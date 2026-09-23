@@ -1,0 +1,56 @@
+{
+  "protocol": {
+    "wikitext_windows": 60,
+    "max_length": 1024,
+    "arc_n": 200,
+    "depths": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "scorer": "fixed-depth, q_th=1.0"
+  },
+  "base_qwen3_1_7b": {
+    "perplexity": {
+      "base": 19.139
+    },
+    "arc_challenge": {
+      "base": {
+        "acc": 0.22,
+        "correct": 44,
+        "n": 200
+      }
+    }
+  },
+  "loopus_qwen3_1_7b": {
+    "perplexity": {
+      "d1": 773.682,
+      "d2": 13.509,
+      "d4": 13.498,
+      "d8": 13.525
+    },
+    "arc_challenge": {
+      "d1": {
+        "acc": 0.235,
+        "correct": 47,
+        "n": 200
+      },
+      "d2": {
+        "acc": 0.265,
+        "correct": 53,
+        "n": 200
+      },
+      "d4": {
+        "acc": 0.265,
+        "correct": 53,
+        "n": 200
+      },
+      "d8": {
+        "acc": 0.27,
+        "correct": 54,
+        "n": 200
+      }
+    }
+  }
+}

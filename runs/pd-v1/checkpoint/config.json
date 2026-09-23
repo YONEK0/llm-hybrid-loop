@@ -1,0 +1,30 @@
+{
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "quantized_weights": "E:\\develop\\project_files\\llm-test\\models\\Qwen3-4B-Thinking-2507-bnb-4bit",
+  "method": "recurrent depth (weight-tied block looped K times with per-iteration low-rank deltas) + deep supervision",
+  "train_depth": 4,
+  "block_start": 24,
+  "block_len": 6,
+  "rank": 8,
+  "trainable": "low-rank deltas on 7 projections of the 6 looped layers",
+  "scope": "GSM8K answer-only training on one 8GB laptop GPU; inference depth is a runtime knob",
+  "args": {
+    "run_name": "pd-v1",
+    "resume": "runs/pd-v1/checkpoint",
+    "train_count": 6000,
+    "dev_count": 40,
+    "max_steps": 400,
+    "accum": 4,
+    "lr": 5e-05,
+    "train_depth": 4,
+    "depth_sampling": true,
+    "rollout_frac": 0.5,
+    "rollout_len": 20,
+    "block_start": 24,
+    "block_len": 6,
+    "rank": 8,
+    "seed": 2026,
+    "eval_every": 100
+  },
+  "steps": 200
+}

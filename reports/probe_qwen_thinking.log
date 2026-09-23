@@ -1,0 +1,13 @@
+W0918 13:56:01.689000 15316 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   6%|▌         | 22/398 [00:00<00:01, 197.51it/s]Loading weights:  13%|█▎        | 53/398 [00:00<00:01, 254.03it/s]Loading weights:  22%|██▏       | 86/398 [00:00<00:01, 279.66it/s]Loading weights:  29%|██▉       | 115/398 [00:00<00:01, 278.45it/s]Loading weights:  36%|███▌      | 143/398 [00:00<00:01, 250.20it/s]Loading weights:  43%|████▎     | 173/398 [00:00<00:00, 262.24it/s]Loading weights:  52%|█████▏    | 206/398 [00:00<00:00, 278.69it/s]Loading weights:  59%|█████▉    | 236/398 [00:00<00:00, 273.11it/s]Loading weights:  68%|██████▊   | 269/398 [00:00<00:00, 285.27it/s]Loading weights:  76%|███████▌  | 301/398 [00:01<00:00, 293.52it/s]Loading weights:  83%|████████▎ | 331/398 [00:01<00:00, 292.90it/s]Loading weights:  91%|█████████ | 363/398 [00:01<00:00, 295.80it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 285.36it/s]
+{
+  "model": "Qwen3-4B-Thinking-2507",
+  "quantization": "NF4 double quantization",
+  "latent_steps": 4,
+  "latent_forward_backward_step": true,
+  "loss": 4.809554576873779,
+  "first_latent_grad_norm": 9.763289451599121,
+  "peak_allocated_gib": 2.934640407562256,
+  "seconds": 5.697715000000244,
+  "trainable_parameters": 16515072
+}

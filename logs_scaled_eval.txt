@@ -1,0 +1,17 @@
+W0919 06:39:23.917000 30776 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   7%|▋         | 26/398 [00:00<00:01, 257.87it/s]Loading weights:  13%|█▎        | 52/398 [00:00<00:01, 258.50it/s]Loading weights:  20%|█▉        | 78/398 [00:00<00:01, 225.22it/s]Loading weights:  26%|██▌       | 104/398 [00:00<00:01, 236.24it/s]Loading weights:  33%|███▎      | 130/398 [00:00<00:01, 243.59it/s]Loading weights:  39%|███▉      | 155/398 [00:00<00:01, 224.27it/s]Loading weights:  45%|████▍     | 179/398 [00:00<00:00, 228.15it/s]Loading weights:  51%|█████     | 203/398 [00:00<00:00, 227.72it/s]Loading weights:  58%|█████▊    | 231/398 [00:00<00:00, 235.61it/s]Loading weights:  64%|██████▍   | 256/398 [00:01<00:00, 235.34it/s]Loading weights:  71%|███████   | 281/398 [00:01<00:00, 239.55it/s]Loading weights:  77%|███████▋  | 306/398 [00:01<00:00, 240.60it/s]Loading weights:  84%|████████▎ | 333/398 [00:01<00:00, 238.45it/s]Loading weights:  90%|█████████ | 360/398 [00:01<00:00, 246.72it/s]Loading weights:  97%|█████████▋| 385/398 [00:01<00:00, 240.12it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 241.59it/s]
+n=150, checkpoint=runs/pq-v1/checkpoint
+  [25/150] base_48=16/25 base_16=16/25 trained_16=16/25
+  [50/150] base_48=25/50 base_16=25/50 trained_16=25/50
+  [75/150] base_48=41/75 base_16=41/75 trained_16=41/75
+  [100/150] base_48=56/100 base_16=56/100 trained_16=56/100
+  [125/150] base_48=69/125 base_16=69/125 trained_16=69/125
+  [150/150] base_48=86/150 base_16=86/150 trained_16=86/150
+
+===== token compression, ProsQA n=150 =====
+  base_48    : acc=0.573 (95% CI (0.4933, 0.6497)) tokens=48.0 4.612s/q
+  base_16    : acc=0.573 (95% CI (0.4933, 0.6497)) tokens=16.0 1.632s/q
+  trained_16 : acc=0.573 (95% CI (0.4933, 0.6497)) tokens=16.0 4.322s/q
+  trained_16_vs_base_48: +0/-0 p=1.0
+  trained_16_vs_base_16: +0/-0 p=1.0
+written to E:\develop\project_files\llm-test\results\compression_scaled_prosqa.json

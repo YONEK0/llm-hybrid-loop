@@ -1,0 +1,7 @@
+{
+  "repository": "openai/gsm8k",
+  "revision": "740312add88f781978c0658806c59bc2815b9866",
+  "license": "mit",
+  "source": "https://huggingface.co/datasets/openai/gsm8k",
+  "train_test_separation": "Official test split never used for training or checkpoint selection"
+}

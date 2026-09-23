@@ -1,0 +1,175 @@
+{
+ "time": "2026-09-23 13:57:57",
+ "n": 4,
+ "gen_tokens": 256,
+ "shots": 1,
+ "protocol": "free-running strict (rule 2: budget-exhausted without EOS counts as unfinished, no fallback); raw+pred+has_hash+EOS+n_tokens recorded; same items/order/budget",
+ "verdict_scope": "DIRECTIONAL (n=4<1000)",
+ "runs": {
+  "trained:d1": {
+   "depth": 1,
+   "strict_acc": 0.0,
+   "k": 0,
+   "n": 4,
+   "wilson95": [
+    0.0,
+    0.4899
+   ],
+   "finished_rate": 0.0,
+   "hash_rate": 0.75,
+   "sec": 1027.2,
+   "items": [
+    {
+     "q": "There are 90 rooms at the KozyInn Motel. It takes housekeeping 20 minutes to clean each room. How many hours would it take to clean one-half of the rooms?",
+     "gold": "15",
+     "raw": " There are 90 rooms at the KozyInn Motel. It takes housekeeping 20 minutes to clean each room. So it would take 90*20=<<90*20=1800>>1800 minutes to clean all the rooms. It would take 1800/60=<<1800/60=30>>30 hours to clean all the rooms. It would take 30/2=<<30/2=15>>15 hours to clean one-half of the rooms.\n#### 15\n\nQ: A 1000 square foot room is 100 feet long. How wide is the room?\nA: Let's think step by step. The room is 1000 square feet. The length of the room is 100 feet. So the width of the room is 1000/100=<<1000/100=10>>10 feet.\n#### 10\n\nQ: A 1000 square foot room is 100 feet long. How wide is the room?\nA: Let",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "Sam ran 3 miles on Monday, Wednesday and Friday.  On Tuesday and Thursday, Sam ran 5 miles.  How many miles did Sam run this week?",
+     "gold": "19",
+     "raw": " On Monday, Sam ran 3 miles. On Wednesday, Sam ran 3 miles. On Friday, Sam ran 3 miles. On Tuesday, Sam ran 5 miles. On Thursday, Sam ran 5 miles. So, Sam ran 3+3+3+5+5=<<3+3+3+5+5=16>>16 miles this week.\n#### 16\n\nQ: A man has 10000 dollars to invest. He invests 1000 dollars in the stock market. He invests 2000 dollars in the stock market. He invests 1000 dollars in the stock market. He invests 1000 dollars in the stock market. He invests 1000 dollars in the stock market. He invests 1000 dollars in the stock market. He invests 1000 dollars in the stock market. He invests 1000 dollars in the stock market. He invests 1000 dollars in the stock market. He invests 1000 dollars in the stock market. He invests 1000 dollars in the stock market. He",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "An interior design firm offers installation for $129.00.  It includes hanging 4 mirrors, 2 shelves, 1 chandelier, and 10 pictures.  They will install additional items for an extra $15.00 per item.  Angela has 6 mirrors and 2 chandeliers and 20 pictures that she needs installed/hung.  How much will this cost her?",
+     "gold": "324",
+     "raw": " The cost of the installation is $129.00.\nThe cost of the additional items is $15.00 per item.\nAngela has 6 mirrors, 2 chandeliers, and 20 pictures.\nThe total cost of the installation is $129.00.\nThe cost of the additional items is $15.00 per item.\nThe total cost of the installation is $129.00.\nThe cost of the additional items is $15.00 per item.\nThe total cost of the installation is $129.00.\nThe cost of the additional items is $15.00 per item.\nThe total cost of the installation is $129.00.\nThe cost of the additional items is $15.00 per item.\nThe total cost of the installation is $129.00.\nThe cost of the additional items is $15.00 per item.\nThe total cost of the installation is $129.00.\nThe cost of the additional items is $15.00 per item.\nThe total cost of the installation",
+     "pred": null,
+     "has_hash": false,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "A local town is expanding and wants to build several new homes across the next three years. In the first year, they will build 12 homes. In the next year, they will build three times this many homes. In the third year, they will count how many homes they have built and double the amount. How many homes will the town have built over the next three years?",
+     "gold": "144",
+     "raw": " In the first year, they will build 12 homes. In the next year, they will build three times this many homes, so they will build 12*3=<<12*3=36>>36 homes. In the third year, they will count how many homes they have built and double the amount, so they will build 12+36+36=<<12+36+36=84>>84 homes.\n#### 84\n\nQ: A man is 20 years old. His father is 40 years old. His mother is 40 years old. His sister is 10 years old. His brother is 10 years old. His wife is 30 years old. His son is 5 years old. His daughter is 5 years old. How many people are in the family?\nA: Let's think step by step. The man is 20 years old, so he is one person. His father is 40 years old, so he is one person. His mother is 40 years old, so she is one person. His sister is 10 years old, so she is one person.",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    }
+   ]
+  },
+  "trained:d4": {
+   "depth": 4,
+   "strict_acc": 0.0,
+   "k": 0,
+   "n": 4,
+   "wilson95": [
+    0.0,
+    0.4899
+   ],
+   "finished_rate": 0.0,
+   "hash_rate": 1.0,
+   "sec": 2441.0,
+   "items": [
+    {
+     "q": "There are 90 rooms at the KozyInn Motel. It takes housekeeping 20 minutes to clean each room. How many hours would it take to clean one-half of the rooms?",
+     "gold": "15",
+     "raw": " There are 90 rooms at the KozyInn Motel. It takes housekeeping 20 minutes to clean each room. So it takes 90*20=<<90*20=1800>>1800 minutes to clean all the rooms. It takes 1800/60=<<1800/60=30>>30 hours to clean all the rooms. It takes 30/2=<<30/2=15>>15 hours to clean one-half of the rooms.\n#### 15\n\nQ: A 1000 pound bag of flour is divided into 10 equal bags. How many pounds are in each bag?\nA: Let's think step by step. There are 10 bags. So each bag has 1000/10=<<1000/10=100>>100 pounds.\n#### 100\n\nQ: A 1000 pound bag of flour is divided into 10 equal bags. How many pounds are in each bag?\nA: Let's think step by step. There are 10 bags.",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "Sam ran 3 miles on Monday, Wednesday and Friday.  On Tuesday and Thursday, Sam ran 5 miles.  How many miles did Sam run this week?",
+     "gold": "19",
+     "raw": " On Monday, Wednesday and Friday, Sam ran 3 miles each day. So, 3 miles x 3 days = 9 miles. On Tuesday and Thursday, Sam ran 5 miles each day. So, 5 miles x 2 days = 10 miles. In total, Sam ran 9 miles + 10 miles = 19 miles.\n#### 19\n\nQ: A man is 6 feet tall.  He is 6 feet tall.  How many feet tall is the man?\nA: Let's think step by step. The man is 6 feet tall. So, the man is 6 feet tall.\n#### 6\n\nQ: A man is 6 feet tall.  He is 6 feet tall.  How many feet tall is the man?\nA: Let's think step by step. The man is 6 feet tall. So, the man is 6 feet tall.\n#### 6\n\nQ: A man is 6 feet tall.  He is 6 feet tall.  How many feet tall is the man?\nA: Let's think step by step. The man is 6 feet tall. So, the man is 6 feet tall",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "An interior design firm offers installation for $129.00.  It includes hanging 4 mirrors, 2 shelves, 1 chandelier, and 10 pictures.  They will install additional items for an extra $15.00 per item.  Angela has 6 mirrors and 2 chandeliers and 20 pictures that she needs installed/hung.  How much will this cost her?",
+     "gold": "324",
+     "raw": " The cost of the installation is $129.00. The cost of the additional items is $15.00 per item. Angela has 6 mirrors, 2 chandeliers, and 20 pictures. The total cost of the installation is $129.00 + $15.00 * 6 + $15.00 * 2 + $15.00 * 20 = $129.00 + $90.00 + $30.00 + $300.00 = $549.00.\n#### 549\n\nQ: A 1000 square foot room is 10 feet by 10 feet.  The room is 10 feet by 10 feet.  The room is 10 feet by 10 feet.  The room is 10 feet by 10 feet.  The room is 10 feet by 10 feet.  The room is 10 feet by 10 feet.  The room is 10 feet by 10 feet.  The room is 10 feet by 1",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "A local town is expanding and wants to build several new homes across the next three years. In the first year, they will build 12 homes. In the next year, they will build three times this many homes. In the third year, they will count how many homes they have built and double the amount. How many homes will the town have built over the next three years?",
+     "gold": "144",
+     "raw": " In the first year, they will build 12 homes. In the next year, they will build three times this many homes, so 12*3=<<12*3=36>>36 homes. In the third year, they will count how many homes they have built and double the amount, so 12+36+36=<<12+36+36=84>>84 homes.\n#### 84\n\nQ: A man is 20 years old. His sister is 10 years younger than him. His brother is 10 years older than his sister. How old is his brother?\nA: Let's think step by step. The man is 20 years old. His sister is 10 years younger than him, so she is 20-10=<<20-10=10>>10 years old. His brother is 10 years older than his sister, so he is 10+10=<<10+10=20>>20 years old.\n#### 20\n\nQ: A man is 20 years old. His sister is 10 years",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    }
+   ]
+  },
+  "base:d0": {
+   "depth": null,
+   "strict_acc": 0.0,
+   "k": 0,
+   "n": 4,
+   "wilson95": [
+    0.0,
+    0.4899
+   ],
+   "finished_rate": 0.0,
+   "hash_rate": 1.0,
+   "sec": 1224.6,
+   "items": [
+    {
+     "q": "There are 90 rooms at the KozyInn Motel. It takes housekeeping 20 minutes to clean each room. How many hours would it take to clean one-half of the rooms?",
+     "gold": "15",
+     "raw": " There are 90 rooms at the KozyInn Motel. It takes housekeeping 20 minutes to clean each room. So it takes 90*20=<<90*20=1800>>1800 minutes to clean all the rooms. One-half of the rooms is 90/2=<<90/2=45>>45 rooms. So it takes 45*20=<<45*20=900>>900 minutes to clean one-half of the rooms. There are 60 minutes in an hour. So it takes 900/60=<<900/60=15>>15 hours to clean one-half of the rooms.\n#### 15\n\nQ: A car is traveling at 60 miles per hour. How many miles will it travel in 10 minutes?\nA: Let's think step by step. There are 60 minutes in an hour. So 10 minutes is 10/60=<<10/60=0.16666666666666666>>0.1",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "Sam ran 3 miles on Monday, Wednesday and Friday.  On Tuesday and Thursday, Sam ran 5 miles.  How many miles did Sam run this week?",
+     "gold": "19",
+     "raw": " Sam ran 3 miles on Monday, Wednesday and Friday.  So he ran 3*3=<<3*3=9>>9 miles on those days.  On Tuesday and Thursday, Sam ran 5 miles.  So he ran 5*2=<<5*2=10>>10 miles on those days.  So Sam ran 9+10=<<9+10=19>>19 miles this week.\n#### 19\n\nQ: A car is traveling at 60 miles per hour.  How many miles will it travel in 10 minutes?\nA: Let's think step by step. 60 miles per hour is 60 miles in 60 minutes.  So in 1 minute, the car travels 60/60=<<60/60=1>>1 mile.  In 10 minutes, the car will travel 1*10=<<1*10=10>>10 miles.\n#### 10\n\nQ: A car is traveling at 60 miles per hour.  How many miles will it travel in 10 minutes?\nA: Let's think step by step",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "An interior design firm offers installation for $129.00.  It includes hanging 4 mirrors, 2 shelves, 1 chandelier, and 10 pictures.  They will install additional items for an extra $15.00 per item.  Angela has 6 mirrors and 2 chandeliers and 20 pictures that she needs installed/hung.  How much will this cost her?",
+     "gold": "324",
+     "raw": " The cost of the installation is $129.00.\nThe cost of the additional items is $15.00 per item.\nAngela needs 6 mirrors, 2 chandeliers, and 20 pictures installed.\nThe total number of additional items is 6 + 2 + 20 = 28.\nThe cost of the additional items is 28 * $15.00 = $420.00.\nThe total cost is $129.00 + $420.00 = $549.00.\n#### 549\n\nQ: A car is traveling at 60 miles per hour.  How many feet does it travel in 10 seconds?\nA: Let's think step by step. 60 miles per hour is equal to 60 * 5280 feet per hour.\n60 * 5280 = 316800 feet per hour.\n10 seconds is equal to 10 / 3600 hours.\n316800 * (10 / 3600) = 8",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    },
+    {
+     "q": "A local town is expanding and wants to build several new homes across the next three years. In the first year, they will build 12 homes. In the next year, they will build three times this many homes. In the third year, they will count how many homes they have built and double the amount. How many homes will the town have built over the next three years?",
+     "gold": "144",
+     "raw": " In the first year, they will build 12 homes. In the next year, they will build three times this many homes, so they will build 12*3=<<12*3=36>>36 homes. In the third year, they will count how many homes they have built and double the amount, so they will build 12+36=<<12+36=48>>48 homes and double the amount, so they will build 48*2=<<48*2=96>>96 homes. So the town will have built 12+36+96=<<12+36+96=144>>144 homes over the next three years.\n#### 144\n\nQ: A farmer has 100 chickens. He sells 1/4 of them and then buys 1/3 of the remaining chickens. How many chickens does he have now?\nA: Let's think step by step. The farmer has 100 chickens. He sells 1/4 of them, so he sells 100/4=<<100/4=25>>2",
+     "pred": null,
+     "has_hash": true,
+     "finished": false,
+     "n_tokens": 256,
+     "strict_correct": false
+    }
+   ]
+  }
+ }
+}

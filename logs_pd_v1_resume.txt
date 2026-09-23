@@ -1,0 +1,10 @@
+W0919 15:58:25.632000 35204 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   6%|▌         | 22/398 [00:00<00:01, 212.02it/s]Loading weights:  11%|█         | 44/398 [00:00<00:01, 183.32it/s]Loading weights:  17%|█▋        | 66/398 [00:00<00:01, 196.28it/s]Loading weights:  22%|██▏       | 86/398 [00:00<00:01, 185.04it/s]Loading weights:  27%|██▋       | 107/398 [00:00<00:01, 190.54it/s]Loading weights:  32%|███▏      | 127/398 [00:00<00:01, 189.28it/s]Loading weights:  37%|███▋      | 147/398 [00:00<00:01, 184.44it/s]Loading weights:  42%|████▏     | 166/398 [00:00<00:01, 178.72it/s]Loading weights:  47%|████▋     | 187/398 [00:00<00:01, 186.00it/s]Loading weights:  53%|█████▎    | 209/398 [00:01<00:00, 190.47it/s]Loading weights:  58%|█████▊    | 229/398 [00:01<00:00, 183.00it/s]Loading weights:  62%|██████▏   | 248/398 [00:01<00:00, 178.67it/s]Loading weights:  67%|██████▋   | 266/398 [00:01<00:00, 172.09it/s]Loading weights:  72%|███████▏  | 287/398 [00:01<00:00, 179.35it/s]Loading weights:  77%|███████▋  | 308/398 [00:01<00:00, 181.29it/s]Loading weights:  82%|████████▏ | 327/398 [00:01<00:00, 181.67it/s]Loading weights:  87%|████████▋ | 346/398 [00:01<00:00, 176.16it/s]Loading weights:  92%|█████████▏| 366/398 [00:02<00:00, 177.41it/s]Loading weights:  97%|█████████▋| 385/398 [00:02<00:00, 179.14it/s]Loading weights: 100%|██████████| 398/398 [00:02<00:00, 185.73it/s]
+trainable=24.117M resume=runs/pd-v1/checkpoint train=6000 dev=40
+pre-training strict free EM (depth 1, 16 tok): 0.000
+{"step": 50, "depth": 2, "rollout": 20, "loss": 0.024, "seconds": 6.19, "peak_gib": 6.81}
+{"step": 100, "depth": 3, "rollout": 0, "loss": 0.135, "seconds": 0.72, "peak_gib": 6.81, "grad_norm": 4.229}
+EVAL {"step": 100, "strict_free_em_d1": 0.0}
+{"step": 150, "depth": 2, "rollout": 1, "loss": 0.42, "seconds": 37.01, "peak_gib": 6.82}
+{"step": 200, "depth": 1, "rollout": 0, "loss": 0.0, "seconds": 3.28, "peak_gib": 7.06, "grad_norm": 7.087}
+EVAL {"step": 200, "strict_free_em_d1": 0.0}

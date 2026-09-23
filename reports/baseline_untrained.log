@@ -1,0 +1,31 @@
+W0918 15:15:43.411000 11436 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\modeling_utils.py:5064: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   8%|▊         | 33/398 [00:00<00:01, 308.62it/s]Loading weights:  16%|█▌        | 64/398 [00:00<00:01, 263.82it/s]Loading weights:  24%|██▍       | 96/398 [00:00<00:01, 275.78it/s]Loading weights:  31%|███       | 124/398 [00:00<00:01, 264.10it/s]Loading weights:  38%|███▊      | 151/398 [00:00<00:00, 252.46it/s]Loading weights:  45%|████▌     | 180/398 [00:00<00:00, 252.39it/s]Loading weights:  53%|█████▎    | 210/398 [00:00<00:00, 262.41it/s]Loading weights:  60%|██████    | 239/398 [00:00<00:00, 267.21it/s]Loading weights:  67%|██████▋   | 267/398 [00:01<00:00, 265.24it/s]Loading weights:  74%|███████▍  | 295/398 [00:01<00:00, 268.18it/s]Loading weights:  81%|████████  | 322/398 [00:01<00:00, 267.84it/s]Loading weights:  88%|████████▊ | 351/398 [00:01<00:00, 274.34it/s]Loading weights:  95%|█████████▌| 379/398 [00:01<00:00, 261.18it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 275.43it/s]
+{
+  "note": "untrained, zero-initialised deltas",
+  "metric": "greedy answer accuracy",
+  "depth_curve": {
+    "1": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 12,
+      "mean_tokens": 16.0,
+      "mean_seconds": 1.62
+    },
+    "2": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 12,
+      "mean_tokens": 16.0,
+      "mean_seconds": 1.98
+    },
+    "4": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 12,
+      "mean_tokens": 16.0,
+      "mean_seconds": 2.88
+    }
+  }
+}

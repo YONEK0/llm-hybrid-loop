@@ -1,0 +1,10 @@
+W0919 11:39:05.104000 14224 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   8%|▊         | 31/398 [00:00<00:01, 305.29it/s]Loading weights:  16%|█▌        | 64/398 [00:00<00:01, 316.21it/s]Loading weights:  24%|██▍       | 96/398 [00:00<00:00, 310.26it/s]Loading weights:  32%|███▏      | 128/398 [00:00<00:00, 308.44it/s]Loading weights:  40%|███▉      | 159/398 [00:00<00:00, 291.50it/s]Loading weights:  48%|████▊     | 190/398 [00:00<00:00, 293.25it/s]Loading weights:  56%|█████▌    | 221/398 [00:00<00:00, 291.60it/s]Loading weights:  64%|██████▎   | 253/398 [00:00<00:00, 295.92it/s]Loading weights:  72%|███████▏  | 286/398 [00:00<00:00, 294.11it/s]Loading weights:  79%|███████▉  | 316/398 [00:01<00:00, 292.01it/s]Loading weights:  88%|████████▊ | 349/398 [00:01<00:00, 302.37it/s]Loading weights:  95%|█████████▌| 380/398 [00:01<00:00, 296.98it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 303.21it/s]
+trainable=24.117M resume=runs/pq-v1/checkpoint train=6000 dev=40
+pre-training strict free EM (depth 1, 16 tok): 0.000
+{"step": 50, "depth": 2, "rollout": 20, "loss": 0.336, "seconds": 5.77, "peak_gib": 6.81}
+{"step": 100, "depth": 3, "rollout": 0, "loss": 0.144, "seconds": 1.7, "peak_gib": 6.81, "grad_norm": 7.731}
+EVAL {"step": 100, "strict_free_em_d1": 0.0}
+{"step": 150, "depth": 2, "rollout": 1, "loss": 0.547, "seconds": 7.36, "peak_gib": 6.82}
+{"step": 200, "depth": 1, "rollout": 0, "loss": 0.001, "seconds": 0.69, "peak_gib": 7.06, "grad_norm": 5.507}
+EVAL {"step": 200, "strict_free_em_d1": 0.0}

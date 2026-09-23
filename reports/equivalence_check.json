@@ -1,0 +1,6 @@
+{
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "equivalent": true,
+  "note": "depth=1 looped forward vs stock forward; deltas are zero-initialised so they must match"
+}

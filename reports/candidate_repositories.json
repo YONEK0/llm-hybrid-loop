@@ -1,0 +1,52 @@
+[
+  {
+    "id": "unsloth/Qwen3-4B-Thinking-2507-bnb-4bit",
+    "sha": "a1b773dfdced457ae4d443b3d0124ae2b203e10f",
+    "files": [
+      {
+        "name": "README.md",
+        "bytes": 10939
+      },
+      {
+        "name": "added_tokens.json",
+        "bytes": 707
+      },
+      {
+        "name": "chat_template.jinja",
+        "bytes": 4049
+      },
+      {
+        "name": "config.json",
+        "bytes": 2185
+      },
+      {
+        "name": "generation_config.json",
+        "bytes": 238
+      },
+      {
+        "name": "merges.txt",
+        "bytes": 1671853
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 2653133905
+      },
+      {
+        "name": "special_tokens_map.json",
+        "bytes": 614
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 11422654
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 9663
+      },
+      {
+        "name": "vocab.json",
+        "bytes": 2776833
+      }
+    ]
+  }
+]

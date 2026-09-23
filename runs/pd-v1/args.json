@@ -1,0 +1,18 @@
+{
+  "run_name": "pd-v1",
+  "resume": "runs/pd-v1/checkpoint",
+  "train_count": 6000,
+  "dev_count": 40,
+  "max_steps": 400,
+  "accum": 4,
+  "lr": 5e-05,
+  "train_depth": 4,
+  "depth_sampling": true,
+  "rollout_frac": 0.5,
+  "rollout_len": 20,
+  "block_start": 24,
+  "block_len": 6,
+  "rank": 8,
+  "seed": 2026,
+  "eval_every": 100
+}

@@ -1,0 +1,91 @@
+W0918 15:01:36.320000 4020 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\modeling_utils.py:5064: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:01, 244.86it/s]Loading weights:  14%|█▍        | 55/398 [00:00<00:01, 275.91it/s]Loading weights:  21%|██        | 83/398 [00:00<00:01, 265.76it/s]Loading weights:  28%|██▊       | 110/398 [00:00<00:01, 260.37it/s]Loading weights:  34%|███▍      | 137/398 [00:00<00:01, 246.89it/s]Loading weights:  42%|████▏     | 166/398 [00:00<00:00, 254.03it/s]Loading weights:  48%|████▊     | 192/398 [00:00<00:00, 248.01it/s]Loading weights:  56%|█████▌    | 221/398 [00:00<00:00, 258.51it/s]Loading weights:  64%|██████▎   | 253/398 [00:00<00:00, 270.90it/s]Loading weights:  71%|███████▏  | 284/398 [00:01<00:00, 280.59it/s]Loading weights:  79%|███████▊  | 313/398 [00:01<00:00, 272.24it/s]Loading weights:  86%|████████▋ | 344/398 [00:01<00:00, 282.31it/s]Loading weights:  94%|█████████▎| 373/398 [00:01<00:00, 276.09it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 276.23it/s]
+{
+  "technique": "recurrent depth: weight-tied block looped K times, per-iteration low-rank deltas, deep supervision",
+  "load_seconds": 4.3,
+  "trainable_total_m": 11.01,
+  "trainable_by_group": {
+    "model.model": 11.01
+  },
+  "n_delta_sets": 42,
+  "block_layers": 6,
+  "stack_len": 36,
+  "sample": {
+    "ids": 76,
+    "prefix": 71,
+    "target": 5
+  },
+  "forward_depth1": {
+    "logits": [
+      1,
+      76,
+      151936
+    ],
+    "iteration_marks": 1
+  },
+  "forward_depth2": {
+    "logits": [
+      1,
+      76,
+      151936
+    ],
+    "iteration_marks": 2
+  },
+  "forward_depth4": {
+    "logits": [
+      1,
+      76,
+      151936
+    ],
+    "iteration_marks": 4
+  },
+  "train_step": {
+    "ok": true,
+    "loss": 9.9118,
+    "report": {
+      "ce": 7.625,
+      "aux_ce": 11.434158325195312,
+      "ids": 76,
+      "depth": 4
+    },
+    "grad_norm": 16.2257,
+    "peak_gib": 3.08,
+    "seconds": 5.3
+  },
+  "delta_change_after_step": [
+    7.443e-05,
+    7.443e-05,
+    7.443e-05,
+    7.443e-05
+  ],
+  "weights_moved": true,
+  "depth_curve": {
+    "1": {
+      "answer": null,
+      "text": "Okay, let's see. The problem is about Natalia selling clips in April",
+      "seconds": 1.37,
+      "generated_tokens": 16
+    },
+    "2": {
+      "answer": "4",
+      "text": "Okay, let's see. The problem says Natalia sold clips to 4",
+      "seconds": 1.63,
+      "generated_tokens": 16
+    },
+    "4": {
+      "answer": null,
+      "text": "Okay, wait, let me try to solve this problem step by April and May",
+      "seconds": 2.13,
+      "generated_tokens": 16
+    },
+    "8": {
+      "answer": "0",
+      "text": "prompt amount: 0\nThe problem says that Natalia initially sold some number",
+      "seconds": 3.12,
+      "generated_tokens": 16
+    }
+  },
+  "gold": "72"
+}

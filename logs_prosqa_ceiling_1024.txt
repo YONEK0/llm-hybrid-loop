@@ -1,0 +1,35 @@
+W0919 10:49:00.604000 33864 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:01, 236.83it/s]Loading weights:  12%|█▏        | 49/398 [00:00<00:01, 236.73it/s]Loading weights:  19%|█▉        | 75/398 [00:00<00:01, 246.64it/s]Loading weights:  25%|██▌       | 100/398 [00:00<00:01, 247.17it/s]Loading weights:  31%|███▏      | 125/398 [00:00<00:01, 227.86it/s]Loading weights:  37%|███▋      | 149/398 [00:00<00:01, 230.72it/s]Loading weights:  44%|████▎     | 174/398 [00:00<00:00, 236.55it/s]Loading weights:  50%|████▉     | 198/398 [00:00<00:00, 234.40it/s]Loading weights:  56%|█████▌    | 222/398 [00:00<00:00, 235.23it/s]Loading weights:  62%|██████▏   | 246/398 [00:01<00:00, 229.29it/s]Loading weights:  68%|██████▊   | 272/398 [00:01<00:00, 235.05it/s]Loading weights:  75%|███████▍  | 297/398 [00:01<00:00, 236.05it/s]Loading weights:  81%|████████  | 321/398 [00:01<00:00, 234.61it/s]Loading weights:  87%|████████▋ | 345/398 [00:01<00:00, 232.69it/s]Loading weights:  93%|█████████▎| 369/398 [00:01<00:00, 231.71it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 238.14it/s]
+[1/30] strict=0 loose=0
+[2/30] strict=0 loose=0
+[3/30] strict=0 loose=0
+[4/30] strict=0 loose=0
+[5/30] strict=0 loose=0
+[6/30] strict=0 loose=0
+[7/30] strict=0 loose=0
+[8/30] strict=0 loose=0
+[9/30] strict=0 loose=0
+[10/30] strict=0 loose=0
+[11/30] strict=0 loose=0
+[12/30] strict=0 loose=1
+[13/30] strict=0 loose=1
+[14/30] strict=0 loose=2
+[15/30] strict=0 loose=2
+[16/30] strict=0 loose=2
+[17/30] strict=0 loose=2
+[18/30] strict=0 loose=2
+[19/30] strict=0 loose=2
+[20/30] strict=0 loose=2
+[21/30] strict=0 loose=2
+[22/30] strict=0 loose=2
+[23/30] strict=0 loose=2
+[24/30] strict=0 loose=2
+[25/30] strict=0 loose=2
+[26/30] strict=0 loose=2
+[27/30] strict=0 loose=2
+[28/30] strict=0 loose=3
+[29/30] strict=0 loose=3
+[30/30] strict=0 loose=3
+
+base ProsQA ceiling @ 1024 tokens: strict=0/30 loose=3/30 mean_tokens=1024.0
+written to E:\develop\project_files\llm-test\results\prosqa_base_ceiling.json

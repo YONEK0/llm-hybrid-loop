@@ -1,0 +1,221 @@
+{
+  "model": "Qwen3-4B-Thinking-2507 (frozen base)",
+  "task": "ProsQA test",
+  "n": 30,
+  "budget": 512,
+  "loose_accuracy": 0.06666666666666667,
+  "strict_accuracy": 0.0,
+  "mean_tokens": 512.0,
+  "records": [
+    {
+      "gold": "Eva is a lorpus.",
+      "loose_pred": "Bob is a worpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Eva is a lorpus or yumpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to track all the relationships step by step. Let me list out all the given statements first and then see how they connect.\n\nFirst, let's note down all the premises:\n\n1. Every lempus is a shumpus.\n2. Every numpus is a yumpus.\n3. Every boompus is a chorpus.\n4"
+    },
+    {
+      "gold": "Tom is a storpus.",
+      "loose_pred": "Davis is a vumpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Tom is a storpus or scrompus. Hmm, this seems like a logic puzzle with a lot of different terms. I need to map out all the relationships step by step. Let me start by listing out all the given statements and see how they connect.\n\nFirst, let's note down all the premises:\n\n1. Every vumpus is a sterpus.\n2. Every gerpus is a storpus.\n3. Every lorpus is a shumpus.\n4. E"
+    },
+    {
+      "gold": "Oliver is a scrompus.",
+      "loose_pred": "Oliver is a jelpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Oliver is a felpus or scrompus. Hmm, this seems like a logic puzzle with a bunch of statements about different types of creatures. I need to go through each statement step by step and see how they connect.\n\nFirst, let me list out all the given information to keep track.\n\nStarting with the statements:\n\n1. Every bompus is a scrompus.\n2. Every bompus is a lempus.\n3. E"
+    },
+    {
+      "gold": "Sally is a scrompus.",
+      "loose_pred": "She is a jompus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Sally is a scrompus or a vumpus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. Let me break it down step by step.\n\nFirst, I need to list out all the given statements and see how they connect. Let me write them down one by one.\n\n1. Every jelpus is a shumpus.\n2. Every felpus is a fompus.\n3. Sally is a jompus.\n4. Every jompus is a g"
+    },
+    {
+      "gold": "Davis is a lorpus.",
+      "loose_pred": "Davis is a kerpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Davis is a lorpus or jompus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. Let me break it down step by step.\n\nFirst, I need to list out all the given information and see how it connects. Let's start by writing down all the statements.\n\nGiven:\n\n1. Every rorpus is a boompus.\n2. Every wumpus is a quimpus.\n3. Jack is a chorpus.\n4. D"
+    },
+    {
+      "gold": "Jack is a gwompus.",
+      "loose_pred": "Jack is a fompus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Jack is a dumpus or gwompus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me start by listing out all the given information and see how they connect.\n\nFirst, let's note down all the premises:\n\n1. Every jompus is a terpus.\n2. Every worpus is a lorpus.\n3. Jack is a storpus.\n4. Ev"
+    },
+    {
+      "gold": "Jack is a scrompus.",
+      "loose_pred": "Fae is a tumpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Jack is a scrompus or jompus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let me list out all the given statements to keep track:\n\n1. Every rompus is a boompus.\n2. Every tumpus is a timpus.\n3. Every yerpus is a rompus.\n4. Every zumpus is a wumpus.\n5. Every bompus is a scro"
+    },
+    {
+      "gold": "Gabriel is a yumpus.",
+      "loose_pred": "Gabriel is a jelpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Gabriel is a kerpus or a yumpus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. I need to go through each statement step by step and see how they connect.\n\nFirst, let me list out all the given information to keep track. Maybe making a table or some notes would help, but since I'm doing this mentally, I'll try to map it out.\n\nStart"
+    },
+    {
+      "gold": "Tom is a rempus.",
+      "loose_pred": "Tom is a bomp",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Tom is a rempus or timpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let me list out all the given statements to keep track:\n\n1. Every bompus is a brimpus.\n2. Every shumpus is a yerpus.\n3. Every gwompus is a bompus.\n4. Every vumpus is a gwompus.\n5. Every rorpus is a gwom"
+    },
+    {
+      "gold": "Fae is a fompus.",
+      "loose_pred": "Fae is a rompus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Fae is a fompus or chorpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me list out all the given information first and then see how it connects to Fae.\n\nFirst, let's note down all the premises:\n\n1. Every shumpus is a jompus.\n2. Every hilpus is a worpus.\n3. Fae is a hilpus.\n4."
+    },
+    {
+      "gold": "Eva is a tumpus.",
+      "loose_pred": "Eva is a tumpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Eva is a tumpus or vumpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me start by listing all the given information and see how they connect.\n\nFirst, let's list all the statements:\n\n1. Every lorpus is a tumpus.\n2. Every impus is a rompus.\n3. Every rempus is a boompus.\n4. Wren"
+    },
+    {
+      "gold": "Oliver is a zumpus.",
+      "loose_pred": "Stella is a lorpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Oliver is a zumpus or worpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let me list out all the given statements to keep track. Maybe making a table or a list of each statement would help. Let's go through them one by one.\n\n1. Every quimpus is a storpus.\n2. Every kerpus "
+    },
+    {
+      "gold": "Carol is a felpus.",
+      "loose_pred": "Sally is a lorpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Carol is a felpus or lempus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to go through each statement step by step and see how they connect.\n\nFirst, let me list out all the given information to keep track. Maybe making a table or a list of each statement would help. Let's see.\n\nStarting with the statements:\n\n1. Every shumpus i"
+    },
+    {
+      "gold": "Alex is a brimpus.",
+      "loose_pred": "Alex is a shumpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Alex is a brimpus or chorpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let me list out all the given information to keep track.\n\nStarting with the premises:\n\n1. Alex is a shumpus.\n2. Every jompus is a chorpus.\n3. Wren is a yimpus.\n4. Every sterpus is a jelpus.\n5. Every "
+    },
+    {
+      "gold": "Stella is a vumpus.",
+      "loose_pred": "Bob is a lorpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Stella is a gerpus or vumpus. Hmm, this seems like a logic puzzle with a bunch of different categories. I need to track all the relationships step by step. Let me list out all the given information first.\n\nFirst, let's note down all the statements:\n\n1. Stella is a bompus.\n2. Every yerpus is a zumpus.\n3. Every rempus is a gwompus.\n4. Every timpus is a storpus.\n5. Bo"
+    },
+    {
+      "gold": "Eva is a boompus.",
+      "loose_pred": "Eva is a dumpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Eva is a boompus or numpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me start by listing out all the given information and see how they connect.\n\nFirst, let's list all the statements:\n\n1. Every sterpus is a zumpus.\n2. Every quimpus is a hilpus.\n3. Every lempus is a kerpus.\n"
+    },
+    {
+      "gold": "Jack is a chorpus.",
+      "loose_pred": "Rex is a wumpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Jack is a terpus or chorpus. Hmm, this seems like a logic puzzle with a lot of different terms. I need to go through each statement step by step and see how the relationships connect.\n\nFirst, let me list out all the given statements to keep track:\n\n1. Every gorpus is a hilpus.\n2. Every fompus is a terpus.\n3. Every dumpus is a sterpus.\n4. Every shumpus is a terpus.\n"
+    },
+    {
+      "gold": "Bob is a grimpus.",
+      "loose_pred": "Jack is a boompus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Bob is a grimpus or sterpus. Hmm, this seems like a logic puzzle with a bunch of categories. Let me break it down step by step.\n\nFirst, I need to list out all the given statements and see how they connect. Let are the different categories: fompus, lorpus, vumpus, gorpus, rempus, rompus, timpus, grimpus, worpus, storpus, jompus, tumpus, sterpus, scrompus, jelpus, qu"
+    },
+    {
+      "gold": "Gabriel is a storpus.",
+      "loose_pred": "Davis is a yerpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Gabriel is a storpus or zumpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me start by listing out all the given statements and see how they connect.\n\nFirst, let's note down all the statements:\n\n1. Every gwompus is a yumpus.\n2. Every boompus is a gwompus.\n3. Every quimpus is "
+    },
+    {
+      "gold": "Sam is a shumpus.",
+      "loose_pred": "Jack is a gerpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Sam is a felpus or shumpus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. I need to go through each statement step by step and see how they connect.\n\nFirst, let me list out all the given information to keep track.\n\nStarting with the statements:\n\n1. Every gerpus is a bompus.\n2. Every yerpus is a rompus.\n3. Every kerpus is a rompus"
+    },
+    {
+      "gold": "Oliver is a storpus.",
+      "loose_pred": "Oliver is a lempus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Oliver is a timpus or storpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let me list out all the given statements to keep track:\n\n1. Every rorpus is a lempus.\n2. Oliver is a boompus.\n3. Every shumpus is a worpus.\n4. Every jompus is a storpus.\n5. Oliver is a rorpus.\n6. Ev"
+    },
+    {
+      "gold": "Alex is a tumpus.",
+      "loose_pred": "Alex is a grimpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Alex is a tumpus or jelpus. Hmm, this is a bit complicated with all these different terms. Let me start by listing out all the given information step by step.\n\nFirst, let's note down all the statements:\n\n1. Every quimpus is a hilpus.\n2. Every yerpus is a jompus.\n3. Every zumpus is a yimpus.\n4. Every gwompus is a zumpus.\n5. Every jompus is a tumpus.\n6. Alex is a qui"
+    },
+    {
+      "gold": "Stella is a terpus.",
+      "loose_pred": "Stella is a scrompus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Stella is a felpus or terpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me start by listing out all the given information and see how they connect.\n\nFirst, let's note down all the statements:\n\n1. Every yumpus is a gwompus.\n2. Polly is a rompus.\n3. Every dumpus is a grimpus.\n"
+    },
+    {
+      "gold": "Max is a quimpus.",
+      "loose_pred": "Max is a chorpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Max is a chorpus or quimpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let me list out all the given statements to keep track:\n\n1. Every jelpus is a gwompus.\n2. Every zhorpus is a scrompus.\n3. Every jelpus is a fompus.\n4. Every lempus is a gorpus.\n5. Wren is a lempus.\n6."
+    },
+    {
+      "gold": "Sam is a wumpus.",
+      "loose_pred": "Sam is a wumpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Sam is a wumpus or a worpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let me list out all the given information to keep track.\n\nStarting with Sam's attributes:\n\n- Sam is a scrompus.\n- Sam is a gwompus (from the last line: \"Sam is a gwompus.\")\n- Also, Sam is a hilpus (fr"
+    },
+    {
+      "gold": "Bob is a rompus.",
+      "loose_pred": "Bob is a sterpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Bob is a zhorpus or rompus. Hmm, first I need to parse all these statements and see how they connect. Let me list out all the given information step by step.\n\nFirst, let's note down all the premises:\n\n1. Every jompus is a grimpus.\n2. Every yimpus is a rempus.\n3. Every jompus is a hilpus.\n4. Every gerpus is a boompus.\n5. Every hilpus is a rempus.\n6. Every gerpus is "
+    },
+    {
+      "gold": "Max is a bompus.",
+      "loose_pred": "Max is a chorpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Max is a scrompus or bompus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. Let me break it down step by step.\n\nFirst, I need to list out all the given information and see how the different categories connect. Let's start by writing down all the statements:\n\n1. Every storpus is a scrompus.\n2. Every terpus is a wumpus.\n3. Alex is a"
+    },
+    {
+      "gold": "Sally is a tumpus.",
+      "loose_pred": "Sally is a felpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Sally is a tumpus or numpus. Hmm, this seems like a logic puzzle with a lot of different categories. I need to go through each statement step by step and see how the relationships connect.\n\nFirst, let me list out all the given statements to keep track:\n\n1. Every quimpus is a felpus.\n2. Every yimpus is a felpus.\n3. Every yimpus is a quimpus.\n4. Gabriel is a wumpus.\n"
+    },
+    {
+      "gold": "Tom is a rempus.",
+      "loose_pred": "Tom is a felpus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Tom is a jelpus or rempus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me start by listing all the given statements and see how they connect.\n\nFirst, let's note down all the premises:\n\n1. Every yerpus is a terpus.\n2. Every timpus is a tumpus.\n3. Every hilpus is a jelpus.\n4. Ev"
+    },
+    {
+      "gold": "Stella is a impus.",
+      "loose_pred": "Stella is a rempus",
+      "strict_pred": null,
+      "tokens": 512,
+      "text": "Okay, let's try to figure out if Stella is a vumpus or impus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to track all the relationships step by step. Let me list out all the given information first and then see how they connect to Stella.\n\nFirst, let's note down all the premises:\n\n1. Every lorpus is a kerpus.\n2. Every shumpus is a rompus.\n3. Every yumpus is "
+    }
+  ]
+}

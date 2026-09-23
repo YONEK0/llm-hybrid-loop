@@ -1,0 +1,25 @@
+# python environments (5.4G total)
+loopus_env/
+ouro_env/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# model weights & checkpoints (18G) — archives stay local
+models/
+*.pt
+*.bin
+*.safetensors
+*.gguf
+*.tmp
+
+# third-party project clones (provenance noted in docs/README.md)
+Coconut/
+CODI/
+loopus/
+
+# transient
+.cache/
+.ipynb_checkpoints/
+tmp/

@@ -1,0 +1,27 @@
+{
+  "note": "untrained, zero-initialised deltas",
+  "metric": "greedy answer accuracy",
+  "depth_curve": {
+    "1": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 12,
+      "mean_tokens": 16.0,
+      "mean_seconds": 1.62
+    },
+    "2": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 12,
+      "mean_tokens": 16.0,
+      "mean_seconds": 1.98
+    },
+    "4": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 12,
+      "mean_tokens": 16.0,
+      "mean_seconds": 2.88
+    }
+  }
+}

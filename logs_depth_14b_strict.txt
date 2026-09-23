@@ -1,0 +1,6 @@
+Ouro-1.4B: total_ut_steps=4
+depth=1: loose=0.467 strict=0.000 tokens=16.0 time=1.98s
+depth=2: loose=0.300 strict=0.000 tokens=16.0 time=2.22s
+depth=3: loose=0.367 strict=0.100 tokens=14.5 time=2.08s
+depth=4: loose=0.367 strict=0.200 tokens=12.5 time=1.83s
+saved -> E:\develop\project_files\llm-test\results\ouro_depth_sweep_Ouro-1.4B.json

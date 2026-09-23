@@ -1,0 +1,57 @@
+{
+  "model": "pd-v1 (scheduled-sampling, step-400)",
+  "task": "ProsQA test",
+  "n": 30,
+  "budget": 16,
+  "scorer": "strict",
+  "depths": {
+    "1": {
+      "strict_em": 0.0,
+      "correct": 0,
+      "samples": [
+        {
+          "gold": "Eva is a lorpus.",
+          "strict_pred": null,
+          "ok": false,
+          "text": "Okay, let's try to figure out if Eva is a lorpus or y"
+        },
+        {
+          "gold": "Tom is a storpus.",
+          "strict_pred": null,
+          "ok": false,
+          "text": "Okay, let's try to figure out if Tom is a storpus or sc"
+        },
+        {
+          "gold": "Oliver is a scrompus.",
+          "strict_pred": null,
+          "ok": false,
+          "text": "Okay, let's try to figure out if Oliver is a felpus or"
+        }
+      ]
+    },
+    "4": {
+      "strict_em": 0.0,
+      "correct": 0,
+      "samples": [
+        {
+          "gold": "Eva is a lorpus.",
+          "strict_pred": null,
+          "ok": false,
+          "text": "Okay, wait, hold on. This is a logic puzzle with many different terms"
+        },
+        {
+          "gold": "Tom is a storpus.",
+          "strict_pred": null,
+          "ok": false,
+          "text": "Okay, wait, hold on. This question seems complicated with all these different -"
+        },
+        {
+          "gold": "Oliver is a scrompus.",
+          "strict_pred": null,
+          "ok": false,
+          "text": "Okay, so I need to figure out whether Oliver is either a felpus"
+        }
+      ]
+    }
+  }
+}

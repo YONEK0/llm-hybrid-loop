@@ -1,0 +1,14 @@
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at C:\Users\li287\.cache\huggingface\datasets\Salesforce___wikitext\wikitext-2-raw-v1\0.0.0\b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Sep 20 08:41:44 2026).
+=== A. Qwen3.5-4B-Base (hybrid 3:1) ===
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 9650.62it/s]
+P1: {"peaks": [2, 6, 19], "peak_spacings": [4, 13], "autocorr_lag2_8": {"2": 0.102, "3": 0.063, "4": 0.027, "5": 0.036, "6": 0.057, "7": 0.03, "8": -0.001}, "lag4_autocorr": 0.027, "peaks_at_attn_transition": [2, 6, 19], "phase_lock_rate": 1.0}
+P2: {"U_test_linear_vs_attn_involving": {"U": 56.0, "z": -0.924, "p": 0.35561, "mean_a": 0.08031, "mean_b": 0.09291}}
+P2 groups: {"linear->linear": 0.08031, "linear->attn": 0.09325, "attn->linear": 0.09257}
+P3: {"attn_peaks_by_layer": [[2, 0.17369], [6, 0.15638], [22, 0.08128]], "attn_peak_envelope": [0.17369, 0.15638, 0.08128], "macro_boundary_candidates_top4": [1, 2, 3, 4], "largest_attn_peaks": [[2, 0.17369], [6, 0.15638], [22, 0.08128]], "note": "compare macro candidates with attn peak positions"}
+=== B. Qwen3-1.7B (standard attention, control) ===
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 3337.06it/s]
+The tied weights mapping and config for this model specifies to tie model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+logitlens_ce: [133.34453, 16.90483, 16.26773, 16.37149, 15.34675, 14.81718, 14.29905, 13.72561, 13.3665, 13.09804, 12.80723, 11.72093, 11.93599, 11.51353, 11.11625, 10.81968, 10.5061, 10.79541, 9.83282, 9.05372, 9.29328, 8.38008, 7.62601, 6.77642, 6.39134, 5.31486, 4.34509, 3.25615, 5.95011]
+written to results/s1a_dynamics.json [375s]

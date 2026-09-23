@@ -1,0 +1,82 @@
+[
+  {
+    "step": 1,
+    "epoch": 1,
+    "seconds": 0.64,
+    "peak_gib": 5.57,
+    "ce": 4.46875,
+    "aux_ce": 8.266782760620117,
+    "depth": 4,
+    "keep_steps": 2,
+    "scaffold": 16,
+    "answer": 11
+  },
+  {
+    "step": 2,
+    "epoch": 1,
+    "seconds": 0.86,
+    "peak_gib": 6.53,
+    "ce": 4.625,
+    "aux_ce": 7.705906867980957,
+    "depth": 4,
+    "keep_steps": 2,
+    "scaffold": 15,
+    "answer": 12,
+    "grad_norm": 326.175
+  },
+  {
+    "step": 3,
+    "epoch": 1,
+    "seconds": 0.58,
+    "peak_gib": 6.53,
+    "ce": 1.984375,
+    "aux_ce": 5.040677070617676,
+    "depth": 4,
+    "keep_steps": 2,
+    "scaffold": 14,
+    "answer": 11
+  },
+  {
+    "step": 4,
+    "epoch": 1,
+    "seconds": 0.77,
+    "peak_gib": 6.53,
+    "ce": 1.8828125,
+    "aux_ce": 4.4855499267578125,
+    "depth": 4,
+    "keep_steps": 2,
+    "scaffold": 14,
+    "answer": 11,
+    "grad_norm": 107.656
+  },
+  {
+    "step": 5,
+    "epoch": 1,
+    "seconds": 0.64,
+    "peak_gib": 6.53,
+    "ce": 0.984375,
+    "aux_ce": 3.2263965606689453,
+    "depth": 4,
+    "keep_steps": 2,
+    "scaffold": 14,
+    "answer": 11
+  },
+  {
+    "step": 6,
+    "epoch": 1,
+    "seconds": 0.9,
+    "peak_gib": 6.53,
+    "ce": 1.140625,
+    "aux_ce": 3.3069891929626465,
+    "depth": 4,
+    "keep_steps": 2,
+    "scaffold": 17,
+    "answer": 11,
+    "grad_norm": 63.199
+  },
+  {
+    "step": 6,
+    "train_seconds": 4.5,
+    "peak_gib": 6.53
+  }
+]

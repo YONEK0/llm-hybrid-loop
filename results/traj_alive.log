@@ -1,0 +1,86 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:01<09:10,  1.30s/it]Loading weights:   1%|▏         | 6/426 [00:02<02:34,  2.73it/s]Loading weights:   2%|▏         | 7/426 [00:02<02:39,  2.63it/s]Loading weights:   2%|▏         | 8/426 [00:03<02:38,  2.64it/s]Loading weights:   2%|▏         | 9/426 [00:03<02:36,  2.66it/s]Loading weights:   3%|▎         | 11/426 [00:03<01:56,  3.56it/s]Loading weights:   3%|▎         | 12/426 [00:04<02:06,  3.28it/s]Loading weights:   3%|▎         | 13/426 [00:04<02:13,  3.09it/s]Loading weights:   3%|▎         | 14/426 [00:05<02:23,  2.86it/s]Loading weights:   5%|▍         | 20/426 [00:05<01:03,  6.41it/s]Loading weights:   5%|▍         | 21/426 [00:05<01:09,  5.82it/s]Loading weights:   5%|▌         | 22/426 [00:06<01:12,  5.60it/s]Loading weights:   5%|▌         | 23/426 [00:06<01:43,  3.89it/s]Loading weights:   6%|▌         | 25/426 [00:07<01:48,  3.68it/s]Loading weights:   6%|▌         | 26/426 [00:07<02:07,  3.14it/s]Loading weights:   6%|▋         | 27/426 [00:08<02:55,  2.27it/s]Loading weights:   7%|▋         | 28/426 [00:08<02:25,  2.74it/s]Loading weights:  42%|████▏     | 181/426 [00:08<00:01, 135.01it/s]Loading weights:  83%|████████▎ | 355/426 [00:08<00:00, 311.72it/s]Loading weights: 100%|██████████| 426/426 [00:09<00:00, 47.17it/s] 
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at C:\Users\li287\.cache\huggingface\datasets\Salesforce___wikitext\wikitext-2-raw-v1\0.0.0\b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Sep 20 08:41:44 2026).
+block 0 done
+block 1 done
+block 2 done
+block 3 done
+block 4 done
+block 5 done
+block 6 done
+block 7 done
+{
+ "ckpt_step": 1954,
+ "velocity_rel_per_loop": {
+  "d1": 1.28125,
+  "d2": 0.09674,
+  "d3": 0.04605,
+  "d4": 0.02953,
+  "d5": 0.02168,
+  "d6": 0.01711,
+  "d7": 0.01423,
+  "d8": 0.01221,
+  "d9": 0.01078,
+  "d10": 0.00967,
+  "d11": 0.0088,
+  "d12": 0.00814,
+  "d13": 0.00784,
+  "d14": 0.00748,
+  "d15": 0.00718,
+  "d16": 0.00698
+ },
+ "ce_by_depth": {
+  "d1": 1.99812,
+  "d2": 1.97675,
+  "d3": 1.96922,
+  "d4": 1.96419,
+  "d5": 1.96133,
+  "d6": 1.95927,
+  "d7": 1.95943,
+  "d8": 1.95794,
+  "d9": 1.95824,
+  "d10": 1.95887,
+  "d11": 1.95972,
+  "d12": 1.96015,
+  "d13": 1.96093,
+  "d14": 1.96135,
+  "d15": 1.96135,
+  "d16": 1.96475
+ },
+ "kl_d_minus_1_to_d": {
+  "d2": 0.00516,
+  "d3": 0.00181,
+  "d4": 0.00104,
+  "d5": 0.0008,
+  "d6": 0.00065,
+  "d7": 0.00056,
+  "d8": 0.00055,
+  "d9": 0.00056,
+  "d10": 0.00053,
+  "d11": 0.00053,
+  "d12": 0.00046,
+  "d13": 0.00048,
+  "d14": 0.00045,
+  "d15": 0.00051,
+  "d16": 0.00045
+ },
+ "top1_flip_rate": {
+  "d2": 0.0175,
+  "d3": 0.025,
+  "d4": 0.02,
+  "d5": 0.01,
+  "d6": 0.0125,
+  "d7": 0.01,
+  "d8": 0.0125,
+  "d9": 0.02,
+  "d10": 0.01,
+  "d11": 0.0125,
+  "d12": 0.01,
+  "d13": 0.0125,
+  "d14": 0.005,
+  "d15": 0.0075,
+  "d16": 0.0025
+ }
+}
+written results/traj_alive_v5_l0.json

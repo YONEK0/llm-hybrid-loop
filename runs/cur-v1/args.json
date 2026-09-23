@@ -1,0 +1,20 @@
+{
+  "run_name": "cur-v1",
+  "train_count": 2500,
+  "dev_count": 24,
+  "max_steps": 900,
+  "accum": 4,
+  "lr": 0.0001,
+  "train_depth": 4,
+  "keep_steps": 1,
+  "keep_steps_schedule": "0:2,450:1,750:0",
+  "aux_weight": 0.2,
+  "block_start": 24,
+  "block_len": 6,
+  "rank": 8,
+  "seed": 2026,
+  "resume": null,
+  "eval_every": 150,
+  "max_new_tokens": 24,
+  "depth_sampling": true
+}

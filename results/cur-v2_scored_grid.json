@@ -1,0 +1,128 @@
+{
+  "checkpoint": "runs/cur-v2/checkpoint",
+  "split": "test",
+  "n": 30,
+  "protocol": "gold scaffold fed as input; CE + exact match on answer tokens",
+  "max_delta_B": 0.022227762266993523,
+  "injection_delta": 0.02282392419874668,
+  "scaffold_grid": {
+    "k3_d1": {
+      "keep_steps": 3,
+      "depth": 1,
+      "mean_ce": 1.15859375,
+      "exact_match": 0.5333333333333333,
+      "correct": 16,
+      "n": 30
+    },
+    "k3_d4": {
+      "keep_steps": 3,
+      "depth": 4,
+      "mean_ce": 1.7411458333333334,
+      "exact_match": 0.2,
+      "correct": 6,
+      "n": 30
+    },
+    "k3_d8": {
+      "keep_steps": 3,
+      "depth": 8,
+      "mean_ce": 4.297916666666667,
+      "exact_match": 0.13333333333333333,
+      "correct": 4,
+      "n": 30
+    },
+    "k2_d1": {
+      "keep_steps": 2,
+      "depth": 1,
+      "mean_ce": 1.0859375,
+      "exact_match": 0.23333333333333334,
+      "correct": 7,
+      "n": 30
+    },
+    "k2_d4": {
+      "keep_steps": 2,
+      "depth": 4,
+      "mean_ce": 1.63046875,
+      "exact_match": 0.1,
+      "correct": 3,
+      "n": 30
+    },
+    "k2_d8": {
+      "keep_steps": 2,
+      "depth": 8,
+      "mean_ce": 4.149479166666667,
+      "exact_match": 0.13333333333333333,
+      "correct": 4,
+      "n": 30
+    },
+    "k1_d1": {
+      "keep_steps": 1,
+      "depth": 1,
+      "mean_ce": 0.8142578125,
+      "exact_match": 0.1,
+      "correct": 3,
+      "n": 30
+    },
+    "k1_d4": {
+      "keep_steps": 1,
+      "depth": 4,
+      "mean_ce": 1.2951822916666667,
+      "exact_match": 0.06666666666666667,
+      "correct": 2,
+      "n": 30
+    },
+    "k1_d8": {
+      "keep_steps": 1,
+      "depth": 8,
+      "mean_ce": 3.7348958333333333,
+      "exact_match": 0.13333333333333333,
+      "correct": 4,
+      "n": 30
+    },
+    "k0_d1": {
+      "keep_steps": 0,
+      "depth": 1,
+      "mean_ce": 0.6357421875,
+      "exact_match": 0.03333333333333333,
+      "correct": 1,
+      "n": 30
+    },
+    "k0_d4": {
+      "keep_steps": 0,
+      "depth": 4,
+      "mean_ce": 0.68515625,
+      "exact_match": 0.0,
+      "correct": 0,
+      "n": 30
+    },
+    "k0_d8": {
+      "keep_steps": 0,
+      "depth": 8,
+      "mean_ce": 1.2513671875,
+      "exact_match": 0.13333333333333333,
+      "correct": 4,
+      "n": 30
+    }
+  },
+  "free_running": {
+    "free_k3_d4": 0.0,
+    "free_k0_d4": 0.0
+  },
+  "zeroed_control": {
+    "zeroed_k3_d4": {
+      "mean_ce": 1.4525390625,
+      "exact_match": 0.1
+    },
+    "zeroed_k2_d4": {
+      "mean_ce": 1.3787109375,
+      "exact_match": 0.1
+    },
+    "zeroed_k1_d4": {
+      "mean_ce": 1.125,
+      "exact_match": 0.1
+    },
+    "zeroed_k0_d4": {
+      "mean_ce": 0.6328125,
+      "exact_match": 0.0
+    }
+  }
+}

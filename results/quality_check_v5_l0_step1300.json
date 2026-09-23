@@ -1,0 +1,125 @@
+{
+  "run": "v5_l0",
+  "step": 1300,
+  "sup_tokens": 3328000,
+  "time": "2026-09-22 08:52:34",
+  "checks": {
+    "n_dev_blocks": 16,
+    "depth_extrapolation_ce": {
+      "d1": 2.098,
+      "d2": 2.0778,
+      "d4": 2.0663,
+      "d8": 2.062,
+      "d16": 2.0668,
+      "d32": 2.0906
+    },
+    "extrapolation_verdict": "FLAT",
+    "generations": [
+      {
+        "prompt": 0,
+        "depth": 1,
+        "n_tokens": 32,
+        "text": " with a serrated edge used for cutting food . The second pair of pereiopods are also armed with a pair of claws , but are smaller and more",
+        "self_ce": null,
+        "seconds": 29.7
+      },
+      {
+        "prompt": 0,
+        "depth": 2,
+        "n_tokens": 32,
+        "text": " with a serrated edge used for cutting food . The second pair of pereiopods are also armed with a pair of claws , but are smaller and more",
+        "self_ce": null,
+        "seconds": 39.7
+      },
+      {
+        "prompt": 0,
+        "depth": 4,
+        "n_tokens": 32,
+        "text": " with a serrated edge used for cutting food . The second pair of pereiopods are also armed with a pair of claws , but are smaller and more",
+        "self_ce": null,
+        "seconds": 61.2
+      },
+      {
+        "prompt": 0,
+        "depth": 8,
+        "n_tokens": 32,
+        "text": " with a serrated edge used for cutting food . The second pair of pereiopods are also armed with claws , but are smaller and more symmetrical .",
+        "self_ce": null,
+        "seconds": 102.9
+      },
+      {
+        "prompt": 1,
+        "depth": 1,
+        "n_tokens": 32,
+        "text": " , and from the British Isles to the Mediterranean Sea . It is also found in the Baltic Sea , the Black Sea , the Caspian Sea , the Red",
+        "self_ce": null,
+        "seconds": 29.0
+      },
+      {
+        "prompt": 1,
+        "depth": 2,
+        "n_tokens": 32,
+        "text": " , and from the British Isles to the Mediterranean Sea . It is also found in the Baltic Sea , the Black Sea , the Caspian Sea , the Red",
+        "self_ce": null,
+        "seconds": 40.0
+      },
+      {
+        "prompt": 1,
+        "depth": 4,
+        "n_tokens": 32,
+        "text": " , and from the British Isles to the Mediterranean Sea . It is also found in the Baltic Sea , the Black Sea , the Caspian Sea , the Red",
+        "self_ce": null,
+        "seconds": 61.5
+      },
+      {
+        "prompt": 1,
+        "depth": 8,
+        "n_tokens": 32,
+        "text": " , and from the British Isles to the Mediterranean Sea . It is also found in the Baltic Sea , where it is found in the southern Baltic Sea , and in",
+        "self_ce": null,
+        "seconds": 104.0
+      },
+      {
+        "prompt": 2,
+        "depth": 1,
+        "n_tokens": 32,
+        "text": " hepatopancreas . The meat of H. gammarus is low in fat and protein , and is a good source of vitamins A and D . \n\n\n",
+        "self_ce": null,
+        "seconds": 29.5
+      },
+      {
+        "prompt": 2,
+        "depth": 2,
+        "n_tokens": 32,
+        "text": " hepatopancreas . \n\n\n The meat of H. gammarus is low in fat and protein , and is a good source of vitamins A and D .",
+        "self_ce": null,
+        "seconds": 40.2
+      },
+      {
+        "prompt": 2,
+        "depth": 4,
+        "n_tokens": 32,
+        "text": " hepatopancreas . \n\n\n The meat of H. gammarus is low in fat and protein , and is a good source of vitamins A and D .",
+        "self_ce": null,
+        "seconds": 60.2
+      },
+      {
+        "prompt": 2,
+        "depth": 8,
+        "n_tokens": 32,
+        "text": " hepatopancreas . \n\n\n The meat of H. gammarus is low in fat and protein , and is a good source of vitamins A and D .",
+        "self_ce": null,
+        "seconds": 102.2
+      }
+    ],
+    "gate": {
+      "A_log_min": 0.065,
+      "A_log_max": 7.795,
+      "A_bar_mean": 0.45591,
+      "A_bar_std": 0.376,
+      "A_bar_pct_closed_lt0.1": 0.3624,
+      "A_bar_pct_open_gt0.9": 0.1008
+    },
+    "strict_scorer_note": "0/12 generations contain a scorable final statement (base model on WikiText: low is expected, recorded for the record)"
+  }
+}

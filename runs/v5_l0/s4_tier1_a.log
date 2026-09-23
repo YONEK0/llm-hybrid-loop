@@ -1,0 +1,32 @@
+tier-1 @ 2026-09-23 12:05:57  n_ce=300 n_gen=0
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<05:12,  1.36it/s]Loading weights:   1%|▏         | 6/426 [00:01<01:09,  6.08it/s]Loading weights:   2%|▏         | 7/426 [00:01<01:07,  6.18it/s]Loading weights:   2%|▏         | 8/426 [00:01<01:02,  6.65it/s]Loading weights:   2%|▏         | 9/426 [00:01<01:08,  6.06it/s]Loading weights:   3%|▎         | 11/426 [00:01<00:53,  7.83it/s]Loading weights:   3%|▎         | 12/426 [00:01<00:59,  6.96it/s]Loading weights:   3%|▎         | 13/426 [00:02<01:02,  6.63it/s]Loading weights:   3%|▎         | 14/426 [00:02<01:04,  6.42it/s]Loading weights:   5%|▍         | 20/426 [00:02<00:24, 16.33it/s]Loading weights:   5%|▌         | 23/426 [00:02<00:40, 10.03it/s]Loading weights:   6%|▌         | 25/426 [00:03<00:38, 10.33it/s]Loading weights:   6%|▋         | 27/426 [00:03<00:42,  9.34it/s]Loading weights:  50%|████▉     | 212/426 [00:03<00:00, 276.36it/s]Loading weights:  88%|████████▊ | 377/426 [00:03<00:00, 512.00it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 114.13it/s]
+== trained (ckpt gate) ==
+  [A] CE trained:d1: 0.8137 (n=300, 194.9s)
+  [A] CE trained:d2: 0.8145 (n=300, 294.4s)
+  [A] CE trained:d4: 0.8192 (n=300, 461.0s)
+  [A] CE trained:d8: 0.8274 (n=300, 896.1s)
+  [B] trained:d2: strict 0/0 wilson=[0.0, 0.0]
+  [B] trained:d4: strict 0/0 wilson=[0.0, 0.0]
+== frozen (fresh gate) ==
+  [A] CE frozen:d1: 1.2275 (n=300, 272.6s)
+  [A] CE frozen:d2: 1.1717 (n=300, 304.8s)
+  [A] CE frozen:d4: 1.4572 (n=300, 429.6s)
+  [A] CE frozen:d8: 2.5534 (n=300, 747.3s)
+  [B] frozen:d4: strict 0/0 wilson=[0.0, 0.0]
+== base (original forward) ==
+  [A] CE base: 0.7453 (n=300, 216.3s)
+  [B] base:d0: strict 0/0 wilson=[0.0, 0.0]
+  [delta] trained-frozen:d1: -0.4138 [-0.4239, -0.4036]
+  [delta] trained-frozen:d2: -0.3572 [-0.3668, -0.3477]
+  [delta] trained-frozen:d4: -0.638 [-0.6553, -0.6207]
+  [delta] trained-frozen:d8: -1.7261 [-1.7626, -1.6895]
+  [delta] trained:d1-d1: 0.0 [0.0, 0.0]
+  [delta] trained:d2-d1: 0.0008 [-0.0005, 0.0021]
+  [delta] trained:d4-d1: 0.0055 [0.0032, 0.0077]
+  [delta] trained:d8-d1: 0.0137 [0.0106, 0.0167]
+  [delta] trained:d1-base: 0.0684 [0.0645, 0.0724]
+  [delta] trained:d2-base: 0.0692 [0.065, 0.0734]
+  [delta] trained:d4-base: 0.0739 [0.0694, 0.0784]
+  [delta] trained:d8-base: 0.0821 [0.0771, 0.087]
+written to E:\develop\project_files\llm-test\results\s4_tier1_v5_l0.json

@@ -1,0 +1,87 @@
+{
+  "technique": "recurrent depth: weight-tied block looped K times, per-iteration low-rank deltas, deep supervision",
+  "load_seconds": 4.3,
+  "trainable_total_m": 11.01,
+  "trainable_by_group": {
+    "model.model": 11.01
+  },
+  "n_delta_sets": 42,
+  "block_layers": 6,
+  "stack_len": 36,
+  "sample": {
+    "ids": 76,
+    "prefix": 71,
+    "target": 5
+  },
+  "forward_depth1": {
+    "logits": [
+      1,
+      76,
+      151936
+    ],
+    "iteration_marks": 1
+  },
+  "forward_depth2": {
+    "logits": [
+      1,
+      76,
+      151936
+    ],
+    "iteration_marks": 2
+  },
+  "forward_depth4": {
+    "logits": [
+      1,
+      76,
+      151936
+    ],
+    "iteration_marks": 4
+  },
+  "train_step": {
+    "ok": true,
+    "loss": 9.9118,
+    "report": {
+      "ce": 7.625,
+      "aux_ce": 11.434158325195312,
+      "ids": 76,
+      "depth": 4
+    },
+    "grad_norm": 16.2257,
+    "peak_gib": 3.08,
+    "seconds": 5.3
+  },
+  "delta_change_after_step": [
+    7.443e-05,
+    7.443e-05,
+    7.443e-05,
+    7.443e-05
+  ],
+  "weights_moved": true,
+  "depth_curve": {
+    "1": {
+      "answer": null,
+      "text": "Okay, let's see. The problem is about Natalia selling clips in April",
+      "seconds": 1.37,
+      "generated_tokens": 16
+    },
+    "2": {
+      "answer": "4",
+      "text": "Okay, let's see. The problem says Natalia sold clips to 4",
+      "seconds": 1.63,
+      "generated_tokens": 16
+    },
+    "4": {
+      "answer": null,
+      "text": "Okay, wait, let me try to solve this problem step by April and May",
+      "seconds": 2.13,
+      "generated_tokens": 16
+    },
+    "8": {
+      "answer": "0",
+      "text": "prompt amount: 0\nThe problem says that Natalia initially sold some number",
+      "seconds": 3.12,
+      "generated_tokens": 16
+    }
+  },
+  "gold": "72"
+}

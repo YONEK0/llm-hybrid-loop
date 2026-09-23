@@ -1,0 +1,154 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<02:23,  2.96it/s]Loading weights:   1%|▏         | 6/426 [00:00<00:40, 10.46it/s]Loading weights:   2%|▏         | 8/426 [00:00<00:45,  9.20it/s]Loading weights:   2%|▏         | 9/426 [00:01<00:48,  8.57it/s]Loading weights:   3%|▎         | 11/426 [00:01<00:44,  9.37it/s]Loading weights:   3%|▎         | 12/426 [00:01<00:48,  8.58it/s]Loading weights:   3%|▎         | 13/426 [00:01<00:57,  7.23it/s]Loading weights:   3%|▎         | 14/426 [00:01<00:53,  7.64it/s]Loading weights:   5%|▍         | 20/426 [00:01<00:26, 15.11it/s]Loading weights:   5%|▌         | 22/426 [00:02<00:35, 11.54it/s]Loading weights:   6%|▌         | 24/426 [00:02<00:39, 10.08it/s]Loading weights:   6%|▌         | 26/426 [00:03<01:13,  5.46it/s]Loading weights:  39%|███▊      | 165/426 [00:03<00:01, 136.92it/s]Loading weights:  85%|████████▌ | 363/426 [00:03<00:00, 357.03it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 117.55it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at C:\Users\li287\.cache\huggingface\datasets\Salesforce___wikitext\wikitext-2-raw-v1\0.0.0\b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Sep 20 08:41:44 2026).
+blocks: 16, recording d=1..20
+  block 0: d1 ce=1.603 d20 ce=1.584
+  block 1: d1 ce=1.978 d20 ce=1.975
+  block 2: d1 ce=2.077 d20 ce=2.070
+  block 3: d1 ce=2.002 d20 ce=1.979
+  block 4: d1 ce=1.921 d20 ce=1.888
+  block 5: d1 ce=2.142 d20 ce=2.107
+  block 6: d1 ce=2.110 d20 ce=2.072
+  block 7: d1 ce=2.152 d20 ce=2.121
+  block 8: d1 ce=2.069 d20 ce=2.054
+  block 9: d1 ce=2.247 d20 ce=2.223
+  block 10: d1 ce=2.003 d20 ce=1.966
+  block 11: d1 ce=1.951 d20 ce=1.921
+  block 12: d1 ce=2.207 d20 ce=2.166
+  block 13: d1 ce=2.294 d20 ce=2.268
+  block 14: d1 ce=2.497 d20 ce=2.478
+  block 15: d1 ce=1.874 d20 ce=1.816
+{
+ "fixed": {
+  "d4": {
+   "ce": 2.0381,
+   "acc": 0.5543
+  },
+  "d8": {
+   "ce": 2.0327,
+   "acc": 0.5544
+  },
+  "d16": {
+   "ce": 2.0368,
+   "acc": 0.5548
+  },
+  "d20": {
+   "ce": 2.043,
+   "acc": 0.5539
+  }
+ },
+ "rules": {
+  "velocity": [
+   {
+    "param": 0.003,
+    "avg_exit": 20.0,
+    "ce": 2.043,
+    "ce_gap_vs_d8": 0.0103
+   },
+   {
+    "param": 0.005,
+    "avg_exit": 19.44,
+    "ce": 2.0424,
+    "ce_gap_vs_d8": 0.0097
+   },
+   {
+    "param": 0.01,
+    "avg_exit": 10.19,
+    "ce": 2.0332,
+    "ce_gap_vs_d8": 0.0005
+   },
+   {
+    "param": 0.02,
+    "avg_exit": 5.81,
+    "ce": 2.0345,
+    "ce_gap_vs_d8": 0.0018
+   },
+   {
+    "param": 0.04,
+    "avg_exit": 4.0,
+    "ce": 2.0381,
+    "ce_gap_vs_d8": 0.0054
+   }
+  ],
+  "kl": [
+   {
+    "param": 0.0001,
+    "avg_exit": 20.0,
+    "ce": 2.043,
+    "ce_gap_vs_d8": 0.0103
+   },
+   {
+    "param": 0.0005,
+    "avg_exit": 9.31,
+    "ce": 2.0349,
+    "ce_gap_vs_d8": 0.0022
+   },
+   {
+    "param": 0.001,
+    "avg_exit": 4.06,
+    "ce": 2.0392,
+    "ce_gap_vs_d8": 0.0065
+   },
+   {
+    "param": 0.002,
+    "avg_exit": 3.0,
+    "ce": 2.0443,
+    "ce_gap_vs_d8": 0.0116
+   }
+  ],
+  "patience": [
+   {
+    "param": 1,
+    "avg_exit": 2.0,
+    "ce": 2.051,
+    "ce_gap_vs_d8": 0.0183
+   },
+   {
+    "param": 2,
+    "avg_exit": 3.0,
+    "ce": 2.0434,
+    "ce_gap_vs_d8": 0.0107
+   },
+   {
+    "param": 3,
+    "avg_exit": 4.0,
+    "ce": 2.0381,
+    "ce_gap_vs_d8": 0.0054
+   }
+  ],
+  "ruleE": [
+   {
+    "param": 0.02,
+    "avg_exit": 20.0,
+    "ce": 2.043,
+    "ce_gap_vs_d8": 0.0103
+   },
+   {
+    "param": 0.05,
+    "avg_exit": 9.38,
+    "ce": 2.0333,
+    "ce_gap_vs_d8": 0.0006
+   },
+   {
+    "param": 0.1,
+    "avg_exit": 5.25,
+    "ce": 2.0348,
+    "ce_gap_vs_d8": 0.0021
+   },
+   {
+    "param": 0.2,
+    "avg_exit": 3.31,
+    "ce": 2.0417,
+    "ce_gap_vs_d8": 0.009
+   },
+   {
+    "param": 0.5,
+    "avg_exit": 2.0,
+    "ce": 2.051,
+    "ce_gap_vs_d8": 0.0183
+   }
+  ]
+ }
+}
+written results/s6_r0_pareto.json

@@ -1,0 +1,442 @@
+{
+ "ckpt_step": 1954,
+ "n_blocks": 16,
+ "max_d": 20,
+ "fixed_depth": {
+  "d4": {
+   "ce": 2.0381,
+   "acc": 0.5543
+  },
+  "d8": {
+   "ce": 2.0327,
+   "acc": 0.5544
+  },
+  "d16": {
+   "ce": 2.0368,
+   "acc": 0.5548
+  },
+  "d20": {
+   "ce": 2.043,
+   "acc": 0.5539
+  }
+ },
+ "rules": {
+  "velocity": [
+   {
+    "param": 0.003,
+    "avg_exit_depth": 20.0,
+    "ce_at_exit": 2.043,
+    "acc_at_exit": 0.5539,
+    "per_block_exit": [
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20
+    ]
+   },
+   {
+    "param": 0.005,
+    "avg_exit_depth": 19.44,
+    "ce_at_exit": 2.0424,
+    "acc_at_exit": 0.5538,
+    "per_block_exit": [
+     20,
+     20,
+     20,
+     20,
+     20,
+     18,
+     17,
+     19,
+     18,
+     20,
+     20,
+     20,
+     20,
+     19,
+     20,
+     20
+    ]
+   },
+   {
+    "param": 0.01,
+    "avg_exit_depth": 10.19,
+    "ce_at_exit": 2.0332,
+    "acc_at_exit": 0.5559,
+    "per_block_exit": [
+     12,
+     11,
+     11,
+     11,
+     10,
+     9,
+     9,
+     9,
+     9,
+     10,
+     11,
+     11,
+     11,
+     9,
+     10,
+     10
+    ]
+   },
+   {
+    "param": 0.02,
+    "avg_exit_depth": 5.81,
+    "ce_at_exit": 2.0345,
+    "acc_at_exit": 0.556,
+    "per_block_exit": [
+     7,
+     6,
+     6,
+     6,
+     6,
+     5,
+     5,
+     5,
+     5,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ]
+   },
+   {
+    "param": 0.04,
+    "avg_exit_depth": 4.0,
+    "ce_at_exit": 2.0381,
+    "acc_at_exit": 0.5543,
+    "per_block_exit": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ]
+   }
+  ],
+  "kl": [
+   {
+    "param": 0.0001,
+    "avg_exit_depth": 20.0,
+    "ce_at_exit": 2.043,
+    "acc_at_exit": 0.5539,
+    "per_block_exit": [
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20
+    ]
+   },
+   {
+    "param": 0.0005,
+    "avg_exit_depth": 9.31,
+    "ce_at_exit": 2.0349,
+    "acc_at_exit": 0.5559,
+    "per_block_exit": [
+     14,
+     12,
+     14,
+     12,
+     12,
+     8,
+     5,
+     8,
+     6,
+     6,
+     4,
+     6,
+     9,
+     18,
+     5,
+     10
+    ]
+   },
+   {
+    "param": 0.001,
+    "avg_exit_depth": 4.06,
+    "ce_at_exit": 2.0392,
+    "acc_at_exit": 0.5547,
+    "per_block_exit": [
+     5,
+     4,
+     6,
+     4,
+     4,
+     4,
+     3,
+     3,
+     4,
+     4,
+     3,
+     4,
+     4,
+     6,
+     3,
+     4
+    ]
+   },
+   {
+    "param": 0.002,
+    "avg_exit_depth": 3.0,
+    "ce_at_exit": 2.0443,
+    "acc_at_exit": 0.5532,
+    "per_block_exit": [
+     3,
+     3,
+     5,
+     3,
+     3,
+     3,
+     2,
+     3,
+     3,
+     3,
+     2,
+     3,
+     3,
+     3,
+     3,
+     3
+    ]
+   }
+  ],
+  "patience": [
+   {
+    "param": 1,
+    "avg_exit_depth": 2.0,
+    "ce_at_exit": 2.051,
+    "acc_at_exit": 0.5528,
+    "per_block_exit": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ]
+   },
+   {
+    "param": 2,
+    "avg_exit_depth": 3.0,
+    "ce_at_exit": 2.0434,
+    "acc_at_exit": 0.5538,
+    "per_block_exit": [
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3
+    ]
+   },
+   {
+    "param": 3,
+    "avg_exit_depth": 4.0,
+    "ce_at_exit": 2.0381,
+    "acc_at_exit": 0.5543,
+    "per_block_exit": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ]
+   }
+  ],
+  "ruleE": [
+   {
+    "param": 0.02,
+    "avg_exit_depth": 20.0,
+    "ce_at_exit": 2.043,
+    "acc_at_exit": 0.5539,
+    "per_block_exit": [
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20
+    ]
+   },
+   {
+    "param": 0.05,
+    "avg_exit_depth": 9.38,
+    "ce_at_exit": 2.0333,
+    "acc_at_exit": 0.5555,
+    "per_block_exit": [
+     13,
+     10,
+     10,
+     11,
+     9,
+     8,
+     8,
+     7,
+     8,
+     8,
+     9,
+     10,
+     11,
+     9,
+     10,
+     9
+    ]
+   },
+   {
+    "param": 0.1,
+    "avg_exit_depth": 5.25,
+    "ce_at_exit": 2.0348,
+    "acc_at_exit": 0.5563,
+    "per_block_exit": [
+     6,
+     6,
+     5,
+     6,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     6,
+     5,
+     5,
+     5
+    ]
+   },
+   {
+    "param": 0.2,
+    "avg_exit_depth": 3.31,
+    "ce_at_exit": 2.0417,
+    "acc_at_exit": 0.5541,
+    "per_block_exit": [
+     4,
+     4,
+     3,
+     4,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     4,
+     4,
+     3,
+     3
+    ]
+   },
+   {
+    "param": 0.5,
+    "avg_exit_depth": 2.0,
+    "ce_at_exit": 2.051,
+    "acc_at_exit": 0.5528,
+    "per_block_exit": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ]
+   }
+  ]
+ },
+ "note": "R0 zero-training exit rules; CE gap = ce_at_exit - fixed d8 ce; Pareto target: low avg_exit_depth with small CE gap. patience-N: last-token argmax stable N consecutive loops. ruleE: pooled-state delta < eps (LoopUS App.E)."
+}

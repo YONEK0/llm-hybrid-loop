@@ -1,0 +1,49 @@
+{
+  "loss": 2.7882,
+  "trainable_params_total": 832001,
+  "per_param": {
+    "A_log": {
+      "present": true,
+      "finite": true,
+      "absmax": 0.012757
+    },
+    "dt_input_proj.weight": {
+      "present": true,
+      "finite": true,
+      "absmax": 0.005954
+    },
+    "delta_proj.weight": {
+      "present": true,
+      "finite": true,
+      "absmax": 0.002914
+    },
+    "delta_proj.bias": {
+      "present": true,
+      "finite": true,
+      "absmax": 0.012417
+    },
+    "0.weight": {
+      "present": true,
+      "finite": true,
+      "absmax": 0.005441
+    },
+    "0.bias": {
+      "present": true,
+      "finite": true,
+      "absmax": 0.001045
+    },
+    "1.weight": {
+      "present": true,
+      "finite": true,
+      "absmax": 0.383372
+    },
+    "1.bias": {
+      "present": true,
+      "finite": true,
+      "absmax": 0.052883
+    }
+  },
+  "all_trainable_have_finite_grads": true,
+  "backbone_requires_or_has_grad": 0,
+  "verdict": "PASS"
+}

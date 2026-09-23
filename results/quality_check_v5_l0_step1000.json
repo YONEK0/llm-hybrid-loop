@@ -1,0 +1,125 @@
+{
+  "run": "v5_l0",
+  "step": 1000,
+  "sup_tokens": 2560000,
+  "time": "2026-09-21 12:08:20",
+  "checks": {
+    "n_dev_blocks": 16,
+    "depth_extrapolation_ce": {
+      "d1": 2.1192,
+      "d2": 2.0955,
+      "d4": 2.0835,
+      "d8": 2.0811,
+      "d16": 2.0909,
+      "d32": 2.1183
+    },
+    "extrapolation_verdict": "FLAT",
+    "generations": [
+      {
+        "prompt": 0,
+        "depth": 1,
+        "n_tokens": 32,
+        "text": " with a serrated edge used for cutting prey . The claws are used for defence , and are often used to pry open the shells of molluscs . The",
+        "self_ce": null,
+        "seconds": 37.6
+      },
+      {
+        "prompt": 0,
+        "depth": 2,
+        "n_tokens": 32,
+        "text": " with a serrated edge used for cutting prey . The second pair of pereiopods is also armed with a crusher , but is smaller than the crusher claw",
+        "self_ce": null,
+        "seconds": 54.5
+      },
+      {
+        "prompt": 0,
+        "depth": 4,
+        "n_tokens": 32,
+        "text": " with serrated edges used for cutting . The second pair of pereiopods are also armed with claws , but are smaller and more symmetrical . The third",
+        "self_ce": null,
+        "seconds": 99.3
+      },
+      {
+        "prompt": 0,
+        "depth": 8,
+        "n_tokens": 32,
+        "text": " with serrated edges used for cutting . The second pair of pereiopods are also armed with claws , but are smaller and more symmetrical . The third",
+        "self_ce": null,
+        "seconds": 180.8
+      },
+      {
+        "prompt": 1,
+        "depth": 1,
+        "n_tokens": 32,
+        "text": " , and from the British Isles to the Mediterranean Sea . It is also found in the Baltic Sea , the Black Sea , the Caspian Sea , the Red",
+        "self_ce": null,
+        "seconds": 50.9
+      },
+      {
+        "prompt": 1,
+        "depth": 2,
+        "n_tokens": 32,
+        "text": " , and from the British Isles to the Mediterranean Sea . It is also found in the Baltic Sea , the Black Sea , the Caspian Sea , the Red",
+        "self_ce": null,
+        "seconds": 70.1
+      },
+      {
+        "prompt": 1,
+        "depth": 4,
+        "n_tokens": 32,
+        "text": " , and from the British Isles to the Mediterranean Sea . It is also found in the Baltic Sea , the North Sea , the English Channel , the Bay of B",
+        "self_ce": null,
+        "seconds": 106.7
+      },
+      {
+        "prompt": 1,
+        "depth": 8,
+        "n_tokens": 32,
+        "text": " , and from the British Isles to the Mediterranean Sea . It is also found in the Baltic Sea , where it is the most common lobster species . \n\n\n = =",
+        "self_ce": null,
+        "seconds": 182.7
+      },
+      {
+        "prompt": 2,
+        "depth": 1,
+        "n_tokens": 32,
+        "text": " hepatopancreas . The meat of H. gammarus is low in fat and protein , and is a good source of vitamins A and D . \n\n\n",
+        "self_ce": null,
+        "seconds": 52.9
+      },
+      {
+        "prompt": 2,
+        "depth": 2,
+        "n_tokens": 32,
+        "text": " hepatopancreas . The meat of H. gammarus is low in fat and protein , and is a good source of vitamins A and D . \n\n\n",
+        "self_ce": null,
+        "seconds": 72.6
+      },
+      {
+        "prompt": 2,
+        "depth": 4,
+        "n_tokens": 32,
+        "text": " stomach , which are removed before cooking . The meat is usually cooked in a sauce made from the lobster 's own blood . \n\n\n The meat of H. gam",
+        "self_ce": null,
+        "seconds": 110.9
+      },
+      {
+        "prompt": 2,
+        "depth": 8,
+        "n_tokens": 32,
+        "text": " stomach , which are inedible . \n\n\n The meat of H. gammarus is low in fat and protein , and is a good source of vitamins A and",
+        "self_ce": null,
+        "seconds": 188.5
+      }
+    ],
+    "gate": {
+      "A_log_min": 0.062,
+      "A_log_max": 7.807,
+      "A_bar_mean": 0.40615,
+      "A_bar_std": 0.35188,
+      "A_bar_pct_closed_lt0.1": 0.3774,
+      "A_bar_pct_open_gt0.9": 0.0448
+    },
+    "strict_scorer_note": "0/12 generations contain a scorable final statement (base model on WikiText: low is expected, recorded for the record)"
+  }
+}

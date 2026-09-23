@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "E:\develop\project_files\llm-test\s4_tier1_eval.py", line 241, in <module>
+    main()
+    ~~~~^^
+  File "E:\develop\project_files\llm-test\s4_tier1_eval.py", line 112, in main
+    gold = _norm_num(r["answer"].rsplit("####", 1)[1])
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+tier-1 @ 2026-09-22 22:17:56  n_ce=300 n_gen=12
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<03:18,  2.15it/s]Loading weights:   1%|▏         | 6/426 [00:00<00:49,  8.57it/s]Loading weights:   2%|▏         | 7/426 [00:00<00:50,  8.32it/s]Loading weights:   2%|▏         | 8/426 [00:01<00:53,  7.84it/s]Loading weights:   2%|▏         | 9/426 [00:01<00:56,  7.41it/s]Loading weights:   3%|▎         | 11/426 [00:01<00:48,  8.48it/s]Loading weights:   3%|▎         | 12/426 [00:01<01:03,  6.55it/s]Loading weights:   3%|▎         | 13/426 [00:01<00:58,  7.09it/s]Loading weights:   5%|▍         | 20/426 [00:02<00:29, 13.94it/s]Loading weights:   5%|▌         | 22/426 [00:02<00:38, 10.38it/s]Loading weights:   6%|▌         | 24/426 [00:02<00:39, 10.06it/s]Loading weights:   6%|▌         | 25/426 [00:02<00:44,  9.05it/s]Loading weights:   6%|▌         | 26/426 [00:03<00:52,  7.63it/s]Loading weights:  53%|█████▎    | 224/426 [00:03<00:00, 322.62it/s]Loading weights:  92%|█████████▏| 393/426 [00:03<00:00, 575.77it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 126.75it/s]
+== trained (ckpt gate) ==
+  [A] CE trained:d1: 0.8137 (n=300, 362.4s)
+  [A] CE trained:d2: 0.8145 (n=300, 450.8s)
+  [A] CE trained:d4: 0.8192 (n=300, 704.2s)

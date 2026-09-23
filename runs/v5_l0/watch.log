@@ -1,0 +1,197 @@
+2026-09-20 20:25:12 verdict=PASS step=354 evals=3 sup=896000 | d1=2.247, d2=2.134, d4=2.089
+2026-09-20 20:56:41 verdict=PASS step=432 evals=4 sup=1088000 | d1=2.162, d2=2.088, d4=2.066
+2026-09-20 21:28:57 verdict=PASS step=507 evals=5 sup=1280000 | d1=2.148, d2=2.080, d4=2.054
+2026-09-21 08:38:40 verdict=PASS step=633 evals=6 sup=1600000 | d1=2.113, d2=2.058, d4=2.035 | ‖h‖ d1=10.8,d2=11.7,d4=12.7
+2026-09-21 09:09:23 verdict=PASS step=696 evals=6 sup=1728000 | d1=2.113, d2=2.058, d4=2.035 | ‖h‖ d1=10.8,d2=11.7,d4=12.7
+2026-09-21 09:39:54 verdict=PASS step=733 evals=7 sup=1856000 | d1=2.085, d2=2.040, d4=2.023 | ‖h‖ d1=11.1,d2=11.9,d4=12.7
+2026-09-21 09:43:45 verdict=PASS step=741 evals=7 sup=1856000 | d1=2.085, d2=2.040, d4=2.023 | ‖h‖ d1=11.1,d2=11.9,d4=12.7
+2026-09-21 10:14:15 verdict=PASS step=800 evals=7 sup=2048000 | d1=2.085, d2=2.040, d4=2.023 | ‖h‖ d1=11.1,d2=11.9,d4=12.7
+2026-09-21 10:47:43 verdict=PASS step=862 evals=8 sup=2176000 | d1=2.061, d2=2.025, d4=2.009 | ‖h‖ d1=11.6,d2=12.3,d4=13.0
+2026-09-21 11:18:24 verdict=PASS step=921 evals=9 sup=2304000 | d1=2.053, d2=2.019, d4=2.001 | ‖h‖ d1=11.7,d2=12.3,d4=12.9
+2026-09-21 11:49:37 verdict=PASS step=984 evals=9 sup=2496000 | d1=2.053, d2=2.019, d4=2.001 | ‖h‖ d1=11.7,d2=12.3,d4=12.9
+2026-09-21 12:20:16 verdict=FAIL step=1001 evals=10 sup=2560000 | d1=2.036, d2=2.006, d4=1.991 | ‖h‖ d1=11.9,d2=12.4,d4=12.9 | ALERTS FAIL:training_live
+2026-09-21 15:51:55 verdict=PASS step=1079 evals=10 sup=2688000 | d1=2.036, d2=2.006, d4=1.991 | ‖h‖ d1=11.9,d2=12.4,d4=12.9
+2026-09-21 16:22:43 verdict=PASS step=1120 evals=11 sup=2816000 | d1=2.025, d2=1.998, d4=1.983 | ‖h‖ d1=12.5,d2=12.9,d4=13.4
+2026-09-21 16:53:50 verdict=PASS step=1161 evals=11 sup=2944000 | d1=2.025, d2=1.998, d4=1.983 | ‖h‖ d1=12.5,d2=12.9,d4=13.4
+2026-09-21 17:24:59 verdict=PASS step=1189 evals=11 sup=3008000 | d1=2.025, d2=1.998, d4=1.983 | ‖h‖ d1=12.5,d2=12.9,d4=13.4
+2026-09-22 08:37:37 verdict=PASS step=1283 evals=11 sup=3200000 | d1=2.025, d2=1.998, d4=1.983 | ‖h‖ d1=12.5,d2=12.9,d4=13.4
+[watch] sleeping 30 min before check (training untouched)...
+[watch] sleeping 30 min before check (training untouched)...
+=== 存档点验收 v5_l0 — PASS (11:06:04) ===
+checkpoint step=1350 sup_tokens=3456000 | history batches=1376 evals=12
+  ✓ ckpt_latest_structure: 9.5MB step=1350 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_prev_structure: 9.5MB step=1325 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_rolling_order: latest=1350 > prev=1325
+  ✓ trainable_param_count: gate+q_head=832001 (expected 832001)
+  ✓ history_parses: 1390 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)
+  ✓ ckpt_step_vs_history: ckpt step=1350 <= history batches=1376 (gap=26 = work since last ckpt)
+  ✓ training_live: history written 24s ago
+  ✓ acceptance_CE_drop: step 1300: d1 2.4427→2.0115 (-0.4312), d2 2.4604→1.985 (-0.4754), d4 2.7869→1.9689 (-0.818) | deeper-depth CE dropping = gate working
+  ✓ depth_curve_inverted: d4=1.9689 vs d1=2.0115 (deeper now better)
+  ✓ vs_frozen_reference: trained − frozen: {'d1': -0.378, 'd2': -0.466, 'd4': -0.83}
+  ✓ gate_open: A_bar mean=0.0955 range=[0.0582,0.5175]
+  ✓ grad_norm_stable: max grad_norm=17.60 over last 750 supervised steps
+  i 块后隐状态范数(S1b机制): {'d1': 12.416, 'd2': 12.766, 'd4': 13.169}
+  i 生成样本(d=2,12tok): ' is the American lobster , H. americanus , which is'
+  i 生成样本(d=2,12tok): ' Adriatic Sea and the Ionian Sea . It is also'
+written to E:\develop\project_files\llm-test\results\checkpoint_accept_v5_l0.json
+
+[watch] 2026-09-22 11:06:05 verdict=PASS step=1376 evals=12 sup=3456000 | d1=2.011, d2=1.985, d4=1.969 | ‖h‖ d1=12.4,d2=12.8,d4=13.2
+[watch] check took 13.4s 
+[watch] sleeping 30 min before check (training untouched)...
+=== 存档点验收 v5_l0 — PASS (11:36:45) ===
+checkpoint step=1425 sup_tokens=3648000 | history batches=1443 evals=13
+  ✓ ckpt_latest_structure: 9.5MB step=1425 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_prev_structure: 9.5MB step=1400 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_rolling_order: latest=1425 > prev=1400
+  ✓ trainable_param_count: gate+q_head=832001 (expected 832001)
+  ✓ history_parses: 1458 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)
+  ✓ ckpt_step_vs_history: ckpt step=1425 <= history batches=1443 (gap=18 = work since last ckpt)
+  ✓ training_live: history written 22s ago
+  ✓ acceptance_CE_drop: step 1400: d1 2.4427→2.0044 (-0.4383), d2 2.4604→1.9777 (-0.4827), d4 2.7869→1.9612 (-0.8257) | deeper-depth CE dropping = gate working
+  ✓ depth_curve_inverted: d4=1.9612 vs d1=2.0044 (deeper now better)
+  ✓ vs_frozen_reference: trained − frozen: {'d1': -0.385, 'd2': -0.474, 'd4': -0.838}
+  ✓ gate_open: A_bar mean=0.0939 range=[0.0548,0.5175]
+  ✓ grad_norm_stable: max grad_norm=20.57 over last 750 supervised steps
+  i 块后隐状态范数(S1b机制): {'d1': 12.695, 'd2': 13.031, 'd4': 13.413}
+  i 生成样本(d=2,12tok): ' is the American lobster , H. americanus , which is'
+  i 生成样本(d=2,12tok): ' Adriatic Sea and the Black Sea . It is found in'
+written to E:\develop\project_files\llm-test\results\checkpoint_accept_v5_l0.json
+
+[watch] 2026-09-22 11:36:46 verdict=PASS step=1443 evals=13 sup=3648000 | d1=2.004, d2=1.978, d4=1.961 | ‖h‖ d1=12.7,d2=13.0,d4=13.4
+[watch] check took 3.2s 
+[watch] sleeping 30 min before check (training untouched)...
+=== 存档点验收 v5_l0 — PASS (12:07:15) ===
+checkpoint step=1500 sup_tokens=3840000 | history batches=1510 evals=13
+  ✓ ckpt_latest_structure: 9.5MB step=1500 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_prev_structure: 9.5MB step=1475 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_rolling_order: latest=1500 > prev=1475
+  ✓ trainable_param_count: gate+q_head=832001 (expected 832001)
+  ✓ history_parses: 1525 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)
+  ✓ ckpt_step_vs_history: ckpt step=1500 <= history batches=1510 (gap=10 = work since last ckpt)
+  ✓ training_live: history written 56s ago
+  ✓ acceptance_CE_drop: step 1400: d1 2.4427→2.0044 (-0.4383), d2 2.4604→1.9777 (-0.4827), d4 2.7869→1.9612 (-0.8257) | deeper-depth CE dropping = gate working
+  ✓ depth_curve_inverted: d4=1.9612 vs d1=2.0044 (deeper now better)
+  ✓ vs_frozen_reference: trained − frozen: {'d1': -0.385, 'd2': -0.474, 'd4': -0.838}
+  ✓ gate_open: A_bar mean=0.0949 range=[0.0548,0.5207]
+  ✓ grad_norm_stable: max grad_norm=20.57 over last 750 supervised steps
+  i 块后隐状态范数(S1b机制): {'d1': 12.695, 'd2': 13.031, 'd4': 13.413}
+  i 生成样本(d=2,12tok): ' is the American lobster , H. americanus , which is'
+  i 生成样本(d=2,12tok): ' Adriatic Sea and the Black Sea . It is found in'
+written to E:\develop\project_files\llm-test\results\checkpoint_accept_v5_l0.json
+
+[watch] 2026-09-22 12:07:15 verdict=PASS step=1510 evals=13 sup=3840000 | d1=2.004, d2=1.978, d4=1.961 | ‖h‖ d1=12.7,d2=13.0,d4=13.4
+[watch] check took 4.5s 
+[watch] sleeping 30 min before check (training untouched)...
+[watch] sleeping 30 min before check (training untouched)...
+=== 存档点验收 v5_l0 — PASS (13:35:35) ===
+checkpoint step=1600 sup_tokens=4096000 | history batches=1615 evals=15
+  ✓ ckpt_latest_structure: 9.5MB step=1600 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_prev_structure: 9.5MB step=1575 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_rolling_order: latest=1600 > prev=1575
+  ✓ trainable_param_count: gate+q_head=832001 (expected 832001)
+  ✓ history_parses: 1632 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)
+  ✓ ckpt_step_vs_history: ckpt step=1600 <= history batches=1615 (gap=15 = work since last ckpt)
+  ✓ training_live: history written 6s ago
+  ✓ acceptance_CE_drop: step 1600: d1 2.4427→1.9961 (-0.4466), d2 2.4604→1.9707 (-0.4897), d4 2.7869→1.9545 (-0.8324) | deeper-depth CE dropping = gate working
+  ✓ depth_curve_inverted: d4=1.9545 vs d1=1.9961 (deeper now better)
+  ✓ vs_frozen_reference: trained − frozen: {'d1': -0.394, 'd2': -0.481, 'd4': -0.844}
+  ✓ gate_open: A_bar mean=0.0862 range=[0.0510,0.5367]
+  ✓ grad_norm_stable: max grad_norm=14.92 over last 750 supervised steps
+  i 块后隐状态范数(S1b机制): {'d1': 12.885, 'd2': 13.178, 'd4': 13.513}
+  i 生成样本(d=2,12tok): ' is the American lobster , H. americanus , which is'
+  i 生成样本(d=2,12tok): ' Adriatic Sea and the Black Sea . It is found in'
+written to E:\develop\project_files\llm-test\results\checkpoint_accept_v5_l0.json
+
+[watch] 2026-09-22 13:35:36 verdict=PASS step=1615 evals=15 sup=4096000 | d1=1.996, d2=1.971, d4=1.954 | ‖h‖ d1=12.9,d2=13.2,d4=13.5
+[watch] check took 4.2s 
+[watch] sleeping 30 min before check (training untouched)...
+=== 存档点验收 v5_l0 — PASS (15:24:14) ===
+checkpoint step=1700 sup_tokens=4352000 | history batches=1729 evals=16
+  ✓ ckpt_latest_structure: 9.5MB step=1700 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_prev_structure: 9.5MB step=1675 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_rolling_order: latest=1700 > prev=1675
+  ✓ trainable_param_count: gate+q_head=832001 (expected 832001)
+  ✓ history_parses: 1747 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)
+  ✓ ckpt_step_vs_history: ckpt step=1700 <= history batches=1729 (gap=29 = work since last ckpt)
+  ✓ training_live: history written 13s ago
+  ✓ acceptance_CE_drop: step 1700: d1 2.4427→1.9926 (-0.4501), d2 2.4604→1.9675 (-0.4929), d4 2.7869→1.9503 (-0.8366) | deeper-depth CE dropping = gate working
+  ✓ depth_curve_inverted: d4=1.9503 vs d1=1.9926 (deeper now better)
+  ✓ vs_frozen_reference: trained − frozen: {'d1': -0.397, 'd2': -0.484, 'd4': -0.849}
+  ✓ gate_open: A_bar mean=0.0816 range=[0.0512,0.5484]
+  ✓ grad_norm_stable: max grad_norm=14.54 over last 750 supervised steps
+  i 块后隐状态范数(S1b机制): {'d1': 12.928, 'd2': 13.2, 'd4': 13.51}
+  i 生成样本(d=2,12tok): ' is the American lobster , H. americanus , which is'
+  i 生成样本(d=2,12tok): ' Adriatic Sea and the Black Sea . It is found in'
+written to E:\develop\project_files\llm-test\results\checkpoint_accept_v5_l0.json
+
+[watch] 2026-09-22 15:24:15 verdict=PASS step=1729 evals=16 sup=4352000 | d1=1.993, d2=1.968, d4=1.950 | ‖h‖ d1=12.9,d2=13.2,d4=13.5
+[watch] check took 18.3s 
+[watch] sleeping 30 min before check (training untouched)...
+=== 存档点验收 v5_l0 — PASS (15:54:31) ===
+checkpoint step=1750 sup_tokens=4480000 | history batches=1768 evals=16
+  ✓ ckpt_latest_structure: 9.5MB step=1750 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_prev_structure: 9.5MB step=1725 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_rolling_order: latest=1750 > prev=1725
+  ✓ trainable_param_count: gate+q_head=832001 (expected 832001)
+  ✓ history_parses: 1786 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)
+  ✓ ckpt_step_vs_history: ckpt step=1750 <= history batches=1768 (gap=18 = work since last ckpt)
+  ✓ training_live: history written 31s ago
+  ✓ acceptance_CE_drop: step 1700: d1 2.4427→1.9926 (-0.4501), d2 2.4604→1.9675 (-0.4929), d4 2.7869→1.9503 (-0.8366) | deeper-depth CE dropping = gate working
+  ✓ depth_curve_inverted: d4=1.9503 vs d1=1.9926 (deeper now better)
+  ✓ vs_frozen_reference: trained − frozen: {'d1': -0.397, 'd2': -0.484, 'd4': -0.849}
+  ✓ gate_open: A_bar mean=0.0869 range=[0.0476,0.5512]
+  ✓ grad_norm_stable: max grad_norm=15.56 over last 750 supervised steps
+  i 块后隐状态范数(S1b机制): {'d1': 12.928, 'd2': 13.2, 'd4': 13.51}
+  i 生成样本(d=2,12tok): ' is the American lobster , H. americanus , which is'
+  i 生成样本(d=2,12tok): ' Adriatic Sea and the Black Sea . It is found in'
+written to E:\develop\project_files\llm-test\results\checkpoint_accept_v5_l0.json
+
+[watch] 2026-09-22 15:54:32 verdict=PASS step=1768 evals=16 sup=4480000 | d1=1.993, d2=1.968, d4=1.950 | ‖h‖ d1=12.9,d2=13.2,d4=13.5
+[watch] check took 5.2s 
+[watch] sleeping 30 min before check (training untouched)...
+=== 存档点验收 v5_l0 — PASS (16:26:41) ===
+checkpoint step=1800 sup_tokens=4608000 | history batches=1829 evals=17
+  ✓ ckpt_latest_structure: 9.5MB step=1800 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_prev_structure: 9.5MB step=1775 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_rolling_order: latest=1800 > prev=1775
+  ✓ trainable_param_count: gate+q_head=832001 (expected 832001)
+  ✓ history_parses: 1848 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)
+  ✓ ckpt_step_vs_history: ckpt step=1800 <= history batches=1829 (gap=29 = work since last ckpt)
+  ✓ training_live: history written 5s ago
+  ✓ acceptance_CE_drop: step 1800: d1 2.4427→1.9861 (-0.4566), d2 2.4604→1.9611 (-0.4993), d4 2.7869→1.944 (-0.8429) | deeper-depth CE dropping = gate working
+  ✓ depth_curve_inverted: d4=1.944 vs d1=1.9861 (deeper now better)
+  ✓ vs_frozen_reference: trained − frozen: {'d1': -0.404, 'd2': -0.49, 'd4': -0.855}
+  ✓ gate_open: A_bar mean=0.0828 range=[0.0467,0.5512]
+  ✓ grad_norm_stable: max grad_norm=15.73 over last 750 supervised steps
+  i 块后隐状态范数(S1b机制): {'d1': 13.108, 'd2': 13.38, 'd4': 13.686}
+  i 生成样本(d=2,12tok): ' is the American lobster , H. americanus , which is'
+  i 生成样本(d=2,12tok): ' Adriatic Sea and the Ionian Sea . It is found'
+written to E:\develop\project_files\llm-test\results\checkpoint_accept_v5_l0.json
+
+[watch] 2026-09-22 16:26:41 verdict=PASS step=1829 evals=17 sup=4608000 | d1=1.986, d2=1.961, d4=1.944 | ‖h‖ d1=13.1,d2=13.4,d4=13.7
+[watch] check took 4.9s 
+[watch] sleeping 30 min before check (training untouched)...
+[watch] sleeping 30 min before check (training untouched)...
+=== 存档点验收 v5_l0 — PASS (21:31:43) ===
+checkpoint step=1900 sup_tokens=4864000 | history batches=1921 evals=18
+  ✓ ckpt_latest_structure: 9.5MB step=1900 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_prev_structure: 9.5MB step=1875 gate=824320 q_head=7681 opt_states=8 rng=3
+  ✓ ckpt_rolling_order: latest=1900 > prev=1875
+  ✓ trainable_param_count: gate+q_head=832001 (expected 832001)
+  ✓ history_parses: 1941 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)
+  ✓ ckpt_step_vs_history: ckpt step=1900 <= history batches=1921 (gap=21 = work since last ckpt)
+  ✓ training_live: history written 1s ago
+  ✓ acceptance_CE_drop: step 1900: d1 2.4427→1.9822 (-0.4605), d2 2.4604→1.9578 (-0.5026), d4 2.7869→1.9412 (-0.8457) | deeper-depth CE dropping = gate working
+  ✓ depth_curve_inverted: d4=1.9412 vs d1=1.9822 (deeper now better)
+  ✓ vs_frozen_reference: trained − frozen: {'d1': -0.408, 'd2': -0.494, 'd4': -0.858}
+  ✓ gate_open: A_bar mean=0.0808 range=[0.0459,0.5693]
+  ✓ grad_norm_stable: max grad_norm=20.94 over last 750 supervised steps
+  i 块后隐状态范数(S1b机制): {'d1': 13.262, 'd2': 13.507, 'd4': 13.785}
+  i 生成样本(d=2,12tok): ' is the American lobster , H. americanus , which is'
+  i 生成样本(d=2,12tok): ' Adriatic Sea and the Ionian Sea . It is also'
+written to E:\develop\project_files\llm-test\results\checkpoint_accept_v5_l0.json
+
+[watch] 2026-09-22 21:31:45 verdict=PASS step=1921 evals=18 sup=4864000 | d1=1.982, d2=1.958, d4=1.941 | ‖h‖ d1=13.3,d2=13.5,d4=13.8
+[watch] check took 4.2s 
+[watch] sleeping 30 min before check (training untouched)...

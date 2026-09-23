@@ -1,0 +1,16 @@
+{
+  "run_name": "smoke",
+  "train_count": 8,
+  "valid_count": 2,
+  "max_steps": 2,
+  "accum": 1,
+  "lr": 0.0001,
+  "latent_steps": 4,
+  "kd_weight": 1.0,
+  "ref_weight": 1.0,
+  "lora_rank": 8,
+  "seed": 2026,
+  "resume": null,
+  "eval_every": 0,
+  "max_new_tokens": 48
+}

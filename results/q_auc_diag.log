@@ -1,0 +1,43 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<03:15,  2.17it/s]Loading weights:   1%|▏         | 6/426 [00:00<00:57,  7.36it/s]Loading weights:   2%|▏         | 8/426 [00:01<00:55,  7.51it/s]Loading weights:   2%|▏         | 9/426 [00:01<00:58,  7.08it/s]Loading weights:   3%|▎         | 11/426 [00:01<00:47,  8.72it/s]Loading weights:   3%|▎         | 12/426 [00:01<00:52,  7.91it/s]Loading weights:   3%|▎         | 13/426 [00:01<00:56,  7.32it/s]Loading weights:   3%|▎         | 14/426 [00:01<00:58,  7.04it/s]Loading weights:   5%|▍         | 20/426 [00:02<00:25, 15.76it/s]Loading weights:   5%|▌         | 22/426 [00:02<00:34, 11.56it/s]Loading weights:   6%|▌         | 24/426 [00:02<00:37, 10.80it/s]Loading weights:   6%|▌         | 26/426 [00:03<00:51,  7.70it/s]Loading weights:  50%|████▉     | 212/426 [00:03<00:00, 246.51it/s]Loading weights:  90%|█████████ | 385/426 [00:03<00:00, 476.88it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 125.51it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at C:\Users\li287\.cache\huggingface\datasets\Salesforce___wikitext\wikitext-2-raw-v1\0.0.0\b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Sep 20 08:41:44 2026).
+blocks: 8, ckpt step 1954
+block 0: d1:q=0.96,acc=0.614 d2:q=0.70,acc=0.611 d3:q=0.67,acc=0.618 d4:q=0.64,acc=0.616 d5:q=0.61,acc=0.616 d6:q=0.57,acc=0.616 d7:q=0.56,acc=0.614 d8:q=0.54,acc=0.616
+block 1: d1:q=-0.46,acc=0.581 d2:q=-0.16,acc=0.593 d3:q=-0.12,acc=0.589 d4:q=-0.10,acc=0.589 d5:q=-0.10,acc=0.595 d6:q=-0.07,acc=0.595 d7:q=-0.07,acc=0.587 d8:q=-0.06,acc=0.589
+block 2: d1:q=-0.20,acc=0.571 d2:q=-0.46,acc=0.573 d3:q=-0.41,acc=0.575 d4:q=-0.41,acc=0.573 d5:q=-0.42,acc=0.573 d6:q=-0.39,acc=0.573 d7:q=-0.41,acc=0.569 d8:q=-0.39,acc=0.569
+block 3: d1:q=0.72,acc=0.571 d2:q=0.54,acc=0.562 d3:q=0.52,acc=0.558 d4:q=0.55,acc=0.564 d5:q=0.55,acc=0.560 d6:q=0.56,acc=0.571 d7:q=0.57,acc=0.571 d8:q=0.58,acc=0.569
+block 4: d1:q=-0.01,acc=0.583 d2:q=0.44,acc=0.593 d3:q=0.35,acc=0.595 d4:q=0.31,acc=0.593 d5:q=0.30,acc=0.597 d6:q=0.30,acc=0.597 d7:q=0.30,acc=0.595 d8:q=0.31,acc=0.589
+block 5: d1:q=0.10,acc=0.513 d2:q=-0.53,acc=0.513 d3:q=-0.64,acc=0.519 d4:q=-0.72,acc=0.521 d5:q=-0.78,acc=0.528 d6:q=-0.81,acc=0.524 d7:q=-0.82,acc=0.524 d8:q=-0.86,acc=0.526
+block 6: d1:q=0.08,acc=0.524 d2:q=-0.18,acc=0.530 d3:q=-0.29,acc=0.536 d4:q=-0.35,acc=0.532 d5:q=-0.39,acc=0.530 d6:q=-0.41,acc=0.528 d7:q=-0.43,acc=0.528 d8:q=-0.45,acc=0.528
+block 7: d1:q=0.79,acc=0.532 d2:q=-0.60,acc=0.532 d3:q=-0.45,acc=0.532 d4:q=-0.40,acc=0.526 d5:q=-0.39,acc=0.526 d6:q=-0.38,acc=0.528 d7:q=-0.36,acc=0.528 d8:q=-0.36,acc=0.528
+{
+ "ckpt_step": 1954,
+ "auc_q_vs_lasttoken_correct": 0.5342,
+ "auc_q_vs_fix_next_depth": null,
+ "n_pairs": {
+  "correct": 64,
+  "fix": 28
+ },
+ "mean_q_by_depth": {
+  "d1": 0.2488,
+  "d2": -0.0311,
+  "d3": -0.0466,
+  "d4": -0.0603,
+  "d5": -0.0756,
+  "d6": -0.0797,
+  "d7": -0.0812,
+  "d8": -0.0873
+ },
+ "mean_acc_by_depth": {
+  "d1": 0.5614,
+  "d2": 0.5634,
+  "d3": 0.5653,
+  "d4": 0.5643,
+  "d5": 0.5658,
+  "d6": 0.5668,
+  "d7": 0.5648,
+  "d8": 0.5646
+ }
+}
+written results/q_head_auc_v5_l0.json

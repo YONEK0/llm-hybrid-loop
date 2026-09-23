@@ -1,0 +1,81 @@
+{
+  "spec": {
+    "split": "E=0..7 / M=L8-19 / D=20..31 (S1b)",
+    "beta": 0.3,
+    "lr": 0.0001,
+    "optimizer": "AdamW",
+    "step": "per-supervision optimizer.step (LoopUS-faithful)",
+    "q_target": "per-sample next-token accuracy (approx of LoopUS compute_q_target)"
+  },
+  "checks": {
+    "trainable_params": 832001,
+    "expected_params": 832001,
+    "backbone_frozen": true,
+    "isolation_max_diff_b": 0.0,
+    "isolation_max_diff_a": 0.0,
+    "isolation_pass": true,
+    "grad_present_all_trainable": false,
+    "grad_norms": {
+      "A_log": -1.0,
+      "dt_input_proj.weight": -1.0,
+      "delta_proj.weight": -1.0,
+      "delta_proj.bias": -1.0,
+      "0.weight": -1.0,
+      "0.bias": -1.0,
+      "1.weight": -1.0,
+      "1.bias": -1.0
+    },
+    "first_step_logs": [
+      {
+        "b": 0,
+        "lm": 2.7841,
+        "lm_prev": 3.4178,
+        "q": 0.7063,
+        "grad_norm": 6.319,
+        "A_bar_mean": 0.08409
+      }
+    ],
+    "loss_moved": true
+  },
+  "configs": {
+    "ctx512_B8_K2": {
+      "steps": 8,
+      "sec_total": 117.2,
+      "sec_per_batch": 14.65,
+      "tok_per_s_raw": 34.9,
+      "tok_per_s_supervised": 69.9,
+      "peak_gib": 8.71,
+      "lm_first": 2.6199,
+      "lm_last": 4.0512,
+      "n_supervised_logs": 16
+    },
+    "ctx512_B20_K5": {
+      "steps": 5,
+      "sec_total": 221.5,
+      "sec_per_batch": 44.3,
+      "tok_per_s_raw": 11.6,
+      "tok_per_s_supervised": 57.8,
+      "peak_gib": 8.71,
+      "lm_first": 2.026,
+      "lm_last": 7.3825,
+      "n_supervised_logs": 25
+    },
+    "ctx256_B20_K5": {
+      "steps": 5,
+      "sec_total": 241.0,
+      "sec_per_batch": 48.21,
+      "tok_per_s_raw": 5.3,
+      "tok_per_s_supervised": 26.6,
+      "peak_gib": 6.28,
+      "lm_first": 2.0334,
+      "lm_last": 7.0661,
+      "n_supervised_logs": 25
+    }
+  },
+  "budget_note": {
+    "official_recipe_sec_per_batch_ctx512": 44.3,
+    "supervised_tok_per_s": 57.8,
+    "tokens_1h_supervised": 208080,
+    "note": "L1 budget decided from these numbers before S3; 3B-token server recipe out of local scope"
+  }
+}

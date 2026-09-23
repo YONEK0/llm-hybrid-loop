@@ -1,0 +1,913 @@
+W0918 16:35:02.951000 3668 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\modeling_utils.py:5064: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   8%|▊         | 33/398 [00:00<00:01, 304.43it/s]Loading weights:  16%|█▌        | 64/398 [00:00<00:01, 270.27it/s]Loading weights:  23%|██▎       | 92/398 [00:00<00:01, 265.16it/s]Loading weights:  30%|██▉       | 119/398 [00:00<00:01, 265.46it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 257.37it/s]Loading weights:  44%|████▎     | 174/398 [00:00<00:00, 262.13it/s]Loading weights:  51%|█████     | 201/398 [00:00<00:00, 258.46it/s]Loading weights:  58%|█████▊    | 229/398 [00:00<00:00, 263.07it/s]Loading weights:  65%|██████▍   | 257/398 [00:00<00:00, 266.33it/s]Loading weights:  72%|███████▏  | 286/398 [00:01<00:00, 271.83it/s]Loading weights:  79%|███████▉  | 314/398 [00:01<00:00, 268.11it/s]Loading weights:  86%|████████▌ | 342/398 [00:01<00:00, 266.78it/s]Loading weights:  93%|█████████▎| 369/398 [00:01<00:00, 264.81it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 270.03it/s]
+trainable=11.010M depth=4 keep_steps=1 schedule=[(0, 2), (450, 1), (750, 0)]
+train=2500 dev=24
+{"step": 1, "epoch": 1, "seconds": 0.52, "peak_gib": 3.01, "ce": 1.5078125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 46, "answer": 6}
+{"step": 2, "epoch": 1, "seconds": 0.31, "peak_gib": 3.65, "ce": 2.546875, "aux_ce": 5.621899604797363, "depth": 3, "keep_steps": 2, "scaffold": 44, "answer": 6}
+{"step": 3, "epoch": 1, "seconds": 0.2, "peak_gib": 3.65, "ce": 1.515625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 75, "answer": 9}
+{"step": 4, "epoch": 1, "seconds": 0.33, "peak_gib": 3.65, "ce": 1.828125, "aux_ce": 3.753156900405884, "depth": 2, "keep_steps": 2, "scaffold": 56, "answer": 8, "grad_norm": 0.846}
+{"step": 5, "epoch": 1, "seconds": 0.32, "peak_gib": 3.72, "ce": 2.421875, "aux_ce": 4.547229766845703, "depth": 4, "keep_steps": 2, "scaffold": 38, "answer": 6}
+{"step": 6, "epoch": 1, "seconds": 0.37, "peak_gib": 3.96, "ce": 3.453125, "aux_ce": 5.213230133056641, "depth": 4, "keep_steps": 2, "scaffold": 37, "answer": 8}
+{"step": 7, "epoch": 1, "seconds": 0.38, "peak_gib": 4.04, "ce": 2.3125, "aux_ce": 6.779832363128662, "depth": 4, "keep_steps": 2, "scaffold": 50, "answer": 6}
+{"step": 8, "epoch": 1, "seconds": 0.27, "peak_gib": 4.04, "ce": 1.8046875, "aux_ce": 5.039631366729736, "depth": 2, "keep_steps": 2, "scaffold": 55, "answer": 11, "grad_norm": 1.494}
+{"step": 9, "epoch": 1, "seconds": 0.19, "peak_gib": 4.04, "ce": 1.0390625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 61, "answer": 7}
+{"step": 10, "epoch": 1, "seconds": 0.19, "peak_gib": 4.04, "ce": 2.171875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 45, "answer": 7}
+{"step": 11, "epoch": 1, "seconds": 0.19, "peak_gib": 4.04, "ce": 1.3828125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 73, "answer": 9}
+{"step": 12, "epoch": 1, "seconds": 0.26, "peak_gib": 4.04, "ce": 2.484375, "aux_ce": 4.718421936035156, "depth": 3, "keep_steps": 2, "scaffold": 46, "answer": 6, "grad_norm": 0.836}
+{"step": 13, "epoch": 1, "seconds": 0.2, "peak_gib": 4.04, "ce": 2.34375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 7}
+{"step": 14, "epoch": 1, "seconds": 0.32, "peak_gib": 4.04, "ce": 3.015625, "aux_ce": 5.384664058685303, "depth": 4, "keep_steps": 2, "scaffold": 24, "answer": 7}
+{"step": 15, "epoch": 1, "seconds": 0.15, "peak_gib": 4.04, "ce": 1.84375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 7}
+{"step": 16, "epoch": 1, "seconds": 0.39, "peak_gib": 4.3, "ce": 1.7890625, "aux_ce": 5.076524257659912, "depth": 4, "keep_steps": 2, "scaffold": 68, "answer": 8, "grad_norm": 1.399}
+{"step": 17, "epoch": 1, "seconds": 0.36, "peak_gib": 4.3, "ce": 1.90625, "aux_ce": 4.200514316558838, "depth": 3, "keep_steps": 2, "scaffold": 92, "answer": 8}
+{"step": 18, "epoch": 1, "seconds": 0.29, "peak_gib": 4.3, "ce": 1.4296875, "aux_ce": 5.205987930297852, "depth": 2, "keep_steps": 2, "scaffold": 70, "answer": 6}
+{"step": 19, "epoch": 1, "seconds": 0.39, "peak_gib": 4.3, "ce": 2.09375, "aux_ce": 5.231759548187256, "depth": 4, "keep_steps": 2, "scaffold": 55, "answer": 9}
+{"step": 20, "epoch": 1, "seconds": 0.34, "peak_gib": 4.3, "ce": 1.234375, "aux_ce": 2.8161768913269043, "depth": 3, "keep_steps": 2, "scaffold": 79, "answer": 8, "grad_norm": 0.998}
+{"step": 21, "epoch": 1, "seconds": 0.27, "peak_gib": 4.3, "ce": 1.59375, "aux_ce": 5.334556579589844, "depth": 3, "keep_steps": 2, "scaffold": 42, "answer": 7}
+{"step": 22, "epoch": 1, "seconds": 0.32, "peak_gib": 4.3, "ce": 2.203125, "aux_ce": 5.504962921142578, "depth": 3, "keep_steps": 2, "scaffold": 37, "answer": 7}
+{"step": 23, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 1.890625, "aux_ce": 4.122528076171875, "depth": 4, "keep_steps": 2, "scaffold": 52, "answer": 8}
+{"step": 24, "epoch": 1, "seconds": 0.16, "peak_gib": 4.3, "ce": 1.4609375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 32, "answer": 8, "grad_norm": 1.247}
+{"step": 25, "epoch": 1, "seconds": 0.33, "peak_gib": 4.3, "ce": 1.921875, "aux_ce": 4.485221862792969, "depth": 3, "keep_steps": 2, "scaffold": 85, "answer": 6}
+{"step": 26, "epoch": 1, "seconds": 0.2, "peak_gib": 4.3, "ce": 1.09375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 77, "answer": 7}
+{"step": 27, "epoch": 1, "seconds": 0.32, "peak_gib": 4.3, "ce": 2.96875, "aux_ce": 6.227401256561279, "depth": 3, "keep_steps": 2, "scaffold": 51, "answer": 7}
+{"step": 28, "epoch": 1, "seconds": 0.33, "peak_gib": 4.3, "ce": 2.09375, "aux_ce": 3.9845852851867676, "depth": 3, "keep_steps": 2, "scaffold": 56, "answer": 8, "grad_norm": 0.838}
+{"step": 29, "epoch": 1, "seconds": 0.39, "peak_gib": 4.3, "ce": 1.34375, "aux_ce": 3.7166287899017334, "depth": 4, "keep_steps": 2, "scaffold": 58, "answer": 8}
+{"step": 30, "epoch": 1, "seconds": 0.25, "peak_gib": 4.3, "ce": 2.203125, "aux_ce": 5.673663139343262, "depth": 2, "keep_steps": 2, "scaffold": 51, "answer": 7}
+{"step": 31, "epoch": 1, "seconds": 0.33, "peak_gib": 4.3, "ce": 1.4375, "aux_ce": 3.4214730262756348, "depth": 3, "keep_steps": 2, "scaffold": 65, "answer": 6}
+{"step": 32, "epoch": 1, "seconds": 0.23, "peak_gib": 4.3, "ce": 0.77734375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 72, "answer": 7, "grad_norm": 0.853}
+{"step": 33, "epoch": 1, "seconds": 0.32, "peak_gib": 4.3, "ce": 1.578125, "aux_ce": 3.6121296882629395, "depth": 3, "keep_steps": 2, "scaffold": 68, "answer": 9}
+{"step": 34, "epoch": 1, "seconds": 0.32, "peak_gib": 4.3, "ce": 1.875, "aux_ce": 3.9557814598083496, "depth": 3, "keep_steps": 2, "scaffold": 56, "answer": 7}
+{"step": 35, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 1.640625, "aux_ce": 4.832146644592285, "depth": 4, "keep_steps": 2, "scaffold": 57, "answer": 8}
+{"step": 36, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 2.09375, "aux_ce": 4.491050720214844, "depth": 4, "keep_steps": 2, "scaffold": 43, "answer": 7, "grad_norm": 1.108}
+{"step": 37, "epoch": 1, "seconds": 0.2, "peak_gib": 4.3, "ce": 1.015625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 78, "answer": 9}
+{"step": 38, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 2.296875, "aux_ce": 5.96561336517334, "depth": 4, "keep_steps": 2, "scaffold": 39, "answer": 6}
+{"step": 39, "epoch": 1, "seconds": 0.37, "peak_gib": 4.3, "ce": 1.8046875, "aux_ce": 5.098356246948242, "depth": 4, "keep_steps": 2, "scaffold": 39, "answer": 8}
+{"step": 40, "epoch": 1, "seconds": 0.16, "peak_gib": 4.3, "ce": 1.1640625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 7, "grad_norm": 1.104}
+{"step": 41, "epoch": 1, "seconds": 0.31, "peak_gib": 4.3, "ce": 0.98046875, "aux_ce": 3.444671630859375, "depth": 4, "keep_steps": 2, "scaffold": 38, "answer": 7}
+{"step": 42, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 2.765625, "aux_ce": 4.662663459777832, "depth": 4, "keep_steps": 2, "scaffold": 31, "answer": 7}
+{"step": 43, "epoch": 1, "seconds": 0.31, "peak_gib": 4.3, "ce": 2.71875, "aux_ce": 3.8770575523376465, "depth": 4, "keep_steps": 2, "scaffold": 18, "answer": 7}
+{"step": 44, "epoch": 1, "seconds": 0.32, "peak_gib": 4.3, "ce": 1.3828125, "aux_ce": 4.40128231048584, "depth": 3, "keep_steps": 2, "scaffold": 42, "answer": 6, "grad_norm": 1.406}
+{"step": 45, "epoch": 1, "seconds": 0.31, "peak_gib": 4.3, "ce": 2.234375, "aux_ce": 4.509115219116211, "depth": 4, "keep_steps": 2, "scaffold": 35, "answer": 8}
+{"step": 46, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 0.8046875, "aux_ce": 3.0242691040039062, "depth": 4, "keep_steps": 2, "scaffold": 50, "answer": 7}
+{"step": 47, "epoch": 1, "seconds": 0.17, "peak_gib": 4.3, "ce": 1.65625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 35, "answer": 7}
+{"step": 48, "epoch": 1, "seconds": 0.27, "peak_gib": 4.3, "ce": 1.578125, "aux_ce": 4.187836170196533, "depth": 2, "keep_steps": 2, "scaffold": 83, "answer": 6, "grad_norm": 1.183}
+{"step": 49, "epoch": 1, "seconds": 0.26, "peak_gib": 4.3, "ce": 0.8828125, "aux_ce": 6.384249687194824, "depth": 2, "keep_steps": 2, "scaffold": 40, "answer": 6}
+{"step": 50, "epoch": 1, "seconds": 0.2, "peak_gib": 4.3, "ce": 1.7421875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 60, "answer": 8}
+{"step": 51, "epoch": 1, "seconds": 0.19, "peak_gib": 4.3, "ce": 1.46875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 53, "answer": 8}
+{"step": 52, "epoch": 1, "seconds": 0.34, "peak_gib": 4.3, "ce": 1.7421875, "aux_ce": 3.955731153488159, "depth": 4, "keep_steps": 2, "scaffold": 40, "answer": 7, "grad_norm": 1.117}
+{"step": 53, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 2.375, "aux_ce": 5.094956874847412, "depth": 4, "keep_steps": 2, "scaffold": 48, "answer": 6}
+{"step": 54, "epoch": 1, "seconds": 0.22, "peak_gib": 4.3, "ce": 1.5078125, "aux_ce": 3.715632200241089, "depth": 2, "keep_steps": 2, "scaffold": 39, "answer": 8}
+{"step": 55, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 1.90625, "aux_ce": 3.104027271270752, "depth": 4, "keep_steps": 2, "scaffold": 39, "answer": 6}
+{"step": 56, "epoch": 1, "seconds": 0.27, "peak_gib": 4.3, "ce": 1.53125, "aux_ce": 5.505423545837402, "depth": 2, "keep_steps": 2, "scaffold": 44, "answer": 7, "grad_norm": 1.533}
+{"step": 57, "epoch": 1, "seconds": 0.19, "peak_gib": 4.3, "ce": 2.1875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 29, "answer": 6}
+{"step": 58, "epoch": 1, "seconds": 0.33, "peak_gib": 4.3, "ce": 1.2109375, "aux_ce": 5.265158653259277, "depth": 4, "keep_steps": 2, "scaffold": 34, "answer": 8}
+{"step": 59, "epoch": 1, "seconds": 0.34, "peak_gib": 4.3, "ce": 1.953125, "aux_ce": 3.6015355587005615, "depth": 4, "keep_steps": 2, "scaffold": 27, "answer": 7}
+{"step": 60, "epoch": 1, "seconds": 0.32, "peak_gib": 4.3, "ce": 0.4765625, "aux_ce": 2.8075172901153564, "depth": 3, "keep_steps": 2, "scaffold": 47, "answer": 8, "grad_norm": 1.396}
+{"step": 61, "epoch": 1, "seconds": 0.39, "peak_gib": 4.3, "ce": 2.3125, "aux_ce": 5.4373908042907715, "depth": 4, "keep_steps": 2, "scaffold": 53, "answer": 7}
+{"step": 62, "epoch": 1, "seconds": 0.33, "peak_gib": 4.3, "ce": 0.7578125, "aux_ce": 3.075603485107422, "depth": 3, "keep_steps": 2, "scaffold": 56, "answer": 7}
+{"step": 63, "epoch": 1, "seconds": 0.4, "peak_gib": 4.3, "ce": 1.375, "aux_ce": 3.519423007965088, "depth": 4, "keep_steps": 2, "scaffold": 67, "answer": 10}
+{"step": 64, "epoch": 1, "seconds": 0.32, "peak_gib": 4.3, "ce": 1.4921875, "aux_ce": 4.701163291931152, "depth": 4, "keep_steps": 2, "scaffold": 39, "answer": 6, "grad_norm": 1.331}
+{"step": 65, "epoch": 1, "seconds": 0.32, "peak_gib": 4.3, "ce": 1.6875, "aux_ce": 4.35249137878418, "depth": 4, "keep_steps": 2, "scaffold": 36, "answer": 6}
+{"step": 66, "epoch": 1, "seconds": 0.21, "peak_gib": 4.3, "ce": 1.109375, "aux_ce": 4.024809837341309, "depth": 2, "keep_steps": 2, "scaffold": 36, "answer": 7}
+{"step": 67, "epoch": 1, "seconds": 0.33, "peak_gib": 4.3, "ce": 1.3359375, "aux_ce": 3.3610033988952637, "depth": 3, "keep_steps": 2, "scaffold": 61, "answer": 7}
+{"step": 68, "epoch": 1, "seconds": 0.33, "peak_gib": 4.3, "ce": 1.59375, "aux_ce": 3.4455807209014893, "depth": 3, "keep_steps": 2, "scaffold": 42, "answer": 8, "grad_norm": 1.323}
+{"step": 69, "epoch": 1, "seconds": 0.16, "peak_gib": 4.3, "ce": 0.302734375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 26, "answer": 8}
+{"step": 70, "epoch": 1, "seconds": 0.22, "peak_gib": 4.3, "ce": 1.1953125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 76, "answer": 7}
+{"step": 71, "epoch": 1, "seconds": 0.26, "peak_gib": 4.3, "ce": 1.3671875, "aux_ce": 3.34127140045166, "depth": 2, "keep_steps": 2, "scaffold": 30, "answer": 7}
+{"step": 72, "epoch": 1, "seconds": 0.38, "peak_gib": 4.3, "ce": 1.125, "aux_ce": 4.00394344329834, "depth": 4, "keep_steps": 2, "scaffold": 37, "answer": 7, "grad_norm": 1.023}
+{"step": 73, "epoch": 1, "seconds": 0.31, "peak_gib": 4.3, "ce": 1.40625, "aux_ce": 4.703801155090332, "depth": 4, "keep_steps": 2, "scaffold": 34, "answer": 6}
+{"step": 74, "epoch": 1, "seconds": 0.33, "peak_gib": 4.3, "ce": 2.671875, "aux_ce": 6.411565780639648, "depth": 3, "keep_steps": 2, "scaffold": 52, "answer": 6}
+{"step": 75, "epoch": 1, "seconds": 0.28, "peak_gib": 4.3, "ce": 0.98828125, "aux_ce": 4.2143874168396, "depth": 2, "keep_steps": 2, "scaffold": 53, "answer": 8}
+{"step": 76, "epoch": 1, "seconds": 0.37, "peak_gib": 4.3, "ce": 0.984375, "aux_ce": 3.678424596786499, "depth": 3, "keep_steps": 2, "scaffold": 63, "answer": 7, "grad_norm": 1.575}
+{"step": 77, "epoch": 1, "seconds": 0.57, "peak_gib": 5.25, "ce": 1.6640625, "aux_ce": 3.6496665477752686, "depth": 4, "keep_steps": 2, "scaffold": 98, "answer": 6}
+{"step": 78, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.5078125, "aux_ce": 4.6131086349487305, "depth": 4, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 79, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 1.625, "aux_ce": 4.289559364318848, "depth": 4, "keep_steps": 2, "scaffold": 50, "answer": 7}
+{"step": 80, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.98828125, "aux_ce": 2.4895286560058594, "depth": 4, "keep_steps": 2, "scaffold": 47, "answer": 9, "grad_norm": 1.274}
+{"step": 81, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.0390625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 54, "answer": 7}
+{"step": 82, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 1.2734375, "aux_ce": 4.005207061767578, "depth": 3, "keep_steps": 2, "scaffold": 43, "answer": 7}
+{"step": 83, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 1.9453125, "aux_ce": 3.5794105529785156, "depth": 3, "keep_steps": 2, "scaffold": 34, "answer": 7}
+{"step": 84, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 2.046875, "aux_ce": 4.209990501403809, "depth": 4, "keep_steps": 2, "scaffold": 28, "answer": 7, "grad_norm": 1.517}
+{"step": 85, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.94140625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 41, "answer": 7}
+{"step": 86, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 1.5703125, "aux_ce": 3.694666624069214, "depth": 4, "keep_steps": 2, "scaffold": 31, "answer": 8}
+{"step": 87, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.91796875, "aux_ce": 3.0750913619995117, "depth": 3, "keep_steps": 2, "scaffold": 74, "answer": 7}
+{"step": 88, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 1.3203125, "aux_ce": 3.7525949478149414, "depth": 4, "keep_steps": 2, "scaffold": 59, "answer": 7, "grad_norm": 1.252}
+{"step": 89, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 1.734375, "aux_ce": 3.5021555423736572, "depth": 2, "keep_steps": 2, "scaffold": 47, "answer": 7}
+{"step": 90, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.81640625, "aux_ce": 2.4824419021606445, "depth": 4, "keep_steps": 2, "scaffold": 39, "answer": 8}
+{"step": 91, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 1.8125, "aux_ce": 3.7518177032470703, "depth": 4, "keep_steps": 2, "scaffold": 40, "answer": 7}
+{"step": 92, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 1.28125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 54, "answer": 8, "grad_norm": 1.569}
+{"step": 93, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 1.796875, "aux_ce": 3.687504291534424, "depth": 3, "keep_steps": 2, "scaffold": 30, "answer": 8}
+{"step": 94, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.458984375, "aux_ce": 2.8644304275512695, "depth": 4, "keep_steps": 2, "scaffold": 38, "answer": 6}
+{"step": 95, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 1.875, "aux_ce": 4.538906097412109, "depth": 3, "keep_steps": 2, "scaffold": 41, "answer": 7}
+{"step": 96, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.2890625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 67, "answer": 7, "grad_norm": 1.425}
+{"step": 97, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.8203125, "aux_ce": 3.563295364379883, "depth": 2, "keep_steps": 2, "scaffold": 42, "answer": 6}
+{"step": 98, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.298828125, "aux_ce": 2.080296277999878, "depth": 4, "keep_steps": 2, "scaffold": 30, "answer": 7}
+{"step": 99, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.67578125, "aux_ce": 3.199516534805298, "depth": 2, "keep_steps": 2, "scaffold": 26, "answer": 6}
+{"step": 100, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 1.046875, "aux_ce": 3.5670218467712402, "depth": 4, "keep_steps": 2, "scaffold": 31, "answer": 8, "grad_norm": 1.242}
+{"step": 101, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 66, "answer": 10}
+{"step": 102, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.4765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 59, "answer": 8}
+{"step": 103, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.5625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 62, "answer": 7}
+{"step": 104, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.90625, "aux_ce": 2.103691816329956, "depth": 4, "keep_steps": 2, "scaffold": 35, "answer": 8, "grad_norm": 1.225}
+{"step": 105, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.7109375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 51, "answer": 7}
+{"step": 106, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.97265625, "aux_ce": 3.4294488430023193, "depth": 2, "keep_steps": 2, "scaffold": 35, "answer": 7}
+{"step": 107, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.4453125, "aux_ce": 3.410057783126831, "depth": 2, "keep_steps": 2, "scaffold": 47, "answer": 7}
+{"step": 108, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 1.265625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 34, "answer": 6, "grad_norm": 1.407}
+{"step": 109, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.75390625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 56, "answer": 7}
+{"step": 110, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.298828125, "aux_ce": 2.6172335147857666, "depth": 3, "keep_steps": 2, "scaffold": 27, "answer": 6}
+{"step": 111, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.8828125, "aux_ce": 3.065373182296753, "depth": 3, "keep_steps": 2, "scaffold": 35, "answer": 7}
+{"step": 112, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.68359375, "aux_ce": 2.1767914295196533, "depth": 2, "keep_steps": 2, "scaffold": 39, "answer": 7, "grad_norm": 1.177}
+{"step": 113, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.1015625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 53, "answer": 9}
+{"step": 114, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.85546875, "aux_ce": 2.7812271118164062, "depth": 3, "keep_steps": 2, "scaffold": 44, "answer": 8}
+{"step": 115, "epoch": 1, "seconds": 0.41, "peak_gib": 5.25, "ce": 0.71875, "aux_ce": 2.9808173179626465, "depth": 4, "keep_steps": 2, "scaffold": 48, "answer": 6}
+{"step": 116, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 2.143784284591675, "depth": 2, "keep_steps": 2, "scaffold": 32, "answer": 7, "grad_norm": 1.246}
+{"step": 117, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.796875, "aux_ce": 3.2507195472717285, "depth": 2, "keep_steps": 2, "scaffold": 44, "answer": 7}
+{"step": 118, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.3515625, "aux_ce": 1.512147307395935, "depth": 4, "keep_steps": 2, "scaffold": 30, "answer": 6}
+{"step": 119, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.921875, "aux_ce": 2.993868827819824, "depth": 2, "keep_steps": 2, "scaffold": 41, "answer": 7}
+{"step": 120, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.6640625, "aux_ce": 2.7043709754943848, "depth": 3, "keep_steps": 2, "scaffold": 32, "answer": 7, "grad_norm": 1.255}
+{"step": 121, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 1.0703125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 40, "answer": 8}
+{"step": 122, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 1.0390625, "aux_ce": 3.098634719848633, "depth": 4, "keep_steps": 2, "scaffold": 16, "answer": 8}
+{"step": 123, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.462890625, "aux_ce": 2.7425434589385986, "depth": 2, "keep_steps": 2, "scaffold": 26, "answer": 6}
+{"step": 124, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.515625, "aux_ce": 3.5435404777526855, "depth": 2, "keep_steps": 2, "scaffold": 42, "answer": 8, "grad_norm": 1.631}
+{"step": 125, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.8359375, "aux_ce": 2.7549171447753906, "depth": 3, "keep_steps": 2, "scaffold": 42, "answer": 7}
+{"step": 126, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 1.3359375, "aux_ce": 2.9867734909057617, "depth": 4, "keep_steps": 2, "scaffold": 38, "answer": 7}
+{"step": 127, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.46875, "aux_ce": 1.133521318435669, "depth": 4, "keep_steps": 2, "scaffold": 43, "answer": 7}
+{"step": 128, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 1.09375, "aux_ce": 2.904237747192383, "depth": 2, "keep_steps": 2, "scaffold": 40, "answer": 7, "grad_norm": 1.239}
+{"step": 129, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.796875, "aux_ce": 3.015575408935547, "depth": 2, "keep_steps": 2, "scaffold": 80, "answer": 7}
+{"step": 130, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.87109375, "aux_ce": 3.312241315841675, "depth": 4, "keep_steps": 2, "scaffold": 40, "answer": 8}
+{"step": 131, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.0390625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 81, "answer": 8}
+{"step": 132, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.63671875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 54, "answer": 7, "grad_norm": 1.005}
+{"step": 133, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 1.234375, "aux_ce": 3.0264711380004883, "depth": 4, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 134, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.42578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 74, "answer": 6}
+{"step": 135, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.453125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 6}
+{"step": 136, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.76171875, "aux_ce": 2.5480942726135254, "depth": 3, "keep_steps": 2, "scaffold": 74, "answer": 9, "grad_norm": 0.978}
+{"step": 137, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.953125, "aux_ce": 2.673529624938965, "depth": 3, "keep_steps": 2, "scaffold": 60, "answer": 7}
+{"step": 138, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.58984375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 44, "answer": 7}
+{"step": 139, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.65625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 49, "answer": 9}
+{"step": 140, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 0.86328125, "aux_ce": 2.4778008460998535, "depth": 4, "keep_steps": 2, "scaffold": 56, "answer": 6, "grad_norm": 1.089}
+{"step": 141, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.44140625, "aux_ce": 2.025085926055908, "depth": 3, "keep_steps": 2, "scaffold": 42, "answer": 8}
+{"step": 142, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 2.1930735111236572, "depth": 3, "keep_steps": 2, "scaffold": 90, "answer": 11}
+{"step": 143, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 1.0859375, "aux_ce": 3.404557704925537, "depth": 4, "keep_steps": 2, "scaffold": 22, "answer": 6}
+{"step": 144, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 1.0234375, "aux_ce": 2.400778293609619, "depth": 3, "keep_steps": 2, "scaffold": 36, "answer": 7, "grad_norm": 1.495}
+{"step": 145, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.8515625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 56, "answer": 7}
+{"step": 146, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.9609375, "aux_ce": 2.068563461303711, "depth": 4, "keep_steps": 2, "scaffold": 28, "answer": 7}
+{"step": 147, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 1.734375, "aux_ce": 4.136094093322754, "depth": 4, "keep_steps": 2, "scaffold": 40, "answer": 6}
+{"step": 148, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.8828125, "aux_ce": 1.9703357219696045, "depth": 2, "keep_steps": 2, "scaffold": 47, "answer": 7, "grad_norm": 1.415}
+{"step": 149, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.8203125, "aux_ce": 2.3389275074005127, "depth": 2, "keep_steps": 2, "scaffold": 71, "answer": 8}
+{"step": 150, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 1.3828125, "aux_ce": 3.22259259223938, "depth": 2, "keep_steps": 2, "scaffold": 40, "answer": 7}
+EVAL {"step": 150, "keep_steps": 2, "dev": {"4": 0.0}}
+{"step": 151, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.734375, "aux_ce": 2.5158145427703857, "depth": 4, "keep_steps": 2, "scaffold": 33, "answer": 8}
+{"step": 152, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 1.974540114402771, "depth": 3, "keep_steps": 2, "scaffold": 62, "answer": 8, "grad_norm": 1.387}
+{"step": 153, "epoch": 1, "seconds": 0.41, "peak_gib": 5.25, "ce": 0.86328125, "aux_ce": 2.467268943786621, "depth": 4, "keep_steps": 2, "scaffold": 43, "answer": 7}
+{"step": 154, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.74609375, "aux_ce": 2.6096444129943848, "depth": 2, "keep_steps": 2, "scaffold": 49, "answer": 7}
+{"step": 155, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.79296875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 69, "answer": 6}
+{"step": 156, "epoch": 1, "seconds": 0.46, "peak_gib": 5.25, "ce": 1.2265625, "aux_ce": 2.80279803276062, "depth": 4, "keep_steps": 2, "scaffold": 75, "answer": 6, "grad_norm": 1.346}
+{"step": 157, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.58203125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 55, "answer": 11}
+{"step": 158, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 1.2265625, "aux_ce": 3.3621435165405273, "depth": 2, "keep_steps": 2, "scaffold": 71, "answer": 6}
+{"step": 159, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.86328125, "aux_ce": 2.264364004135132, "depth": 2, "keep_steps": 2, "scaffold": 62, "answer": 8}
+{"step": 160, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 1.234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 67, "answer": 9, "grad_norm": 0.926}
+{"step": 161, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.6640625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 43, "answer": 8}
+{"step": 162, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 1.125, "aux_ce": 2.3334426879882812, "depth": 4, "keep_steps": 2, "scaffold": 30, "answer": 7}
+{"step": 163, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.71484375, "aux_ce": 2.462423801422119, "depth": 2, "keep_steps": 2, "scaffold": 34, "answer": 7}
+{"step": 164, "epoch": 1, "seconds": 0.41, "peak_gib": 5.25, "ce": 1.359375, "aux_ce": 2.8898427486419678, "depth": 4, "keep_steps": 2, "scaffold": 41, "answer": 8, "grad_norm": 1.479}
+{"step": 165, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 44, "answer": 6}
+{"step": 166, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.375, "aux_ce": 1.1087661981582642, "depth": 2, "keep_steps": 2, "scaffold": 36, "answer": 6}
+{"step": 167, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.9609375, "aux_ce": 2.099860668182373, "depth": 2, "keep_steps": 2, "scaffold": 26, "answer": 7}
+{"step": 168, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 1.171875, "aux_ce": 2.4058456420898438, "depth": 2, "keep_steps": 2, "scaffold": 58, "answer": 8, "grad_norm": 1.141}
+{"step": 169, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 1.0859375, "aux_ce": 3.169644594192505, "depth": 2, "keep_steps": 2, "scaffold": 41, "answer": 7}
+{"step": 170, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.75390625, "aux_ce": 2.1726114749908447, "depth": 2, "keep_steps": 2, "scaffold": 38, "answer": 7}
+{"step": 171, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 1.203125, "aux_ce": 2.3643383979797363, "depth": 4, "keep_steps": 2, "scaffold": 66, "answer": 8}
+{"step": 172, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.74609375, "aux_ce": 1.4342440366744995, "depth": 3, "keep_steps": 2, "scaffold": 54, "answer": 7, "grad_norm": 1.284}
+{"step": 173, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.66796875, "aux_ce": 1.464097023010254, "depth": 4, "keep_steps": 2, "scaffold": 51, "answer": 8}
+{"step": 174, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.9765625, "aux_ce": 2.224123001098633, "depth": 4, "keep_steps": 2, "scaffold": 57, "answer": 7}
+{"step": 175, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.71484375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 7}
+{"step": 176, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.5625, "aux_ce": 2.065056324005127, "depth": 4, "keep_steps": 2, "scaffold": 38, "answer": 7, "grad_norm": 1.186}
+{"step": 177, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 1.6015625, "aux_ce": 3.392488718032837, "depth": 3, "keep_steps": 2, "scaffold": 56, "answer": 9}
+{"step": 178, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.58203125, "aux_ce": 2.166808843612671, "depth": 2, "keep_steps": 2, "scaffold": 42, "answer": 7}
+{"step": 179, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 1.453125, "aux_ce": 2.593620777130127, "depth": 3, "keep_steps": 2, "scaffold": 35, "answer": 6}
+{"step": 180, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.4453125, "aux_ce": 1.6995421648025513, "depth": 2, "keep_steps": 2, "scaffold": 29, "answer": 7, "grad_norm": 1.35}
+{"step": 181, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.75390625, "aux_ce": 2.2917842864990234, "depth": 3, "keep_steps": 2, "scaffold": 32, "answer": 7}
+{"step": 182, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.4375, "aux_ce": 2.3116345405578613, "depth": 4, "keep_steps": 2, "scaffold": 31, "answer": 8}
+{"step": 183, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.9765625, "aux_ce": 2.531611680984497, "depth": 4, "keep_steps": 2, "scaffold": 36, "answer": 6}
+{"step": 184, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 1.1484375, "aux_ce": 2.8265414237976074, "depth": 4, "keep_steps": 2, "scaffold": 47, "answer": 7, "grad_norm": 1.451}
+{"step": 185, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 1.0, "aux_ce": 2.3822641372680664, "depth": 3, "keep_steps": 2, "scaffold": 52, "answer": 8}
+{"step": 186, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 1.203125, "aux_ce": 2.4504752159118652, "depth": 4, "keep_steps": 2, "scaffold": 77, "answer": 11}
+{"step": 187, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.7578125, "aux_ce": 3.0787031650543213, "depth": 2, "keep_steps": 2, "scaffold": 63, "answer": 8}
+{"step": 188, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.0234375, "aux_ce": 3.3418641090393066, "depth": 3, "keep_steps": 2, "scaffold": 84, "answer": 9, "grad_norm": 1.128}
+{"step": 189, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.9296875, "aux_ce": 2.0911765098571777, "depth": 4, "keep_steps": 2, "scaffold": 32, "answer": 8}
+{"step": 190, "epoch": 1, "seconds": 0.46, "peak_gib": 5.25, "ce": 1.1796875, "aux_ce": 2.5000181198120117, "depth": 4, "keep_steps": 2, "scaffold": 70, "answer": 7}
+{"step": 191, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.0234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 50, "answer": 7}
+{"step": 192, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.92578125, "aux_ce": 2.123171091079712, "depth": 3, "keep_steps": 2, "scaffold": 38, "answer": 7, "grad_norm": 1.389}
+{"step": 193, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.7578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 39, "answer": 6}
+{"step": 194, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.8203125, "aux_ce": 2.4478585720062256, "depth": 2, "keep_steps": 2, "scaffold": 55, "answer": 7}
+{"step": 195, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 1.359375, "aux_ce": 3.174405097961426, "depth": 2, "keep_steps": 2, "scaffold": 58, "answer": 7}
+{"step": 196, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 1.0859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 42, "answer": 7, "grad_norm": 1.208}
+{"step": 197, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 42, "answer": 8}
+{"step": 198, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.486328125, "aux_ce": 1.8250079154968262, "depth": 4, "keep_steps": 2, "scaffold": 61, "answer": 7}
+{"step": 199, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 2.0067155361175537, "depth": 3, "keep_steps": 2, "scaffold": 38, "answer": 7}
+{"step": 200, "epoch": 1, "seconds": 0.41, "peak_gib": 5.25, "ce": 0.8359375, "aux_ce": 2.088921070098877, "depth": 4, "keep_steps": 2, "scaffold": 48, "answer": 7, "grad_norm": 1.145}
+{"step": 201, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 0.9296875, "aux_ce": 1.9723008871078491, "depth": 2, "keep_steps": 2, "scaffold": 41, "answer": 8}
+{"step": 202, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.515625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 44, "answer": 9}
+{"step": 203, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.6953125, "aux_ce": 2.543598175048828, "depth": 3, "keep_steps": 2, "scaffold": 28, "answer": 8}
+{"step": 204, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.765625, "aux_ce": 2.685195207595825, "depth": 2, "keep_steps": 2, "scaffold": 59, "answer": 8, "grad_norm": 1.433}
+{"step": 205, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.75390625, "aux_ce": 2.8672239780426025, "depth": 3, "keep_steps": 2, "scaffold": 36, "answer": 6}
+{"step": 206, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.80078125, "aux_ce": 2.984567642211914, "depth": 2, "keep_steps": 2, "scaffold": 69, "answer": 8}
+{"step": 207, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.4609375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 57, "answer": 6}
+{"step": 208, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.8828125, "aux_ce": 1.7634963989257812, "depth": 3, "keep_steps": 2, "scaffold": 55, "answer": 7, "grad_norm": 1.175}
+{"step": 209, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.96875, "aux_ce": 3.131316661834717, "depth": 2, "keep_steps": 2, "scaffold": 24, "answer": 7}
+{"step": 210, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.8203125, "aux_ce": 3.719963312149048, "depth": 3, "keep_steps": 2, "scaffold": 58, "answer": 7}
+{"step": 211, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.400390625, "aux_ce": 1.752134084701538, "depth": 3, "keep_steps": 2, "scaffold": 38, "answer": 6}
+{"step": 212, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.466796875, "aux_ce": 1.0785771608352661, "depth": 2, "keep_steps": 2, "scaffold": 51, "answer": 8, "grad_norm": 1.303}
+{"step": 213, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.59765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 63, "answer": 8}
+{"step": 214, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.79296875, "aux_ce": 2.318558692932129, "depth": 3, "keep_steps": 2, "scaffold": 42, "answer": 7}
+{"step": 215, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.140625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 61, "answer": 7}
+{"step": 216, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 1.1953125, "aux_ce": 2.6618199348449707, "depth": 4, "keep_steps": 2, "scaffold": 57, "answer": 8, "grad_norm": 1.071}
+{"step": 217, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.6796875, "aux_ce": 3.0072731971740723, "depth": 2, "keep_steps": 2, "scaffold": 63, "answer": 6}
+{"step": 218, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 44, "answer": 8}
+{"step": 219, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.0234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 38, "answer": 8}
+{"step": 220, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 1.2734375, "aux_ce": 2.670677423477173, "depth": 3, "keep_steps": 2, "scaffold": 50, "answer": 7, "grad_norm": 1.114}
+{"step": 221, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 0.60546875, "aux_ce": 1.597823977470398, "depth": 2, "keep_steps": 2, "scaffold": 47, "answer": 9}
+{"step": 222, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.73046875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 34, "answer": 8}
+{"step": 223, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.890625, "aux_ce": 1.7134888172149658, "depth": 3, "keep_steps": 2, "scaffold": 30, "answer": 8}
+{"step": 224, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.609375, "aux_ce": 1.6107604503631592, "depth": 3, "keep_steps": 2, "scaffold": 52, "answer": 7, "grad_norm": 1.246}
+{"step": 225, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.76171875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 61, "answer": 7}
+{"step": 226, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.88671875, "aux_ce": 1.6765249967575073, "depth": 3, "keep_steps": 2, "scaffold": 46, "answer": 9}
+{"step": 227, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.88671875, "aux_ce": 2.2845077514648438, "depth": 3, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 228, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 1.015625, "aux_ce": 2.109801769256592, "depth": 2, "keep_steps": 2, "scaffold": 41, "answer": 8, "grad_norm": 1.168}
+{"step": 229, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.6328125, "aux_ce": 1.6097853183746338, "depth": 3, "keep_steps": 2, "scaffold": 72, "answer": 7}
+{"step": 230, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.40234375, "aux_ce": 1.599479079246521, "depth": 3, "keep_steps": 2, "scaffold": 43, "answer": 7}
+{"step": 231, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.73828125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 7}
+{"step": 232, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 39, "answer": 6, "grad_norm": 1.119}
+{"step": 233, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.82421875, "aux_ce": 2.4268293380737305, "depth": 4, "keep_steps": 2, "scaffold": 44, "answer": 6}
+{"step": 234, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.87109375, "aux_ce": 2.6308913230895996, "depth": 3, "keep_steps": 2, "scaffold": 54, "answer": 6}
+{"step": 235, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.85546875, "aux_ce": 3.0972020626068115, "depth": 4, "keep_steps": 2, "scaffold": 44, "answer": 6}
+{"step": 236, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.90234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 51, "answer": 7, "grad_norm": 1.107}
+{"step": 237, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 1.09375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 37, "answer": 6}
+{"step": 238, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.384765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 33, "answer": 7}
+{"step": 239, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 1.03125, "aux_ce": 2.110579490661621, "depth": 2, "keep_steps": 2, "scaffold": 32, "answer": 7}
+{"step": 240, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 1.28125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 29, "answer": 7, "grad_norm": 1.255}
+{"step": 241, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.2373046875, "aux_ce": 1.1375279426574707, "depth": 3, "keep_steps": 2, "scaffold": 72, "answer": 6}
+{"step": 242, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.59375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 71, "answer": 10}
+{"step": 243, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.68359375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 244, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.671875, "aux_ce": 1.6482651233673096, "depth": 3, "keep_steps": 2, "scaffold": 40, "answer": 8, "grad_norm": 0.931}
+{"step": 245, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.40234375, "aux_ce": 2.0920114517211914, "depth": 3, "keep_steps": 2, "scaffold": 33, "answer": 6}
+{"step": 246, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.59375, "aux_ce": 1.9843659400939941, "depth": 4, "keep_steps": 2, "scaffold": 44, "answer": 8}
+{"step": 247, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 1.28125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 48, "answer": 7}
+{"step": 248, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.97265625, "aux_ce": 2.2863545417785645, "depth": 4, "keep_steps": 2, "scaffold": 46, "answer": 7, "grad_norm": 1.366}
+{"step": 249, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.46484375, "aux_ce": 1.5158491134643555, "depth": 3, "keep_steps": 2, "scaffold": 41, "answer": 7}
+{"step": 250, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 1.140625, "aux_ce": 2.8680458068847656, "depth": 2, "keep_steps": 2, "scaffold": 19, "answer": 8}
+{"step": 251, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.72265625, "aux_ce": 1.8797070980072021, "depth": 4, "keep_steps": 2, "scaffold": 39, "answer": 7}
+{"step": 252, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.828125, "aux_ce": 2.0751113891601562, "depth": 4, "keep_steps": 2, "scaffold": 40, "answer": 6, "grad_norm": 1.511}
+{"step": 253, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.41796875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 56, "answer": 10}
+{"step": 254, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 1.2578125, "aux_ce": 2.0877902507781982, "depth": 3, "keep_steps": 2, "scaffold": 35, "answer": 8}
+{"step": 255, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.6953125, "aux_ce": 2.051356792449951, "depth": 3, "keep_steps": 2, "scaffold": 40, "answer": 8}
+{"step": 256, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 1.171875, "aux_ce": 2.490483522415161, "depth": 4, "keep_steps": 2, "scaffold": 74, "answer": 7, "grad_norm": 1.153}
+{"step": 257, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 0.283203125, "aux_ce": 1.2151377201080322, "depth": 3, "keep_steps": 2, "scaffold": 29, "answer": 7}
+{"step": 258, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 0.51953125, "aux_ce": 1.4126574993133545, "depth": 3, "keep_steps": 2, "scaffold": 31, "answer": 6}
+{"step": 259, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 1.234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 52, "answer": 7}
+{"step": 260, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 1.0546875, "aux_ce": 1.555821418762207, "depth": 4, "keep_steps": 2, "scaffold": 23, "answer": 7, "grad_norm": 1.457}
+{"step": 261, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.53515625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 66, "answer": 8}
+{"step": 262, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.71875, "aux_ce": 1.7064464092254639, "depth": 3, "keep_steps": 2, "scaffold": 38, "answer": 7}
+{"step": 263, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.859375, "aux_ce": 2.1803970336914062, "depth": 3, "keep_steps": 2, "scaffold": 53, "answer": 7}
+{"step": 264, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 1.0234375, "aux_ce": 2.9806838035583496, "depth": 3, "keep_steps": 2, "scaffold": 43, "answer": 7, "grad_norm": 1.082}
+{"step": 265, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.75390625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 53, "answer": 8}
+{"step": 266, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.86328125, "aux_ce": 2.3232455253601074, "depth": 3, "keep_steps": 2, "scaffold": 49, "answer": 7}
+{"step": 267, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.4140625, "aux_ce": 1.3540937900543213, "depth": 4, "keep_steps": 2, "scaffold": 37, "answer": 7}
+{"step": 268, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.58984375, "aux_ce": 2.4347167015075684, "depth": 3, "keep_steps": 2, "scaffold": 31, "answer": 7, "grad_norm": 1.084}
+{"step": 269, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.921875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 41, "answer": 6}
+{"step": 270, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.9765625, "aux_ce": 2.490476608276367, "depth": 3, "keep_steps": 2, "scaffold": 57, "answer": 7}
+{"step": 271, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.80859375, "aux_ce": 2.3088269233703613, "depth": 2, "keep_steps": 2, "scaffold": 38, "answer": 6}
+{"step": 272, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.96875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 6, "grad_norm": 1.227}
+{"step": 273, "epoch": 1, "seconds": 0.21, "peak_gib": 5.25, "ce": 0.70703125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 50, "answer": 6}
+{"step": 274, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.77734375, "aux_ce": 1.8735387325286865, "depth": 2, "keep_steps": 2, "scaffold": 76, "answer": 7}
+{"step": 275, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 1.015625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 33, "answer": 7}
+{"step": 276, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.609375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 73, "answer": 8, "grad_norm": 0.891}
+{"step": 277, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.6875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 90, "answer": 10}
+{"step": 278, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.671875, "aux_ce": 1.2705368995666504, "depth": 2, "keep_steps": 2, "scaffold": 62, "answer": 8}
+{"step": 279, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.5625, "aux_ce": 1.758528470993042, "depth": 3, "keep_steps": 2, "scaffold": 45, "answer": 6}
+{"step": 280, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.8984375, "aux_ce": 1.665738821029663, "depth": 3, "keep_steps": 2, "scaffold": 55, "answer": 7, "grad_norm": 0.978}
+{"step": 281, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.91796875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 50, "answer": 8}
+{"step": 282, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.421875, "aux_ce": 1.3026025295257568, "depth": 4, "keep_steps": 2, "scaffold": 37, "answer": 8}
+{"step": 283, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.326171875, "aux_ce": 1.3430352210998535, "depth": 2, "keep_steps": 2, "scaffold": 35, "answer": 6}
+{"step": 284, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.85546875, "aux_ce": 1.6387360095977783, "depth": 3, "keep_steps": 2, "scaffold": 33, "answer": 7, "grad_norm": 1.229}
+{"step": 285, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.80859375, "aux_ce": 2.080735445022583, "depth": 4, "keep_steps": 2, "scaffold": 37, "answer": 6}
+{"step": 286, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.34765625, "aux_ce": 1.5254724025726318, "depth": 4, "keep_steps": 2, "scaffold": 34, "answer": 7}
+{"step": 287, "epoch": 1, "seconds": 0.41, "peak_gib": 5.25, "ce": 1.0625, "aux_ce": 1.9944324493408203, "depth": 4, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 288, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.6796875, "aux_ce": 2.1439175605773926, "depth": 2, "keep_steps": 2, "scaffold": 57, "answer": 7, "grad_norm": 1.462}
+{"step": 289, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 1.25, "aux_ce": 2.1216979026794434, "depth": 4, "keep_steps": 2, "scaffold": 45, "answer": 7}
+{"step": 290, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.90625, "aux_ce": 2.739581346511841, "depth": 2, "keep_steps": 2, "scaffold": 34, "answer": 7}
+{"step": 291, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 1.0859375, "aux_ce": 3.040849208831787, "depth": 2, "keep_steps": 2, "scaffold": 46, "answer": 6}
+{"step": 292, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.6484375, "aux_ce": 2.0631608963012695, "depth": 2, "keep_steps": 2, "scaffold": 51, "answer": 7, "grad_norm": 1.646}
+{"step": 293, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.75, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 42, "answer": 12}
+{"step": 294, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.439453125, "aux_ce": 1.5327365398406982, "depth": 4, "keep_steps": 2, "scaffold": 36, "answer": 6}
+{"step": 295, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.3828125, "aux_ce": 1.5003818273544312, "depth": 3, "keep_steps": 2, "scaffold": 34, "answer": 7}
+{"step": 296, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.73828125, "aux_ce": 1.889379858970642, "depth": 2, "keep_steps": 2, "scaffold": 59, "answer": 7, "grad_norm": 1.029}
+{"step": 297, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.3828125, "aux_ce": 1.2476353645324707, "depth": 2, "keep_steps": 2, "scaffold": 46, "answer": 6}
+{"step": 298, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 1.015625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 32, "answer": 8}
+{"step": 299, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 59, "answer": 7}
+{"step": 300, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.78125, "aux_ce": 2.525782585144043, "depth": 3, "keep_steps": 2, "scaffold": 61, "answer": 7, "grad_norm": 1.107}
+EVAL {"step": 300, "keep_steps": 2, "dev": {"4": 0.041666666666666664}}
+{"step": 301, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 0.609375, "aux_ce": 1.559509038925171, "depth": 4, "keep_steps": 2, "scaffold": 39, "answer": 7}
+{"step": 302, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.73046875, "aux_ce": 1.9365270137786865, "depth": 4, "keep_steps": 2, "scaffold": 50, "answer": 7}
+{"step": 303, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 1.203125, "aux_ce": 3.3538126945495605, "depth": 3, "keep_steps": 2, "scaffold": 55, "answer": 7}
+{"step": 304, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 1.015625, "aux_ce": 2.029507637023926, "depth": 3, "keep_steps": 2, "scaffold": 52, "answer": 8, "grad_norm": 1.353}
+{"step": 305, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.80078125, "aux_ce": 1.6855621337890625, "depth": 2, "keep_steps": 2, "scaffold": 40, "answer": 8}
+{"step": 306, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.75, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 48, "answer": 9}
+{"step": 307, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.5703125, "aux_ce": 1.6679364442825317, "depth": 2, "keep_steps": 2, "scaffold": 29, "answer": 7}
+{"step": 308, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.21875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 35, "answer": 7, "grad_norm": 1.203}
+{"step": 309, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.427734375, "aux_ce": 1.8721307516098022, "depth": 3, "keep_steps": 2, "scaffold": 61, "answer": 7}
+{"step": 310, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.7109375, "aux_ce": 1.875187635421753, "depth": 3, "keep_steps": 2, "scaffold": 73, "answer": 7}
+{"step": 311, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.6640625, "aux_ce": 1.4235187768936157, "depth": 3, "keep_steps": 2, "scaffold": 52, "answer": 7}
+{"step": 312, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.83984375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 26, "answer": 7, "grad_norm": 1.153}
+{"step": 313, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 1.1484375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 21, "answer": 6}
+{"step": 314, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.671875, "aux_ce": 2.0528790950775146, "depth": 2, "keep_steps": 2, "scaffold": 31, "answer": 7}
+{"step": 315, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.75, "aux_ce": 1.5204081535339355, "depth": 4, "keep_steps": 2, "scaffold": 67, "answer": 7}
+{"step": 316, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.6015625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 52, "answer": 9, "grad_norm": 1.28}
+{"step": 317, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.8359375, "aux_ce": 1.9549751281738281, "depth": 2, "keep_steps": 2, "scaffold": 50, "answer": 7}
+{"step": 318, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.58203125, "aux_ce": 1.5536049604415894, "depth": 2, "keep_steps": 2, "scaffold": 49, "answer": 6}
+{"step": 319, "epoch": 1, "seconds": 0.47, "peak_gib": 5.25, "ce": 1.2734375, "aux_ce": 2.345686912536621, "depth": 4, "keep_steps": 2, "scaffold": 77, "answer": 7}
+{"step": 320, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.0546875, "aux_ce": 2.102243423461914, "depth": 3, "keep_steps": 2, "scaffold": 55, "answer": 8, "grad_norm": 1.197}
+{"step": 321, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.96875, "aux_ce": 2.3017075061798096, "depth": 2, "keep_steps": 2, "scaffold": 45, "answer": 8}
+{"step": 322, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.59765625, "aux_ce": 1.7739118337631226, "depth": 3, "keep_steps": 2, "scaffold": 47, "answer": 8}
+{"step": 323, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.96875, "aux_ce": 1.736447811126709, "depth": 3, "keep_steps": 2, "scaffold": 74, "answer": 9}
+{"step": 324, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.40234375, "aux_ce": 1.385236144065857, "depth": 2, "keep_steps": 2, "scaffold": 40, "answer": 9, "grad_norm": 1.277}
+{"step": 325, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.94921875, "aux_ce": 2.578124523162842, "depth": 3, "keep_steps": 2, "scaffold": 48, "answer": 8}
+{"step": 326, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.384765625, "aux_ce": 1.2974109649658203, "depth": 3, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 327, "epoch": 1, "seconds": 0.46, "peak_gib": 5.25, "ce": 1.234375, "aux_ce": 2.483590602874756, "depth": 4, "keep_steps": 2, "scaffold": 66, "answer": 11}
+{"step": 328, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 1.0234375, "aux_ce": 2.369828939437866, "depth": 4, "keep_steps": 2, "scaffold": 46, "answer": 6, "grad_norm": 1.432}
+{"step": 329, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 1.2265625, "aux_ce": 2.3913629055023193, "depth": 4, "keep_steps": 2, "scaffold": 34, "answer": 7}
+{"step": 330, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.78515625, "aux_ce": 1.927009105682373, "depth": 3, "keep_steps": 2, "scaffold": 39, "answer": 7}
+{"step": 331, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 0.578125, "aux_ce": 1.671777367591858, "depth": 2, "keep_steps": 2, "scaffold": 37, "answer": 9}
+{"step": 332, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.9140625, "aux_ce": 2.1624937057495117, "depth": 2, "keep_steps": 2, "scaffold": 44, "answer": 6, "grad_norm": 1.54}
+{"step": 333, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 0.7421875, "aux_ce": 1.721003770828247, "depth": 4, "keep_steps": 2, "scaffold": 44, "answer": 7}
+{"step": 334, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.125, "aux_ce": 2.2771289348602295, "depth": 2, "keep_steps": 2, "scaffold": 35, "answer": 7}
+{"step": 335, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.494140625, "aux_ce": 1.098630428314209, "depth": 4, "keep_steps": 2, "scaffold": 46, "answer": 8}
+{"step": 336, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.81640625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 7, "grad_norm": 1.435}
+{"step": 337, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.45703125, "aux_ce": 0.8742671608924866, "depth": 3, "keep_steps": 2, "scaffold": 43, "answer": 7}
+{"step": 338, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.6171875, "aux_ce": 1.6784662008285522, "depth": 4, "keep_steps": 2, "scaffold": 44, "answer": 6}
+{"step": 339, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.90234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 52, "answer": 6}
+{"step": 340, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.59375, "aux_ce": 1.4163748025894165, "depth": 2, "keep_steps": 2, "scaffold": 44, "answer": 7, "grad_norm": 1.169}
+{"step": 341, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.55859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 54, "answer": 7}
+{"step": 342, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.6875, "aux_ce": 1.8157973289489746, "depth": 3, "keep_steps": 2, "scaffold": 74, "answer": 8}
+{"step": 343, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.71875, "aux_ce": 2.3662543296813965, "depth": 3, "keep_steps": 2, "scaffold": 50, "answer": 7}
+{"step": 344, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.98828125, "aux_ce": 2.0891032218933105, "depth": 3, "keep_steps": 2, "scaffold": 45, "answer": 8, "grad_norm": 1.245}
+{"step": 345, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.76953125, "aux_ce": 1.6278350353240967, "depth": 2, "keep_steps": 2, "scaffold": 48, "answer": 9}
+{"step": 346, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.56640625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 37, "answer": 7}
+{"step": 347, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.89453125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 51, "answer": 7}
+{"step": 348, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 0.76171875, "aux_ce": 1.9724010229110718, "depth": 2, "keep_steps": 2, "scaffold": 25, "answer": 7, "grad_norm": 1.236}
+{"step": 349, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.71875, "aux_ce": 1.764509677886963, "depth": 3, "keep_steps": 2, "scaffold": 28, "answer": 8}
+{"step": 350, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.4765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 50, "answer": 7}
+{"step": 351, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.66015625, "aux_ce": 1.8350481986999512, "depth": 4, "keep_steps": 2, "scaffold": 35, "answer": 7}
+{"step": 352, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 1.1171875, "aux_ce": 2.0452346801757812, "depth": 4, "keep_steps": 2, "scaffold": 16, "answer": 7, "grad_norm": 1.851}
+{"step": 353, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.87109375, "aux_ce": 1.7190519571304321, "depth": 2, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 354, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.515625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 40, "answer": 6}
+{"step": 355, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 1.1875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 69, "answer": 7}
+{"step": 356, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 1.2265625, "aux_ce": 2.3806002140045166, "depth": 2, "keep_steps": 2, "scaffold": 85, "answer": 7, "grad_norm": 1.124}
+{"step": 357, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.88671875, "aux_ce": 1.5886039733886719, "depth": 4, "keep_steps": 2, "scaffold": 68, "answer": 9}
+{"step": 358, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 0.87109375, "aux_ce": 1.5260772705078125, "depth": 3, "keep_steps": 2, "scaffold": 74, "answer": 7}
+{"step": 359, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.7421875, "aux_ce": 1.9692785739898682, "depth": 3, "keep_steps": 2, "scaffold": 41, "answer": 7}
+{"step": 360, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.490234375, "aux_ce": 1.1952502727508545, "depth": 3, "keep_steps": 2, "scaffold": 40, "answer": 7, "grad_norm": 1.25}
+{"step": 361, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.67578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 47, "answer": 7}
+{"step": 362, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.6796875, "aux_ce": 2.0268776416778564, "depth": 2, "keep_steps": 2, "scaffold": 37, "answer": 7}
+{"step": 363, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.431640625, "aux_ce": 1.031848430633545, "depth": 2, "keep_steps": 2, "scaffold": 35, "answer": 7}
+{"step": 364, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 1.0390625, "aux_ce": 1.9305280447006226, "depth": 3, "keep_steps": 2, "scaffold": 29, "answer": 7, "grad_norm": 1.459}
+{"step": 365, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.8828125, "aux_ce": 2.197772979736328, "depth": 3, "keep_steps": 2, "scaffold": 45, "answer": 7}
+{"step": 366, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.53515625, "aux_ce": 1.3219131231307983, "depth": 3, "keep_steps": 2, "scaffold": 48, "answer": 7}
+{"step": 367, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.828125, "aux_ce": 2.151024341583252, "depth": 3, "keep_steps": 2, "scaffold": 63, "answer": 7}
+{"step": 368, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.5234375, "aux_ce": 1.4516749382019043, "depth": 2, "keep_steps": 2, "scaffold": 43, "answer": 6, "grad_norm": 1.265}
+{"step": 369, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.7421875, "aux_ce": 1.4105377197265625, "depth": 4, "keep_steps": 2, "scaffold": 37, "answer": 8}
+{"step": 370, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 1.0703125, "aux_ce": 1.9317967891693115, "depth": 2, "keep_steps": 2, "scaffold": 37, "answer": 9}
+{"step": 371, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.72265625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 50, "answer": 8}
+{"step": 372, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.40234375, "aux_ce": 1.153217077255249, "depth": 4, "keep_steps": 2, "scaffold": 41, "answer": 8, "grad_norm": 1.587}
+{"step": 373, "epoch": 1, "seconds": 0.53, "peak_gib": 5.25, "ce": 0.78125, "aux_ce": 1.668852686882019, "depth": 4, "keep_steps": 2, "scaffold": 108, "answer": 8}
+{"step": 374, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 0.890625, "aux_ce": 1.6856062412261963, "depth": 3, "keep_steps": 2, "scaffold": 65, "answer": 10}
+{"step": 375, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.53125, "aux_ce": 1.0954675674438477, "depth": 2, "keep_steps": 2, "scaffold": 40, "answer": 8}
+{"step": 376, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.0859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 68, "answer": 7, "grad_norm": 1.017}
+{"step": 377, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.34375, "aux_ce": 2.735142469406128, "depth": 2, "keep_steps": 2, "scaffold": 47, "answer": 8}
+{"step": 378, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 1.09375, "aux_ce": 1.873488187789917, "depth": 3, "keep_steps": 2, "scaffold": 39, "answer": 6}
+{"step": 379, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.82421875, "aux_ce": 1.818453311920166, "depth": 2, "keep_steps": 2, "scaffold": 60, "answer": 6}
+{"step": 380, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.9140625, "aux_ce": 1.3948947191238403, "depth": 2, "keep_steps": 2, "scaffold": 60, "answer": 7, "grad_norm": 1.487}
+{"step": 381, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.60546875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 40, "answer": 7}
+{"step": 382, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.8125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 34, "answer": 6}
+{"step": 383, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 0.875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 114, "answer": 9}
+{"step": 384, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.15625, "aux_ce": 1.987505555152893, "depth": 3, "keep_steps": 2, "scaffold": 26, "answer": 7, "grad_norm": 1.278}
+{"step": 385, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.54296875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 36, "answer": 7}
+{"step": 386, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.671875, "aux_ce": 1.4663701057434082, "depth": 3, "keep_steps": 2, "scaffold": 58, "answer": 9}
+{"step": 387, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.46875, "aux_ce": 1.2215090990066528, "depth": 3, "keep_steps": 2, "scaffold": 25, "answer": 7}
+{"step": 388, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.82421875, "aux_ce": 1.8721582889556885, "depth": 2, "keep_steps": 2, "scaffold": 62, "answer": 7, "grad_norm": 1.296}
+{"step": 389, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.94921875, "aux_ce": 2.102374315261841, "depth": 2, "keep_steps": 2, "scaffold": 54, "answer": 7}
+{"step": 390, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.83203125, "aux_ce": 1.623340129852295, "depth": 2, "keep_steps": 2, "scaffold": 40, "answer": 6}
+{"step": 391, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.859375, "aux_ce": 1.2970830202102661, "depth": 2, "keep_steps": 2, "scaffold": 40, "answer": 7}
+{"step": 392, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.4453125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 59, "answer": 8, "grad_norm": 1.258}
+{"step": 393, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.314453125, "aux_ce": 1.2005326747894287, "depth": 3, "keep_steps": 2, "scaffold": 26, "answer": 7}
+{"step": 394, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 0.85546875, "aux_ce": 1.7868837118148804, "depth": 4, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 395, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.57421875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 38, "answer": 8}
+{"step": 396, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.95703125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 39, "answer": 7, "grad_norm": 1.418}
+{"step": 397, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 1.2265625, "aux_ce": 2.396307945251465, "depth": 4, "keep_steps": 2, "scaffold": 46, "answer": 7}
+{"step": 398, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.625, "aux_ce": 1.656470775604248, "depth": 3, "keep_steps": 2, "scaffold": 52, "answer": 6}
+{"step": 399, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.8671875, "aux_ce": 2.0263166427612305, "depth": 3, "keep_steps": 2, "scaffold": 80, "answer": 7}
+{"step": 400, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 75, "answer": 10, "grad_norm": 1.244}
+{"step": 401, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.8359375, "aux_ce": 2.1612343788146973, "depth": 3, "keep_steps": 2, "scaffold": 51, "answer": 7}
+{"step": 402, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.357421875, "aux_ce": 1.8060743808746338, "depth": 4, "keep_steps": 2, "scaffold": 38, "answer": 8}
+{"step": 403, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.59375, "aux_ce": 1.6346596479415894, "depth": 4, "keep_steps": 2, "scaffold": 36, "answer": 8}
+{"step": 404, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.7578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 49, "answer": 6, "grad_norm": 1.211}
+{"step": 405, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.60546875, "aux_ce": 1.3609238862991333, "depth": 2, "keep_steps": 2, "scaffold": 66, "answer": 8}
+{"step": 406, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.67578125, "aux_ce": 1.7613334655761719, "depth": 3, "keep_steps": 2, "scaffold": 62, "answer": 9}
+{"step": 407, "epoch": 1, "seconds": 0.46, "peak_gib": 5.25, "ce": 0.58984375, "aux_ce": 1.2285109758377075, "depth": 4, "keep_steps": 2, "scaffold": 65, "answer": 9}
+{"step": 408, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.384765625, "aux_ce": 1.5629825592041016, "depth": 3, "keep_steps": 2, "scaffold": 30, "answer": 7, "grad_norm": 1.333}
+{"step": 409, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.69140625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 43, "answer": 8}
+{"step": 410, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.95703125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 50, "answer": 7}
+{"step": 411, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.78125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 33, "answer": 7}
+{"step": 412, "epoch": 1, "seconds": 0.47, "peak_gib": 5.25, "ce": 0.81640625, "aux_ce": 1.5214166641235352, "depth": 4, "keep_steps": 2, "scaffold": 62, "answer": 6, "grad_norm": 1.35}
+{"step": 413, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.390625, "aux_ce": 1.7902750968933105, "depth": 3, "keep_steps": 2, "scaffold": 66, "answer": 9}
+{"step": 414, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.265625, "aux_ce": 2.3643288612365723, "depth": 3, "keep_steps": 2, "scaffold": 63, "answer": 8}
+{"step": 415, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.546875, "aux_ce": 1.4740235805511475, "depth": 2, "keep_steps": 2, "scaffold": 73, "answer": 10}
+{"step": 416, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.6953125, "aux_ce": 1.6868921518325806, "depth": 2, "keep_steps": 2, "scaffold": 36, "answer": 7, "grad_norm": 1.512}
+{"step": 417, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.58984375, "aux_ce": 1.2415518760681152, "depth": 3, "keep_steps": 2, "scaffold": 39, "answer": 7}
+{"step": 418, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.51953125, "aux_ce": 1.3166675567626953, "depth": 4, "keep_steps": 2, "scaffold": 43, "answer": 7}
+{"step": 419, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.9140625, "aux_ce": 1.9549134969711304, "depth": 3, "keep_steps": 2, "scaffold": 60, "answer": 7}
+{"step": 420, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.3203125, "aux_ce": 1.178555965423584, "depth": 3, "keep_steps": 2, "scaffold": 60, "answer": 8, "grad_norm": 1.453}
+{"step": 421, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 0.3515625, "aux_ce": 1.3087830543518066, "depth": 4, "keep_steps": 2, "scaffold": 57, "answer": 8}
+{"step": 422, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.486328125, "aux_ce": 1.387924075126648, "depth": 4, "keep_steps": 2, "scaffold": 32, "answer": 7}
+{"step": 423, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.55078125, "aux_ce": 1.3264621496200562, "depth": 3, "keep_steps": 2, "scaffold": 34, "answer": 7}
+{"step": 424, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.9140625, "aux_ce": 1.7077929973602295, "depth": 2, "keep_steps": 2, "scaffold": 59, "answer": 7, "grad_norm": 1.617}
+{"step": 425, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.7421875, "aux_ce": 3.1530215740203857, "depth": 2, "keep_steps": 2, "scaffold": 29, "answer": 7}
+{"step": 426, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.82421875, "aux_ce": 1.2689085006713867, "depth": 4, "keep_steps": 2, "scaffold": 40, "answer": 7}
+{"step": 427, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.455078125, "aux_ce": 1.4550405740737915, "depth": 2, "keep_steps": 2, "scaffold": 36, "answer": 6}
+{"step": 428, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.24609375, "aux_ce": 1.0014045238494873, "depth": 3, "keep_steps": 2, "scaffold": 33, "answer": 7, "grad_norm": 1.927}
+{"step": 429, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.48828125, "aux_ce": 1.0953609943389893, "depth": 3, "keep_steps": 2, "scaffold": 37, "answer": 10}
+{"step": 430, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 0.8203125, "aux_ce": 3.0222854614257812, "depth": 4, "keep_steps": 2, "scaffold": 41, "answer": 7}
+{"step": 431, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.6953125, "aux_ce": 1.5789101123809814, "depth": 4, "keep_steps": 2, "scaffold": 35, "answer": 7}
+{"step": 432, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.66796875, "aux_ce": 1.5359522104263306, "depth": 2, "keep_steps": 2, "scaffold": 48, "answer": 9, "grad_norm": 1.72}
+{"step": 433, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.8984375, "aux_ce": 1.8166821002960205, "depth": 2, "keep_steps": 2, "scaffold": 71, "answer": 8}
+{"step": 434, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.5703125, "aux_ce": 1.5060529708862305, "depth": 4, "keep_steps": 2, "scaffold": 42, "answer": 7}
+{"step": 435, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.8984375, "aux_ce": 2.0647850036621094, "depth": 2, "keep_steps": 2, "scaffold": 36, "answer": 7}
+{"step": 436, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.330078125, "aux_ce": 0.7700592279434204, "depth": 4, "keep_steps": 2, "scaffold": 44, "answer": 7, "grad_norm": 1.269}
+{"step": 437, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.447265625, "aux_ce": 1.7726832628250122, "depth": 3, "keep_steps": 2, "scaffold": 39, "answer": 6}
+{"step": 438, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.1611328125, "aux_ce": 0.9963304996490479, "depth": 3, "keep_steps": 2, "scaffold": 30, "answer": 8}
+{"step": 439, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.62890625, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 47, "answer": 8}
+{"step": 440, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.55859375, "aux_ce": 1.2210863828659058, "depth": 3, "keep_steps": 2, "scaffold": 78, "answer": 10, "grad_norm": 1.29}
+{"step": 441, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.9296875, "aux_ce": 1.858262538909912, "depth": 3, "keep_steps": 2, "scaffold": 45, "answer": 6}
+{"step": 442, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.64453125, "aux_ce": 1.4711774587631226, "depth": 4, "keep_steps": 2, "scaffold": 32, "answer": 6}
+{"step": 443, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.50390625, "aux_ce": 1.1089929342269897, "depth": 3, "keep_steps": 2, "scaffold": 34, "answer": 7}
+{"step": 444, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.796875, "aux_ce": 1.8584150075912476, "depth": 2, "keep_steps": 2, "scaffold": 66, "answer": 7, "grad_norm": 1.558}
+{"step": 445, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.56640625, "aux_ce": 1.5003135204315186, "depth": 3, "keep_steps": 2, "scaffold": 61, "answer": 8}
+{"step": 446, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.66015625, "aux_ce": 1.3722047805786133, "depth": 2, "keep_steps": 2, "scaffold": 33, "answer": 8}
+{"step": 447, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.5625, "aux_ce": 1.8885822296142578, "depth": 3, "keep_steps": 2, "scaffold": 31, "answer": 7}
+{"step": 448, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.498046875, "aux_ce": 1.3945435285568237, "depth": 2, "keep_steps": 2, "scaffold": 48, "answer": 7, "grad_norm": 1.457}
+{"step": 449, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.91796875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 23, "answer": 7}
+{"step": 450, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 1.046875, "aux_ce": 2.5141685009002686, "depth": 3, "keep_steps": 2, "scaffold": 34, "answer": 7}
+EVAL {"step": 450, "keep_steps": 2, "dev": {"4": 0.08333333333333333}}
+{"step": 451, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 1.203125, "aux_ce": 1.9129811525344849, "depth": 3, "keep_steps": 1, "scaffold": 24, "answer": 9}
+{"step": 452, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 1.28125, "aux_ce": 2.459567070007324, "depth": 4, "keep_steps": 1, "scaffold": 36, "answer": 7, "grad_norm": 2.54}
+{"step": 453, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 1.3125, "aux_ce": 2.3002090454101562, "depth": 4, "keep_steps": 1, "scaffold": 31, "answer": 7}
+{"step": 454, "epoch": 1, "seconds": 0.48, "peak_gib": 5.25, "ce": 0.7265625, "aux_ce": 1.8552312850952148, "depth": 4, "keep_steps": 1, "scaffold": 15, "answer": 7}
+{"step": 455, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.84765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 22, "answer": 9}
+{"step": 456, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.8046875, "aux_ce": 1.9870390892028809, "depth": 3, "keep_steps": 1, "scaffold": 28, "answer": 7, "grad_norm": 2.447}
+{"step": 457, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.0390625, "aux_ce": 1.5584323406219482, "depth": 4, "keep_steps": 1, "scaffold": 7, "answer": 8}
+{"step": 458, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.1640625, "aux_ce": 2.278481960296631, "depth": 3, "keep_steps": 1, "scaffold": 30, "answer": 7}
+{"step": 459, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 12, "answer": 7}
+{"step": 460, "epoch": 1, "seconds": 0.47, "peak_gib": 5.25, "ce": 1.0859375, "aux_ce": 1.9436219930648804, "depth": 4, "keep_steps": 1, "scaffold": 34, "answer": 8, "grad_norm": 3.3}
+{"step": 461, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 1.09375, "aux_ce": 2.1181704998016357, "depth": 2, "keep_steps": 1, "scaffold": 16, "answer": 6}
+{"step": 462, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.48046875, "aux_ce": 1.1370322704315186, "depth": 4, "keep_steps": 1, "scaffold": 16, "answer": 9}
+{"step": 463, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.8515625, "aux_ce": 2.0067038536071777, "depth": 3, "keep_steps": 1, "scaffold": 12, "answer": 9}
+{"step": 464, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.60546875, "aux_ce": 1.2892680168151855, "depth": 3, "keep_steps": 1, "scaffold": 22, "answer": 10, "grad_norm": 2.557}
+{"step": 465, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 30, "answer": 7}
+{"step": 466, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 1.03125, "aux_ce": 1.9675583839416504, "depth": 4, "keep_steps": 1, "scaffold": 28, "answer": 7}
+{"step": 467, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.93359375, "aux_ce": 2.355177640914917, "depth": 2, "keep_steps": 1, "scaffold": 21, "answer": 7}
+{"step": 468, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 21, "answer": 6, "grad_norm": 1.896}
+{"step": 469, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.9921875, "aux_ce": 1.9583953619003296, "depth": 3, "keep_steps": 1, "scaffold": 23, "answer": 7}
+{"step": 470, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.8828125, "aux_ce": 1.715139627456665, "depth": 3, "keep_steps": 1, "scaffold": 53, "answer": 8}
+{"step": 471, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.56640625, "aux_ce": 1.4879237413406372, "depth": 2, "keep_steps": 1, "scaffold": 20, "answer": 8}
+{"step": 472, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.7421875, "aux_ce": 1.7577142715454102, "depth": 3, "keep_steps": 1, "scaffold": 29, "answer": 9, "grad_norm": 1.562}
+{"step": 473, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.69140625, "aux_ce": 2.0823545455932617, "depth": 4, "keep_steps": 1, "scaffold": 20, "answer": 7}
+{"step": 474, "epoch": 1, "seconds": 0.46, "peak_gib": 5.25, "ce": 0.46484375, "aux_ce": 1.2964768409729004, "depth": 4, "keep_steps": 1, "scaffold": 36, "answer": 12}
+{"step": 475, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.6640625, "aux_ce": 2.862584114074707, "depth": 4, "keep_steps": 1, "scaffold": 26, "answer": 8}
+{"step": 476, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.5703125, "aux_ce": 1.6845775842666626, "depth": 3, "keep_steps": 1, "scaffold": 26, "answer": 7, "grad_norm": 2.405}
+{"step": 477, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 1.0859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 15, "answer": 7}
+{"step": 478, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 479, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.734375, "aux_ce": 1.7848347425460815, "depth": 2, "keep_steps": 1, "scaffold": 18, "answer": 10}
+{"step": 480, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.6171875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 33, "answer": 10, "grad_norm": 1.825}
+{"step": 481, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.42578125, "aux_ce": 1.2843985557556152, "depth": 3, "keep_steps": 1, "scaffold": 37, "answer": 6}
+{"step": 482, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 1.203125, "aux_ce": 1.7703543901443481, "depth": 3, "keep_steps": 1, "scaffold": 19, "answer": 7}
+{"step": 483, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 1.078125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 15, "answer": 8}
+{"step": 484, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.71875, "aux_ce": 1.9059110879898071, "depth": 2, "keep_steps": 1, "scaffold": 82, "answer": 10, "grad_norm": 2.229}
+{"step": 485, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 1.5546875, "aux_ce": 2.166496515274048, "depth": 4, "keep_steps": 1, "scaffold": 38, "answer": 6}
+{"step": 486, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.875, "aux_ce": 1.8306477069854736, "depth": 3, "keep_steps": 1, "scaffold": 21, "answer": 7}
+{"step": 487, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.66015625, "aux_ce": 1.3552546501159668, "depth": 3, "keep_steps": 1, "scaffold": 15, "answer": 8}
+{"step": 488, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.140625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 36, "answer": 7, "grad_norm": 1.972}
+{"step": 489, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.9453125, "aux_ce": 2.6308488845825195, "depth": 2, "keep_steps": 1, "scaffold": 13, "answer": 7}
+{"step": 490, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.58984375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 15, "answer": 8}
+{"step": 491, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.490234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 18, "answer": 7}
+{"step": 492, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.984375, "aux_ce": 2.0180752277374268, "depth": 2, "keep_steps": 1, "scaffold": 35, "answer": 8, "grad_norm": 1.889}
+{"step": 493, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 1.015625, "aux_ce": 1.9490349292755127, "depth": 3, "keep_steps": 1, "scaffold": 31, "answer": 7}
+{"step": 494, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.4765625, "aux_ce": 0.8726416230201721, "depth": 2, "keep_steps": 1, "scaffold": 16, "answer": 7}
+{"step": 495, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.83984375, "aux_ce": 2.1333441734313965, "depth": 4, "keep_steps": 1, "scaffold": 20, "answer": 12}
+{"step": 496, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.80078125, "aux_ce": 1.1282838582992554, "depth": 2, "keep_steps": 1, "scaffold": 35, "answer": 7, "grad_norm": 1.813}
+{"step": 497, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.22265625, "aux_ce": 1.209616780281067, "depth": 2, "keep_steps": 1, "scaffold": 17, "answer": 7}
+{"step": 498, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.63671875, "aux_ce": 1.0808379650115967, "depth": 3, "keep_steps": 1, "scaffold": 10, "answer": 6}
+{"step": 499, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.9609375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 17, "answer": 7}
+{"step": 500, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 1.09375, "aux_ce": 2.2996158599853516, "depth": 4, "keep_steps": 1, "scaffold": 24, "answer": 8, "grad_norm": 2.421}
+{"step": 501, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.494140625, "aux_ce": 1.19364595413208, "depth": 2, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 502, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.3359375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 36, "answer": 7}
+{"step": 503, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 1.28125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 26, "answer": 7}
+{"step": 504, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.44140625, "aux_ce": 1.4837294816970825, "depth": 3, "keep_steps": 1, "scaffold": 24, "answer": 8, "grad_norm": 1.564}
+{"step": 505, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.486328125, "aux_ce": 1.2634499073028564, "depth": 4, "keep_steps": 1, "scaffold": 16, "answer": 7}
+{"step": 506, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.94921875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 28, "answer": 7}
+{"step": 507, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 1.015625, "aux_ce": 1.7443547248840332, "depth": 2, "keep_steps": 1, "scaffold": 28, "answer": 7}
+{"step": 508, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.55859375, "aux_ce": 1.5832610130310059, "depth": 2, "keep_steps": 1, "scaffold": 30, "answer": 7, "grad_norm": 1.922}
+{"step": 509, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 1.234375, "aux_ce": 1.8676483631134033, "depth": 4, "keep_steps": 1, "scaffold": 24, "answer": 6}
+{"step": 510, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.51953125, "aux_ce": 1.1952717304229736, "depth": 3, "keep_steps": 1, "scaffold": 15, "answer": 6}
+{"step": 511, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.64453125, "aux_ce": 1.702605962753296, "depth": 3, "keep_steps": 1, "scaffold": 37, "answer": 7}
+{"step": 512, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 1.421875, "aux_ce": 2.155914545059204, "depth": 3, "keep_steps": 1, "scaffold": 33, "answer": 7, "grad_norm": 2.278}
+{"step": 513, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.671875, "aux_ce": 2.0380420684814453, "depth": 3, "keep_steps": 1, "scaffold": 20, "answer": 7}
+{"step": 514, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.48046875, "aux_ce": 1.310469388961792, "depth": 4, "keep_steps": 1, "scaffold": 23, "answer": 7}
+{"step": 515, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.4375, "aux_ce": 1.0329066514968872, "depth": 3, "keep_steps": 1, "scaffold": 23, "answer": 7}
+{"step": 516, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.49609375, "aux_ce": 0.9380235075950623, "depth": 4, "keep_steps": 1, "scaffold": 38, "answer": 8, "grad_norm": 1.764}
+{"step": 517, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.578125, "aux_ce": 1.5660364627838135, "depth": 3, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 518, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.6640625, "aux_ce": 1.5539277791976929, "depth": 3, "keep_steps": 1, "scaffold": 37, "answer": 7}
+{"step": 519, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.5390625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 16, "answer": 9}
+{"step": 520, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.5390625, "aux_ce": 1.1126688718795776, "depth": 4, "keep_steps": 1, "scaffold": 23, "answer": 7, "grad_norm": 1.762}
+{"step": 521, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.40625, "aux_ce": 2.3419880867004395, "depth": 2, "keep_steps": 1, "scaffold": 15, "answer": 7}
+{"step": 522, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 1.0, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 523, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.421875, "aux_ce": 1.1931854486465454, "depth": 4, "keep_steps": 1, "scaffold": 16, "answer": 8}
+{"step": 524, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.79296875, "aux_ce": 1.116334319114685, "depth": 3, "keep_steps": 1, "scaffold": 24, "answer": 6, "grad_norm": 2.082}
+{"step": 525, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.82421875, "aux_ce": 1.3783800601959229, "depth": 3, "keep_steps": 1, "scaffold": 22, "answer": 7}
+{"step": 526, "epoch": 1, "seconds": 0.47, "peak_gib": 5.25, "ce": 0.470703125, "aux_ce": 0.959854781627655, "depth": 4, "keep_steps": 1, "scaffold": 18, "answer": 7}
+{"step": 527, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.9765625, "aux_ce": 2.7646408081054688, "depth": 2, "keep_steps": 1, "scaffold": 17, "answer": 7}
+{"step": 528, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 1.109375, "aux_ce": 1.8680822849273682, "depth": 3, "keep_steps": 1, "scaffold": 19, "answer": 11, "grad_norm": 2.149}
+{"step": 529, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.078125, "aux_ce": 1.7698297500610352, "depth": 3, "keep_steps": 1, "scaffold": 12, "answer": 8}
+{"step": 530, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.859375, "aux_ce": 1.7725975513458252, "depth": 4, "keep_steps": 1, "scaffold": 11, "answer": 8}
+{"step": 531, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.0703125, "aux_ce": 2.2102980613708496, "depth": 3, "keep_steps": 1, "scaffold": 22, "answer": 6}
+{"step": 532, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.458984375, "aux_ce": 1.113845705986023, "depth": 2, "keep_steps": 1, "scaffold": 16, "answer": 6, "grad_norm": 2.262}
+{"step": 533, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 15, "answer": 7}
+{"step": 534, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.31640625, "aux_ce": 0.9146429300308228, "depth": 4, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 535, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.62890625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 28, "answer": 9}
+{"step": 536, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.6640625, "aux_ce": 1.5612939596176147, "depth": 3, "keep_steps": 1, "scaffold": 28, "answer": 9, "grad_norm": 1.512}
+{"step": 537, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 1.640625, "aux_ce": 2.982023000717163, "depth": 4, "keep_steps": 1, "scaffold": 38, "answer": 7}
+{"step": 538, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.484375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 21, "answer": 7}
+{"step": 539, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.9765625, "aux_ce": 1.6771965026855469, "depth": 3, "keep_steps": 1, "scaffold": 25, "answer": 7}
+{"step": 540, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.96484375, "aux_ce": 1.6815451383590698, "depth": 4, "keep_steps": 1, "scaffold": 18, "answer": 11, "grad_norm": 1.952}
+{"step": 541, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.376953125, "aux_ce": 1.0845603942871094, "depth": 3, "keep_steps": 1, "scaffold": 13, "answer": 7}
+{"step": 542, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.451171875, "aux_ce": 1.0003769397735596, "depth": 3, "keep_steps": 1, "scaffold": 22, "answer": 7}
+{"step": 543, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.88671875, "aux_ce": 1.1542794704437256, "depth": 3, "keep_steps": 1, "scaffold": 13, "answer": 7}
+{"step": 544, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.375, "aux_ce": 1.054041862487793, "depth": 2, "keep_steps": 1, "scaffold": 12, "answer": 6, "grad_norm": 1.906}
+{"step": 545, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.70703125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 13, "answer": 7}
+{"step": 546, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.34765625, "aux_ce": 1.0843943357467651, "depth": 2, "keep_steps": 1, "scaffold": 27, "answer": 7}
+{"step": 547, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.34375, "aux_ce": 1.118657112121582, "depth": 3, "keep_steps": 1, "scaffold": 13, "answer": 8}
+{"step": 548, "epoch": 1, "seconds": 0.47, "peak_gib": 5.25, "ce": 1.2265625, "aux_ce": 2.454970121383667, "depth": 4, "keep_steps": 1, "scaffold": 58, "answer": 9, "grad_norm": 1.453}
+{"step": 549, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.87890625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 19, "answer": 7}
+{"step": 550, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.7109375, "aux_ce": 1.8398910760879517, "depth": 2, "keep_steps": 1, "scaffold": 13, "answer": 7}
+{"step": 551, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.61328125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 27, "answer": 7}
+{"step": 552, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.3828125, "aux_ce": 1.249338150024414, "depth": 4, "keep_steps": 1, "scaffold": 19, "answer": 7, "grad_norm": 1.89}
+{"step": 553, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.875, "aux_ce": 1.3780028820037842, "depth": 2, "keep_steps": 1, "scaffold": 36, "answer": 8}
+{"step": 554, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.365234375, "aux_ce": 1.1395834684371948, "depth": 2, "keep_steps": 1, "scaffold": 26, "answer": 8}
+{"step": 555, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.55078125, "aux_ce": 1.370561122894287, "depth": 4, "keep_steps": 1, "scaffold": 14, "answer": 6}
+{"step": 556, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.37109375, "aux_ce": 0.5513670444488525, "depth": 2, "keep_steps": 1, "scaffold": 28, "answer": 9, "grad_norm": 1.911}
+{"step": 557, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 1.265625, "aux_ce": 2.6321892738342285, "depth": 2, "keep_steps": 1, "scaffold": 74, "answer": 7}
+{"step": 558, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.451171875, "aux_ce": 1.155989408493042, "depth": 3, "keep_steps": 1, "scaffold": 29, "answer": 8}
+{"step": 559, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.70703125, "aux_ce": 1.6068986654281616, "depth": 4, "keep_steps": 1, "scaffold": 20, "answer": 9}
+{"step": 560, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.953125, "aux_ce": 1.400756597518921, "depth": 2, "keep_steps": 1, "scaffold": 28, "answer": 9, "grad_norm": 2.005}
+{"step": 561, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 1.375, "aux_ce": 2.041334390640259, "depth": 3, "keep_steps": 1, "scaffold": 21, "answer": 8}
+{"step": 562, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.435546875, "aux_ce": 1.4918516874313354, "depth": 3, "keep_steps": 1, "scaffold": 29, "answer": 6}
+{"step": 563, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.5078125, "aux_ce": 0.9135438203811646, "depth": 4, "keep_steps": 1, "scaffold": 18, "answer": 7}
+{"step": 564, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.078125, "aux_ce": 1.563420295715332, "depth": 2, "keep_steps": 1, "scaffold": 19, "answer": 6, "grad_norm": 2.493}
+{"step": 565, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.875, "aux_ce": 1.939026951789856, "depth": 2, "keep_steps": 1, "scaffold": 26, "answer": 8}
+{"step": 566, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.5, "aux_ce": 0.7851502895355225, "depth": 2, "keep_steps": 1, "scaffold": 14, "answer": 7}
+{"step": 567, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.69140625, "aux_ce": 1.2581475973129272, "depth": 2, "keep_steps": 1, "scaffold": 14, "answer": 8}
+{"step": 568, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.61328125, "aux_ce": 1.287626028060913, "depth": 2, "keep_steps": 1, "scaffold": 25, "answer": 7, "grad_norm": 1.92}
+{"step": 569, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.59375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 17, "answer": 6}
+{"step": 570, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 33, "answer": 8}
+{"step": 571, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.6875, "aux_ce": 1.50794517993927, "depth": 3, "keep_steps": 1, "scaffold": 22, "answer": 8}
+{"step": 572, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.6171875, "aux_ce": 1.1166996955871582, "depth": 3, "keep_steps": 1, "scaffold": 32, "answer": 8, "grad_norm": 1.604}
+{"step": 573, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.333984375, "aux_ce": 0.6782943606376648, "depth": 2, "keep_steps": 1, "scaffold": 14, "answer": 7}
+{"step": 574, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 1.0234375, "aux_ce": 2.157935380935669, "depth": 2, "keep_steps": 1, "scaffold": 27, "answer": 8}
+{"step": 575, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.80859375, "aux_ce": 1.3493648767471313, "depth": 3, "keep_steps": 1, "scaffold": 17, "answer": 9}
+{"step": 576, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.482421875, "aux_ce": 0.9641857147216797, "depth": 3, "keep_steps": 1, "scaffold": 18, "answer": 7, "grad_norm": 2.09}
+{"step": 577, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.95703125, "aux_ce": 1.8905647993087769, "depth": 2, "keep_steps": 1, "scaffold": 23, "answer": 7}
+{"step": 578, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 1.0, "aux_ce": 1.4369310140609741, "depth": 4, "keep_steps": 1, "scaffold": 17, "answer": 9}
+{"step": 579, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.421875, "aux_ce": 0.8851629495620728, "depth": 2, "keep_steps": 1, "scaffold": 26, "answer": 7}
+{"step": 580, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.84375, "aux_ce": 1.619388222694397, "depth": 2, "keep_steps": 1, "scaffold": 19, "answer": 6, "grad_norm": 2.197}
+{"step": 581, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.8984375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 33, "answer": 10}
+{"step": 582, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.51171875, "aux_ce": 0.8491922616958618, "depth": 2, "keep_steps": 1, "scaffold": 25, "answer": 9}
+{"step": 583, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.77734375, "aux_ce": 1.4948079586029053, "depth": 2, "keep_steps": 1, "scaffold": 20, "answer": 8}
+{"step": 584, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.8203125, "aux_ce": 1.2278838157653809, "depth": 4, "keep_steps": 1, "scaffold": 21, "answer": 7, "grad_norm": 1.751}
+{"step": 585, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 1.3828125, "aux_ce": 2.187340497970581, "depth": 4, "keep_steps": 1, "scaffold": 17, "answer": 12}
+{"step": 586, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.69921875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 13, "answer": 8}
+{"step": 587, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.482421875, "aux_ce": 0.7839008569717407, "depth": 3, "keep_steps": 1, "scaffold": 18, "answer": 9}
+{"step": 588, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.94140625, "aux_ce": 1.7904415130615234, "depth": 2, "keep_steps": 1, "scaffold": 33, "answer": 7, "grad_norm": 3.629}
+{"step": 589, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.6484375, "aux_ce": 1.7075008153915405, "depth": 3, "keep_steps": 1, "scaffold": 29, "answer": 7}
+{"step": 590, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.3359375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 20, "answer": 7}
+{"step": 591, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.8828125, "aux_ce": 1.6548079252243042, "depth": 4, "keep_steps": 1, "scaffold": 16, "answer": 8}
+{"step": 592, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.494140625, "aux_ce": 1.7230536937713623, "depth": 4, "keep_steps": 1, "scaffold": 37, "answer": 7, "grad_norm": 1.984}
+{"step": 593, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 1.4921875, "aux_ce": 2.681737184524536, "depth": 2, "keep_steps": 1, "scaffold": 29, "answer": 6}
+{"step": 594, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.75390625, "aux_ce": 1.425335168838501, "depth": 3, "keep_steps": 1, "scaffold": 21, "answer": 9}
+{"step": 595, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.453125, "aux_ce": 0.6904447078704834, "depth": 2, "keep_steps": 1, "scaffold": 17, "answer": 7}
+{"step": 596, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.7734375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 11, "answer": 7, "grad_norm": 2.335}
+{"step": 597, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.66015625, "aux_ce": 1.30681574344635, "depth": 4, "keep_steps": 1, "scaffold": 29, "answer": 7}
+{"step": 598, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.6484375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 23, "answer": 6}
+{"step": 599, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.75, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 8, "answer": 6}
+{"step": 600, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.6953125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 7, "grad_norm": 1.889}
+EVAL {"step": 600, "keep_steps": 1, "dev": {"4": 0.08333333333333333}}
+{"step": 601, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.80859375, "aux_ce": 1.4994769096374512, "depth": 3, "keep_steps": 1, "scaffold": 45, "answer": 7}
+{"step": 602, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.5625, "aux_ce": 1.1084227561950684, "depth": 3, "keep_steps": 1, "scaffold": 22, "answer": 7}
+{"step": 603, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.447265625, "aux_ce": 0.9386358261108398, "depth": 3, "keep_steps": 1, "scaffold": 29, "answer": 7}
+{"step": 604, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.0, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 33, "answer": 8, "grad_norm": 1.707}
+{"step": 605, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.86328125, "aux_ce": 1.8849154710769653, "depth": 2, "keep_steps": 1, "scaffold": 18, "answer": 7}
+{"step": 606, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.2060546875, "aux_ce": 0.4443835914134979, "depth": 2, "keep_steps": 1, "scaffold": 11, "answer": 6}
+{"step": 607, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.2099609375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 13, "answer": 7}
+{"step": 608, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.37890625, "aux_ce": 0.7369281053543091, "depth": 4, "keep_steps": 1, "scaffold": 19, "answer": 8, "grad_norm": 1.784}
+{"step": 609, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.69921875, "aux_ce": 1.2219370603561401, "depth": 4, "keep_steps": 1, "scaffold": 23, "answer": 8}
+{"step": 610, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.61328125, "aux_ce": 0.9385179281234741, "depth": 2, "keep_steps": 1, "scaffold": 31, "answer": 9}
+{"step": 611, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.67578125, "aux_ce": 1.2396667003631592, "depth": 2, "keep_steps": 1, "scaffold": 32, "answer": 8}
+{"step": 612, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.90234375, "aux_ce": 1.7206233739852905, "depth": 2, "keep_steps": 1, "scaffold": 24, "answer": 6, "grad_norm": 1.82}
+{"step": 613, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.74609375, "aux_ce": 1.3894410133361816, "depth": 2, "keep_steps": 1, "scaffold": 18, "answer": 6}
+{"step": 614, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.85546875, "aux_ce": 2.1218018531799316, "depth": 4, "keep_steps": 1, "scaffold": 26, "answer": 7}
+{"step": 615, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.89453125, "aux_ce": 1.6974830627441406, "depth": 2, "keep_steps": 1, "scaffold": 18, "answer": 6}
+{"step": 616, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.439453125, "aux_ce": 0.6929497718811035, "depth": 3, "keep_steps": 1, "scaffold": 11, "answer": 7, "grad_norm": 2.079}
+{"step": 617, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.60546875, "aux_ce": 2.350327730178833, "depth": 2, "keep_steps": 1, "scaffold": 35, "answer": 8}
+{"step": 618, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.314453125, "aux_ce": 0.8570741415023804, "depth": 4, "keep_steps": 1, "scaffold": 30, "answer": 10}
+{"step": 619, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.61328125, "aux_ce": 1.1807026863098145, "depth": 4, "keep_steps": 1, "scaffold": 21, "answer": 7}
+{"step": 620, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.61328125, "aux_ce": 1.0916497707366943, "depth": 4, "keep_steps": 1, "scaffold": 18, "answer": 8, "grad_norm": 1.882}
+{"step": 621, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.921875, "aux_ce": 1.5420985221862793, "depth": 3, "keep_steps": 1, "scaffold": 32, "answer": 10}
+{"step": 622, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.734375, "aux_ce": 1.3716133832931519, "depth": 2, "keep_steps": 1, "scaffold": 22, "answer": 8}
+{"step": 623, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.5703125, "aux_ce": 1.030194878578186, "depth": 3, "keep_steps": 1, "scaffold": 20, "answer": 7}
+{"step": 624, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.306640625, "aux_ce": 1.200204849243164, "depth": 4, "keep_steps": 1, "scaffold": 22, "answer": 7, "grad_norm": 1.782}
+{"step": 625, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.5390625, "aux_ce": 1.3304942846298218, "depth": 4, "keep_steps": 1, "scaffold": 20, "answer": 9}
+{"step": 626, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.53125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 26, "answer": 8}
+{"step": 627, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 1.3671875, "aux_ce": 2.903939962387085, "depth": 2, "keep_steps": 1, "scaffold": 29, "answer": 7}
+{"step": 628, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.396484375, "aux_ce": 0.6979602575302124, "depth": 2, "keep_steps": 1, "scaffold": 11, "answer": 6, "grad_norm": 1.84}
+{"step": 629, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.82421875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 33, "answer": 8}
+{"step": 630, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.478515625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 631, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.5, "aux_ce": 1.2046808004379272, "depth": 3, "keep_steps": 1, "scaffold": 18, "answer": 7}
+{"step": 632, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.83203125, "aux_ce": 1.098618984222412, "depth": 2, "keep_steps": 1, "scaffold": 31, "answer": 8, "grad_norm": 1.988}
+{"step": 633, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.40625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 634, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.486328125, "aux_ce": 0.8961231708526611, "depth": 2, "keep_steps": 1, "scaffold": 23, "answer": 7}
+{"step": 635, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.453125, "aux_ce": 0.9614533185958862, "depth": 2, "keep_steps": 1, "scaffold": 31, "answer": 7}
+{"step": 636, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.640625, "aux_ce": 1.1277549266815186, "depth": 4, "keep_steps": 1, "scaffold": 22, "answer": 7, "grad_norm": 1.571}
+{"step": 637, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.439453125, "aux_ce": 1.109763503074646, "depth": 2, "keep_steps": 1, "scaffold": 27, "answer": 7}
+{"step": 638, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.6171875, "aux_ce": 1.346865177154541, "depth": 4, "keep_steps": 1, "scaffold": 36, "answer": 7}
+{"step": 639, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.9296875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 640, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.3671875, "aux_ce": 2.1959073543548584, "depth": 2, "keep_steps": 1, "scaffold": 17, "answer": 7, "grad_norm": 2.316}
+{"step": 641, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.6171875, "aux_ce": 1.0784045457839966, "depth": 3, "keep_steps": 1, "scaffold": 12, "answer": 8}
+{"step": 642, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.66015625, "aux_ce": 1.021828532218933, "depth": 3, "keep_steps": 1, "scaffold": 15, "answer": 7}
+{"step": 643, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.423828125, "aux_ce": 1.2851874828338623, "depth": 3, "keep_steps": 1, "scaffold": 22, "answer": 7}
+{"step": 644, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.431640625, "aux_ce": 1.133510947227478, "depth": 4, "keep_steps": 1, "scaffold": 23, "answer": 7, "grad_norm": 2.156}
+{"step": 645, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.376953125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 27, "answer": 9}
+{"step": 646, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.4140625, "aux_ce": 1.1812366247177124, "depth": 4, "keep_steps": 1, "scaffold": 12, "answer": 7}
+{"step": 647, "epoch": 1, "seconds": 0.47, "peak_gib": 5.25, "ce": 0.6875, "aux_ce": 1.277051568031311, "depth": 4, "keep_steps": 1, "scaffold": 22, "answer": 7}
+{"step": 648, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.9296875, "aux_ce": 1.727257251739502, "depth": 3, "keep_steps": 1, "scaffold": 22, "answer": 6, "grad_norm": 2.104}
+{"step": 649, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.91796875, "aux_ce": 2.3163657188415527, "depth": 3, "keep_steps": 1, "scaffold": 26, "answer": 7}
+{"step": 650, "epoch": 1, "seconds": 0.46, "peak_gib": 5.25, "ce": 0.478515625, "aux_ce": 1.2890000343322754, "depth": 4, "keep_steps": 1, "scaffold": 25, "answer": 8}
+{"step": 651, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.82421875, "aux_ce": 1.2431488037109375, "depth": 2, "keep_steps": 1, "scaffold": 32, "answer": 9}
+{"step": 652, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.7890625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 16, "answer": 7, "grad_norm": 1.848}
+{"step": 653, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.3359375, "aux_ce": 1.0003701448440552, "depth": 2, "keep_steps": 1, "scaffold": 15, "answer": 8}
+{"step": 654, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.55078125, "aux_ce": 0.8749680519104004, "depth": 2, "keep_steps": 1, "scaffold": 22, "answer": 6}
+{"step": 655, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.859375, "aux_ce": 1.600034475326538, "depth": 3, "keep_steps": 1, "scaffold": 24, "answer": 8}
+{"step": 656, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.7734375, "aux_ce": 0.9950262904167175, "depth": 4, "keep_steps": 1, "scaffold": 28, "answer": 8, "grad_norm": 2.013}
+{"step": 657, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.86328125, "aux_ce": 1.227935791015625, "depth": 4, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 658, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.7890625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 30, "answer": 7}
+{"step": 659, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.625, "aux_ce": 1.5857090950012207, "depth": 3, "keep_steps": 1, "scaffold": 26, "answer": 7}
+{"step": 660, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 1.0546875, "aux_ce": 1.8754997253417969, "depth": 3, "keep_steps": 1, "scaffold": 38, "answer": 9, "grad_norm": 1.965}
+{"step": 661, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.4765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 20, "answer": 6}
+{"step": 662, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 1.3828125, "aux_ce": 2.34580135345459, "depth": 4, "keep_steps": 1, "scaffold": 28, "answer": 7}
+{"step": 663, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.81640625, "aux_ce": 1.9187606573104858, "depth": 4, "keep_steps": 1, "scaffold": 42, "answer": 8}
+{"step": 664, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 1.3359375, "aux_ce": 2.1739344596862793, "depth": 3, "keep_steps": 1, "scaffold": 37, "answer": 7, "grad_norm": 2.234}
+{"step": 665, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.283203125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 19, "answer": 8}
+{"step": 666, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.61328125, "aux_ce": 0.7024365663528442, "depth": 3, "keep_steps": 1, "scaffold": 21, "answer": 6}
+{"step": 667, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.294921875, "aux_ce": 0.6999162435531616, "depth": 3, "keep_steps": 1, "scaffold": 17, "answer": 8}
+{"step": 668, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.45703125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 7, "grad_norm": 1.368}
+{"step": 669, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.66796875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 27, "answer": 7}
+{"step": 670, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.65625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 6}
+{"step": 671, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.36328125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 21, "answer": 9}
+{"step": 672, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.8046875, "aux_ce": 1.527101755142212, "depth": 4, "keep_steps": 1, "scaffold": 23, "answer": 9, "grad_norm": 2.169}
+{"step": 673, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 1.5078125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 38, "answer": 8}
+{"step": 674, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.828125, "aux_ce": 1.4396089315414429, "depth": 4, "keep_steps": 1, "scaffold": 19, "answer": 7}
+{"step": 675, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.453125, "aux_ce": 1.0252549648284912, "depth": 4, "keep_steps": 1, "scaffold": 19, "answer": 8}
+{"step": 676, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.28125, "aux_ce": 0.5802731513977051, "depth": 4, "keep_steps": 1, "scaffold": 24, "answer": 8, "grad_norm": 1.943}
+{"step": 677, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.80859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 23, "answer": 8}
+{"step": 678, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.53125, "aux_ce": 1.291126012802124, "depth": 2, "keep_steps": 1, "scaffold": 30, "answer": 7}
+{"step": 679, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.7109375, "aux_ce": 1.0349435806274414, "depth": 3, "keep_steps": 1, "scaffold": 12, "answer": 7}
+{"step": 680, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.2109375, "aux_ce": 2.531085252761841, "depth": 2, "keep_steps": 1, "scaffold": 14, "answer": 7, "grad_norm": 2.352}
+{"step": 681, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.609375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 15, "answer": 7}
+{"step": 682, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.1015625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 104, "answer": 7}
+{"step": 683, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.546875, "aux_ce": 0.8256630301475525, "depth": 4, "keep_steps": 1, "scaffold": 17, "answer": 7}
+{"step": 684, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.7265625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 17, "answer": 10, "grad_norm": 1.754}
+{"step": 685, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 1.6875, "aux_ce": 2.2906901836395264, "depth": 2, "keep_steps": 1, "scaffold": 6, "answer": 7}
+{"step": 686, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.76171875, "aux_ce": 1.3323633670806885, "depth": 3, "keep_steps": 1, "scaffold": 32, "answer": 7}
+{"step": 687, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.84765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 26, "answer": 9}
+{"step": 688, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.220703125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 44, "answer": 8, "grad_norm": 3.31}
+{"step": 689, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.921875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 18, "answer": 7}
+{"step": 690, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.330078125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 28, "answer": 7}
+{"step": 691, "epoch": 1, "seconds": 0.41, "peak_gib": 5.25, "ce": 0.640625, "aux_ce": 1.6568440198898315, "depth": 3, "keep_steps": 1, "scaffold": 46, "answer": 8}
+{"step": 692, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.5078125, "aux_ce": 0.7146254181861877, "depth": 2, "keep_steps": 1, "scaffold": 18, "answer": 8, "grad_norm": 1.965}
+{"step": 693, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.94921875, "aux_ce": 1.6794781684875488, "depth": 3, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 694, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.78515625, "aux_ce": 1.69313645362854, "depth": 4, "keep_steps": 1, "scaffold": 20, "answer": 6}
+{"step": 695, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.8125, "aux_ce": 1.1955198049545288, "depth": 2, "keep_steps": 1, "scaffold": 21, "answer": 8}
+{"step": 696, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.90625, "aux_ce": 1.5258089303970337, "depth": 3, "keep_steps": 1, "scaffold": 18, "answer": 7, "grad_norm": 2.744}
+{"step": 697, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.9765625, "aux_ce": 1.673938512802124, "depth": 4, "keep_steps": 1, "scaffold": 19, "answer": 10}
+{"step": 698, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.1689453125, "aux_ce": 0.6891095638275146, "depth": 2, "keep_steps": 1, "scaffold": 20, "answer": 7}
+{"step": 699, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.55078125, "aux_ce": 1.1094849109649658, "depth": 4, "keep_steps": 1, "scaffold": 21, "answer": 6}
+{"step": 700, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.6640625, "aux_ce": 1.3125276565551758, "depth": 2, "keep_steps": 1, "scaffold": 51, "answer": 8, "grad_norm": 1.809}
+{"step": 701, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.828125, "aux_ce": 1.9381191730499268, "depth": 3, "keep_steps": 1, "scaffold": 19, "answer": 7}
+{"step": 702, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.40625, "aux_ce": 1.1065196990966797, "depth": 4, "keep_steps": 1, "scaffold": 24, "answer": 6}
+{"step": 703, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.58203125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 704, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.87890625, "aux_ce": 1.4771232604980469, "depth": 4, "keep_steps": 1, "scaffold": 26, "answer": 7, "grad_norm": 2.332}
+{"step": 705, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.1015625, "aux_ce": 3.222689151763916, "depth": 2, "keep_steps": 1, "scaffold": 20, "answer": 6}
+{"step": 706, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.87890625, "aux_ce": 1.8496942520141602, "depth": 2, "keep_steps": 1, "scaffold": 26, "answer": 6}
+{"step": 707, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.419921875, "aux_ce": 0.6210232973098755, "depth": 4, "keep_steps": 1, "scaffold": 30, "answer": 9}
+{"step": 708, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.59765625, "aux_ce": 1.4258347749710083, "depth": 2, "keep_steps": 1, "scaffold": 28, "answer": 8, "grad_norm": 2.151}
+{"step": 709, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.61328125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 31, "answer": 7}
+{"step": 710, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.21875, "aux_ce": 0.5484362840652466, "depth": 4, "keep_steps": 1, "scaffold": 23, "answer": 7}
+{"step": 711, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 1.4921875, "aux_ce": 2.1979053020477295, "depth": 4, "keep_steps": 1, "scaffold": 38, "answer": 8}
+{"step": 712, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.60546875, "aux_ce": 1.1739318370819092, "depth": 4, "keep_steps": 1, "scaffold": 26, "answer": 8, "grad_norm": 1.802}
+{"step": 713, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.5390625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 16, "answer": 7}
+{"step": 714, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.455078125, "aux_ce": 0.5813195705413818, "depth": 4, "keep_steps": 1, "scaffold": 24, "answer": 7}
+{"step": 715, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.451171875, "aux_ce": 1.125473976135254, "depth": 2, "keep_steps": 1, "scaffold": 14, "answer": 7}
+{"step": 716, "epoch": 1, "seconds": 0.41, "peak_gib": 5.25, "ce": 0.8359375, "aux_ce": 1.5375404357910156, "depth": 4, "keep_steps": 1, "scaffold": 20, "answer": 8, "grad_norm": 2.28}
+{"step": 717, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.318359375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 50, "answer": 6}
+{"step": 718, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.60546875, "aux_ce": 1.217921257019043, "depth": 4, "keep_steps": 1, "scaffold": 17, "answer": 8}
+{"step": 719, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.451171875, "aux_ce": 0.9317775368690491, "depth": 2, "keep_steps": 1, "scaffold": 33, "answer": 7}
+{"step": 720, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.77734375, "aux_ce": 1.6422537565231323, "depth": 3, "keep_steps": 1, "scaffold": 14, "answer": 7, "grad_norm": 1.919}
+{"step": 721, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.318359375, "aux_ce": 0.5379641652107239, "depth": 2, "keep_steps": 1, "scaffold": 19, "answer": 7}
+{"step": 722, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.70703125, "aux_ce": 1.4845423698425293, "depth": 3, "keep_steps": 1, "scaffold": 48, "answer": 8}
+{"step": 723, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.77734375, "aux_ce": 1.4246710538864136, "depth": 3, "keep_steps": 1, "scaffold": 13, "answer": 7}
+{"step": 724, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 0.71875, "aux_ce": 1.5024107694625854, "depth": 4, "keep_steps": 1, "scaffold": 26, "answer": 7, "grad_norm": 1.931}
+{"step": 725, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 1.0078125, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 30, "answer": 7}
+{"step": 726, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.578125, "aux_ce": 1.008150577545166, "depth": 3, "keep_steps": 1, "scaffold": 25, "answer": 8}
+{"step": 727, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.58984375, "aux_ce": 0.6961268782615662, "depth": 2, "keep_steps": 1, "scaffold": 29, "answer": 7}
+{"step": 728, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 0.9296875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 46, "answer": 6, "grad_norm": 1.926}
+{"step": 729, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.7578125, "aux_ce": 1.3404752016067505, "depth": 3, "keep_steps": 1, "scaffold": 21, "answer": 7}
+{"step": 730, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 1.1640625, "aux_ce": 1.8804539442062378, "depth": 2, "keep_steps": 1, "scaffold": 12, "answer": 10}
+{"step": 731, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.6796875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 21, "answer": 9}
+{"step": 732, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.57421875, "aux_ce": 1.6015675067901611, "depth": 2, "keep_steps": 1, "scaffold": 21, "answer": 6, "grad_norm": 2.13}
+{"step": 733, "epoch": 1, "seconds": 0.46, "peak_gib": 5.25, "ce": 0.60546875, "aux_ce": 1.3677616119384766, "depth": 4, "keep_steps": 1, "scaffold": 45, "answer": 6}
+{"step": 734, "epoch": 1, "seconds": 0.39, "peak_gib": 5.25, "ce": 0.65625, "aux_ce": 1.1381875276565552, "depth": 4, "keep_steps": 1, "scaffold": 15, "answer": 8}
+{"step": 735, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 1.0234375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 41, "answer": 8}
+{"step": 736, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 1.109375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 20, "answer": 7, "grad_norm": 1.674}
+{"step": 737, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 1.0078125, "aux_ce": 1.2719640731811523, "depth": 4, "keep_steps": 1, "scaffold": 17, "answer": 9}
+{"step": 738, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.296875, "aux_ce": 0.5330995917320251, "depth": 4, "keep_steps": 1, "scaffold": 15, "answer": 7}
+{"step": 739, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.0859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 28, "answer": 6}
+{"step": 740, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.4375, "aux_ce": 0.47296276688575745, "depth": 2, "keep_steps": 1, "scaffold": 23, "answer": 9, "grad_norm": 2.039}
+{"step": 741, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.55859375, "aux_ce": 0.6743867993354797, "depth": 2, "keep_steps": 1, "scaffold": 18, "answer": 7}
+{"step": 742, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.640625, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 22, "answer": 8}
+{"step": 743, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.46875, "aux_ce": 0.8653827905654907, "depth": 3, "keep_steps": 1, "scaffold": 19, "answer": 6}
+{"step": 744, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.9296875, "aux_ce": 1.453258991241455, "depth": 2, "keep_steps": 1, "scaffold": 29, "answer": 7, "grad_norm": 1.864}
+{"step": 745, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.412109375, "aux_ce": 1.2179447412490845, "depth": 3, "keep_steps": 1, "scaffold": 20, "answer": 6}
+{"step": 746, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.74609375, "aux_ce": 1.6781010627746582, "depth": 3, "keep_steps": 1, "scaffold": 34, "answer": 8}
+{"step": 747, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 1.25, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 21, "answer": 7}
+{"step": 748, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.68359375, "aux_ce": 1.111986756324768, "depth": 3, "keep_steps": 1, "scaffold": 19, "answer": 8, "grad_norm": 2.402}
+{"step": 749, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.5390625, "aux_ce": 0.7491095066070557, "depth": 2, "keep_steps": 1, "scaffold": 19, "answer": 9}
+{"step": 750, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.498046875, "aux_ce": 0.0, "depth": 1, "keep_steps": 1, "scaffold": 20, "answer": 6}
+EVAL {"step": 750, "keep_steps": 1, "dev": {"4": 0.041666666666666664}}
+{"step": 751, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 3.234375, "aux_ce": 4.757762432098389, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 752, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 4.9375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 16.773}
+{"step": 753, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 3.25, "aux_ce": 3.7247321605682373, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 754, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 4.28125, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 755, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 1.8828125, "aux_ce": 2.652548313140869, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 11}
+{"step": 756, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 1.875, "aux_ce": 2.3876352310180664, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 34.806}
+{"step": 757, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 2.84375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 758, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 2.609375, "aux_ce": 2.9525091648101807, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 759, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 3.015625, "aux_ce": 3.4915213584899902, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 760, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 2.578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 22.978}
+{"step": 761, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 1.1328125, "aux_ce": 2.837491035461426, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 762, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 2.71875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 763, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 2.28125, "aux_ce": 2.5515570640563965, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 764, "epoch": 1, "seconds": 0.26, "peak_gib": 5.25, "ce": 2.46875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 33.254}
+{"step": 765, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.765625, "aux_ce": 2.220202922821045, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 766, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.64453125, "aux_ce": 1.9554831981658936, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 767, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 1.359375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 768, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.86328125, "aux_ce": 2.25081729888916, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 17.02}
+{"step": 769, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.81640625, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 770, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.75, "aux_ce": 2.138357639312744, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 771, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.443359375, "aux_ce": 1.622281789779663, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 772, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 1.046875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 13.978}
+{"step": 773, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.3046875, "aux_ce": 1.095184087753296, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 774, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.73046875, "aux_ce": 1.7340959310531616, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 775, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 1.0625, "aux_ce": 1.5566070079803467, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 776, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.58203125, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 8.983}
+{"step": 777, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.69140625, "aux_ce": 1.1992212533950806, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 778, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.4453125, "aux_ce": 0.5466464757919312, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 779, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.76953125, "aux_ce": 1.5141539573669434, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 780, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.51953125, "aux_ce": 0.9558087587356567, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 8.381}
+{"step": 781, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.72265625, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 782, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.251953125, "aux_ce": 0.31046950817108154, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 10}
+{"step": 783, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.78125, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 784, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.9296875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 5.207}
+{"step": 785, "epoch": 1, "seconds": 0.43, "peak_gib": 5.25, "ce": 0.671875, "aux_ce": 0.9246349334716797, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 786, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.734375, "aux_ce": 1.1521066427230835, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 787, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.63671875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 788, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.490234375, "aux_ce": 0.8617596626281738, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 3.37}
+{"step": 789, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.828125, "aux_ce": 0.9555153846740723, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 790, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.486328125, "aux_ce": 0.6290265321731567, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 791, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.4609375, "aux_ce": 0.7109147906303406, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 792, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.78515625, "aux_ce": 1.1100075244903564, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 5.801}
+{"step": 793, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.462890625, "aux_ce": 0.6704224348068237, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 794, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.546875, "aux_ce": 0.8389154672622681, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 795, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.427734375, "aux_ce": 0.6912691593170166, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 796, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.69921875, "aux_ce": 1.2688658237457275, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 4.307}
+{"step": 797, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.57421875, "aux_ce": 0.5931835174560547, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 798, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.345703125, "aux_ce": 0.43209415674209595, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 799, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.478515625, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 800, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.484375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 2.487}
+{"step": 801, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.478515625, "aux_ce": 0.7578225135803223, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 802, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.388671875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 803, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.546875, "aux_ce": 0.6576361656188965, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 10}
+{"step": 804, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.8828125, "aux_ce": 1.2167710065841675, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 3.546}
+{"step": 805, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.498046875, "aux_ce": 0.8153492212295532, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 806, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 1.1640625, "aux_ce": 1.2004283666610718, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 807, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.54296875, "aux_ce": 1.0433841943740845, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 808, "epoch": 1, "seconds": 0.25, "peak_gib": 5.25, "ce": 0.296875, "aux_ce": 0.8209871649742126, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 4.678}
+{"step": 809, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.484375, "aux_ce": 0.549080491065979, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 810, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.87109375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 811, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 0.9194540977478027, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 812, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.55859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 4.101}
+{"step": 813, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.83203125, "aux_ce": 0.8667887449264526, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 814, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.98828125, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 815, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.79296875, "aux_ce": 1.0134105682373047, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 816, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.4453125, "aux_ce": 0.43598616123199463, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 2.662}
+{"step": 817, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.5625, "aux_ce": 1.15866219997406, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 818, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.56640625, "aux_ce": 0.8282056450843811, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 819, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.59375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 820, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.6484375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 6.272}
+{"step": 821, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 1.359375, "aux_ce": 1.2795379161834717, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 10}
+{"step": 822, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.357421875, "aux_ce": 0.6298284530639648, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 823, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.953125, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 824, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.53515625, "aux_ce": 0.6936283111572266, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 5.933}
+{"step": 825, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.9375, "aux_ce": 1.1031347513198853, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 826, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.466796875, "aux_ce": 0.5455455780029297, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 827, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.470703125, "aux_ce": 0.4317196309566498, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 828, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.330078125, "aux_ce": 0.37330999970436096, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 1.711}
+{"step": 829, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.5625, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 830, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.43359375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 831, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.94140625, "aux_ce": 0.7561280727386475, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 832, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.4921875, "aux_ce": 0.7365224361419678, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 3.005}
+{"step": 833, "epoch": 1, "seconds": 0.33, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 0.6092854738235474, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 834, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.62890625, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 835, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.45703125, "aux_ce": 0.34862786531448364, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 836, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 1.1484375, "aux_ce": 1.6227749586105347, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 3.483}
+{"step": 837, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.6171875, "aux_ce": 0.6913884282112122, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 838, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.50390625, "aux_ce": 0.5981612205505371, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 839, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.54296875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 840, "epoch": 1, "seconds": 0.2, "peak_gib": 5.25, "ce": 0.484375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 1.413}
+{"step": 841, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.6328125, "aux_ce": 0.7308700680732727, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 842, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.435546875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 843, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.640625, "aux_ce": 0.9055068492889404, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 844, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.63671875, "aux_ce": 1.0600184202194214, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 2.042}
+{"step": 845, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 1.203125, "aux_ce": 1.4631437063217163, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 846, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.87109375, "aux_ce": 0.5781691074371338, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 847, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.51171875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 848, "epoch": 1, "seconds": 0.45, "peak_gib": 5.25, "ce": 0.5546875, "aux_ce": 0.5449677109718323, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 6.428}
+{"step": 849, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.87890625, "aux_ce": 1.3074252605438232, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 850, "epoch": 1, "seconds": 0.27, "peak_gib": 5.25, "ce": 0.458984375, "aux_ce": 0.5847693085670471, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 851, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.5390625, "aux_ce": 0.6954898834228516, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 852, "epoch": 1, "seconds": 0.19, "peak_gib": 5.25, "ce": 0.80859375, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 3.007}
+{"step": 853, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.58984375, "aux_ce": 0.40924057364463806, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 854, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.671875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 855, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.29296875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 856, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.470703125, "aux_ce": 0.49913182854652405, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 1.314}
+{"step": 857, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.3984375, "aux_ce": 0.5349889993667603, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 858, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.41796875, "aux_ce": 1.057772159576416, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 859, "epoch": 1, "seconds": 0.16, "peak_gib": 5.25, "ce": 0.4921875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 860, "epoch": 1, "seconds": 0.38, "peak_gib": 5.25, "ce": 0.48828125, "aux_ce": 0.6599568724632263, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 9, "grad_norm": 3.653}
+{"step": 861, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.50390625, "aux_ce": 0.8259307146072388, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 862, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.68359375, "aux_ce": 0.9324962496757507, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 863, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.68359375, "aux_ce": 0.7100397348403931, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 864, "epoch": 1, "seconds": 0.32, "peak_gib": 5.25, "ce": 0.35546875, "aux_ce": 0.46647489070892334, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 4.607}
+{"step": 865, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.345703125, "aux_ce": 0.21040380001068115, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 866, "epoch": 1, "seconds": 0.35, "peak_gib": 5.25, "ce": 0.431640625, "aux_ce": 0.6318067312240601, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 867, "epoch": 1, "seconds": 0.37, "peak_gib": 5.25, "ce": 0.486328125, "aux_ce": 0.4998377561569214, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 9}
+{"step": 868, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 1.0546875, "aux_ce": 1.8395955562591553, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 6.468}
+{"step": 869, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.263671875, "aux_ce": 0.47690248489379883, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 870, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.3359375, "aux_ce": 0.3718157708644867, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 871, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.357421875, "aux_ce": 0.5211905837059021, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 872, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.81640625, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 1.48}
+{"step": 873, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.78515625, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 874, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.427734375, "aux_ce": 0.37810587882995605, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 875, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.75390625, "aux_ce": 0.8035732507705688, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 876, "epoch": 1, "seconds": 0.28, "peak_gib": 5.25, "ce": 0.447265625, "aux_ce": 0.6570730805397034, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 2.028}
+{"step": 877, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.70703125, "aux_ce": 0.8467640280723572, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 878, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.66796875, "aux_ce": 0.8958731293678284, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 879, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.9375, "aux_ce": 0.557866096496582, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 880, "epoch": 1, "seconds": 0.3, "peak_gib": 5.25, "ce": 0.41015625, "aux_ce": 0.42787373065948486, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 6, "grad_norm": 6.232}
+{"step": 881, "epoch": 1, "seconds": 0.18, "peak_gib": 5.25, "ce": 0.67578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 882, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.828125, "aux_ce": 0.6908900141716003, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 883, "epoch": 1, "seconds": 0.4, "peak_gib": 5.25, "ce": 0.435546875, "aux_ce": 0.5717422366142273, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 884, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.1328125, "aux_ce": 0.8565863370895386, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 4.323}
+{"step": 885, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.263671875, "aux_ce": 1.148088812828064, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 886, "epoch": 1, "seconds": 0.36, "peak_gib": 5.25, "ce": 0.52734375, "aux_ce": 0.528846025466919, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 887, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 1.3828125, "aux_ce": 0.8819787502288818, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 888, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.447265625, "aux_ce": 0.5092355012893677, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 9, "grad_norm": 4.326}
+{"step": 889, "epoch": 1, "seconds": 0.34, "peak_gib": 5.25, "ce": 0.72265625, "aux_ce": 1.335644006729126, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 890, "epoch": 1, "seconds": 0.29, "peak_gib": 5.25, "ce": 0.58203125, "aux_ce": 0.5697342157363892, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 6}
+{"step": 891, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.6328125, "aux_ce": 0.49438047409057617, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 8}
+{"step": 892, "epoch": 1, "seconds": 0.44, "peak_gib": 5.25, "ce": 0.6328125, "aux_ce": 0.5999540686607361, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 8, "grad_norm": 3.78}
+{"step": 893, "epoch": 1, "seconds": 0.22, "peak_gib": 5.25, "ce": 0.400390625, "aux_ce": 0.4480369985103607, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 10}
+{"step": 894, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.58203125, "aux_ce": 0.6019010543823242, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 895, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.373046875, "aux_ce": 0.9464654922485352, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 896, "epoch": 1, "seconds": 0.17, "peak_gib": 5.25, "ce": 0.578125, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 2.011}
+{"step": 897, "epoch": 1, "seconds": 0.23, "peak_gib": 5.25, "ce": 0.69921875, "aux_ce": 0.8349302411079407, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 898, "epoch": 1, "seconds": 0.31, "peak_gib": 5.25, "ce": 0.2314453125, "aux_ce": 1.3779027462005615, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 899, "epoch": 1, "seconds": 0.24, "peak_gib": 5.25, "ce": 0.640625, "aux_ce": 0.4988422989845276, "depth": 2, "keep_steps": 0, "scaffold": 0, "answer": 7}
+{"step": 900, "epoch": 1, "seconds": 0.42, "peak_gib": 5.25, "ce": 0.6171875, "aux_ce": 0.43559688329696655, "depth": 4, "keep_steps": 0, "scaffold": 0, "answer": 7, "grad_norm": 2.084}
+EVAL {"step": 900, "keep_steps": 0, "dev": {"4": 0.0}}
+done: 900 steps in 769s

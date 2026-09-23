@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen3.5-4B-Base",
+  "ctx": 512,
+  "env": "loopus_env (transformers 5.3.0, bnb 0.50.2)",
+  "load_seconds": 8.3,
+  "model_class": "Qwen3_5ForCausalLM",
+  "n_layers": 32,
+  "config_num_hidden_layers": 32,
+  "layer_type_counts": {
+    "linear_attention": 24,
+    "full_attention": 8
+  },
+  "config_module_layer_types_match": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "forward_seconds": 3.58,
+  "peak_gib_forward": 3.0,
+  "forward_loss_free_run": 0.16,
+  "probe_forward_backward_seconds": 3.73,
+  "probe_grad_finite": true,
+  "probe_grad_absmax": 0.021406926214694977,
+  "probe_loss": 0.16,
+  "probe_params": 6556160,
+  "base_trainable_params": 0,
+  "quantized_weights_touched": false,
+  "peak_gib_backward": 3.78,
+  "verdict": "PASS"
+}

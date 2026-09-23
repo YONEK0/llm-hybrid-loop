@@ -1,0 +1,1626 @@
+{
+  "model": "Qwen/Qwen3-4B-Thinking-2507 (4-bit NF4, frozen, KV-cache decoding)",
+  "n": 100,
+  "modes": {
+    "think": {
+      "accuracy": 0.67,
+      "correct": 67,
+      "n": 100,
+      "budget": 1024,
+      "mean_tokens": 784.7,
+      "mean_seconds": 63.36,
+      "records": [
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "160",
+          "ok": true,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how long it takes Carla to download the 200 GB file. Hmm, first, let's break down the problem step by step. \n\nSo, normally she can download 2 GB per minute. But 40% of the way through, Windows forces a restart to install updates, which takes 20 minutes. Then she has to "
+        },
+        {
+          "id": "gsm8k-test-443",
+          "gold": "59",
+          "pred": "5",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the problem correctly. Jon runs a triathlon with specific times for each part: swim (40 minutes), bike (1 hour 20 minutes, which is 80 minutes), and run (50 minutes). James finishes the swim 10% faster than "
+        },
+        {
+          "id": "gsm8k-test-708",
+          "gold": "168",
+          "pred": "168",
+          "ok": true,
+          "tokens": 413,
+          "text": "Okay, let's see. The problem is about Alex charging for tutoring. We need to find out how much she charges for 2 weeks of tutoring, given that she charges $12 per day. First, I need to remember that a week has 7 days. So, 2 weeks would be 2 times 7 days. Let me write that down.\n\nFirst, calculate the"
+        },
+        {
+          "id": "gsm8k-test-1073",
+          "gold": "21",
+          "pred": "21",
+          "ok": true,
+          "tokens": 971,
+          "text": "Okay, let's try to figure out how many bananas the third monkey eats each day. First, let me read the problem again to make sure I understand it.\n\nMr. Robles buys 315 bananas, which is enough to feed his three monkeys for a week. So, a week is 7 days, right? So the total bananas (315) are for 7 days"
+        },
+        {
+          "id": "gsm8k-test-579",
+          "gold": "7",
+          "pred": "7",
+          "ok": true,
+          "tokens": 301,
+          "text": "Okay, let's see. The problem says a boy has 5 cards. His brother has 3 fewer cards than he has. We need to find out how many cards they have together. \n\nFirst, let's break it down. The boy has 5 cards. His brother has 3 fewer than the boy. So, if the boy has 5, then the brother has 5 minus 3. Let me"
+        },
+        {
+          "id": "gsm8k-test-1197",
+          "gold": "2400",
+          "pred": "50",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how much John spends on everything. First, let's break down the problem step by step. \n\nSo, John buys 10 bottles of scotch for a total cost of $600. That part seems straightforward. Let me confirm: 10 bottles of scotch cost $600 total. So, maybe we can find the price pe"
+        },
+        {
+          "id": "gsm8k-test-327",
+          "gold": "31",
+          "pred": "31",
+          "ok": true,
+          "tokens": 624,
+          "text": "Okay, let's try to figure out how many lollipops Oscar has left. Hmm, let's break this down step by step. First, he starts with 24 lollipops. \n\nSo, he eats 2 on his way to school. Let me write that down. Starting amount: 24. After eating 2, he has 24 - 2 = 22 left. \n\nThen he passes 14 out to his fri"
+        },
+        {
+          "id": "gsm8k-test-786",
+          "gold": "142",
+          "pred": "142",
+          "ok": true,
+          "tokens": 598,
+          "text": "Okay, let's see. Ricardo has tomato plants and eggplant plants. The question is asking how many fruits he can get from his plants. First, I need to make sure I understand the problem correctly. \n\nSo, each tomato plant yields 22 tomatoes. He planted 5 tomato plants. Then, each eggplant plant yields 4"
+        },
+        {
+          "id": "gsm8k-test-780",
+          "gold": "25",
+          "pred": "4",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the problem correctly. Ava and Emma are playing a video game, and we need to find the difference in their scores. The scoring system is: 10 points per enemy jumped on, 5 points per berry collected, and 30 po"
+        },
+        {
+          "id": "gsm8k-test-111",
+          "gold": "16",
+          "pred": "64",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the problem correctly. Julia's boat is leaking water, and it's taking on two liters of water for every ten feet she rows back towards shore. She rows at a certain speed, and the shore is 64 seconds away. We "
+        },
+        {
+          "id": "gsm8k-test-1045",
+          "gold": "420",
+          "pred": "420",
+          "ok": true,
+          "tokens": 847,
+          "text": "Okay, let's try to figure out this problem step by step. So, three people divided $1920. Let me call the first person's share something, maybe \"x\". The problem says the second took $80 more than the first, so that would be x + 80. Then the third took twice what the second took, so that's 2 times (x "
+        },
+        {
+          "id": "gsm8k-test-45",
+          "gold": "104",
+          "pred": "5",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let me read through it again to make sure I understand.\n\nMeredith is a freelance blogger who writes about health topics and submits to clients each day as her permanent job. A blog article takes an average of 4 hours to research and wri"
+        },
+        {
+          "id": "gsm8k-test-1273",
+          "gold": "27",
+          "pred": "25",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. So, Mazie has 52 marbles total and gives them to her twins, Dallas and Darla. The question is asking how many marbles Mazie gave to Darla. \n\nFirst, let's parse the information given. It says Dallas has a total of 21 marbles after dropping 4 of"
+        },
+        {
+          "id": "gsm8k-test-880",
+          "gold": "10",
+          "pred": "1.5",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let me read it again to make sure I understand. \n\nSarah has a rope that's 20 meters long. Her friend wants to buy it for $2 a meter. Wait, hold on, does that mean Sarah is selling it to her friend? The problem says \"her friend wants to "
+        },
+        {
+          "id": "gsm8k-test-854",
+          "gold": "144",
+          "pred": "144",
+          "ok": true,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how many homes the town will have built over the next three years. Let me read the problem again carefully.\n\nFirst year: 12 homes. Got that. Next year (so second year) they build three times this many. So \"this many\" refers to the first year, right? So three times 12. T"
+        },
+        {
+          "id": "gsm8k-test-1246",
+          "gold": "3360",
+          "pred": "3360",
+          "ok": true,
+          "tokens": 698,
+          "text": "Okay, let's see. The problem is about Ara's basketball points. Let me try to figure it out step by step. \n\nFirst, the question says she joined the school basketball team four years ago. She's been playing 40 games every year. Her score per game is 21 points. We need to find the total points over fou"
+        },
+        {
+          "id": "gsm8k-test-1317",
+          "gold": "5",
+          "pred": "5",
+          "ok": true,
+          "tokens": 936,
+          "text": "Okay, let's try to figure out this problem. So, Farmer Brown has 20 animals, all chickens or cows. Total legs are 70. We need to find how many are chickens. \n\nFirst, I remember that chickens have 2 legs each and cows have 4 legs each. Let me set up some variables. Let's say the number of chickens is"
+        },
+        {
+          "id": "gsm8k-test-775",
+          "gold": "276",
+          "pred": "276",
+          "ok": true,
+          "tokens": 890,
+          "text": "Okay, let's see. Henry needs to assemble 57 cars and 73 motorcycles. Each car needs 4 wheels, and each motorcycle needs 2 wheels. We need to find out how many wheels he'll have left after assembling all the toys, given he starts with 650 wheels.\n\nFirst, I should calculate the total number of wheels "
+        },
+        {
+          "id": "gsm8k-test-923",
+          "gold": "2",
+          "pred": "3",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the problem correctly. Lana has 27 cups of tea total. She divides them into 3 rows. In each row, she creates equal amounts of chamomile and mint tea cups. Then she uses the remaining cups to brew 15 cups of "
+        },
+        {
+          "id": "gsm8k-test-832",
+          "gold": "42",
+          "pred": "42",
+          "ok": true,
+          "tokens": 677,
+          "text": "Okay, let's try to figure out how much money Roy has. First, let's list out all the information given. \n\nThe problem says: Roy has saved 40% more in money earned by chores than his brother Anthony. Anthony has saved $10.00 more than their sister Eva. Eva has saved $20.00. We need to find out how muc"
+        },
+        {
+          "id": "gsm8k-test-916",
+          "gold": "14",
+          "pred": "2",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how much each girl was given. So, first, let's break down the problem step by step. \n\nThe problem says Julia and Nadine were given the same amount of allowance by their mother. Let's call the amount each of them got \"x\" dollars. So, together they have 2x dollars.\n\nThey "
+        },
+        {
+          "id": "gsm8k-test-840",
+          "gold": "16",
+          "pred": "16",
+          "ok": true,
+          "tokens": 738,
+          "text": "Okay, let's see. Patrick has three glue sticks, each originally 12 millimeters long. We need to find the total length that's not used. So first, I need to figure out how much of each glue stick is left, then add them up. \n\nThe problem says one has 1/6 left, the second has 2/3 left, and the third has"
+        },
+        {
+          "id": "gsm8k-test-657",
+          "gold": "330000",
+          "pred": "330000",
+          "ok": true,
+          "tokens": 877,
+          "text": "Okay, let's see. James buys a plane that costs $150,000. Then he has to pay for a hanger rental and fuel each month. The problem is asking for the total cost for the first year. \n\nFirst, I need to figure out the monthly costs and then multiply by 12 months. Let me break it down step by step.\n\nThe pl"
+        },
+        {
+          "id": "gsm8k-test-321",
+          "gold": "1",
+          "pred": "1",
+          "ok": true,
+          "tokens": 332,
+          "text": "Okay, let's try to figure out how much the pen costs. First, let me read the problem again to make sure I understand it. \n\n\"A magazine costs half as much as a book. The book costs $4. A pen costs $1 less than a magazine. How much is the pen?\"\n\nAlright, so let's break this down step by step. \n\nFirst,"
+        },
+        {
+          "id": "gsm8k-test-353",
+          "gold": "20",
+          "pred": "2",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how much time John spent sightseeing. Hmm, first, let me read through the problem again to make sure I understand all the parts.\n\nSo, John is on vacation doing several activities. He spends 6 hours boating and half that time swimming. Then he watched 3 different shows w"
+        },
+        {
+          "id": "gsm8k-test-996",
+          "gold": "3",
+          "pred": "2",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to solve this problem step by step. First, let's list out what we know. There are four children: Akbar, Alessandro, Helene, and Wilfred. Their total age is 20. Akbar is 3, Alessandro is 4. We need to find Wilfred's age. \n\nFirst, let's denote the ages: let A = Akbar's age = 3, S = Ale"
+        },
+        {
+          "id": "gsm8k-test-1079",
+          "gold": "10",
+          "pred": "1500",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the question correctly. We have a watch that was originally $2000. Mr. Rogers bought it at 75% of the original price. Then he sold it to his friend at 120% of the price he bought it. We need to find the perc"
+        },
+        {
+          "id": "gsm8k-test-480",
+          "gold": "11",
+          "pred": "11",
+          "ok": true,
+          "tokens": 528,
+          "text": "Okay, let's try to figure out how many tubes of paint Jasper has. First, let me read the problem again to make sure I understand it.\n\nBen has 4 tubes of blue paint and 3 tubes of yellow paint. Jasper has half as many tubes of blue paint as Ben, and three times as many tubes of yellow paint as Ben. W"
+        },
+        {
+          "id": "gsm8k-test-197",
+          "gold": "6277",
+          "pred": "6277",
+          "ok": true,
+          "tokens": 806,
+          "text": "Okay, let's see. The problem is about finding the number of kids in the city of Soda. First, I need to remember that the total population is 23786. They have 8417 men and 9092 women. The rest are children. So, to find the number of kids, I should subtract the number of men and women from the total p"
+        },
+        {
+          "id": "gsm8k-test-749",
+          "gold": "3",
+          "pred": "6",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, the problem says there are fifty-four students who need to be separated into six groups of equal size. Wait, but then it says the activity requires 12 groups. Hmm, maybe I need to check if that's correct. Let me read again.\n\n\"In a schoo"
+        },
+        {
+          "id": "gsm8k-test-216",
+          "gold": "220",
+          "pred": "220",
+          "ok": true,
+          "tokens": 945,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the question correctly. Janeth borrowed $2000 and promised to return it with an additional 10% of the amount. So, does that mean she has to pay back the original $2000 plus 10% of that? Let me check.\n\nThe pr"
+        },
+        {
+          "id": "gsm8k-test-289",
+          "gold": "16",
+          "pred": "16",
+          "ok": true,
+          "tokens": 748,
+          "text": "Okay, let's see. So the problem is about two cars: one in the fast lane going 60 mph, and another in the slow lane going half that speed. The fast lane car traveled 480 miles, and we need to find how long the slow lane car took to cover the same distance. \n\nFirst, I need to remember that time equals"
+        },
+        {
+          "id": "gsm8k-test-862",
+          "gold": "40",
+          "pred": "40",
+          "ok": true,
+          "tokens": 835,
+          "text": "Okay, let's try to figure out how much Paige raised. First, I need to break down the problem step by step. \n\nSo, the problem says: Every hour, Paige can bake 2 banana bread loaves. She baked from 1:00 PM to 6:00 PM straight. Each loaf is cut into 8 slices, and each slice is sold for 50 cents. We nee"
+        },
+        {
+          "id": "gsm8k-test-88",
+          "gold": "8000",
+          "pred": "8000",
+          "ok": true,
+          "tokens": 686,
+          "text": "Okay, let's try to figure out this problem. So, Marilyn's first record sold 10 times as many copies as Harald's. Together, they sold 88,000 copies. We need to find out how many copies Harald sold. \n\nFirst, let me make sure I understand the problem correctly. Let's denote the number of copies Harald "
+        },
+        {
+          "id": "gsm8k-test-909",
+          "gold": "38",
+          "pred": "38",
+          "ok": true,
+          "tokens": 916,
+          "text": "Okay, let's try to solve this problem step by step. First, let's make sure I understand the problem correctly. \n\nSo, Duncan's current age is 60. The problem says: \"Duncan's age eight years ago was two times Adam's age four years ago.\" We need to find out how old Adam will be in 8 years. \n\nLet me bre"
+        },
+        {
+          "id": "gsm8k-test-1007",
+          "gold": "34",
+          "pred": "34",
+          "ok": true,
+          "tokens": 514,
+          "text": "Okay, let's try to figure out how many sticks the two friends have. First, let's break down the problem step by step. \n\nThe problem says there are 9 red sticks. So red sticks = 9. \n\nNext, it says there are 5 more blue sticks than red. So blue sticks are red sticks plus 5. Since red is 9, blue should"
+        },
+        {
+          "id": "gsm8k-test-356",
+          "gold": "21",
+          "pred": "21",
+          "ok": true,
+          "tokens": 499,
+          "text": "Okay, let's see. So Dean started with $28. He bought some toys. Let me break this down step by step.\n\nFirst, he bought 6 toy cars, each costing $2. So the cost for the toy cars would be 6 times $2. Let me calculate that: 6 * 2 = $12. Right, so $12 for the cars.\n\nThen he bought 5 teddy bears, each co"
+        },
+        {
+          "id": "gsm8k-test-54",
+          "gold": "40",
+          "pred": "7",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let me read it again carefully to make sure I understand all the parts.\n\nSo, the Doubtfire sisters are driving home with 7 kittens they adopted from the animal shelter. Then their mother calls to say that their two house cats have just "
+        },
+        {
+          "id": "gsm8k-test-219",
+          "gold": "54",
+          "pred": "2",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how many points Jojo scored. First, let's list out all the information given. \n\nWe know that four students scored a total of 251 points. The students are Naomi, Yuri, Brianna, and Jojo. \n\nNaomi scored 68 points. So Naomi = 68.\n\nYuri scored 10 more than half as many poin"
+        },
+        {
+          "id": "gsm8k-test-73",
+          "gold": "255",
+          "pred": "3",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how much Shiela will pay each month. First, let's break down the problem. She bought five cell phones, each for $150. So, the total cost before interest is 5 times $150. Let me calculate that first. \n\n5 phones * $150 each = $750. So, the principal amount is $750. Now, i"
+        },
+        {
+          "id": "gsm8k-test-491",
+          "gold": "16",
+          "pred": "16",
+          "ok": true,
+          "tokens": 376,
+          "text": "Okay, let's see. So the problem is about Jaime placing eggs on a tray. Each tray holds 24 eggs. He has 64 eggs and 2 trays. We need to find out how many eggs he can't place on the tray. \n\nFirst, I should figure out how many eggs can fit on the two trays. Since each tray holds 24 eggs, two trays woul"
+        },
+        {
+          "id": "gsm8k-test-602",
+          "gold": "5",
+          "pred": "5",
+          "ok": true,
+          "tokens": 601,
+          "text": "Okay, let's see. The problem is about a plane traveling 1200 miles in 3 hours. We need to find out how many additional hours it would take to travel an additional 2000 miles at the same rate. Hmm, first, I should figure out the plane's speed. \n\nSo, speed is distance divided by time. The plane goes 1"
+        },
+        {
+          "id": "gsm8k-test-156",
+          "gold": "1400",
+          "pred": "10",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how many bananas the zookeeper needs to order for 2 months. First, I need to list out all the animals and their banana requirements. \n\nThe problem says: monkeys need 200 bananas, gorillas need 400 bananas, and baboons need 100 bananas every month. Wait, the question is "
+        },
+        {
+          "id": "gsm8k-test-1116",
+          "gold": "60",
+          "pred": "60",
+          "ok": true,
+          "tokens": 596,
+          "text": "Okay, let's see. The problem says that last year there were 50 students in a calligraphy class. This year, there's a 20% increase in enrollment. I need to find out how many students are enrolled this year. \n\nFirst, I remember that a percentage increase means you take the original number and add a pe"
+        },
+        {
+          "id": "gsm8k-test-376",
+          "gold": "15",
+          "pred": "15",
+          "ok": true,
+          "tokens": 699,
+          "text": "Okay, let's try to figure out how many pupils like yellow. First, the problem says there are 40 pupils in the class. Half of the class likes blue. So, I need to find half of 40. Let me calculate that. Half of 40 is 20, right? So 20 pupils like blue.\n\nNow, the next part says one-fourth of the remaini"
+        },
+        {
+          "id": "gsm8k-test-317",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "tokens": 653,
+          "text": "Okay, let's see. So John is filling a pool that's 6 feet by 4 feet by 5 feet deep. The cost is $0.10 per cubic foot. I need to find the total cost. Hmm, first, I should figure out the volume of the pool because the cost depends on the volume. \n\nRight, the volume of a rectangular prism (which a pool "
+        },
+        {
+          "id": "gsm8k-test-495",
+          "gold": "200",
+          "pred": "200",
+          "ok": true,
+          "tokens": 547,
+          "text": "Okay, let's try to figure out how many minutes Charisma has walked after 5 days. First, let's break down the problem step by step. \n\nSo, Charisma works 8 hours every day. She has a timer that reminds her to get up and walk for 5 minutes every hour she's at work. We need to find out how many minutes "
+        },
+        {
+          "id": "gsm8k-test-670",
+          "gold": "4",
+          "pred": "4",
+          "ok": true,
+          "tokens": 360,
+          "text": "Okay, let's see. So Robert, Cindy, and Aaron have candy after Halloween. The problem says Robert had 3 pounds, Cindy 5 pounds, and Aaron 4 pounds. They want to pool and share equally. I need to find out how much each of them would have after sharing equally.\n\nFirst, I should figure out the total amo"
+        },
+        {
+          "id": "gsm8k-test-389",
+          "gold": "6",
+          "pred": "6",
+          "ok": true,
+          "tokens": 799,
+          "text": "Okay, let's try to figure out how much David saves. First, let me make sure I understand the problem correctly. \n\nSo, there are 9 rides at the carnival. Each ride costs 2 ride tickets, and each ticket is $2. So, normally, to get one ride, you need 2 tickets, which cost $2 each. Wait, no, hold on. Le"
+        },
+        {
+          "id": "gsm8k-test-595",
+          "gold": "13",
+          "pred": "13",
+          "ok": true,
+          "tokens": 700,
+          "text": "Okay, let's try to figure out this problem. So, the question is: Jerry is twice as old as he was 5 years ago. How old will Jerry be in 3 years? Hmm, let's break this down step by step.\n\nFirst, let's define a variable for Jerry's current age. Let's say his current age is \\( x \\) years. \n\nThe problem "
+        },
+        {
+          "id": "gsm8k-test-718",
+          "gold": "2",
+          "pred": "2",
+          "ok": true,
+          "tokens": 467,
+          "text": "Okay, let's try to figure out how many people accept the job position. So, the problem says 100 people apply for a job at Google. Let me break this down step by step.\n\nFirst, 30% of the applicants receive interviews. Since there are 100 applicants, 30% of 100 is 0.30 * 100. Let me calculate that: 0."
+        },
+        {
+          "id": "gsm8k-test-987",
+          "gold": "3",
+          "pred": "3",
+          "ok": true,
+          "tokens": 783,
+          "text": "Okay, let's see. So Artemis and her father have a 30-pound bag of soil. They want to plant some roses, carnations, and sunflowers. The question is, how many roses can they plant if they plant 4 sunflowers and 10 carnations. \n\nFirst, I need to figure out how much soil they use for the sunflowers and "
+        },
+        {
+          "id": "gsm8k-test-504",
+          "gold": "2",
+          "pred": "2",
+          "ok": true,
+          "tokens": 799,
+          "text": "Okay, let's try to figure out how much each pack of strawberry gum cost. Hmm, let's break down the problem step by step. \n\nFirst, Suzie bought four packs of gum. Let me list out what she bought: two packs of strawberry (her favorite), one pack of grape that cost $2, and one pack of green apple that "
+        },
+        {
+          "id": "gsm8k-test-474",
+          "gold": "80",
+          "pred": "80",
+          "ok": true,
+          "tokens": 609,
+          "text": "Okay, let's try to figure out this problem. So, the question is: At a certain grade level, three-fourths of students have a desktop computer at home. If 20 students do not have desktop computers, how many students are there at that grade level?\n\nHmm, let's break this down. First, if three-fourths of"
+        },
+        {
+          "id": "gsm8k-test-488",
+          "gold": "6",
+          "pred": "6",
+          "ok": true,
+          "tokens": 307,
+          "text": "Okay, let's see. Jana has 27 puppies. First, the problem says two-thirds of them are Pomeranians. So I need to find out how many Pomeranians there are. \n\nTwo-thirds of 27. Let me calculate that. 27 divided by 3 is 9, so two-thirds would be 9 times 2, which is 18. So there are 18 Pomeranians.\n\nNext p"
+        },
+        {
+          "id": "gsm8k-test-612",
+          "gold": "30",
+          "pred": "30",
+          "ok": true,
+          "tokens": 720,
+          "text": "Okay, let's try to figure out how many ounces of meat the basketball team consumed. Let me read through the problem again to make sure I don't miss anything.\n\nSo, the first player ate a 6-ounce steak. That's straightforward. So that's 6 ounces.\n\nThe second player ate beef tips, containing 8 beef tip"
+        },
+        {
+          "id": "gsm8k-test-706",
+          "gold": "9",
+          "pred": "9",
+          "ok": true,
+          "tokens": 770,
+          "text": "Okay, let's see. The problem is about the firefighters raising money for a \"fill the boot\" fundraiser. Their goal is $6300. After 3 hours, they've raised $2100. We need to find out how many total hours they need to fundraise to reach their goal, assuming they raise an equal amount each hour. \n\nFirst"
+        },
+        {
+          "id": "gsm8k-test-553",
+          "gold": "92",
+          "pred": "92",
+          "ok": true,
+          "tokens": 596,
+          "text": "Okay, let's see. Bill needs to figure out how many more water bottles he needs to buy for his party. Let me break this down step by step.\n\nFirst, he started with 2 cases of water, and each case has 24 bottles. So, I need to calculate how many bottles he already has. That would be 2 cases times 24 bo"
+        },
+        {
+          "id": "gsm8k-test-870",
+          "gold": "40",
+          "pred": "40",
+          "ok": true,
+          "tokens": 928,
+          "text": "Okay, let's try to figure out this problem step by step. First, the problem says that Madeline and Keenan share the cost of groceries, and they spend about $400 per month. We need to find out how many dollars Keenan spends per week, given that Madeline pays 60% of the cost. \n\nFirst, let's make sure "
+        },
+        {
+          "id": "gsm8k-test-181",
+          "gold": "160",
+          "pred": "160",
+          "ok": true,
+          "tokens": 852,
+          "text": "Okay, let's try to figure out this problem step by step. First, let me read through it again to make sure I understand.\n\nSo, Sandra is a florist who ordered some things. She ordered four times as many red roses as white carnations. She also ordered 200 pink calla lilies, which were five times the nu"
+        },
+        {
+          "id": "gsm8k-test-328",
+          "gold": "2",
+          "pred": "2",
+          "ok": true,
+          "tokens": 588,
+          "text": "Okay, let's try to figure out this problem. So, the phone recharges at a rate of 1 percentage-point of charge per 3 minutes. It's currently at 60% charged, and we need to find out how long it will take to fully charge, which is 100%. \n\nFirst, let me make sure I understand the problem correctly. The "
+        },
+        {
+          "id": "gsm8k-test-725",
+          "gold": "25",
+          "pred": "25",
+          "ok": true,
+          "tokens": 933,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the question correctly. We have a cat that eats nine sausages in 30 minutes. Then a dog can eat the same number of sausages (so also nine) in 2/3 the time the cat takes. We need to find the average time the "
+        },
+        {
+          "id": "gsm8k-test-666",
+          "gold": "120",
+          "pred": "120",
+          "ok": true,
+          "tokens": 1024,
+          "text": "Okay, let's try to solve this problem step by step. First, let's make sure I understand the problem correctly. We have three people: Rayna, Kassidas (I think it's Kassidy), and Aurelia (the problem says \"Arelia\" but probably a typo for Aurelia). The problem states:\n\n- Rayna has 60 more dollars than "
+        },
+        {
+          "id": "gsm8k-test-722",
+          "gold": "255",
+          "pred": "255",
+          "ok": true,
+          "tokens": 850,
+          "text": "Okay, let's try to figure out how much Ron saves by fixing the pothole himself. First, I need to understand the problem step by step. \n\nSo, the problem says that if the pothole isn't fixed, it's going to do $450 worth of damage to his car. But if he fixes it himself, the city council will fine him $"
+        },
+        {
+          "id": "gsm8k-test-871",
+          "gold": "48",
+          "pred": "2",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how many pizza pieces Tobias has eaten so far. First, let's make sure I understand the problem correctly. He bought a big pizza with 60 pieces. On the first day, he ate 2/5 of the pieces. Then on the second day, he ate 10 pieces. On the third day, he ate 7/13 of the rem"
+        },
+        {
+          "id": "gsm8k-test-625",
+          "gold": "160",
+          "pred": "160",
+          "ok": true,
+          "tokens": 491,
+          "text": "Okay, let's see. So Arianna has a garden with 10 rows of flowers, and each row has 20 flowers. First, I need to figure out the total number of flowers she planted. Then, since only 4/5 of them have bloomed, I can calculate how many that is.\n\nLet me start by finding the total number of flowers. If th"
+        },
+        {
+          "id": "gsm8k-test-907",
+          "gold": "16",
+          "pred": "16",
+          "ok": true,
+          "tokens": 335,
+          "text": "Okay, let's see. The problem says Sarah has 9 books. Joseph had twice the number of Sarah’s books, but he lost 2 of them. We need to find out how many books Joseph currently has.\n\nFirst, let's break it down step by step. Sarah has 9 books. Joseph had twice that number. So, twice Sarah's books would "
+        },
+        {
+          "id": "gsm8k-test-1069",
+          "gold": "300",
+          "pred": "2",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let me read it again carefully.\n\nSo, Mr. Hezekiah had 20 trucks from his store supplying fertilizer to different farmers. Each truck was carrying 20 tons of fertilizer packed in bags. Two hours after the trucks had departed for delivery"
+        },
+        {
+          "id": "gsm8k-test-677",
+          "gold": "36",
+          "pred": "36",
+          "ok": true,
+          "tokens": 463,
+          "text": "Okay, let's see. So Carol and Jennifer are sisters who collect celebrity signatures. After five weeks, Carol has 20 and Jennifer has 44. They want to reach 100 signatures between them by the end of summer, which is three more weeks away. The question is how many more signatures they need to collect."
+        },
+        {
+          "id": "gsm8k-test-1232",
+          "gold": "15",
+          "pred": "15",
+          "ok": true,
+          "tokens": 334,
+          "text": "Okay, let's see. Eve had 20 pomelos originally. After giving some away, she's left with 1/4 of what she started with. I need to find out how many she gave away. \n\nFirst, let me figure out how many she has left. If 1/4 is left, then that's 1/4 of 20. Let me calculate that. 20 divided by 4 is 5. So sh"
+        },
+        {
+          "id": "gsm8k-test-547",
+          "gold": "81",
+          "pred": "81",
+          "ok": true,
+          "tokens": 902,
+          "text": "Okay, let's try to figure out this phone tree problem. So, the question is: Ali starts by calling 3 families. Then each family calls 3 other families, and this continues for the fourth round of calls. We need to find out how many families are notified during the fourth round. \n\nFirst, let me make su"
+        },
+        {
+          "id": "gsm8k-test-918",
+          "gold": "56",
+          "pred": "56",
+          "ok": true,
+          "tokens": 913,
+          "text": "Okay, let's try to figure out this problem step by step. First, let me read it again carefully to make sure I understand all the parts.\n\nSo, there are 6 students playing tennis. Then it says \"twice that number playing volleyball.\" Hmm, \"twice that number\" refers to the tennis players, right? So if t"
+        },
+        {
+          "id": "gsm8k-test-375",
+          "gold": "48",
+          "pred": "48",
+          "ok": true,
+          "tokens": 463,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the question correctly. Mrs. Sherman made a dozen bread rolls for breakfast. A dozen is 12, right? So she has 12 rolls initially. \n\nThen she feeds her 6 children with one each. So that means she gives 1 roll"
+        },
+        {
+          "id": "gsm8k-test-1236",
+          "gold": "84",
+          "pred": "5",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the question correctly. Madeline ate 6 grapes. Her brother used 5 times as many grapes as Madeline to make grape juice. Then their mother used the remaining grapes to make 4 pies, and each pie requires 12 gr"
+        },
+        {
+          "id": "gsm8k-test-233",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "tokens": 872,
+          "text": "Okay, let's try to figure out this penguin problem. So, the question is: There are 36 penguins sunbathing in the snow. One-third of them jump in and swim in the ocean. Another one-third go inside the cave to eat their dinner. How many penguins are still left sunbathing?\n\nFirst, I need to break down "
+        },
+        {
+          "id": "gsm8k-test-540",
+          "gold": "39",
+          "pred": "26",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let me read through it again to make sure I understand.\n\n\"18 is shared among 3 boys.\" So, the total money is $18, divided among 3 boys. Wait, does it say how it's shared? Like, maybe equally? The problem says \"shared among 3 boys,\" but "
+        },
+        {
+          "id": "gsm8k-test-171",
+          "gold": "1210",
+          "pred": "3",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's see. Jake is at the museum and he sees different creatures with different numbers of legs. I need to calculate the total number of legs he sees. Let me break it down step by step.\n\nFirst, there are 80 spiders, each with 8 legs. So for the spiders, I should multiply 80 by 8. Let me do tha"
+        },
+        {
+          "id": "gsm8k-test-793",
+          "gold": "250",
+          "pred": "250",
+          "ok": true,
+          "tokens": 756,
+          "text": "Okay, let's see. So Jamie earns $20 per hour for 8 hours a day. But last Tuesday she worked 11 hours. Hmm, I need to figure out how much she got paid. \n\nFirst, I remember that when someone works overtime, they might get paid a different rate for the extra hours. The problem says if she needs to work"
+        },
+        {
+          "id": "gsm8k-test-978",
+          "gold": "160",
+          "pred": "160",
+          "ok": true,
+          "tokens": 437,
+          "text": "Okay, let's see. The problem says the red car is 40% cheaper than the blue car, and the blue car is $100. We need to find out how much both cars cost together. \n\nFirst, I need to figure out the price of the red car. Since it's 40% cheaper than the blue car, that means the red car's price is the blue"
+        },
+        {
+          "id": "gsm8k-test-721",
+          "gold": "2450",
+          "pred": "5",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the question correctly. Helga is a clog dancer. When her arms are down (at her sides), she taps her right foot at 300 taps per minute and her left foot at 250 taps per minute. But when she raises her arms, e"
+        },
+        {
+          "id": "gsm8k-test-601",
+          "gold": "104",
+          "pred": "3",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how many games Steve has after 3 years. Hmm, let's break this down step by step. First, I need to consider each year separately because the problem mentions different numbers of games per month each year and also Christmas games every year. \n\nLet me start by listing out"
+        },
+        {
+          "id": "gsm8k-test-32",
+          "gold": "35",
+          "pred": "35",
+          "ok": true,
+          "tokens": 473,
+          "text": "Okay, let's see. So John takes care of 10 dogs. Each dog takes 0.5 hours a day to walk and take care of their business. The question is asking how many hours a week he spends on this. \n\nFirst, I need to figure out how much time he spends each day. Since there are 10 dogs, and each dog takes 0.5 hour"
+        },
+        {
+          "id": "gsm8k-test-487",
+          "gold": "4",
+          "pred": "4",
+          "ok": true,
+          "tokens": 777,
+          "text": "Okay, let's try to figure out how many bags Uncle Ben needs for five days. First, let's break down the problem step by step. \n\nSo, he has four horses. Each horse eats 5 pounds of oats per meal. He feeds them twice a day. One bag is 50 pounds. We need to find out how many bags for five days.\n\nFirst, "
+        },
+        {
+          "id": "gsm8k-test-417",
+          "gold": "3140",
+          "pred": "2100",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how many kilometers Tom traveled in total during his two-week trip. First, I need to break down the problem step by step. Let me read it again carefully.\n\nSo, Tom's trip is two weeks long. Let's confirm: two weeks is 14 days. The problem says \"in the first 4 days, he tr"
+        },
+        {
+          "id": "gsm8k-test-1018",
+          "gold": "60",
+          "pred": "60",
+          "ok": true,
+          "tokens": 459,
+          "text": "Okay, let's see. The problem is about James reading his book. It says it takes him 10 minutes to read 3 pages. Then he reads 18 pages and goes to sleep. We need to find out how long he spends reading in minutes.\n\nFirst, I need to figure out the rate at which James reads. If 3 pages take 10 minutes, "
+        },
+        {
+          "id": "gsm8k-test-592",
+          "gold": "1",
+          "pred": "1",
+          "ok": true,
+          "tokens": 443,
+          "text": "Okay, let's see. So Marilyn wants to buy these boots online, and we need to compare the total cost on Amazon versus eBay. The question is asking how much more expensive the boots are on eBay compared to Amazon. \n\nFirst, let me break down the costs for each platform. \n\nStarting with Amazon. The boots"
+        },
+        {
+          "id": "gsm8k-test-533",
+          "gold": "300",
+          "pred": "70",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's list out what we know. Errol bought a computer, 2 monitors, and a printer for a total of $2,400. The computer cost $1,100, and he paid $400 less for the printer than the computer. We need to find the cost of one monitor.\n\nFirst, l"
+        },
+        {
+          "id": "gsm8k-test-359",
+          "gold": "4",
+          "pred": "40",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how many pounds of candy Billy bought. Let me read through the problem again to make sure I understand it.\n\nSo, Billy has $10 from his father. He buys some candy that costs $1.5 per pound. After buying candy, he takes half his change and spends it on gumballs that cost "
+        },
+        {
+          "id": "gsm8k-test-565",
+          "gold": "5",
+          "pred": "5",
+          "ok": true,
+          "tokens": 601,
+          "text": "Okay, let's see. So Cody and Trevor had 12 sandwiches total. Cody ate a third of them, and Trevor ate a quarter of them. We need to find out how many are left. Hmm, let me break this down step by step.\n\nFirst, let's figure out how many sandwiches Cody ate. A third of 12. So that's 12 divided by 3. L"
+        },
+        {
+          "id": "gsm8k-test-379",
+          "gold": "21",
+          "pred": "21",
+          "ok": true,
+          "tokens": 438,
+          "text": "Okay, let's see. So Rachel bought 23 cookies, and then Janet gave her 42 cookies. Then her brother ate 44 of those cookies. We need to find out how many are left for Rachel. \n\nFirst, I should figure out how many cookies Rachel had after Janet gave her the 42. So she started with 23, then got 42 more"
+        },
+        {
+          "id": "gsm8k-test-406",
+          "gold": "200",
+          "pred": "6",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to solve this problem step by step. First, let me read through the problem again to make sure I understand it.\n\n\"At Allan's house, there is twice as much corn as cannolis. He has a total of 40 cannolis in his house. Allan bought 60 more cannolis at the store and 40 fewer corns than t"
+        },
+        {
+          "id": "gsm8k-test-831",
+          "gold": "324",
+          "pred": "2",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how much Angela will have to pay for the installation. First, let me read through the problem again to make sure I understand it.\n\nSo, the interior design firm offers installation for $129.00. This includes hanging 4 mirrors, 2 shelves, 1 chandelier, and 10 pictures. Th"
+        },
+        {
+          "id": "gsm8k-test-957",
+          "gold": "45",
+          "pred": "45",
+          "ok": true,
+          "tokens": 532,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's list out what we know. The problem says: Shawna's father is five times as old as Shawัง. Shawna is currently three times as old as Aliya. Aliya is 3 years old. We need to find Shawna's father's age.\n\nHmm, let's break it down. Let'"
+        },
+        {
+          "id": "gsm8k-test-249",
+          "gold": "5,600",
+          "pred": "26",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's make sure I understand the problem correctly. \n\nSo, Sue and her sister are eating cookies. On Monday, Sue ate 4 times as many cookies as her sister. On Tuesday, Sue ate twice as many cookies as her sister. Her sister ate 5 cookies"
+        },
+        {
+          "id": "gsm8k-test-473",
+          "gold": "10",
+          "pred": "10",
+          "ok": true,
+          "tokens": 672,
+          "text": "Okay, let's try to figure out this problem. So, Benny saw a 10-foot shark with 2 remoras that are each 6 inches long. We need to find what percentage of the shark's body length the combined length of the remoras is. \n\nFirst, I need to make sure all the units are the same. The shark's length is in fe"
+        },
+        {
+          "id": "gsm8k-test-1015",
+          "gold": "78",
+          "pred": "78",
+          "ok": true,
+          "tokens": 698,
+          "text": "Okay, let's try to figure out this problem step by step. First, let's read it again to make sure I understand. Anne has a box of sweets with 15 packs, each pack has 60 pieces. She kept two packs and gave the rest to her 10 friends equally. We need to find out how many pieces each friend got.\n\nAlrigh"
+        },
+        {
+          "id": "gsm8k-test-1240",
+          "gold": "2",
+          "pred": "55",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how many bookcases Elly needs. First, I need to understand the problem step by step. \n\nSo, the problem says: Each of the middle 2 shelves can hold 10 books. The bottom shelf can hold twice as many books as a middle shelf. The top shelf can hold 5 fewer books than the bo"
+        },
+        {
+          "id": "gsm8k-test-466",
+          "gold": "1",
+          "pred": "100",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out how much more Kelly paid than Becky. First, I need to calculate how much each of them paid, then subtract Becky's total from Kelly's total to find the difference. Let me break it down step by step.\n\nStarting with Becky. She bought 20 apples at 45 cents each. So, first, "
+        },
+        {
+          "id": "gsm8k-test-1218",
+          "gold": "225",
+          "pred": "45",
+          "ok": false,
+          "tokens": 1024,
+          "text": "Okay, let's try to figure out this problem step by step. So, first, the question is about Cedar Falls Middle School students trying an escape room. Let me read through it again to make sure I understand.\n\nThey have students in grades 4–7, so that's 4 grades. Each grade has 10 students who get the mo"
+        },
+        {
+          "id": "gsm8k-test-1237",
+          "gold": "78",
+          "pred": "78",
+          "ok": true,
+          "tokens": 639,
+          "text": "Okay, let's see. The problem is about how many teachers were at school last Friday. Let me read it again carefully.\n\n\"Last Friday, 13 of the 82 teachers at Rydell Elementary School were sick. There were 9 substitute teachers called in to help. How many teachers were at school that day?\"\n\nAlright, so"
+        }
+      ]
+    },
+    "direct": {
+      "accuracy": 0.02,
+      "correct": 2,
+      "n": 100,
+      "budget": 16,
+      "mean_tokens": 16.0,
+      "mean_seconds": 1.75,
+      "records": [
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "200",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nCarla is downloading a 200 GB file."
+        },
+        {
+          "id": "gsm8k-test-443",
+          "gold": "59",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nFirst, let's break down the information given:\n\n- **"
+        },
+        {
+          "id": "gsm8k-test-708",
+          "gold": "168",
+          "pred": "12",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nAlex charges $12 per day for"
+        },
+        {
+          "id": "gsm8k-test-1073",
+          "gold": "21",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the total number of bananas consumed by all three monkeys in"
+        },
+        {
+          "id": "gsm8k-test-579",
+          "gold": "7",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the number of cards the brother has.\nThe boy has"
+        },
+        {
+          "id": "gsm8k-test-1197",
+          "gold": "2400",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the cost per bottle of scotch\nJohn buys "
+        },
+        {
+          "id": "gsm8k-test-327",
+          "gold": "31",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine how many lollipops Oscar has after eating "
+        },
+        {
+          "id": "gsm8k-test-786",
+          "gold": "142",
+          "pred": "5",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the number of tomatoes\nRicardo planted 5"
+        },
+        {
+          "id": "gsm8k-test-780",
+          "gold": "25",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nWe need to find the difference in scores between Ava and Emma"
+        },
+        {
+          "id": "gsm8k-test-111",
+          "gold": "16",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nFirst, let's break down the information given:\n\n1."
+        },
+        {
+          "id": "gsm8k-test-1045",
+          "gold": "420",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Define Variables\nLet the amount the first person took be $"
+        },
+        {
+          "id": "gsm8k-test-45",
+          "gold": "104",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the number of articles written each day\n- **Monday"
+        },
+        {
+          "id": "gsm8k-test-1273",
+          "gold": "27",
+          "pred": "52",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nMazie has 52 mar"
+        },
+        {
+          "id": "gsm8k-test-880",
+          "gold": "10",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nFirst, let's make sure I understand what's being asked"
+        },
+        {
+          "id": "gsm8k-test-854",
+          "gold": "144",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the number of homes built in each year.\n- **"
+        },
+        {
+          "id": "gsm8k-test-1246",
+          "gold": "3360",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total number of games played in four years.\nA"
+        },
+        {
+          "id": "gsm8k-test-1317",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Define Variables\nLet's denote:\n- $ c $ ="
+        },
+        {
+          "id": "gsm8k-test-775",
+          "gold": "276",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nFirst, I need to figure out how many wheels Henry needs"
+        },
+        {
+          "id": "gsm8k-test-923",
+          "gold": "2",
+          "pred": "27",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nLana has 27 cups of tea total. She"
+        },
+        {
+          "id": "gsm8k-test-832",
+          "gold": "42",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine how much Eva has saved.\nThe problem states that Eva"
+        },
+        {
+          "id": "gsm8k-test-916",
+          "gold": "14",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the cost of the balloons\nThe problem states that they"
+        },
+        {
+          "id": "gsm8k-test-840",
+          "gold": "16",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nPatrick has three glue sticks that are partially used. Each glue"
+        },
+        {
+          "id": "gsm8k-test-657",
+          "gold": "330000",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the cost of the plane itself\nJames buys the plane"
+        },
+        {
+          "id": "gsm8k-test-321",
+          "gold": "1",
+          "pred": "1",
+          "ok": true,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the cost of the magazine.\nThe problem states that a"
+        },
+        {
+          "id": "gsm8k-test-353",
+          "gold": "20",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Let's solve this step by step.\n\nFirst, let's figure out how much"
+        },
+        {
+          "id": "gsm8k-test-996",
+          "gold": "3",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nWe have four children: Akbar,"
+        },
+        {
+          "id": "gsm8k-test-1079",
+          "gold": "10",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Problem Breakdown\n\nOkay, let's try to figure out this problem step by"
+        },
+        {
+          "id": "gsm8k-test-480",
+          "gold": "11",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine how many tubes of blue paint Jasper has.\nBen has"
+        },
+        {
+          "id": "gsm8k-test-197",
+          "gold": "6277",
+          "pred": "2378",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Problem\nIn the city of Soda, there are exactly 2378"
+        },
+        {
+          "id": "gsm8k-test-749",
+          "gold": "3",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nThe problem states: \"In a school activity, fifty-four"
+        },
+        {
+          "id": "gsm8k-test-216",
+          "gold": "220",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total amount Janeth needs to repay\nJaneth"
+        },
+        {
+          "id": "gsm8k-test-289",
+          "gold": "16",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nWe have two cars:\n- Fast lane"
+        },
+        {
+          "id": "gsm8k-test-862",
+          "gold": "40",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the number of hours Paige baked banana bread.\nShe baked"
+        },
+        {
+          "id": "gsm8k-test-88",
+          "gold": "8000",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Define Variables\nLet's denote the number of copies Harald"
+        },
+        {
+          "id": "gsm8k-test-909",
+          "gold": "38",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nWe need to find Adam's age in"
+        },
+        {
+          "id": "gsm8k-test-1007",
+          "gold": "34",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the number of blue sticks\nThe problem states there are"
+        },
+        {
+          "id": "gsm8k-test-356",
+          "gold": "21",
+          "pred": "6",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total cost of toy cars\nDean bought 6"
+        },
+        {
+          "id": "gsm8k-test-54",
+          "gold": "40",
+          "pred": "7",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nThe Doubtfire sisters have 7"
+        },
+        {
+          "id": "gsm8k-test-219",
+          "gold": "54",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nWe have four students: Naomi, Yuri"
+        },
+        {
+          "id": "gsm8k-test-73",
+          "gold": "255",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total cost of the cell phones\nShiela"
+        },
+        {
+          "id": "gsm8k-test-491",
+          "gold": "16",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the total capacity of the trays\nEach tray can hold"
+        },
+        {
+          "id": "gsm8k-test-602",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Find the rate of the plane\nThe plane travels 1"
+        },
+        {
+          "id": "gsm8k-test-156",
+          "gold": "1400",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nThe zookeeper feeds all the apes"
+        },
+        {
+          "id": "gsm8k-test-1116",
+          "gold": "60",
+          "pred": "50",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nLast year, there were 50"
+        },
+        {
+          "id": "gsm8k-test-376",
+          "gold": "15",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the number of pupils who like blue.\nThe problem states"
+        },
+        {
+          "id": "gsm8k-test-317",
+          "gold": "12",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the volume of the pool\nThe pool is a rectangular"
+        },
+        {
+          "id": "gsm8k-test-495",
+          "gold": "200",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the number of hours Charisma works each day.\nChar"
+        },
+        {
+          "id": "gsm8k-test-670",
+          "gold": "4",
+          "pred": "3",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Find the total amount of candy\nRobert had 3 pounds"
+        },
+        {
+          "id": "gsm8k-test-389",
+          "gold": "6",
+          "pred": "9",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the cost of buying tickets for 9 rides without a"
+        },
+        {
+          "id": "gsm8k-test-595",
+          "gold": "13",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Let's solve this step by step.\n\nFirst, let's define Jerry's current"
+        },
+        {
+          "id": "gsm8k-test-718",
+          "gold": "2",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the number of people who receive interviews\nWe start with"
+        },
+        {
+          "id": "gsm8k-test-987",
+          "gold": "3",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total amount of soil used for sunflowers\nEach"
+        },
+        {
+          "id": "gsm8k-test-504",
+          "gold": "2",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Let's solve this step by step.\n\nFirst, let's list out what we"
+        },
+        {
+          "id": "gsm8k-test-474",
+          "gold": "80",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Problem:\nAt a certain grade level, three-fourths of students have a desktop"
+        },
+        {
+          "id": "gsm8k-test-488",
+          "gold": "6",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the number of Pomeranians\nJana has"
+        },
+        {
+          "id": "gsm8k-test-612",
+          "gold": "30",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Convert all measurements to ounces\nFirst, I need to make"
+        },
+        {
+          "id": "gsm8k-test-706",
+          "gold": "9",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nThe problem states that the firefighters are doing a \"fill the"
+        },
+        {
+          "id": "gsm8k-test-553",
+          "gold": "92",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total number of water bottles Bill started with.\nBill"
+        },
+        {
+          "id": "gsm8k-test-870",
+          "gold": "40",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the total monthly cost\nThe problem states that Madeline"
+        },
+        {
+          "id": "gsm8k-test-181",
+          "gold": "160",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Define the variables\nLet's denote the number of white carn"
+        },
+        {
+          "id": "gsm8k-test-328",
+          "gold": "2",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nOkay, let's try to figure out this problem step by"
+        },
+        {
+          "id": "gsm8k-test-725",
+          "gold": "25",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Problem Analysis\n\nOkay, let's try to figure out this problem step by step"
+        },
+        {
+          "id": "gsm8k-test-666",
+          "gold": "120",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine how much money Kassidy has\nThe problem states"
+        },
+        {
+          "id": "gsm8k-test-722",
+          "gold": "255",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Let's break down the problem step by step.\n\nFirst, we need to figure"
+        },
+        {
+          "id": "gsm8k-test-871",
+          "gold": "48",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the number of pieces eaten on the first day\nT"
+        },
+        {
+          "id": "gsm8k-test-625",
+          "gold": "160",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total number of flowers planted.\nArianna has"
+        },
+        {
+          "id": "gsm8k-test-907",
+          "gold": "16",
+          "pred": "9",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine how many books Joseph initially had.\nSarah has 9"
+        },
+        {
+          "id": "gsm8k-test-1069",
+          "gold": "300",
+          "pred": "2",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nMr. Hezekiah had 2"
+        },
+        {
+          "id": "gsm8k-test-677",
+          "gold": "36",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nFirst, let's make sure I understand what's being asked"
+        },
+        {
+          "id": "gsm8k-test-1232",
+          "gold": "15",
+          "pred": "20",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nEve starts with 20 pom"
+        },
+        {
+          "id": "gsm8k-test-547",
+          "gold": "81",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nOkay, let's try to figure out this phone tree problem"
+        },
+        {
+          "id": "gsm8k-test-918",
+          "gold": "56",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the number of students playing tennis\nThe problem states there"
+        },
+        {
+          "id": "gsm8k-test-375",
+          "gold": "48",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the number of rolls left after feeding the children\nMrs"
+        },
+        {
+          "id": "gsm8k-test-1236",
+          "gold": "84",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine how many grapes her brother used.\nMadeline ate "
+        },
+        {
+          "id": "gsm8k-test-233",
+          "gold": "12",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the number of penguins that jump in the ocean.\n"
+        },
+        {
+          "id": "gsm8k-test-540",
+          "gold": "39",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the initial share for each boy\nThe problem states that"
+        },
+        {
+          "id": "gsm8k-test-171",
+          "gold": "1210",
+          "pred": "80",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total legs from spiders\nJake sees 80"
+        },
+        {
+          "id": "gsm8k-test-793",
+          "gold": "250",
+          "pred": "8",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the regular pay for the first 8 hours\nJamie"
+        },
+        {
+          "id": "gsm8k-test-978",
+          "gold": "160",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nWe are told that the red car is"
+        },
+        {
+          "id": "gsm8k-test-721",
+          "gold": "2450",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Problem Breakdown\n\nOkay, let's try to figure out this problem step by"
+        },
+        {
+          "id": "gsm8k-test-601",
+          "gold": "104",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the number of games bought each year\n- **First"
+        },
+        {
+          "id": "gsm8k-test-32",
+          "gold": "35",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the daily time spent on dogs\nJohn has 1"
+        },
+        {
+          "id": "gsm8k-test-487",
+          "gold": "4",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the daily oats consumption per horse\nEach horse consumes "
+        },
+        {
+          "id": "gsm8k-test-417",
+          "gold": "3140",
+          "pred": "4",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the distance traveled in the first 4 days\nTom"
+        },
+        {
+          "id": "gsm8k-test-1018",
+          "gold": "60",
+          "pred": "3",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the reading rate\nJames reads 3 pages in "
+        },
+        {
+          "id": "gsm8k-test-592",
+          "gold": "1",
+          "pred": "1",
+          "ok": true,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total cost on Amazon\nThe boots cost $1"
+        },
+        {
+          "id": "gsm8k-test-533",
+          "gold": "300",
+          "pred": "2",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nErrol bought a computer, 2"
+        },
+        {
+          "id": "gsm8k-test-359",
+          "gold": "4",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine how much money Billy spent on gumballs\nHe"
+        },
+        {
+          "id": "gsm8k-test-565",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine how many sandwiches Cody ate.\nCody ate a third"
+        },
+        {
+          "id": "gsm8k-test-379",
+          "gold": "21",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total number of cookies Rachel had after Janet gave her"
+        },
+        {
+          "id": "gsm8k-test-406",
+          "gold": "200",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nAllan has twice as much corn as"
+        },
+        {
+          "id": "gsm8k-test-831",
+          "gold": "324",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine the base installation cost\nThe problem states that the interior"
+        },
+        {
+          "id": "gsm8k-test-957",
+          "gold": "45",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Determine Shawna's age\nShawna is three times"
+        },
+        {
+          "id": "gsm8k-test-249",
+          "gold": "5,600",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nFirst, I need to figure out how many cookies Sue and"
+        },
+        {
+          "id": "gsm8k-test-473",
+          "gold": "10",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nFirst, I need to figure out the total length of the"
+        },
+        {
+          "id": "gsm8k-test-1015",
+          "gold": "78",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate the total number of sweets in the box\nAnne has"
+        },
+        {
+          "id": "gsm8k-test-1240",
+          "gold": "2",
+          "pred": null,
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nFirst, I need to figure out how many books each shelf"
+        },
+        {
+          "id": "gsm8k-test-466",
+          "gold": "1",
+          "pred": "2",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Calculate Becky's total cost\nBecky bought 2"
+        },
+        {
+          "id": "gsm8k-test-1218",
+          "gold": "225",
+          "pred": "4",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Understanding the Problem\n\nWe have Cedar Falls Middle School with students in grades 4"
+        },
+        {
+          "id": "gsm8k-test-1237",
+          "gold": "78",
+          "pred": "1",
+          "ok": false,
+          "tokens": 16,
+          "text": "#### Step 1: Understand the problem\nWe need to find out how many teachers"
+        }
+      ]
+    }
+  }
+}

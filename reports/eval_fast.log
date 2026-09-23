@@ -1,0 +1,20 @@
+W0919 00:58:23.270000 31864 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\modeling_utils.py:5064: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:01, 247.36it/s]Loading weights:  13%|█▎        | 50/398 [00:00<00:01, 248.46it/s]Loading weights:  19%|█▉        | 75/398 [00:00<00:01, 245.40it/s]Loading weights:  25%|██▌       | 100/398 [00:00<00:01, 235.99it/s]Loading weights:  32%|███▏      | 126/398 [00:00<00:01, 242.83it/s]Loading weights:  39%|███▊      | 154/398 [00:00<00:00, 251.28it/s]Loading weights:  45%|████▌     | 180/398 [00:00<00:00, 243.71it/s]Loading weights:  52%|█████▏    | 207/398 [00:00<00:00, 250.60it/s]Loading weights:  59%|█████▊    | 233/398 [00:00<00:00, 238.28it/s]Loading weights:  65%|██████▍   | 258/398 [00:01<00:00, 238.76it/s]Loading weights:  72%|███████▏  | 287/398 [00:01<00:00, 241.76it/s]Loading weights:  78%|███████▊  | 312/398 [00:01<00:00, 227.37it/s]Loading weights:  85%|████████▌ | 339/398 [00:01<00:00, 237.56it/s]Loading weights:  92%|█████████▏| 366/398 [00:01<00:00, 244.42it/s]Loading weights:  99%|█████████▉| 394/398 [00:01<00:00, 254.37it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 246.80it/s]
+evaluating base model ...
+  base: acc=0.567 tokens=48.0
+evaluating depth 1 ...
+  depth 1: acc=0.567 tokens=16.0
+evaluating depth 4 ...
+  depth 4: acc=0.033 tokens=16.0
+evaluating depth 8 ...
+  depth 8: acc=0.000 tokens=16.0
+
+===== FINAL DEPTH CURVE =====
+  base model (no loop):     0.567
+  trained depth  1:       0.567
+  trained depth  4:       0.033
+  trained depth  8:       0.000
+
+written to E:\develop\project_files\llm-test\results\pq_v1_fast_eval.json

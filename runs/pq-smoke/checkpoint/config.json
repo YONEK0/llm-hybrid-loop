@@ -1,0 +1,33 @@
+{
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "quantized_weights": "E:\\develop\\project_files\\llm-test\\models\\Qwen3-4B-Thinking-2507-bnb-4bit",
+  "method": "recurrent depth (weight-tied block looped K times with per-iteration low-rank deltas) + deep supervision",
+  "train_depth": 4,
+  "block_start": 24,
+  "block_len": 6,
+  "rank": 8,
+  "trainable": "low-rank deltas on 7 projections of the 6 looped layers",
+  "scope": "GSM8K answer-only training on one 8GB laptop GPU; inference depth is a runtime knob",
+  "args": {
+    "run_name": "pq-smoke",
+    "train_count": 60,
+    "dev_count": 8,
+    "max_steps": 6,
+    "accum": 2,
+    "lr": 0.0001,
+    "train_depth": 4,
+    "keep_steps": 2,
+    "keep_steps_schedule": null,
+    "aux_weight": 0.2,
+    "block_start": 24,
+    "block_len": 6,
+    "rank": 8,
+    "seed": 2026,
+    "resume": null,
+    "depth_sampling": false,
+    "eval_every": 0,
+    "max_new_tokens": 32
+  },
+  "steps": 6,
+  "train_seconds": 4.4
+}

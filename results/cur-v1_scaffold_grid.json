@@ -1,0 +1,1996 @@
+{
+  "checkpoint": "runs/cur-v1/checkpoint",
+  "split": "test",
+  "n": 30,
+  "protocol": "gold first-k CoT steps given as context, then greedy generation",
+  "max_delta_B": 0.017587583512067795,
+  "injection_delta": 0.0,
+  "grid": {
+    "k0_d1": {
+      "accuracy": 0.03333333333333333,
+      "correct": 1,
+      "n": 30,
+      "keep_steps": 0,
+      "depth": 1,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "130",
+          "ok": false,
+          "text": "</think>\n\n#### 130"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "130",
+          "ok": false,
+          "text": "</think>\n\n#### 130"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "12000",
+          "ok": false,
+          "text": "</think>\n\n#### 12000"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "11",
+          "ok": false,
+          "text": "</think>\n\n#### 11"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "18",
+          "ok": false,
+          "text": "</think>\n\n#### 18"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "120000",
+          "ok": false,
+          "text": "</think>\n\n#### 120000"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "12.32",
+          "ok": false,
+          "text": "</think>\n\n#### 12.32"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "11",
+          "ok": false,
+          "text": "</think>\n\n#### 11"
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1000",
+          "ok": false,
+          "text": "</think>\n\n#### 1000"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "121",
+          "ok": false,
+          "text": "</think>\n\n#### 121"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "125",
+          "ok": false,
+          "text": "</think>\n\n#### 125"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        }
+      ]
+    },
+    "k0_d2": {
+      "accuracy": 0.03333333333333333,
+      "correct": 1,
+      "n": 30,
+      "keep_steps": 0,
+      "depth": 2,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "1000",
+          "ok": false,
+          "text": "</think>\n\n#### 1000"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "11",
+          "ok": false,
+          "text": "</think>\n\n#### 11"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "1000",
+          "ok": false,
+          "text": "</think>\n\n#### 1000"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "18",
+          "ok": false,
+          "text": "</think>\n\n#### 18"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "150000",
+          "ok": false,
+          "text": "</think>\n\n#### 150000"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "100",
+          "ok": false,
+          "text": "</think>\n\n#### 100"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 180 days of 1 cup / day = "
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "100",
+          "ok": false,
+          "text": "</think>\n\n#### 100"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1000",
+          "ok": false,
+          "text": "</think>\n\n#### 1000"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "14",
+          "ok": false,
+          "text": "</think>\n\n#### 14"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "114",
+          "ok": false,
+          "text": "</think>\n\n#### 114"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "125",
+          "ok": false,
+          "text": "</think>\n\n#### 125"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        }
+      ]
+    },
+    "k0_d4": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 30,
+      "keep_steps": 0,
+      "depth": 4,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "130",
+          "ok": false,
+          "text": "</think>\n\n#### 130"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "1000",
+          "ok": false,
+          "text": "</think>\n\n#### 1000"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "1000",
+          "ok": false,
+          "text": "</think>\n\n#### 1000"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "18",
+          "ok": false,
+          "text": "</think>\n\n#### 18"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "130",
+          "ok": false,
+          "text": "</think>\n\n#### 130"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "150",
+          "ok": false,
+          "text": "</think>\n\n#### 150"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "240",
+          "ok": false,
+          "text": "</think>\n\n#### 240"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "3",
+          "ok": false,
+          "text": "</think>\n\n#### 3"
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "100",
+          "ok": false,
+          "text": "</think>\n\n#### 100"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1000",
+          "ok": false,
+          "text": "</think>\n\n#### 1000"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "2",
+          "ok": false,
+          "text": "</think>\n\n#### 2"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "14",
+          "ok": false,
+          "text": "</think>\n\n#### 14"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "121",
+          "ok": false,
+          "text": "</think>\n\n#### 121"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        }
+      ]
+    },
+    "k1_d1": {
+      "accuracy": 0.13333333333333333,
+      "correct": 4,
+      "n": 30,
+      "keep_steps": 1,
+      "depth": 1,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "140",
+          "ok": true,
+          "text": "</think>\n\n#### 140"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "350",
+          "ok": false,
+          "text": "</think>\n\n#### 350"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "3200",
+          "ok": false,
+          "text": "</think>\n\n#### 3200"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "10",
+          "ok": true,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "40",
+          "ok": false,
+          "text": "</think>\n\n#### 40"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "11.92",
+          "ok": false,
+          "text": "</think>\n\n#### 11.92"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "100000",
+          "ok": false,
+          "text": "</think>\n\n#### 100000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "17",
+          "ok": false,
+          "text": "</think>\n\n#### 17"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "122",
+          "ok": false,
+          "text": "</think>\n\n#### 122"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1356",
+          "ok": false,
+          "text": "</think>\n\n#### 1356"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "300",
+          "ok": false,
+          "text": "</think>\n\n#### 300"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "44",
+          "ok": false,
+          "text": "</think>\n\n#### 44"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "101",
+          "ok": true,
+          "text": "</think>\n\n#### 101"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "24",
+          "ok": false,
+          "text": "</think>\n\n#### 24"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "16",
+          "ok": false,
+          "text": "</think>\n\n#### 16"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "180",
+          "ok": false,
+          "text": "</think>\n\n#### 180"
+        }
+      ]
+    },
+    "k1_d2": {
+      "accuracy": 0.13333333333333333,
+      "correct": 4,
+      "n": 30,
+      "keep_steps": 1,
+      "depth": 2,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "140",
+          "ok": true,
+          "text": "</think>\n\n#### 140"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "250",
+          "ok": true,
+          "text": "</think>\n\n#### 250"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "15000",
+          "ok": false,
+          "text": "</think>\n\n#### 15000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "12000",
+          "ok": false,
+          "text": "</think>\n\n#### 12000"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "40",
+          "ok": false,
+          "text": "</think>\n\n#### 40"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "100000",
+          "ok": false,
+          "text": "</think>\n\n#### 100000"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "100000",
+          "ok": false,
+          "text": "</think>\n\n#### 100000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "124",
+          "ok": false,
+          "text": "</think>\n\n#### 124"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1354",
+          "ok": false,
+          "text": "</think>\n\n#### 1354"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "300",
+          "ok": false,
+          "text": "</think>\n\n#### 300"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "44",
+          "ok": false,
+          "text": "</think>\n\n#### 44"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "108",
+          "ok": false,
+          "text": "</think>\n\n#### 108"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "16",
+          "ok": false,
+          "text": "</think>\n\n#### 16"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        }
+      ]
+    },
+    "k1_d4": {
+      "accuracy": 0.1,
+      "correct": 3,
+      "n": 30,
+      "keep_steps": 1,
+      "depth": 4,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "140",
+          "ok": true,
+          "text": "</think>\n\n#### 140"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "100",
+          "ok": false,
+          "text": "</think>\n\n#### 100"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "1040",
+          "ok": false,
+          "text": "</think>\n\n#### 1040"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "15000",
+          "ok": false,
+          "text": "</think>\n\n#### 15000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "12000",
+          "ok": false,
+          "text": "</think>\n\n#### 12000"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "36",
+          "ok": false,
+          "text": "</think>\n\n#### 36"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "150",
+          "ok": false,
+          "text": "</think>\n\n#### 150"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "10000",
+          "ok": false,
+          "text": "</think>\n\n#### 10000"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "12000",
+          "ok": false,
+          "text": "</think>\n\n#### 12000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "124",
+          "ok": false,
+          "text": "</think>\n\n#### 124"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1449",
+          "ok": false,
+          "text": "</think>\n\n#### 1449"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "300",
+          "ok": false,
+          "text": "</think>\n\n#### 300"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "44",
+          "ok": false,
+          "text": "</think>\n\n#### 44"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "114",
+          "ok": false,
+          "text": "</think>\n\n#### 114"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "16",
+          "ok": false,
+          "text": "</think>\n\n#### 16"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "16",
+          "ok": false,
+          "text": "</think>\n\n#### 16"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        }
+      ]
+    },
+    "k2_d1": {
+      "accuracy": 0.4666666666666667,
+      "correct": 14,
+      "n": 30,
+      "keep_steps": 2,
+      "depth": 1,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "140",
+          "ok": true,
+          "text": "</think>\n\n#### 140"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "250",
+          "ok": true,
+          "text": "</think>\n\n#### 250"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "10400",
+          "ok": false,
+          "text": "</think>\n\n#### 10400"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "126",
+          "ok": false,
+          "text": "</think>\n\n#### 126"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "25000",
+          "ok": true,
+          "text": "</think>\n\n#### 25000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "3800",
+          "ok": false,
+          "text": "</think>\n\n#### 3800"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "360",
+          "ok": true,
+          "text": "</think>\n\n#### 360"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "10",
+          "ok": true,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "30",
+          "ok": false,
+          "text": "</think>\n\n#### 30"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "140000",
+          "ok": false,
+          "text": "</think>\n\n#### 140000"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "15",
+          "ok": true,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "60000",
+          "ok": true,
+          "text": "</think>\n\n#### 60000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "17",
+          "ok": false,
+          "text": "</think>\n\n#### 17"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "132",
+          "ok": false,
+          "text": "</think>\n\n#### 132"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1509",
+          "ok": true,
+          "text": "</think>\n\n#### 1509"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "240",
+          "ok": true,
+          "text": "</think>\n\n#### 240"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "45",
+          "ok": false,
+          "text": "</think>\n\n#### 45"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "101",
+          "ok": true,
+          "text": "</think>\n\n#### 101"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "35",
+          "ok": true,
+          "text": "</think>\n\n#### 35"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "60",
+          "ok": true,
+          "text": "</think>\n\n#### 60"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "16",
+          "ok": false,
+          "text": "</think>\n\n#### 16"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "150",
+          "ok": false,
+          "text": "</think>\n\n#### 150"
+        }
+      ]
+    },
+    "k2_d2": {
+      "accuracy": 0.4666666666666667,
+      "correct": 14,
+      "n": 30,
+      "keep_steps": 2,
+      "depth": 2,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "140",
+          "ok": true,
+          "text": "</think>\n\n#### 140"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "250",
+          "ok": true,
+          "text": "</think>\n\n#### 250"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "126",
+          "ok": false,
+          "text": "</think>\n\n#### 126"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "25000",
+          "ok": true,
+          "text": "</think>\n\n#### 25000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "2800",
+          "ok": false,
+          "text": "</think>\n\n#### 2800"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "360",
+          "ok": true,
+          "text": "</think>\n\n#### 360"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "10",
+          "ok": true,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "30",
+          "ok": false,
+          "text": "</think>\n\n#### 30"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "140000",
+          "ok": false,
+          "text": "</think>\n\n#### 140000"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "15",
+          "ok": true,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "60000",
+          "ok": true,
+          "text": "</think>\n\n#### 60000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "1200",
+          "ok": false,
+          "text": "</think>\n\n#### 1200"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "132",
+          "ok": false,
+          "text": "</think>\n\n#### 132"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1509",
+          "ok": true,
+          "text": "</think>\n\n#### 1509"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "240",
+          "ok": true,
+          "text": "</think>\n\n#### 240"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "45",
+          "ok": false,
+          "text": "</think>\n\n#### 45"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "101",
+          "ok": true,
+          "text": "</think>\n\n#### 101"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "35",
+          "ok": true,
+          "text": "</think>\n\n#### 35"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "60",
+          "ok": true,
+          "text": "</think>\n\n#### 60"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        }
+      ]
+    },
+    "k2_d4": {
+      "accuracy": 0.3,
+      "correct": 9,
+      "n": 30,
+      "keep_steps": 2,
+      "depth": 4,
+      "records": [
+        {
+          "id": "gsm8k-test-222",
+          "gold": "140",
+          "pred": "140",
+          "ok": true,
+          "text": "</think>\n\n#### 140"
+        },
+        {
+          "id": "gsm8k-test-1058",
+          "gold": "250",
+          "pred": "250",
+          "ok": true,
+          "text": "</think>\n\n#### 250"
+        },
+        {
+          "id": "gsm8k-test-690",
+          "gold": "5760",
+          "pred": "1040",
+          "ok": false,
+          "text": "</think>\n\n#### 1040"
+        },
+        {
+          "id": "gsm8k-test-254",
+          "gold": "84",
+          "pred": "124",
+          "ok": false,
+          "text": "</think>\n\n#### 124"
+        },
+        {
+          "id": "gsm8k-test-824",
+          "gold": "52",
+          "pred": "14",
+          "ok": false,
+          "text": "</think>\n\n#### 14"
+        },
+        {
+          "id": "gsm8k-test-62",
+          "gold": "25000",
+          "pred": "25000",
+          "ok": true,
+          "text": "</think>\n\n#### 25000"
+        },
+        {
+          "id": "gsm8k-test-798",
+          "gold": "20",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-631",
+          "gold": "4800",
+          "pred": "1800",
+          "ok": false,
+          "text": "</think>\n\n#### 1800"
+        },
+        {
+          "id": "gsm8k-test-190",
+          "gold": "360",
+          "pred": "360",
+          "ok": true,
+          "text": "</think>\n\n#### 360"
+        },
+        {
+          "id": "gsm8k-test-607",
+          "gold": "10",
+          "pred": "3",
+          "ok": false,
+          "text": "</think>\n\n#### 3"
+        },
+        {
+          "id": "gsm8k-test-884",
+          "gold": "50",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-1206",
+          "gold": "40,000",
+          "pred": "100000",
+          "ok": false,
+          "text": "</think>\n\n#### 100000"
+        },
+        {
+          "id": "gsm8k-test-660",
+          "gold": "15",
+          "pred": "10",
+          "ok": false,
+          "text": "</think>\n\n#### 10"
+        },
+        {
+          "id": "gsm8k-test-873",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-759",
+          "gold": "60000",
+          "pred": "30000",
+          "ok": false,
+          "text": "</think>\n\n#### 30000"
+        },
+        {
+          "id": "gsm8k-test-1161",
+          "gold": "170",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-330",
+          "gold": "31",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        },
+        {
+          "id": "gsm8k-test-259",
+          "gold": "168",
+          "pred": "132",
+          "ok": false,
+          "text": "</think>\n\n#### 132"
+        },
+        {
+          "id": "gsm8k-test-76",
+          "gold": "5",
+          "pred": "1",
+          "ok": false,
+          "text": "</think>\n\n#### 1"
+        },
+        {
+          "id": "gsm8k-test-7",
+          "gold": "160",
+          "pred": "120",
+          "ok": false,
+          "text": "</think>\n\n#### 120"
+        },
+        {
+          "id": "gsm8k-test-620",
+          "gold": "1509",
+          "pred": "1509",
+          "ok": true,
+          "text": "</think>\n\n#### 1509"
+        },
+        {
+          "id": "gsm8k-test-752",
+          "gold": "240",
+          "pred": "360",
+          "ok": false,
+          "text": "</think>\n\n#### 360"
+        },
+        {
+          "id": "gsm8k-test-1027",
+          "gold": "12",
+          "pred": "12",
+          "ok": true,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1179",
+          "gold": "50",
+          "pred": "45",
+          "ok": false,
+          "text": "</think>\n\n#### 45"
+        },
+        {
+          "id": "gsm8k-test-1041",
+          "gold": "101",
+          "pred": "101",
+          "ok": true,
+          "text": "</think>\n\n#### 101"
+        },
+        {
+          "id": "gsm8k-test-675",
+          "gold": "33",
+          "pred": "12",
+          "ok": false,
+          "text": "</think>\n\n#### 12"
+        },
+        {
+          "id": "gsm8k-test-1035",
+          "gold": "35",
+          "pred": "14",
+          "ok": false,
+          "text": "</think>\n\n#### 14"
+        },
+        {
+          "id": "gsm8k-test-1110",
+          "gold": "60",
+          "pred": "60",
+          "ok": true,
+          "text": "</think>\n\n#### 60"
+        },
+        {
+          "id": "gsm8k-test-214",
+          "gold": "8",
+          "pred": "19",
+          "ok": false,
+          "text": "</think>\n\n#### 19"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "gold": "50",
+          "pred": "15",
+          "ok": false,
+          "text": "</think>\n\n#### 15"
+        }
+      ]
+    },
+    "zeroed_k0_d4": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 15
+    },
+    "zeroed_k1_d4": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 15
+    },
+    "zeroed_k2_d4": {
+      "accuracy": 0.06666666666666667,
+      "correct": 1,
+      "n": 15
+    }
+  }
+}

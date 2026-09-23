@@ -1,0 +1,58 @@
+{
+  "base": {
+    "accuracy": 0.5666666666666667,
+    "correct": 17,
+    "mean_tokens": 48.0
+  },
+  "depth_1": {
+    "accuracy": 0.5666666666666667,
+    "correct": 17,
+    "mean_tokens": 16.0,
+    "samples": [
+      {
+        "gold": "Eva is a lorpus.",
+        "pred": "Eva is a lorpus",
+        "text": "Okay, let's try to figure out if Eva is a lorpus or y"
+      },
+      {
+        "gold": "Tom is a storpus.",
+        "pred": "Tom is a storpus",
+        "text": "Okay, let's try to figure out if Tom is a storpus or sc"
+      }
+    ]
+  },
+  "depth_4": {
+    "accuracy": 0.03333333333333333,
+    "correct": 1,
+    "mean_tokens": 16.0,
+    "samples": [
+      {
+        "gold": "Eva is a lorpus.",
+        "pred": "This is a logic",
+        "text": "Okay, wait, hold on. This is a logic puzzle with lots of these"
+      },
+      {
+        "gold": "Tom is a storpus.",
+        "pred": "Okay, wait, hold on. This question seems complicated with all these different -",
+        "text": "Okay, wait, hold on. This question seems complicated with all these different -"
+      }
+    ]
+  },
+  "depth_8": {
+    "accuracy": 0.0,
+    "correct": 0,
+    "mean_tokens": 16.0,
+    "samples": [
+      {
+        "gold": "Eva is a lorpus.",
+        "pred": "Okay, wait for God knows too much here. Okay, slow pace. Alright",
+        "text": "Okay, wait for God knows too much here. Okay, slow pace. Alright"
+      },
+      {
+        "gold": "Tom is a storpus.",
+        "pred": "Okay, wait. Okay, hold hold. Okay, deep breath. Alright,",
+        "text": " Okay, wait. Okay, hold hold. Okay, deep breath. Alright,"
+      }
+    ]
+  }
+}

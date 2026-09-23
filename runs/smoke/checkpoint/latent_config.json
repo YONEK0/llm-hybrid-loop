@@ -1,0 +1,32 @@
+{
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "quantized_weights": "E:\\develop\\project_files\\llm-test\\models\\Qwen3-4B-Thinking-2507-bnb-4bit",
+  "latent_steps": 4,
+  "kd_layers": [
+    17,
+    24,
+    30,
+    36
+  ],
+  "lora_rank": 8,
+  "bridge_rank": 256,
+  "method": "continuous hidden-state feedback (Coconut-style) trained with same-model explicit-CoT hidden-state distillation (CODI/iCoT-style) on a 4-bit QLoRA Qwen3-4B-Thinking",
+  "scope": "GSM8K math-reasoning pilot on a single 8GB laptop GPU",
+  "args": {
+    "run_name": "smoke",
+    "train_count": 8,
+    "valid_count": 2,
+    "max_steps": 2,
+    "accum": 1,
+    "lr": 0.0001,
+    "latent_steps": 4,
+    "kd_weight": 1.0,
+    "ref_weight": 1.0,
+    "lora_rank": 8,
+    "seed": 2026,
+    "resume": null,
+    "eval_every": 0,
+    "max_new_tokens": 48
+  },
+  "steps": 2
+}

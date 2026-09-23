@@ -1,0 +1,1 @@
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files:  14%|█▍        | 1/7 [00:08<00:48,  8.08s/it]Fetching 7 files:  29%|██▊       | 2/7 [00:08<00:18,  3.72s/it]

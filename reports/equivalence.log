@@ -1,0 +1,10 @@
+W0918 15:09:17.960000 21248 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\modeling_utils.py:5064: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   8%|▊         | 33/398 [00:00<00:01, 316.58it/s]Loading weights:  16%|█▋        | 65/398 [00:00<00:01, 302.42it/s]Loading weights:  24%|██▍       | 96/398 [00:00<00:01, 260.69it/s]Loading weights:  31%|███       | 123/398 [00:00<00:01, 259.94it/s]Loading weights:  38%|███▊      | 151/398 [00:00<00:00, 253.00it/s]Loading weights:  45%|████▌     | 180/398 [00:00<00:00, 262.70it/s]Loading weights:  52%|█████▏    | 207/398 [00:00<00:00, 264.32it/s]Loading weights:  59%|█████▉    | 236/398 [00:00<00:00, 266.56it/s]Loading weights:  67%|██████▋   | 268/398 [00:00<00:00, 280.15it/s]Loading weights:  75%|███████▌  | 300/398 [00:01<00:00, 282.92it/s]Loading weights:  83%|████████▎ | 331/398 [00:01<00:00, 284.04it/s]Loading weights:  91%|█████████ | 361/398 [00:01<00:00, 276.86it/s]Loading weights:  98%|█████████▊| 389/398 [00:01<00:00, 270.75it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 277.20it/s]
+{
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "equivalent": true,
+  "note": "depth=1 looped forward vs stock forward; deltas are zero-initialised so they must match"
+}

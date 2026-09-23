@@ -1,0 +1,22 @@
+Loading Ouro-1.4B ...
+Traceback (most recent call last):
+  File "E:\develop\project_files\llm-test\eval_ouro1b.py", line 111, in <module>
+    main()
+    ~~~~^^
+  File "E:\develop\project_files\llm-test\eval_ouro1b.py", line 59, in main
+    model = AutoModelForCausalLM.from_pretrained(
+        MODEL_DIR, trust_remote_code=True, dtype=torch.bfloat16, device_map={"": 0})
+  File "E:\develop\project_files\llm-test\ouro_env\Lib\site-packages\transformers\models\auto\auto_factory.py", line 553, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+        class_ref, pretrained_model_name_or_path, code_revision=code_revision, **hub_kwargs, **kwargs
+    )
+  File "E:\develop\project_files\llm-test\ouro_env\Lib\site-packages\transformers\dynamic_module_utils.py", line 552, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+  File "E:\develop\project_files\llm-test\ouro_env\Lib\site-packages\transformers\dynamic_module_utils.py", line 249, in get_class_in_module
+    module_spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\li287\.cache\huggingface\modules\transformers_modules\Ouro-1.4B\modeling_ouro.py", line 10, in <module>
+    from transformers.integrations import use_kernel_forward_from_hub
+ImportError: cannot import name 'use_kernel_forward_from_hub' from 'transformers.integrations' (E:\develop\project_files\llm-test\ouro_env\Lib\site-packages\transformers\integrations\__init__.py)

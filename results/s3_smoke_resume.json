@@ -1,0 +1,18 @@
+{
+  "event": "S3 冒烟测试：断点续训全链路验证",
+  "date": "2026-09-20",
+  "script": "s3_train_l0.py",
+  "design": [
+    "检查点 = gate+q_head 权重 + AdamW 状态 + 三路 RNG + step/sup_tokens，原子写(tmp→os.replace)",
+    "滚动保留 ckpt_latest.pt / ckpt_prev.pt，损坏可回退",
+    "数据顺序由 seed*1000+epoch 确定性重算，无需存数据游标",
+    "dev 评估每块只编码一次、按深度复用（修复初始版按深度重复编码的效率缺陷）"
+  ],
+  "results": {
+    "interrupted_2plus2": {"dev_ce": {"d1": 2.4407, "d2": 2.4578, "d4": 2.7815, "d8": 3.806}},
+    "uninterrupted_4":   {"dev_ce": {"d1": 2.4407, "d2": 2.4578, "d4": 2.7815, "d8": 3.806}},
+    "bitwise_identical": true,
+    "verdict": "PASS"
+  },
+  "note": "中断-恢复与不中断训练在 4 个深度上 dev CE 完全一致 → RNG/数据顺序/优化器状态恢复正确；断电最多损失一个 ckpt-every 间隔（正式运行默认 25 batch）的工作量"
+}

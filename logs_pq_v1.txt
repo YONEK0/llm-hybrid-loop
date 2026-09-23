@@ -1,0 +1,49 @@
+W0918 23:20:12.541000 31532 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\modeling_utils.py:5064: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   8%|▊         | 30/398 [00:00<00:01, 293.08it/s]Loading weights:  15%|█▌        | 60/398 [00:00<00:01, 239.66it/s]Loading weights:  23%|██▎       | 92/398 [00:00<00:01, 269.99it/s]Loading weights:  30%|███       | 120/398 [00:00<00:01, 265.04it/s]Loading weights:  38%|███▊      | 152/398 [00:00<00:00, 274.77it/s]Loading weights:  46%|████▌     | 184/398 [00:00<00:00, 289.00it/s]Loading weights:  54%|█████▍    | 214/398 [00:00<00:00, 274.51it/s]Loading weights:  61%|██████    | 242/398 [00:00<00:00, 265.22it/s]Loading weights:  69%|██████▉   | 275/398 [00:01<00:00, 276.05it/s]Loading weights:  77%|███████▋  | 305/398 [00:01<00:00, 281.41it/s]Loading weights:  84%|████████▍ | 334/398 [00:01<00:00, 267.45it/s]Loading weights:  91%|█████████ | 361/398 [00:01<00:00, 267.01it/s]Loading weights:  99%|█████████▊| 393/398 [00:01<00:00, 281.37it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 277.25it/s]
+trainable=24.117M depth=4 train=10000 dev=12 schedule=[(0, 3), (500, 2), (850, 1), (1050, 0)]
+pre-training reference (gold steps, depth 4):
+  keep=4: CE=3.220 EM=0.000
+  keep=0: CE=8.094 EM=0.000
+{"step": 50, "epoch": 1, "seconds": 1.5, "peak_gib": 7.25, "ce": 0.1259765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 3, "scaffold": 27, "answer": 10}
+{"step": 100, "epoch": 1, "seconds": 2.1, "peak_gib": 7.41, "ce": 0.296875, "aux_ce": 0.47952064871788025, "depth": 4, "keep_steps": 3, "scaffold": 27, "answer": 10, "grad_norm": 11.451}
+{"step": 150, "epoch": 1, "seconds": 2.15, "peak_gib": 7.41, "ce": 0.1630859375, "aux_ce": 0.499831885099411, "depth": 2, "keep_steps": 3, "scaffold": 25, "answer": 11}
+EVAL {"step": 150, "keep_steps": 3, "scored": {"k3": {"ce": 0.282, "em": 0.25}, "k0": {"ce": 2.099, "em": 0.3}}, "free_acc": 0.0}
+CHECKPOINT saved at step 150
+{"step": 200, "epoch": 1, "seconds": 2.12, "peak_gib": 7.41, "ce": 0.1513671875, "aux_ce": 0.29212886095046997, "depth": 4, "keep_steps": 3, "scaffold": 24, "answer": 10, "grad_norm": 7.603}
+{"step": 250, "epoch": 1, "seconds": 2.48, "peak_gib": 7.41, "ce": 0.0712890625, "aux_ce": 0.10293819010257721, "depth": 2, "keep_steps": 3, "scaffold": 26, "answer": 10}
+{"step": 300, "epoch": 1, "seconds": 1.91, "peak_gib": 7.41, "ce": 0.251953125, "aux_ce": 0.5900219678878784, "depth": 3, "keep_steps": 3, "scaffold": 25, "answer": 11, "grad_norm": 6.132}
+EVAL {"step": 300, "keep_steps": 3, "scored": {"k3": {"ce": 0.247, "em": 0.4}, "k0": {"ce": 2.71, "em": 0.15}}, "free_acc": 0.0}
+CHECKPOINT saved at step 300
+{"step": 350, "epoch": 1, "seconds": 0.44, "peak_gib": 7.41, "ce": 0.11376953125, "aux_ce": 0.0, "depth": 1, "keep_steps": 3, "scaffold": 22, "answer": 11}
+{"step": 400, "epoch": 1, "seconds": 0.46, "peak_gib": 7.41, "ce": 0.07275390625, "aux_ce": 0.0, "depth": 1, "keep_steps": 3, "scaffold": 27, "answer": 11, "grad_norm": 5.871}
+{"step": 450, "epoch": 1, "seconds": 0.78, "peak_gib": 7.41, "ce": 0.1259765625, "aux_ce": 0.08030006289482117, "depth": 3, "keep_steps": 3, "scaffold": 23, "answer": 10}
+EVAL {"step": 450, "keep_steps": 3, "scored": {"k3": {"ce": 0.237, "em": 0.3}, "k0": {"ce": 2.949, "em": 0.05}}, "free_acc": 0.0}
+CHECKPOINT saved at step 450
+{"step": 500, "epoch": 1, "seconds": 2.07, "peak_gib": 7.41, "ce": 0.2373046875, "aux_ce": 0.3413885831832886, "depth": 4, "keep_steps": 3, "scaffold": 28, "answer": 10, "grad_norm": 4.154}
+{"step": 550, "epoch": 1, "seconds": 1.59, "peak_gib": 7.41, "ce": 0.041259765625, "aux_ce": 0.06765580922365189, "depth": 2, "keep_steps": 2, "scaffold": 18, "answer": 10}
+{"step": 600, "epoch": 1, "seconds": 1.12, "peak_gib": 7.41, "ce": 0.263671875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 16, "answer": 10, "grad_norm": 7.225}
+EVAL {"step": 600, "keep_steps": 2, "scored": {"k2": {"ce": 0.163, "em": 0.25}, "k0": {"ce": 1.658, "em": 0.2}}, "free_acc": 0.0}
+CHECKPOINT saved at step 600
+{"step": 650, "epoch": 1, "seconds": 1.77, "peak_gib": 7.42, "ce": 0.1435546875, "aux_ce": 0.12652289867401123, "depth": 4, "keep_steps": 2, "scaffold": 17, "answer": 11}
+{"step": 700, "epoch": 1, "seconds": 1.61, "peak_gib": 7.42, "ce": 0.12255859375, "aux_ce": 0.23273757100105286, "depth": 2, "keep_steps": 2, "scaffold": 16, "answer": 12, "grad_norm": 4.353}
+{"step": 750, "epoch": 1, "seconds": 0.33, "peak_gib": 7.42, "ce": 0.138671875, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 17, "answer": 10}
+EVAL {"step": 750, "keep_steps": 2, "scored": {"k2": {"ce": 0.215, "em": 0.25}, "k0": {"ce": 1.848, "em": 0.25}}, "free_acc": 0.0}
+CHECKPOINT saved at step 750
+{"step": 800, "epoch": 1, "seconds": 0.59, "peak_gib": 7.42, "ce": 0.1064453125, "aux_ce": 0.0, "depth": 1, "keep_steps": 2, "scaffold": 17, "answer": 10, "grad_norm": 5.478}
+{"step": 850, "epoch": 1, "seconds": 1.68, "peak_gib": 7.42, "ce": 0.11962890625, "aux_ce": 0.3323228061199188, "depth": 2, "keep_steps": 2, "scaffold": 15, "answer": 11}
+{"step": 900, "epoch": 1, "seconds": 1.59, "peak_gib": 7.42, "ce": 0.1767578125, "aux_ce": 0.5061783790588379, "depth": 4, "keep_steps": 1, "scaffold": 8, "answer": 11, "grad_norm": 4.281}
+EVAL {"step": 900, "keep_steps": 1, "scored": {"k1": {"ce": 0.16, "em": 0.25}, "k0": {"ce": 0.469, "em": 0.25}}, "free_acc": 0.0}
+CHECKPOINT saved at step 900
+{"step": 950, "epoch": 1, "seconds": 1.29, "peak_gib": 7.42, "ce": 0.31640625, "aux_ce": 0.6252123117446899, "depth": 3, "keep_steps": 1, "scaffold": 6, "answer": 11}
+{"step": 1000, "epoch": 1, "seconds": 1.23, "peak_gib": 7.42, "ce": 0.154296875, "aux_ce": 0.14980930089950562, "depth": 3, "keep_steps": 1, "scaffold": 7, "answer": 11, "grad_norm": 4.285}
+{"step": 1050, "epoch": 1, "seconds": 1.36, "peak_gib": 7.42, "ce": 0.1181640625, "aux_ce": 0.25094515085220337, "depth": 4, "keep_steps": 1, "scaffold": 7, "answer": 11}
+EVAL {"step": 1050, "keep_steps": 1, "scored": {"k1": {"ce": 0.115, "em": 0.35}, "k0": {"ce": 1.068, "em": 0.25}}, "free_acc": 0.0}
+CHECKPOINT saved at step 1050
+{"step": 1100, "epoch": 1, "seconds": 0.57, "peak_gib": 7.42, "ce": 0.009765625, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 10, "grad_norm": 3.656}
+{"step": 1150, "epoch": 1, "seconds": 1.56, "peak_gib": 7.42, "ce": 0.003814697265625, "aux_ce": 0.0033422934357076883, "depth": 3, "keep_steps": 0, "scaffold": 0, "answer": 11}
+{"step": 1200, "epoch": 1, "seconds": 0.99, "peak_gib": 7.42, "ce": 0.07763671875, "aux_ce": 0.0, "depth": 1, "keep_steps": 0, "scaffold": 0, "answer": 12, "grad_norm": 3.791}
+EVAL {"step": 1200, "keep_steps": 0, "scored": {"k0": {"ce": 0.194, "em": 0.25}}, "free_acc": 0.0}
+CHECKPOINT saved at step 1200
+done: 1200 steps in 2214s

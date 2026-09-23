@@ -1,0 +1,836 @@
+{
+  "n": 30,
+  "conditions": {
+    "base_48": {
+      "loose_acc": 0.5666666666666667,
+      "strict_acc": 0.0,
+      "artifact_of_loose_correct": 17,
+      "rows": [
+        {
+          "gold": "Eva is a lorpus.",
+          "loose_pred": "Eva is a lorpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a lorpus or yumpus. Hmm, this seems like a logic p",
+          "text": "Okay, let's try to figure out if Eva is a lorpus or yumpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to track all the relationships step by step. Let me list"
+        },
+        {
+          "gold": "Tom is a storpus.",
+          "loose_pred": "Tom is a storpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a storpus or scrompus. Hmm, this seems like a logi",
+          "text": "Okay, let's try to figure out if Tom is a storpus or scrompus. Hmm, this seems like a logic puzzle with a lot of different terms. I need to map out all the relationships step by step. Let me"
+        },
+        {
+          "gold": "Oliver is a scrompus.",
+          "loose_pred": "Oliver is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a felpus or scrompus. Hmm, this seems like a lo",
+          "text": "Okay, let's try to figure out if Oliver is a felpus or scrompus. Hmm, this seems like a logic puzzle with a bunch of statements about different types of creatures. I need to go through each statement step by"
+        },
+        {
+          "gold": "Sally is a scrompus.",
+          "loose_pred": "Sally is a scrompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sally is a scrompus or a vumpus. Hmm, this seems like a l",
+          "text": "Okay, let's try to figure out if Sally is a scrompus or a vumpus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. Let me break it down step by step.\n\nFirst,"
+        },
+        {
+          "gold": "Davis is a lorpus.",
+          "loose_pred": "Davis is a lorpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Davis is a lorpus or jompus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Davis is a lorpus or jompus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. Let me break it down step by step.\n\nFirst, I need"
+        },
+        {
+          "gold": "Jack is a gwompus.",
+          "loose_pred": "Jack is a dumpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a dumpus or gwompus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Jack is a dumpus or gwompus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me"
+        },
+        {
+          "gold": "Jack is a scrompus.",
+          "loose_pred": "Jack is a scrompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a scrompus or jompus. Hmm, this seems like a logi",
+          "text": "Okay, let's try to figure out if Jack is a scrompus or jompus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst"
+        },
+        {
+          "gold": "Gabriel is a yumpus.",
+          "loose_pred": "Gabriel is a kerpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Gabriel is a kerpus or a yumpus. Hmm, this seems like a l",
+          "text": "Okay, let's try to figure out if Gabriel is a kerpus or a yumpus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. I need to go through each statement step by step and see"
+        },
+        {
+          "gold": "Tom is a rempus.",
+          "loose_pred": "Tom is a rempus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a rempus or timpus. Hmm, this seems like a logic p",
+          "text": "Okay, let's try to figure out if Tom is a rempus or timpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let"
+        },
+        {
+          "gold": "Fae is a fompus.",
+          "loose_pred": "Fae is a fompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Fae is a fompus or chorpus. Hmm, this seems like a logic ",
+          "text": "Okay, let's try to figure out if Fae is a fompus or chorpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let"
+        },
+        {
+          "gold": "Eva is a tumpus.",
+          "loose_pred": "Eva is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a tumpus or vumpus. Hmm, this seems like a logic p",
+          "text": "Okay, let's try to figure out if Eva is a tumpus or vumpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let"
+        },
+        {
+          "gold": "Oliver is a zumpus.",
+          "loose_pred": "Oliver is a zumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a zumpus or worpus. Hmm, this seems like a logi",
+          "text": "Okay, let's try to figure out if Oliver is a zumpus or worpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst,"
+        },
+        {
+          "gold": "Carol is a felpus.",
+          "loose_pred": "Carol is a felpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Carol is a felpus or lempus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Carol is a felpus or lempus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to go through each statement step by step and see how"
+        },
+        {
+          "gold": "Alex is a brimpus.",
+          "loose_pred": "Alex is a brimpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Alex is a brimpus or chorpus. Hmm, this seems like a logi",
+          "text": "Okay, let's try to figure out if Alex is a brimpus or chorpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst,"
+        },
+        {
+          "gold": "Stella is a vumpus.",
+          "loose_pred": "Stella is a gerpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a gerpus or vumpus. Hmm, this seems like a logi",
+          "text": "Okay, let's try to figure out if Stella is a gerpus or vumpus. Hmm, this seems like a logic puzzle with a bunch of different categories. I need to track all the relationships step by step. Let me list"
+        },
+        {
+          "gold": "Eva is a boompus.",
+          "loose_pred": "Eva is a boompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a boompus or numpus. Hmm, this seems like a logic ",
+          "text": "Okay, let's try to figure out if Eva is a boompus or numpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let"
+        },
+        {
+          "gold": "Jack is a chorpus.",
+          "loose_pred": "Jack is a terpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a terpus or chorpus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Jack is a terpus or chorpus. Hmm, this seems like a logic puzzle with a lot of different terms. I need to go through each statement step by step and see how the relationships"
+        },
+        {
+          "gold": "Bob is a grimpus.",
+          "loose_pred": "Bob is a grimpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Bob is a grimpus or sterpus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Bob is a grimpus or sterpus. Hmm, this seems like a logic puzzle with a bunch of categories. Let me break it down step by step.\n\nFirst, I need to list"
+        },
+        {
+          "gold": "Gabriel is a storpus.",
+          "loose_pred": "Gabriel is a storpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Gabriel is a storpus or zumpus. Hmm, this seems like a lo",
+          "text": "Okay, let's try to figure out if Gabriel is a storpus or zumpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me"
+        },
+        {
+          "gold": "Sam is a shumpus.",
+          "loose_pred": "Sam is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sam is a felpus or shumpus. Hmm, this seems like a logic ",
+          "text": "Okay, let's try to figure out if Sam is a felpus or shumpus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. I need to go through each statement step by step and see"
+        },
+        {
+          "gold": "Oliver is a storpus.",
+          "loose_pred": "Oliver is a timpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a timpus or storpus. Hmm, this seems like a log",
+          "text": "Okay, let's try to figure out if Oliver is a timpus or storpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst, let"
+        },
+        {
+          "gold": "Alex is a tumpus.",
+          "loose_pred": "Alex is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Alex is a tumpus or jelpus. Hmm, this is a bit complicate",
+          "text": "Okay, let's try to figure out if Alex is a tumpus or jelpus. Hmm, this is a bit complicated with all these different terms. Let me start by listing out all the given information step by step.\n\nFirst"
+        },
+        {
+          "gold": "Stella is a terpus.",
+          "loose_pred": "Stella is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a felpus or terpus. Hmm, this seems like a logi",
+          "text": "Okay, let's try to figure out if Stella is a felpus or terpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me"
+        },
+        {
+          "gold": "Max is a quimpus.",
+          "loose_pred": "Max is a chorpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Max is a chorpus or quimpus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Max is a chorpus or quimpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst,"
+        },
+        {
+          "gold": "Sam is a wumpus.",
+          "loose_pred": "Sam is a wumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sam is a wumpus or a worpus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Sam is a wumpus or a worpus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step.\n\nFirst"
+        },
+        {
+          "gold": "Bob is a rompus.",
+          "loose_pred": "Bob is a zhorpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Bob is a zhorpus or rompus. Hmm, first I need to parse al",
+          "text": "Okay, let's try to figure out if Bob is a zhorpus or rompus. Hmm, first I need to parse all these statements and see how they connect. Let me list out all the given information step by step.\n\nFirst"
+        },
+        {
+          "gold": "Max is a bompus.",
+          "loose_pred": "Max is a scrompus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Max is a scrompus or bompus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Max is a scrompus or bompus. Hmm, this seems like a logic puzzle with a bunch of categories and relationships. Let me break it down step by step.\n\nFirst, I"
+        },
+        {
+          "gold": "Sally is a tumpus.",
+          "loose_pred": "Sally is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sally is a tumpus or numpus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Sally is a tumpus or numpus. Hmm, this seems like a logic puzzle with a lot of different categories. I need to go through each statement step by step and see how"
+        },
+        {
+          "gold": "Tom is a rempus.",
+          "loose_pred": "Tom is a jelpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a jelpus or rempus. Hmm, this seems like a logic p",
+          "text": "Okay, let's try to figure out if Tom is a jelpus or rempus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to map out all the relationships step by step. Let me"
+        },
+        {
+          "gold": "Stella is a impus.",
+          "loose_pred": "Stella is a vumpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a vumpus or impus. Hmm, this seems like a logic",
+          "text": "Okay, let's try to figure out if Stella is a vumpus or impus. Hmm, this seems like a logic puzzle with a bunch of categorical statements. I need to track all the relationships step by step. Let me list"
+        }
+      ]
+    },
+    "base_16": {
+      "loose_acc": 0.5666666666666667,
+      "strict_acc": 0.0,
+      "artifact_of_loose_correct": 17,
+      "rows": [
+        {
+          "gold": "Eva is a lorpus.",
+          "loose_pred": "Eva is a lorpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a lorpus or y",
+          "text": "Okay, let's try to figure out if Eva is a lorpus or y"
+        },
+        {
+          "gold": "Tom is a storpus.",
+          "loose_pred": "Tom is a storpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a storpus or sc",
+          "text": "Okay, let's try to figure out if Tom is a storpus or sc"
+        },
+        {
+          "gold": "Oliver is a scrompus.",
+          "loose_pred": "Oliver is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a felpus or",
+          "text": "Okay, let's try to figure out if Oliver is a felpus or"
+        },
+        {
+          "gold": "Sally is a scrompus.",
+          "loose_pred": "Sally is a scrompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sally is a scrompus or",
+          "text": "Okay, let's try to figure out if Sally is a scrompus or"
+        },
+        {
+          "gold": "Davis is a lorpus.",
+          "loose_pred": "Davis is a lorpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Davis is a lorpus or j",
+          "text": "Okay, let's try to figure out if Davis is a lorpus or j"
+        },
+        {
+          "gold": "Jack is a gwompus.",
+          "loose_pred": "Jack is a dumpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a dumpus or gw",
+          "text": "Okay, let's try to figure out if Jack is a dumpus or gw"
+        },
+        {
+          "gold": "Jack is a scrompus.",
+          "loose_pred": "Jack is a scrompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a scrompus or",
+          "text": "Okay, let's try to figure out if Jack is a scrompus or"
+        },
+        {
+          "gold": "Gabriel is a yumpus.",
+          "loose_pred": "Gabriel is a kerpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Gabriel is a kerpus or a",
+          "text": "Okay, let's try to figure out if Gabriel is a kerpus or a"
+        },
+        {
+          "gold": "Tom is a rempus.",
+          "loose_pred": "Tom is a rempus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a rempus or timp",
+          "text": "Okay, let's try to figure out if Tom is a rempus or timp"
+        },
+        {
+          "gold": "Fae is a fompus.",
+          "loose_pred": "Fae is a fompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Fae is a fompus",
+          "text": "Okay, let's try to figure out if Fae is a fompus"
+        },
+        {
+          "gold": "Eva is a tumpus.",
+          "loose_pred": "Eva is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a tumpus or",
+          "text": "Okay, let's try to figure out if Eva is a tumpus or"
+        },
+        {
+          "gold": "Oliver is a zumpus.",
+          "loose_pred": "Oliver is a zumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a zumpus or",
+          "text": "Okay, let's try to figure out if Oliver is a zumpus or"
+        },
+        {
+          "gold": "Carol is a felpus.",
+          "loose_pred": "Carol is a felpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Carol is a felpus or",
+          "text": "Okay, let's try to figure out if Carol is a felpus or"
+        },
+        {
+          "gold": "Alex is a brimpus.",
+          "loose_pred": "Alex is a brimpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Alex is a brimpus or",
+          "text": "Okay, let's try to figure out if Alex is a brimpus or"
+        },
+        {
+          "gold": "Stella is a vumpus.",
+          "loose_pred": "Stella is a gerpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a gerpus or v",
+          "text": "Okay, let's try to figure out if Stella is a gerpus or v"
+        },
+        {
+          "gold": "Eva is a boompus.",
+          "loose_pred": "Eva is a boompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a boompus or",
+          "text": "Okay, let's try to figure out if Eva is a boompus or"
+        },
+        {
+          "gold": "Jack is a chorpus.",
+          "loose_pred": "Jack is a terpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a terpus or chor",
+          "text": "Okay, let's try to figure out if Jack is a terpus or chor"
+        },
+        {
+          "gold": "Bob is a grimpus.",
+          "loose_pred": "Bob is a grimpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Bob is a grimpus or",
+          "text": "Okay, let's try to figure out if Bob is a grimpus or"
+        },
+        {
+          "gold": "Gabriel is a storpus.",
+          "loose_pred": "Gabriel is a storpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Gabriel is a storpus or z",
+          "text": "Okay, let's try to figure out if Gabriel is a storpus or z"
+        },
+        {
+          "gold": "Sam is a shumpus.",
+          "loose_pred": "Sam is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sam is a felpus or",
+          "text": "Okay, let's try to figure out if Sam is a felpus or"
+        },
+        {
+          "gold": "Oliver is a storpus.",
+          "loose_pred": "Oliver is a timpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a timpus or stor",
+          "text": "Okay, let's try to figure out if Oliver is a timpus or stor"
+        },
+        {
+          "gold": "Alex is a tumpus.",
+          "loose_pred": "Alex is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Alex is a tumpus or",
+          "text": "Okay, let's try to figure out if Alex is a tumpus or"
+        },
+        {
+          "gold": "Stella is a terpus.",
+          "loose_pred": "Stella is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a felpus or",
+          "text": "Okay, let's try to figure out if Stella is a felpus or"
+        },
+        {
+          "gold": "Max is a quimpus.",
+          "loose_pred": "Max is a chorpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Max is a chorpus or qu",
+          "text": "Okay, let's try to figure out if Max is a chorpus or qu"
+        },
+        {
+          "gold": "Sam is a wumpus.",
+          "loose_pred": "Sam is a wumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sam is a wumpus or",
+          "text": "Okay, let's try to figure out if Sam is a wumpus or"
+        },
+        {
+          "gold": "Bob is a rompus.",
+          "loose_pred": "Bob is a zhorpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Bob is a zhorpus or",
+          "text": "Okay, let's try to figure out if Bob is a zhorpus or"
+        },
+        {
+          "gold": "Max is a bompus.",
+          "loose_pred": "Max is a scrompus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Max is a scrompus or",
+          "text": "Okay, let's try to figure out if Max is a scrompus or"
+        },
+        {
+          "gold": "Sally is a tumpus.",
+          "loose_pred": "Sally is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sally is a tumpus or",
+          "text": "Okay, let's try to figure out if Sally is a tumpus or"
+        },
+        {
+          "gold": "Tom is a rempus.",
+          "loose_pred": "Tom is a jelpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a jelpus or",
+          "text": "Okay, let's try to figure out if Tom is a jelpus or"
+        },
+        {
+          "gold": "Stella is a impus.",
+          "loose_pred": "Stella is a vumpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a vumpus or",
+          "text": "Okay, let's try to figure out if Stella is a vumpus or"
+        }
+      ]
+    },
+    "trained_16": {
+      "loose_acc": 0.5666666666666667,
+      "strict_acc": 0.0,
+      "artifact_of_loose_correct": 17,
+      "rows": [
+        {
+          "gold": "Eva is a lorpus.",
+          "loose_pred": "Eva is a lorpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a lorpus or y",
+          "text": "Okay, let's try to figure out if Eva is a lorpus or y"
+        },
+        {
+          "gold": "Tom is a storpus.",
+          "loose_pred": "Tom is a storpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a storpus or sc",
+          "text": "Okay, let's try to figure out if Tom is a storpus or sc"
+        },
+        {
+          "gold": "Oliver is a scrompus.",
+          "loose_pred": "Oliver is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a felpus or",
+          "text": "Okay, let's try to figure out if Oliver is a felpus or"
+        },
+        {
+          "gold": "Sally is a scrompus.",
+          "loose_pred": "Sally is a scrompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sally is a scrompus or",
+          "text": "Okay, let's try to figure out if Sally is a scrompus or"
+        },
+        {
+          "gold": "Davis is a lorpus.",
+          "loose_pred": "Davis is a lorpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Davis is a lorpus or j",
+          "text": "Okay, let's try to figure out if Davis is a lorpus or j"
+        },
+        {
+          "gold": "Jack is a gwompus.",
+          "loose_pred": "Jack is a dumpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a dumpus or gw",
+          "text": "Okay, let's try to figure out if Jack is a dumpus or gw"
+        },
+        {
+          "gold": "Jack is a scrompus.",
+          "loose_pred": "Jack is a scrompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a scrompus or",
+          "text": "Okay, let's try to figure out if Jack is a scrompus or"
+        },
+        {
+          "gold": "Gabriel is a yumpus.",
+          "loose_pred": "Gabriel is a kerpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Gabriel is a kerpus or a",
+          "text": "Okay, let's try to figure out if Gabriel is a kerpus or a"
+        },
+        {
+          "gold": "Tom is a rempus.",
+          "loose_pred": "Tom is a rempus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a rempus or timp",
+          "text": "Okay, let's try to figure out if Tom is a rempus or timp"
+        },
+        {
+          "gold": "Fae is a fompus.",
+          "loose_pred": "Fae is a fompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Fae is a fompus",
+          "text": "Okay, let's try to figure out if Fae is a fompus"
+        },
+        {
+          "gold": "Eva is a tumpus.",
+          "loose_pred": "Eva is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a tumpus or",
+          "text": "Okay, let's try to figure out if Eva is a tumpus or"
+        },
+        {
+          "gold": "Oliver is a zumpus.",
+          "loose_pred": "Oliver is a zumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a zumpus or",
+          "text": "Okay, let's try to figure out if Oliver is a zumpus or"
+        },
+        {
+          "gold": "Carol is a felpus.",
+          "loose_pred": "Carol is a felpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Carol is a felpus or",
+          "text": "Okay, let's try to figure out if Carol is a felpus or"
+        },
+        {
+          "gold": "Alex is a brimpus.",
+          "loose_pred": "Alex is a brimpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Alex is a brimpus or",
+          "text": "Okay, let's try to figure out if Alex is a brimpus or"
+        },
+        {
+          "gold": "Stella is a vumpus.",
+          "loose_pred": "Stella is a gerpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a gerpus or v",
+          "text": "Okay, let's try to figure out if Stella is a gerpus or v"
+        },
+        {
+          "gold": "Eva is a boompus.",
+          "loose_pred": "Eva is a boompus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Eva is a boompus or",
+          "text": "Okay, let's try to figure out if Eva is a boompus or"
+        },
+        {
+          "gold": "Jack is a chorpus.",
+          "loose_pred": "Jack is a terpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Jack is a terpus or chor",
+          "text": "Okay, let's try to figure out if Jack is a terpus or chor"
+        },
+        {
+          "gold": "Bob is a grimpus.",
+          "loose_pred": "Bob is a grimpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Bob is a grimpus or",
+          "text": "Okay, let's try to figure out if Bob is a grimpus or"
+        },
+        {
+          "gold": "Gabriel is a storpus.",
+          "loose_pred": "Gabriel is a storpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Gabriel is a storpus or z",
+          "text": "Okay, let's try to figure out if Gabriel is a storpus or z"
+        },
+        {
+          "gold": "Sam is a shumpus.",
+          "loose_pred": "Sam is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sam is a felpus or",
+          "text": "Okay, let's try to figure out if Sam is a felpus or"
+        },
+        {
+          "gold": "Oliver is a storpus.",
+          "loose_pred": "Oliver is a timpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Oliver is a timpus or stor",
+          "text": "Okay, let's try to figure out if Oliver is a timpus or stor"
+        },
+        {
+          "gold": "Alex is a tumpus.",
+          "loose_pred": "Alex is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Alex is a tumpus or",
+          "text": "Okay, let's try to figure out if Alex is a tumpus or"
+        },
+        {
+          "gold": "Stella is a terpus.",
+          "loose_pred": "Stella is a felpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a felpus or",
+          "text": "Okay, let's try to figure out if Stella is a felpus or"
+        },
+        {
+          "gold": "Max is a quimpus.",
+          "loose_pred": "Max is a chorpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Max is a chorpus or qu",
+          "text": "Okay, let's try to figure out if Max is a chorpus or qu"
+        },
+        {
+          "gold": "Sam is a wumpus.",
+          "loose_pred": "Sam is a wumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sam is a wumpus or",
+          "text": "Okay, let's try to figure out if Sam is a wumpus or"
+        },
+        {
+          "gold": "Bob is a rompus.",
+          "loose_pred": "Bob is a zhorpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Bob is a zhorpus or",
+          "text": "Okay, let's try to figure out if Bob is a zhorpus or"
+        },
+        {
+          "gold": "Max is a bompus.",
+          "loose_pred": "Max is a scrompus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Max is a scrompus or",
+          "text": "Okay, let's try to figure out if Max is a scrompus or"
+        },
+        {
+          "gold": "Sally is a tumpus.",
+          "loose_pred": "Sally is a tumpus",
+          "strict_pred": null,
+          "loose_ok": true,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Sally is a tumpus or",
+          "text": "Okay, let's try to figure out if Sally is a tumpus or"
+        },
+        {
+          "gold": "Tom is a rempus.",
+          "loose_pred": "Tom is a jelpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Tom is a jelpus or",
+          "text": "Okay, let's try to figure out if Tom is a jelpus or"
+        },
+        {
+          "gold": "Stella is a impus.",
+          "loose_pred": "Stella is a vumpus",
+          "strict_pred": null,
+          "loose_ok": false,
+          "strict_ok": false,
+          "open_line": "Okay, let's try to figure out if Stella is a vumpus or",
+          "text": "Okay, let's try to figure out if Stella is a vumpus or"
+        }
+      ]
+    }
+  }
+}

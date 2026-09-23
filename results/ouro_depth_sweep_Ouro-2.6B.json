@@ -1,0 +1,95 @@
+{
+  "model": "Ouro-2.6B",
+  "task": "ProsQA test",
+  "n": 30,
+  "depths": {
+    "1": {
+      "loose_accuracy": 0.26666666666666666,
+      "strict_accuracy": 0.0,
+      "loose_correct": 8,
+      "strict_correct": 0,
+      "mean_tokens": 16.0,
+      "mean_seconds": 4.56,
+      "samples": [
+        {
+          "loose_pred": "Sally is a hil",
+          "strict_pred": null,
+          "gold": "Sally is a sterpus",
+          "text": "\nOkay, let's try to figure out if Sally is a hil"
+        },
+        {
+          "loose_pred": "Bob is a shump",
+          "strict_pred": null,
+          "gold": "Bob is a shumpus",
+          "text": "\nOkay, let's try to figure out if Bob is a shump"
+        }
+      ]
+    },
+    "2": {
+      "loose_accuracy": 0.4,
+      "strict_accuracy": 0.13333333333333333,
+      "loose_correct": 12,
+      "strict_correct": 4,
+      "mean_tokens": 15.0,
+      "mean_seconds": 4.35,
+      "samples": [
+        {
+          "loose_pred": "Sally is a hil",
+          "strict_pred": null,
+          "gold": "Sally is a sterpus",
+          "text": "\nOkay, let's try to figure out whether Sally is a hil"
+        },
+        {
+          "loose_pred": "Bob is a shumpus",
+          "strict_pred": null,
+          "gold": "Bob is a shumpus",
+          "text": "To determine whether Bob is a shumpus or a gerpus, we need"
+        }
+      ]
+    },
+    "3": {
+      "loose_accuracy": 0.5666666666666667,
+      "strict_accuracy": 0.5333333333333333,
+      "loose_correct": 17,
+      "strict_correct": 16,
+      "mean_tokens": 10.4,
+      "mean_seconds": 3.1,
+      "samples": [
+        {
+          "loose_pred": "Sally is a hilpus",
+          "strict_pred": "Sally is a hilpus",
+          "gold": "Sally is a sterpus",
+          "text": "Sally is a hilpus.\n"
+        },
+        {
+          "loose_pred": "Bob is a shumpus",
+          "strict_pred": "Bob is a shumpus",
+          "gold": "Bob is a shumpus",
+          "text": "Bob is a shumpus.\n"
+        }
+      ]
+    },
+    "4": {
+      "loose_accuracy": 0.6,
+      "strict_accuracy": 0.5333333333333333,
+      "loose_correct": 18,
+      "strict_correct": 16,
+      "mean_tokens": 10.2,
+      "mean_seconds": 3.1,
+      "samples": [
+        {
+          "loose_pred": "Sally is a hilpus",
+          "strict_pred": "Sally is a hilpus",
+          "gold": "Sally is a sterpus",
+          "text": "Sally is a hilpus.\n"
+        },
+        {
+          "loose_pred": "Bob is a shumpus",
+          "strict_pred": null,
+          "gold": "Bob is a shumpus",
+          "text": "Yes, Bob is a shumpus.\n"
+        }
+      ]
+    }
+  }
+}

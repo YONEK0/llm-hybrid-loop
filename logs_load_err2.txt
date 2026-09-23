@@ -1,0 +1,83 @@
+Traceback (most recent call last):
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\develop\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "E:\develop\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "E:\develop\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1170, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\develop\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py", line 1799, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+    ...<2 lines>...
+    )
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 6, in <module>
+    combined = load_lds_model(
+        model_name='Qwen/Qwen3-1.7B', device='cuda', dtype=torch.bfloat16,
+        decomposed_model='models/LoopUS-Qwen3-1.7B', n_recursion=8)
+  File "E:\develop\project_files\llm-test\loopus\utils\inference.py", line 60, in load_lds_model
+    combined = LDSForCausalLM.from_pretrained(
+        decomposed_model,
+        torch_dtype=dtype,
+        device_map=device_map,
+    )
+  File "E:\develop\project_files\llm-test\loopus\models\modeling_lds.py", line 716, in from_pretrained
+    return cls._load_saved(config_or_path, tokenizer=tokenizer, **model_kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\develop\project_files\llm-test\loopus\models\modeling_lds.py", line 749, in _load_saved
+    config = LDSConfig.from_pretrained(local_dir)
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\configuration_utils.py", line 727, in from_pretrained
+    return cls.from_dict(config_dict, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\configuration_utils.py", line 929, in from_dict
+    logger.info(f"Model config {config}")
+                               ^^^^^^^^
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\configuration_utils.py", line 1012, in __repr__
+    return f"{self.__class__.__name__} {self.to_json_string()}"
+                                        ~~~~~~~~~~~~~~~~~~~^^
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\configuration_utils.py", line 1147, in to_json_string
+    config_dict = self.to_diff_dict()
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\configuration_utils.py", line 1034, in to_diff_dict
+    class_config_dict = self.__class__().to_dict() if not self.has_no_defaults_at_init else {}
+                        ~~~~~~~~~~~~~~^^
+  File "E:\develop\project_files\llm-test\loopus\models\configuration_lds.py", line 62, in __init__
+    AutoConfig.from_pretrained(base_model_name_or_path).to_dict()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\models\auto\configuration_auto.py", line 388, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "E:\develop\project_files\llm-test\.venv\Lib\site-packages\transformers\utils\hub.py", line 521, in cached_files
+    raise OSError(
+    ...<3 lines>...
+    ) from e
+OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.

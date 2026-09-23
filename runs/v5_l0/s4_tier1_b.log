@@ -1,0 +1,22 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<06:51,  1.03it/s]Loading weights:   1%|▏         | 6/426 [00:01<01:54,  3.66it/s]Loading weights:   2%|▏         | 7/426 [00:02<01:59,  3.50it/s]Loading weights:   2%|▏         | 8/426 [00:02<02:08,  3.26it/s]Loading weights:   2%|▏         | 9/426 [00:02<02:13,  3.12it/s]Loading weights:   3%|▎         | 11/426 [00:03<01:51,  3.71it/s]Loading weights:   3%|▎         | 12/426 [00:03<02:19,  2.98it/s]Loading weights:   3%|▎         | 13/426 [00:04<02:22,  2.89it/s]Loading weights:   3%|▎         | 14/426 [00:04<02:50,  2.42it/s]Loading weights:   5%|▍         | 20/426 [00:05<01:18,  5.16it/s]Loading weights:   5%|▍         | 21/426 [00:05<01:31,  4.40it/s]Loading weights:   5%|▌         | 22/426 [00:06<01:34,  4.29it/s]Loading weights:   5%|▌         | 23/426 [00:06<02:03,  3.25it/s]Loading weights:   6%|▌         | 25/426 [00:07<02:03,  3.25it/s]Loading weights:   6%|▌         | 26/426 [00:08<02:34,  2.58it/s]Loading weights:  50%|█████     | 213/426 [00:08<00:01, 132.42it/s]Loading weights:  90%|████████▉ | 382/426 [00:08<00:00, 273.07it/s]Loading weights: 100%|██████████| 426/426 [00:08<00:00, 50.91it/s] 
+B-chain freegen: n=4 budget=256 1-shot
+  [trained:d1] item1/4: pred=None gold=15 miss (hash=True eos=False 256tok) [240s]
+  [trained:d1] item2/4: pred=None gold=19 miss (hash=True eos=False 256tok) [456s]
+  [trained:d1] item3/4: pred=None gold=324 miss (hash=False eos=False 256tok) [727s]
+  [trained:d1] item4/4: pred=None gold=144 miss (hash=True eos=False 256tok) [1027s]
+== trained:d1: strict 0/4 finished 0/4 hash 3/4 wilson=[0.0, 0.4899]
+  [trained:d4] item1/4: pred=None gold=15 miss (hash=True eos=False 256tok) [529s]
+  [trained:d4] item2/4: pred=None gold=19 miss (hash=True eos=False 256tok) [1055s]
+  [trained:d4] item3/4: pred=None gold=324 miss (hash=True eos=False 256tok) [1763s]
+  [trained:d4] item4/4: pred=None gold=144 miss (hash=True eos=False 256tok) [2441s]
+== trained:d4: strict 0/4 finished 0/4 hash 4/4 wilson=[0.0, 0.4899]
+  [base:d0] item1/4: pred=None gold=15 miss (hash=True eos=False 256tok) [279s]
+  [base:d0] item2/4: pred=None gold=19 miss (hash=True eos=False 256tok) [554s]
+  [base:d0] item3/4: pred=None gold=324 miss (hash=True eos=False 256tok) [896s]
+  [base:d0] item4/4: pred=None gold=144 miss (hash=True eos=False 256tok) [1225s]
+== base:d0: strict 0/4 finished 0/4 hash 4/4 wilson=[0.0, 0.4899]
+trained:d1: strict=0.0 finished=0.0 hash=0.75
+trained:d4: strict=0.0 finished=0.0 hash=1.0
+base:d0: strict=0.0 finished=0.0 hash=1.0
+written results/s4_tier1_b_freegen.json

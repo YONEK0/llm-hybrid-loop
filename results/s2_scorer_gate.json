@@ -1,0 +1,127 @@
+{
+  "n_cases": 20,
+  "n_fail": 0,
+  "verdict": "PASS",
+  "cases": [
+    {
+      "case": "g1 #### hit",
+      "got": "13",
+      "expect": "13",
+      "pass": true
+    },
+    {
+      "case": "g2 last #### wins",
+      "got": "13",
+      "expect": "13",
+      "pass": true
+    },
+    {
+      "case": "g3 truncated mid-CoT",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "g4 finished but no ####",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "g5 thousands separator",
+      "got": "1234",
+      "expect": "1234",
+      "pass": true
+    },
+    {
+      "case": "g6 currency",
+      "got": "45",
+      "expect": "45",
+      "pass": true
+    },
+    {
+      "case": "g7 negative decimal",
+      "got": "-3.5",
+      "expect": "-3.5",
+      "pass": true
+    },
+    {
+      "case": "g8 empty",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "g9 #### but no number",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "p1 restatement truncated",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "p2 restatement finished",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "p3 #### statement",
+      "got": "eva is a lorpus",
+      "expect": "eva is a lorpus",
+      "pass": true
+    },
+    {
+      "case": "p4 #### with prefix words",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "p5 bare final statement",
+      "got": "eva is a lorpus",
+      "expect": "eva is a lorpus",
+      "pass": true
+    },
+    {
+      "case": "p6 final line continues",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "p7 mid-text only",
+      "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "p8 #### wrong entity",
+      "got": "eva is a zhorpus",
+      "expect": "eva is a zhorpus",
+      "pass": true
+    },
+    {
+      "case": "p9 #### lowercase",
+      "got": "eva is a lorpus",
+      "expect": "eva is a lorpus",
+      "pass": true
+    },
+    {
+      "case": "p10 #### then ramble",
+      "got": "eva is a lorpus",
+      "expect": "eva is a lorpus",
+      "pass": true
+    },
+    {
+      "case": "p11 question final line",
+      "got": null,
+      "expect": null,
+      "pass": true
+    }
+  ]
+}

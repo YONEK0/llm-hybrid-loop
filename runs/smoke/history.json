@@ -1,0 +1,24 @@
+[
+  {
+    "step": 1,
+    "epoch": 1,
+    "seconds": 3.75,
+    "peak_gib": 4.08,
+    "ce": 4.910571098327637,
+    "kd": 0.3235163688659668,
+    "prefix_len": 98,
+    "cot_len": 61,
+    "target_len": 5
+  },
+  {
+    "step": 2,
+    "epoch": 1,
+    "seconds": 2.36,
+    "peak_gib": 4.08,
+    "ce": 4.296196460723877,
+    "kd": 0.27986299991607666,
+    "prefix_len": 74,
+    "cot_len": 64,
+    "target_len": 7
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "model": "Qwen3-4B-Thinking-2507",
+  "quantization": "NF4 double quantization",
+  "latent_steps": 4,
+  "latent_forward_backward_step": true,
+  "loss": 4.809554576873779,
+  "first_latent_grad_norm": 9.763289451599121,
+  "peak_allocated_gib": 2.934640407562256,
+  "seconds": 5.697715000000244,
+  "trainable_parameters": 16515072
+}

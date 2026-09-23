@@ -1,0 +1,100 @@
+{
+  "checkpoint": "runs/fixed-d4/checkpoint",
+  "split": "test",
+  "n": 30,
+  "protocol": "gold scaffold fed as input; CE + exact match on answer tokens",
+  "max_delta_B": 0.015094973146915436,
+  "injection_delta": 0.013096671551465988,
+  "scaffold_grid": {
+    "k2_d1": {
+      "keep_steps": 2,
+      "depth": 1,
+      "mean_ce": 0.76591796875,
+      "exact_match": 0.4,
+      "correct": 12,
+      "n": 30
+    },
+    "k2_d2": {
+      "keep_steps": 2,
+      "depth": 2,
+      "mean_ce": 0.7389322916666666,
+      "exact_match": 0.4,
+      "correct": 12,
+      "n": 30
+    },
+    "k2_d4": {
+      "keep_steps": 2,
+      "depth": 4,
+      "mean_ce": 0.8084309895833334,
+      "exact_match": 0.36666666666666664,
+      "correct": 11,
+      "n": 30
+    },
+    "k1_d1": {
+      "keep_steps": 1,
+      "depth": 1,
+      "mean_ce": 1.1520833333333333,
+      "exact_match": 0.13333333333333333,
+      "correct": 4,
+      "n": 30
+    },
+    "k1_d2": {
+      "keep_steps": 1,
+      "depth": 2,
+      "mean_ce": 1.097265625,
+      "exact_match": 0.13333333333333333,
+      "correct": 4,
+      "n": 30
+    },
+    "k1_d4": {
+      "keep_steps": 1,
+      "depth": 4,
+      "mean_ce": 1.1852864583333333,
+      "exact_match": 0.1,
+      "correct": 3,
+      "n": 30
+    },
+    "k0_d1": {
+      "keep_steps": 0,
+      "depth": 1,
+      "mean_ce": 3.8833333333333333,
+      "exact_match": 0.03333333333333333,
+      "correct": 1,
+      "n": 30
+    },
+    "k0_d2": {
+      "keep_steps": 0,
+      "depth": 2,
+      "mean_ce": 3.2109375,
+      "exact_match": 0.0,
+      "correct": 0,
+      "n": 30
+    },
+    "k0_d4": {
+      "keep_steps": 0,
+      "depth": 4,
+      "mean_ce": 2.9088541666666665,
+      "exact_match": 0.0,
+      "correct": 0,
+      "n": 30
+    }
+  },
+  "free_running": {
+    "free_k2_d4": 0.0,
+    "free_k0_d4": 0.0
+  },
+  "zeroed_control": {
+    "zeroed_k2_d4": {
+      "mean_ce": 0.79765625,
+      "exact_match": 0.3
+    },
+    "zeroed_k1_d4": {
+      "mean_ce": 1.1283203125,
+      "exact_match": 0.1
+    },
+    "zeroed_k0_d4": {
+      "mean_ce": 2.8421875,
+      "exact_match": 0.0
+    }
+  }
+}
