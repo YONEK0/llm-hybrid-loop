@@ -1,0 +1,154 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<07:04,  1.00it/s]Loading weights:   1%|▏         | 6/426 [00:02<03:12,  2.18it/s]Loading weights:   2%|▏         | 7/426 [00:03<02:47,  2.50it/s]Loading weights:   2%|▏         | 8/426 [00:03<02:25,  2.86it/s]Loading weights:   2%|▏         | 9/426 [00:03<02:38,  2.63it/s]Loading weights:   3%|▎         | 11/426 [00:04<02:59,  2.31it/s]Loading weights:   3%|▎         | 12/426 [00:04<02:34,  2.69it/s]Loading weights:   3%|▎         | 13/426 [00:05<02:18,  2.99it/s]Loading weights:   3%|▎         | 14/426 [00:05<02:08,  3.20it/s]Loading weights:   5%|▍         | 20/426 [00:05<00:44,  9.19it/s]Loading weights:   5%|▌         | 23/426 [00:06<01:02,  6.47it/s]Loading weights:   6%|▌         | 25/426 [00:06<00:58,  6.91it/s]Loading weights:   8%|▊         | 36/426 [00:06<00:21, 17.76it/s]Loading weights:  55%|█████▌    | 235/426 [00:06<00:00, 275.64it/s]Loading weights:  96%|█████████▌| 407/426 [00:06<00:00, 500.26it/s]Loading weights: 100%|██████████| 426/426 [00:06<00:00, 62.70it/s] 
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at C:\Users\li287\.cache\huggingface\datasets\Salesforce___wikitext\wikitext-2-raw-v1\0.0.0\b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Sep 20 08:41:44 2026).
+blocks=16 d=1..20 ckpt_step=225
+  block 0: d1 ce=1.478 d20 ce=1.600
+  block 1: d1 ce=1.861 d20 ce=1.948
+  block 2: d1 ce=2.070 d20 ce=2.169
+  block 3: d1 ce=1.841 d20 ce=1.938
+  block 4: d1 ce=1.859 d20 ce=1.971
+  block 5: d1 ce=2.055 d20 ce=2.146
+  block 6: d1 ce=2.049 d20 ce=2.159
+  block 7: d1 ce=2.042 d20 ce=2.134
+  block 8: d1 ce=2.002 d20 ce=2.120
+  block 9: d1 ce=2.189 d20 ce=2.288
+  block 10: d1 ce=1.923 d20 ce=2.020
+  block 11: d1 ce=1.879 d20 ce=1.952
+  block 12: d1 ce=2.117 d20 ce=2.196
+  block 13: d1 ce=2.308 d20 ce=2.461
+  block 14: d1 ce=2.373 d20 ce=2.470
+  block 15: d1 ce=1.768 d20 ce=1.819
+{
+ "fixed": {
+  "d4": {
+   "ce": 2.0188,
+   "acc": 0.5509
+  },
+  "d8": {
+   "ce": 2.036,
+   "acc": 0.5494
+  },
+  "d16": {
+   "ce": 2.0683,
+   "acc": 0.5437
+  },
+  "d20": {
+   "ce": 2.0869,
+   "acc": 0.5412
+  }
+ },
+ "rules": {
+  "velocity": [
+   {
+    "param": 0.003,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.005,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.01,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.02,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.04,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   }
+  ],
+  "kl": [
+   {
+    "param": 0.0001,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.0005,
+    "avg_exit": 17.44,
+    "ce": 2.0763,
+    "gap_vs_d8": 0.0403
+   },
+   {
+    "param": 0.001,
+    "avg_exit": 6.25,
+    "ce": 2.0286,
+    "gap_vs_d8": -0.0074
+   },
+   {
+    "param": 0.002,
+    "avg_exit": 4.0,
+    "ce": 2.0186,
+    "gap_vs_d8": -0.0174
+   }
+  ],
+  "patience": [
+   {
+    "param": 1,
+    "avg_exit": 2.0,
+    "ce": 2.0013,
+    "gap_vs_d8": -0.0347
+   },
+   {
+    "param": 2,
+    "avg_exit": 3.0,
+    "ce": 2.0123,
+    "gap_vs_d8": -0.0237
+   },
+   {
+    "param": 3,
+    "avg_exit": 4.0,
+    "ce": 2.0188,
+    "gap_vs_d8": -0.0172
+   }
+  ],
+  "ruleE": [
+   {
+    "param": 0.02,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.05,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.1,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.2,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   },
+   {
+    "param": 0.5,
+    "avg_exit": 20.0,
+    "ce": 2.0869,
+    "gap_vs_d8": 0.0509
+   }
+  ]
+ }
+}
+written E:\develop\project_files\llm-test\results\s8_r0_l1.json

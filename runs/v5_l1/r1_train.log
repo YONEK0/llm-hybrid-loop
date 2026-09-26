@@ -1,0 +1,17 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<04:22,  1.62it/s]Loading weights:   1%|▏         | 6/426 [00:01<01:05,  6.38it/s]Loading weights:   2%|▏         | 7/426 [00:01<01:02,  6.68it/s]Loading weights:   2%|▏         | 8/426 [00:01<00:59,  6.98it/s]Loading weights:   2%|▏         | 9/426 [00:01<01:13,  5.70it/s]Loading weights:   3%|▎         | 11/426 [00:01<01:00,  6.80it/s]Loading weights:   3%|▎         | 12/426 [00:02<01:08,  6.00it/s]Loading weights:   3%|▎         | 13/426 [00:02<01:05,  6.31it/s]Loading weights:   3%|▎         | 14/426 [00:02<01:11,  5.78it/s]Loading weights:   5%|▍         | 20/426 [00:02<00:34, 11.88it/s]Loading weights:   5%|▌         | 22/426 [00:03<00:43,  9.34it/s]Loading weights:   5%|▌         | 23/426 [00:03<00:44,  9.06it/s]Loading weights:   6%|▌         | 25/426 [00:03<00:37, 10.56it/s]Loading weights:   6%|▋         | 27/426 [00:03<01:00,  6.62it/s]Loading weights:   7%|▋         | 28/426 [00:04<01:29,  4.44it/s]Loading weights:   8%|▊         | 34/426 [00:04<00:49,  7.85it/s]Loading weights:  30%|███       | 129/426 [00:04<00:02, 103.06it/s]Loading weights:  59%|█████▉    | 251/426 [00:04<00:00, 243.69it/s]Loading weights:  85%|████████▌ | 363/426 [00:05<00:00, 376.69it/s]Loading weights: 100%|██████████| 426/426 [00:05<00:00, 82.78it/s] 
+loaded step=700 turns=['t1_inversion', 't2_mature'] | collecting on 64 blocks x d<=16
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at C:\Users\li287\.cache\huggingface\datasets\Salesforce___wikitext\wikitext-2-raw-v1\0.0.0\b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Sep 20 08:41:44 2026).
+features (491520, 3) labels (490560,) pos_rate=0.5176
+Traceback (most recent call last):
+  File "E:\develop\project_files\llm-test\s8_r1_exit.py", line 201, in <module>
+    main()
+    ~~~~^^
+  File "E:\develop\project_files\llm-test\s8_r1_exit.py", line 181, in main
+    loss = F.binary_cross_entropy_with_logits(logit, y32[tr_idx])
+  File "E:\develop\project_files\llm-test\loopus_env\Lib\site-packages\torch\nn\functional.py", line 3637, in binary_cross_entropy_with_logits
+    raise ValueError(
+        f"Target size ({target.size()}) must be the same as input size ({input.size()})"
+    )
+ValueError: Target size (torch.Size([368640])) must be the same as input size (torch.Size([368640, 1]))

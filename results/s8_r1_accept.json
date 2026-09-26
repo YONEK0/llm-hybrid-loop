@@ -1,0 +1,33 @@
+{
+ "time": "2026-09-26 10:30:09",
+ "run": "v5_l1",
+ "verdict": "FAIL",
+ "auc": 0.4876,
+ "checks": [
+  {
+   "item": "turning_point_ckpt_turn1_inversion.pt",
+   "status": "PASS",
+   "detail": "35.1MB mtime=2026-09-25 02:37:26"
+  },
+  {
+   "item": "turning_point_ckpt_turn2_mature.pt",
+   "status": "PASS",
+   "detail": "35.1MB mtime=2026-09-25 15:11:18"
+  },
+  {
+   "item": "exit_head_exists",
+   "status": "PASS",
+   "detail": "4KB params=161 keys_ok=True from_step=700"
+  },
+  {
+   "item": "exit_head_structure",
+   "status": "PASS",
+   "detail": "keys=['ckpt', 'head', 'mu', 'sd', 'step']"
+  },
+  {
+   "item": "exit_head_auc",
+   "status": "FAIL",
+   "detail": "val AUC=0.4876 (acceptance >= 0.7)"
+  }
+ ]
+}

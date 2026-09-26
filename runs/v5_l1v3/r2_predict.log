@@ -1,0 +1,24 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<03:32,  2.00it/s]Loading weights:   1%|▏         | 6/426 [00:00<01:02,  6.71it/s]Loading weights:   2%|▏         | 7/426 [00:01<01:01,  6.84it/s]Loading weights:   2%|▏         | 8/426 [00:01<01:06,  6.31it/s]Loading weights:   2%|▏         | 9/426 [00:01<01:14,  5.63it/s]Loading weights:   3%|▎         | 11/426 [00:01<01:06,  6.24it/s]Loading weights:   3%|▎         | 12/426 [00:02<01:16,  5.42it/s]Loading weights:   3%|▎         | 13/426 [00:02<01:23,  4.97it/s]Loading weights:   3%|▎         | 14/426 [00:02<01:25,  4.82it/s]Loading weights:   5%|▍         | 20/426 [00:02<00:36, 11.05it/s]Loading weights:   5%|▌         | 22/426 [00:03<00:51,  7.86it/s]Loading weights:   5%|▌         | 23/426 [00:03<00:56,  7.13it/s]Loading weights:   6%|▌         | 25/426 [00:03<00:47,  8.43it/s]Loading weights:  49%|████▉     | 210/426 [00:03<00:00, 289.92it/s]Loading weights:  90%|█████████ | 385/426 [00:03<00:00, 550.32it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 109.05it/s]
+loaded step=225 | 32 blocks x d<=16
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at C:\Users\li287\.cache\huggingface\datasets\Salesforce___wikitext\wikitext-2-raw-v1\0.0.0\b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Sep 20 08:41:44 2026).
+collected depths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+
+=== Layer 1: zero-training readout ===
+  d2: pos=0.460 best=max_prob AUC=0.5070 | all: loss=0.4826 entropy=0.4895 max_prob=0.507 margin=0.5024 flip=0.4966 h_cosine=0.4975 delta_norm=0.5037 depth=0.5
+  d3: pos=0.485 best=max_prob AUC=0.5189 | all: loss=0.4773 entropy=0.4797 max_prob=0.5189 margin=0.5155 flip=0.4976 h_cosine=0.4963 delta_norm=0.497 depth=0.5
+  d4: pos=0.491 best=max_prob AUC=0.5116 | all: loss=0.481 entropy=0.4867 max_prob=0.5116 margin=0.5037 flip=0.4983 h_cosine=0.498 delta_norm=0.4934 depth=0.5
+  d5: pos=0.500 best=max_prob AUC=0.5191 | all: loss=0.4748 entropy=0.4811 max_prob=0.5191 margin=0.516 flip=0.5 h_cosine=0.4913 delta_norm=0.4999 depth=0.5
+  d6: pos=0.511 best=max_prob AUC=0.5144 | all: loss=0.4787 entropy=0.4833 max_prob=0.5144 margin=0.5087 flip=0.5 h_cosine=0.5007 delta_norm=0.4965 depth=0.5
+  d7: pos=0.513 best=max_prob AUC=0.5143 | all: loss=0.4779 entropy=0.4883 max_prob=0.5143 margin=0.5119 flip=0.4984 h_cosine=0.4985 delta_norm=0.4981 depth=0.5
+  d8: pos=0.513 best=max_prob AUC=0.5060 | all: loss=0.4896 entropy=0.4962 max_prob=0.506 margin=0.5045 flip=0.4993 h_cosine=0.5033 delta_norm=0.4994 depth=0.5
+  d9: pos=0.512 best=max_prob AUC=0.5045 | all: loss=0.4827 entropy=0.4962 max_prob=0.5045 margin=0.5012 flip=0.5008 h_cosine=0.5022 delta_norm=0.4984 depth=0.5
+  d10: pos=0.524 best=max_prob AUC=0.5115 | all: loss=0.4801 entropy=0.4889 max_prob=0.5115 margin=0.5087 flip=0.4983 h_cosine=0.497 delta_norm=0.503 depth=0.5
+  d11: pos=0.515 best=max_prob AUC=0.5061 | all: loss=0.4829 entropy=0.4965 max_prob=0.5061 margin=0.501 flip=0.4998 h_cosine=0.504 delta_norm=0.504 depth=0.5
+  d12: pos=0.521 best=max_prob AUC=0.5081 | all: loss=0.4848 entropy=0.4938 max_prob=0.5081 margin=0.5052 flip=0.4982 h_cosine=0.4995 delta_norm=0.4993 depth=0.5
+  d13: pos=0.522 best=entropy AUC=0.5021 | all: loss=0.4886 entropy=0.5021 max_prob=0.5017 margin=0.499 flip=0.4995 h_cosine=0.4977 delta_norm=0.4979 depth=0.5
+  d14: pos=0.516 best=max_prob AUC=0.5106 | all: loss=0.4799 entropy=0.4933 max_prob=0.5106 margin=0.5082 flip=0.4993 h_cosine=0.5011 delta_norm=0.4939 depth=0.5
+  d15: pos=0.518 best=max_prob AUC=0.5020 | all: loss=0.4894 entropy=0.5011 max_prob=0.502 margin=0.4967 flip=0.5002 h_cosine=0.4987 delta_norm=0.4992 depth=0.5
+
+written E:\develop\project_files\llm-test\results\s8_r2_readout.json

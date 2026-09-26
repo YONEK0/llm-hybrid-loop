@@ -1,0 +1,15 @@
+s7_b_recheck: n=4 budget=256 ckpt=runs/v5_l1/ckpt_turn2_mature.pt
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:01<07:11,  1.01s/it]Loading weights:   1%|▏         | 6/426 [00:01<01:49,  3.84it/s]Loading weights:   2%|▏         | 7/426 [00:02<01:48,  3.86it/s]Loading weights:   2%|▏         | 8/426 [00:02<02:07,  3.27it/s]Loading weights:   2%|▏         | 9/426 [00:02<01:55,  3.61it/s]Loading weights:   3%|▎         | 11/426 [00:03<01:45,  3.94it/s]Loading weights:   3%|▎         | 12/426 [00:03<01:53,  3.65it/s]Loading weights:   3%|▎         | 13/426 [00:03<02:16,  3.03it/s]Loading weights:   3%|▎         | 14/426 [00:04<02:12,  3.10it/s]Loading weights:   5%|▍         | 20/426 [00:04<01:07,  6.02it/s]Loading weights:   5%|▍         | 21/426 [00:05<01:09,  5.79it/s]Loading weights:   5%|▌         | 22/426 [00:05<01:19,  5.10it/s]Loading weights:   5%|▌         | 23/426 [00:05<01:37,  4.14it/s]Loading weights:   6%|▌         | 25/426 [00:06<01:26,  4.64it/s]Loading weights:   6%|▌         | 26/426 [00:06<01:40,  3.99it/s]Loading weights:   6%|▋         | 27/426 [00:07<02:06,  3.14it/s]Loading weights:   7%|▋         | 28/426 [00:07<01:55,  3.44it/s]Loading weights:  50%|████▉     | 212/426 [00:07<00:01, 199.01it/s]Loading weights:  92%|█████████▏| 393/426 [00:07<00:00, 411.21it/s]Loading weights: 100%|██████████| 426/426 [00:07<00:00, 56.32it/s] 
+loaded L1 ckpt step=700 sup=1792000 turns=['t1_inversion', 't2_mature']
+  [trained:d4] item1/4: strict=False loose=True gold=15 loose_pred=15 (hash=True eos=False 256tok rep4=3 d2=0.7273) [1221s]
+  [trained:d4] item2/4: strict=False loose=False gold=19 loose_pred=3 (hash=True eos=False 256tok rep4=2 d2=0.7237) [2406s]
+  [trained:d4] item3/4: strict=False loose=False gold=324 loose_pred=549 (hash=True eos=False 256tok rep4=2 d2=0.8972) [3737s]
+  [trained:d4] item4/4: strict=False loose=False gold=144 loose_pred=96 (hash=True eos=False 256tok rep4=3 d2=0.7982) [5061s]
+== trained:d4: strict 0/4 loose 1/4 finished 0/4 hash 4/4
+  [base:d0] item1/4: strict=False loose=True gold=15 loose_pred=15 (hash=True eos=False 256tok rep4=2 d2=0.8298) [599s]
+  [base:d0] item2/4: strict=False loose=False gold=19 loose_pred=12 (hash=True eos=False 256tok rep4=4 d2=0.5357) [1171s]
+  [base:d0] item3/4: strict=False loose=False gold=324 loose_pred=3021.6 (hash=True eos=False 256tok rep4=1 d2=0.8514) [1811s]
+  [base:d0] item4/4: strict=False loose=True gold=144 loose_pred=144 (hash=True eos=False 256tok rep4=3 d2=0.7622) [2439s]
+== base:d0: strict 0/4 loose 2/4 finished 0/4 hash 4/4
+written results/s7_b_recheck.json

@@ -1,0 +1,24 @@
+{
+  "run_name": "v5_l1v3",
+  "t2": "runs/v5_l1/ckpt_turn2_mature.pt",
+  "target_supervised_tokens": 1000000.0,
+  "ckpt_every": 25,
+  "eval_every": 50,
+  "B": 20,
+  "K": 5,
+  "ctx": 512,
+  "gate_lr": 0.0001,
+  "lora_lr": 0.0002,
+  "alog_lr_ratio": 0.1,
+  "a_lo": 0.1,
+  "a_hi": 1.0,
+  "seed": 2028,
+  "depths": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "dev_blocks": 8,
+  "resume": "auto"
+}

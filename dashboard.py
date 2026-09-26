@@ -239,6 +239,47 @@ class Tail:
                     "detail": f"解析失败 {self.load_errors} 行"})
         return out
 
+    def exit_gate(self, run_dir):
+        """S6/R1 panel: exit-head AUC + acceptance verdict + archive vault."""
+        rd = Path(run_dir)
+        gate = None
+        gp = ROOT / "results" / "s8_r1_gate.json"
+        if gp.exists():
+            try:
+                gate = json.loads(gp.read_text(encoding="utf-8"))
+            except Exception:
+                gate = None
+        acc = None
+        ap_ = ROOT / "results" / "s8_r1_accept.json"
+        if ap_.exists():
+            try:
+                acc = json.loads(ap_.read_text(encoding="utf-8"))
+            except Exception:
+                acc = None
+        mon = None
+        mp = ROOT / "results" / "s9_monitor.json"
+        if mp.exists():
+            try:
+                mon = json.loads(mp.read_text(encoding="utf-8"))
+            except Exception:
+                mon = None
+        sw_series = []
+        for r in self.events:
+            if r.get("event") in ("eval", "dev_baseline", "final"):
+                m = r.get("dev_ce", {}).get("monitor", {})
+                if m.get("switch_w"):
+                    sw_series.append({"step": r.get("step", 0),
+                                      "sw": m["switch_w"],
+                                      "abar": r.get("logs") and None})
+        vault = []
+        for fn in sorted(rd.glob("ckpt_*.pt")):
+            vault.append({"name": fn.name,
+                          "mb": round(fn.stat().st_size / 2 ** 20, 1),
+                          "mtime": time.strftime(
+                              "%m-%d %H:%M", time.localtime(fn.stat().st_mtime))})
+        return {"gate": gate, "accept": acc, "vault": vault,
+                "monitor9": mon, "switch_series": sw_series}
+
     def feeds(self, run_dir):
         train = []
         for r in self.events:
@@ -300,6 +341,7 @@ class Tail:
                 "samples": self.samples(),
                 "throughput": self.throughput(run_dir),
                 "badges": self.badges(),
+                "exit_gate": self.exit_gate(run_dir),
                 "feeds": self.feeds(run_dir),
                 "checkpoint": ckpt, "history_file": hist,
                 "parse_errors": self.load_errors,
@@ -543,6 +585,33 @@ async function refresh(){
  let bh='';(d.badges||[]).forEach(b=>{
   bh+=`<div class="badge"><span class="${b.ok?'ok':'bad'}">${b.ok?'✓':'✗'} ${b.name}</span><span class="k" style="color:#8b949e">${b.detail}</span></div>`});
  document.getElementById('badges').innerHTML=bh;
+ const eg=(d.exit_gate||{});
+ let eh='';
+ if(eg.gate||eg.accept){const g=eg.gate||{},ac=eg.accept||{};
+  const auc=(g.heads||{}).mlp?g.heads.mlp.val_auc:((g.heads||{}).linear?g.heads.linear.val_auc:'-');
+  eh+=`<div class='card'><h4>S6/R1 关闭门</h4>
+   val AUC <b>${auc}</b> (验收线 0.70) · 样本 ${g.n_train||'-'}训练/${g.n_val||'-'}验证<br>
+   正例率 ${g.pos_rate||'-'} · 标签 ${g.label||''}<br>
+   验收 <b style='color:${ac.verdict==='PASS'?'#6ee76e':'#ffd35e'}'>${ac.verdict||'-'}</b>
+   <span style='color:#889'>${ac.time||''}</span></div>`;}
+ if(eg.vault&&eg.vault.length){eh+="<div class='card'><h4>存档柜（永久档不覆盖）</h4>";
+  eg.vault.forEach(v=>{eh+=`<div>${v.name} — ${v.mb}MB · ${v.mtime}</div>`});
+  eh+='</div>';}
+ const m9=eg.monitor9;
+ if(m9){const ser=m9.series||[];const last=ser[ser.length-1]||{};
+  const ce=last.ce||{};const sw=eg.switch_series||[];const swl=sw[sw.length-1]||{sw:{}};
+  const dm=m9.depth_marginal_lm||{};
+  const dmk=Object.keys(dm).slice(0,10).map(k=>`b${k}:${dm[k]}`).join(' ');
+  const sws=Object.entries(swl.sw||{}).map(([k,v])=>`${k}=${v}`).join(' ');
+  const ces=Object.entries(ce).map(([k,v])=>`${k}=${(+v).toFixed(3)}`).join(' ');
+  eh+=`<div class='card'><h4>L1-v3 训练监控</h4>
+   step ${last.step||0} · ${(last.sup||0/1).toLocaleString?((last.sup||0)/1e6).toFixed(2)+'M':'-'} tokens · ${m9.time||''}<br>
+   CE: <b>${ces}</b> (best=${last.best_depth||'-'})<br>
+   switch_w: <b>${sws}</b><br>
+   lm(b) 边际: <span style='font-size:11px'>${dmk}</span><br>
+   终止判定: <b style='color:${m9.termination&&m9.termination.ready?'#6ee76e':'#ffd35e'}'>${m9.termination?(m9.termination.ready?'建议终止':'继续训练'):'-'}</b>
+   <span style='color:#889'>${m9.termination?m9.termination.reason:''}</span></div>`;}
+ if(eh){const box=document.getElementById('badges');box.innerHTML+=eh;}
  let sh='';
  (d.samples&&d.samples.samples||[]).forEach(x=>{sh+=`<div class="samp">[d${x.depth} · ${x.n_tokens}tok] ${x.text.replace(/</g,'&lt;')}</div>`});
  document.getElementById('samples').innerHTML=sh||'<span class="k">续跑后每次评估生成 2 条</span>';

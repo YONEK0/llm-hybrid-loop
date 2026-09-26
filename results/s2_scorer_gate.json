@@ -1,5 +1,5 @@
 {
-  "n_cases": 20,
+  "n_cases": 42,
   "n_fail": 0,
   "verdict": "PASS",
   "cases": [
@@ -120,6 +120,182 @@
     {
       "case": "p11 question final line",
       "got": null,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b1 eos plain",
+      "finished": true,
+      "got": null,
+      "exp_fin": true,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b2 eos with hash",
+      "finished": true,
+      "got": "13",
+      "exp_fin": true,
+      "expect": "13",
+      "pass": true
+    },
+    {
+      "case": "b3 boundary Q after",
+      "finished": true,
+      "got": "15",
+      "exp_fin": true,
+      "expect": "15",
+      "pass": true
+    },
+    {
+      "case": "b4 boundary immediate Q",
+      "finished": true,
+      "got": "15",
+      "exp_fin": true,
+      "expect": "15",
+      "pass": true
+    },
+    {
+      "case": "b5 end-of-budget bare",
+      "finished": true,
+      "got": "15",
+      "exp_fin": true,
+      "expect": "15",
+      "pass": true
+    },
+    {
+      "case": "b6 trailing spaces",
+      "finished": true,
+      "got": "15",
+      "exp_fin": true,
+      "expect": "15",
+      "pass": true
+    },
+    {
+      "case": "b7 mid-reasoning continues",
+      "finished": false,
+      "got": null,
+      "exp_fin": false,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b8 no hash no eos",
+      "finished": false,
+      "got": null,
+      "exp_fin": false,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b9 hash no number boundary",
+      "finished": false,
+      "got": null,
+      "exp_fin": false,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b10 last hash wins",
+      "finished": true,
+      "got": "13",
+      "exp_fin": true,
+      "expect": "13",
+      "pass": true
+    },
+    {
+      "case": "b11 thousands",
+      "finished": true,
+      "got": "1234",
+      "exp_fin": true,
+      "expect": "1234",
+      "pass": true
+    },
+    {
+      "case": "b12 currency",
+      "finished": true,
+      "got": "45",
+      "exp_fin": true,
+      "expect": "45",
+      "pass": true
+    },
+    {
+      "case": "b13 negative decimal",
+      "finished": true,
+      "got": "-3.5",
+      "exp_fin": true,
+      "expect": "-3.5",
+      "pass": true
+    },
+    {
+      "case": "b14 units word then Q",
+      "finished": true,
+      "got": "18",
+      "exp_fin": true,
+      "expect": "18",
+      "pass": true
+    },
+    {
+      "case": "b15 calc marker",
+      "finished": true,
+      "got": "6",
+      "exp_fin": true,
+      "expect": "6",
+      "pass": true
+    },
+    {
+      "case": "b16 zero half",
+      "finished": true,
+      "got": "0.5",
+      "exp_fin": true,
+      "expect": "0.5",
+      "pass": true
+    },
+    {
+      "case": "b17 long ramble no Q",
+      "finished": false,
+      "got": null,
+      "exp_fin": false,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b18 eos keeps pure-only",
+      "finished": true,
+      "got": null,
+      "exp_fin": true,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b19 hash no num then Q",
+      "finished": false,
+      "got": null,
+      "exp_fin": false,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b20 short tail no Q",
+      "finished": false,
+      "got": null,
+      "exp_fin": false,
+      "expect": null,
+      "pass": true
+    },
+    {
+      "case": "b21 wrong-vs-gold extract",
+      "finished": true,
+      "got": "16",
+      "exp_fin": true,
+      "expect": "16",
+      "pass": true
+    },
+    {
+      "case": "b22 Q inside no hash",
+      "finished": true,
+      "got": null,
+      "exp_fin": true,
       "expect": null,
       "pass": true
     }

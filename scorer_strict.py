@@ -100,6 +100,62 @@ CASES = [
 ]
 
 
+def gsm8k_finished(text, eos_hit=False):
+    """Protocol v1.1 amended 'finished': EOS, or the answer segment is CLOSED by
+    a natural boundary -- a '#### <number>' whose tail is whitespace-only or
+    followed by a line-start 'Q:' (new exemplar question). Conservative:
+    continued reasoning after the number keeps the item unfinished."""
+    if eos_hit:
+        return True
+    if "####" not in text:
+        return False
+    seg = text.rsplit("####", 1)[1]
+    m = re.search(r"-?\d[\d,]*(?:\.\d+)?", seg)
+    if m is None:
+        return False
+    rest = seg[m.end():]
+    return rest.strip() == "" or re.search(r"(^|\n)\s*Q:", rest) is not None
+
+
+def extract_gsm8k_v11(text, eos_hit=False):
+    """Protocol v1.1 GSM8K extraction. EOS path keeps the ORIGINAL strict
+    semantics (pure number only). Boundary path (no EOS): answer segment must
+    be boundary-closed, then its first number is accepted."""
+    if eos_hit:
+        return extract_gsm8k_strict(text, True)
+    if not gsm8k_finished(text, False):
+        return None
+    seg = text.rsplit("####", 1)[1]
+    m = re.search(r"-?\d[\d,]*(?:\.\d+)?", seg)
+    return _norm_num(m.group(0)) if m else None
+
+
+
+BOUNDARY_CASES = [
+    ("b1 eos plain",               "so the answer is 72", True, True, None),
+    ("b2 eos with hash",           "#### 13", True, True, "13"),
+    ("b3 boundary Q after",        "#### 15\n\nQ: A family of 4...", False, True, "15"),
+    ("b4 boundary immediate Q",    "#### 15\nQ: next", False, True, "15"),
+    ("b5 end-of-budget bare",      "#### 15", False, True, "15"),
+    ("b6 trailing spaces",         "#### 15   ", False, True, "15"),
+    ("b7 mid-reasoning continues", "#### 60 for the miles. The total cost is", False, False, None),
+    ("b8 no hash no eos",          "First 24 plus 8 is 32, and then", False, False, None),
+    ("b9 hash no number boundary", "#### done\n\nQ: next", False, False, None),
+    ("b10 last hash wins",         "#### 7 then revise: #### 13\n\nQ: x", False, True, "13"),
+    ("b11 thousands",              "#### 1,234\n\nQ: x", False, True, "1234"),
+    ("b12 currency",               "#### $45\n\nQ:", False, True, "45"),
+    ("b13 negative decimal",       "#### -3.50\n\nQ:", False, True, "-3.5"),
+    ("b14 units word then Q",      "#### 18 dollars\n\nQ:", False, True, "18"),
+    ("b15 calc marker",            "<<2*3=6>> #### 6\n\nQ:", False, True, "6"),
+    ("b16 zero half",              "#### 0.50\n\nQ:", False, True, "0.5"),
+    ("b17 long ramble no Q",       "#### 15\nWait, let me double check the rule. Actually the answer might be different", False, False, None),
+    ("b18 eos keeps pure-only",    "#### 13 blah", True, True, None),
+    ("b19 hash no num then Q",     "calc then ####\nQ:", False, False, None),
+    ("b20 short tail no Q",        "#### 15 ok", False, False, None),
+    ("b21 wrong-vs-gold extract",  "#### 16\n\nQ:", False, True, "16"),
+    ("b22 Q inside no hash",       "Q: trick inside\nA: no hash here", True, True, None),
+]
+
 def main():
     results, fails = [], 0
     for name, text, finished, expect in CASES:
@@ -108,13 +164,21 @@ def main():
         ok = got == expect
         fails += int(not ok)
         results.append({"case": name, "got": got, "expect": expect, "pass": ok})
-    out = {"n_cases": len(CASES), "n_fail": fails,
+    for name, text, eos, exp_fin, exp_pred in BOUNDARY_CASES:
+        fin = gsm8k_finished(text, eos)
+        pred = extract_gsm8k_v11(text, eos)
+        ok = fin == exp_fin and pred == exp_pred
+        fails += int(not ok)
+        results.append({"case": name, "finished": fin, "got": pred,
+                        "exp_fin": exp_fin, "expect": exp_pred, "pass": ok})
+    n_total = len(CASES) + len(BOUNDARY_CASES)
+    out = {"n_cases": n_total, "n_fail": fails,
            "verdict": "PASS" if fails == 0 else "FAIL", "cases": results}
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     for r in results:
         if not r["pass"]:
             print("FAIL", r)
-    print(f"scorer adversarial gate: {len(CASES) - fails}/{len(CASES)} pass "
+    print(f"scorer adversarial gate: {n_total - fails}/{n_total} pass "
           f"-> {out['verdict']} ({OUT})")
 
 

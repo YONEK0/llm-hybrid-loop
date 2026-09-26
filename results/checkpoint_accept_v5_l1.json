@@ -1,0 +1,378 @@
+{
+  "run": "v5_l1",
+  "time": "2026-09-25 15:22:28",
+  "verdict": "PASS",
+  "progress": {
+    "batches": 779,
+    "evals": 7,
+    "ckpt_step": 700,
+    "sup_tokens": 1792000
+  },
+  "eval_series": [
+    {
+      "step": 100,
+      "ce": {
+        "d1": 1.9131,
+        "d2": 1.9088,
+        "d4": 1.9134,
+        "d8": 1.9285,
+        "monitor": {
+          "block_hidden_norm": {
+            "d1": 14.388,
+            "d2": 14.759,
+            "d4": 15.347,
+            "d8": 16.108
+          },
+          "switch_w": {
+            "d1": 0.982,
+            "d2": 0.018,
+            "d4": 0.018,
+            "d8": 0.018
+          },
+          "samples": [
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " is the American lobster , H. americanus , which is"
+            },
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " Adriatic Sea , the Black Sea , and the northern part"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": 200,
+      "ce": {
+        "d1": 1.8984,
+        "d2": 1.8944,
+        "d4": 1.9011,
+        "d8": 1.9111,
+        "monitor": {
+          "block_hidden_norm": {
+            "d1": 16.654,
+            "d2": 17.228,
+            "d4": 18.03,
+            "d8": 18.874
+          },
+          "switch_w": {
+            "d1": 0.982,
+            "d2": 0.018,
+            "d4": 0.018,
+            "d8": 0.018
+          },
+          "samples": [
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " is the American lobster , H. americanus , which is"
+            },
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " Black Sea and the Adriatic Sea . The species is also"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": 300,
+      "ce": {
+        "d1": 1.8982,
+        "d2": 1.8873,
+        "d4": 1.8898,
+        "d8": 1.8995,
+        "monitor": {
+          "block_hidden_norm": {
+            "d1": 15.403,
+            "d2": 16.098,
+            "d4": 16.997,
+            "d8": 18.04
+          },
+          "switch_w": {
+            "d1": 0.982,
+            "d2": 0.018,
+            "d4": 0.018,
+            "d8": 0.018
+          },
+          "samples": [
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " is the American lobster , H. americanus , which is"
+            },
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " Adriatic Sea and the Black Sea . \n\n\n = = ="
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": 400,
+      "ce": {
+        "d1": 1.8806,
+        "d2": 1.8747,
+        "d4": 1.8746,
+        "d8": 1.8779,
+        "monitor": {
+          "block_hidden_norm": {
+            "d1": 16.133,
+            "d2": 16.68,
+            "d4": 17.345,
+            "d8": 18.124
+          },
+          "switch_w": {
+            "d1": 0.982,
+            "d2": 0.019,
+            "d4": 0.018,
+            "d8": 0.018
+          },
+          "samples": [
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " is H. americanus , the American lobster , which is"
+            },
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " Adriatic Sea . \n\n\n = = = Biology = = \n\n\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": 500,
+      "ce": {
+        "d1": 1.8753,
+        "d2": 1.8774,
+        "d4": 1.882,
+        "d8": 1.8877,
+        "monitor": {
+          "block_hidden_norm": {
+            "d1": 16.652,
+            "d2": 17.357,
+            "d4": 17.989,
+            "d8": 18.591
+          },
+          "switch_w": {
+            "d1": 0.982,
+            "d2": 0.019,
+            "d4": 0.018,
+            "d8": 0.018
+          },
+          "samples": [
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " is the American lobster , H. americanus , which is"
+            },
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " Adriatic Sea . It is found in the Atlantic Ocean from"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": 600,
+      "ce": {
+        "d1": 1.8869,
+        "d2": 1.8785,
+        "d4": 1.8779,
+        "d8": 1.8794,
+        "monitor": {
+          "block_hidden_norm": {
+            "d1": 15.25,
+            "d2": 15.896,
+            "d4": 16.65,
+            "d8": 17.566
+          },
+          "switch_w": {
+            "d1": 0.982,
+            "d2": 0.019,
+            "d4": 0.018,
+            "d8": 0.018
+          },
+          "samples": [
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " is the American lobster , H. americanus , which is"
+            },
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " Adriatic Sea . \n\n\n The species is found in the Atlantic"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": 700,
+      "ce": {
+        "d1": 1.8929,
+        "d2": 1.8732,
+        "d4": 1.8683,
+        "d8": 1.872,
+        "monitor": {
+          "block_hidden_norm": {
+            "d1": 15.472,
+            "d2": 16.171,
+            "d4": 17.046,
+            "d8": 18.138
+          },
+          "switch_w": {
+            "d1": 0.982,
+            "d2": 0.019,
+            "d4": 0.018,
+            "d8": 0.018
+          },
+          "samples": [
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " is the American lobster , H. americanus , which is"
+            },
+            {
+              "depth": 2,
+              "n_tokens": 12,
+              "text": " Adriatic Sea . The species is found in the Atlantic Ocean"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "baseline": {
+    "d1": 2.0217,
+    "d2": 2.1125,
+    "d4": 2.5663,
+    "d8": 3.5632,
+    "monitor": {
+      "block_hidden_norm": {
+        "d1": 16.045,
+        "d2": 21.253,
+        "d4": 32.212,
+        "d8": 52.453
+      },
+      "switch_w": {
+        "d1": 0.982,
+        "d2": 0.018,
+        "d4": 0.018,
+        "d8": 0.018
+      },
+      "samples": [
+        {
+          "depth": 2,
+          "n_tokens": 12,
+          "text": " is the American lobster , H. americanus , which is"
+        },
+        {
+          "depth": 2,
+          "n_tokens": 12,
+          "text": " Adriatic Sea and the Black Sea . The species is also"
+        }
+      ]
+    }
+  },
+  "monitor_latest": {
+    "block_hidden_norm": {
+      "d1": 15.472,
+      "d2": 16.171,
+      "d4": 17.046,
+      "d8": 18.138
+    },
+    "switch_w": {
+      "d1": 0.982,
+      "d2": 0.019,
+      "d4": 0.018,
+      "d8": 0.018
+    },
+    "samples": [
+      {
+        "depth": 2,
+        "n_tokens": 12,
+        "text": " is the American lobster , H. americanus , which is"
+      },
+      {
+        "depth": 2,
+        "n_tokens": 12,
+        "text": " Adriatic Sea . The species is found in the Atlantic Ocean"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "item": "ckpt_latest_structure",
+      "status": "PASS",
+      "detail": "35.1MB step=700 gate=824320 switch=20 lora=4460544 opt_states=119 rng=3"
+    },
+    {
+      "item": "ckpt_prev_structure",
+      "status": "PASS",
+      "detail": "35.1MB step=675 gate=824320 switch=20 lora=4460544 opt_states=119 rng=3"
+    },
+    {
+      "item": "ckpt_rolling_order",
+      "status": "PASS",
+      "detail": "latest=700 > prev=675"
+    },
+    {
+      "item": "trainable_param_count",
+      "status": "PASS",
+      "detail": "gate+switch=824340 (expect 824340) + lora=4460544 (r=8)"
+    },
+    {
+      "item": "history_parses",
+      "status": "PASS",
+      "detail": "790 lines, 0 parse errors, torn_tail=0B (trainer mid-append is normal)"
+    },
+    {
+      "item": "ckpt_step_vs_history",
+      "status": "PASS",
+      "detail": "ckpt step=700 <= history batches=779 (gap=79 = work since last ckpt)"
+    },
+    {
+      "item": "training_live",
+      "status": "PASS",
+      "detail": "history written 57s ago"
+    },
+    {
+      "item": "acceptance_CE_drop",
+      "status": "PASS",
+      "detail": "step 700: d1 2.0217→1.8929 (-0.1288), d2 2.1125→1.8732 (-0.2393), d4 2.5663→1.8683 (-0.698), d8 3.5632→1.872 (-1.6912) | deeper-depth CE dropping = gate working"
+    },
+    {
+      "item": "depth_curve_inverted",
+      "status": "PASS",
+      "detail": "d4=1.8683 vs d1=1.8929 (deeper now better)"
+    },
+    {
+      "item": "depth_damage_cleared",
+      "status": "PASS",
+      "detail": "d8=1.872 vs init baseline 3.5632 (x1.15 tolerance; init loop damage cleared)"
+    },
+    {
+      "item": "gate_open",
+      "status": "PASS",
+      "detail": "A_bar mean=0.1025 range=[0.0726,0.1148]"
+    },
+    {
+      "item": "grad_norm_stable",
+      "status": "PASS",
+      "detail": "max grad_norm=1.57 over last 750 supervised steps"
+    }
+  ]
+}

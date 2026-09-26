@@ -1,0 +1,2 @@
+[r1-watch] 2026-09-26 06:37:47 verdict=FAIL auc=0.4876 turning_point_ckpt_turn1_inversion.pt=PASS turning_point_ckpt_turn2_mature.pt=PASS exit_head_exists=PASS exit_head_structure=PASS exit_head_auc=FAIL
+[r1-watch] 2026-09-26 10:30:09 verdict=FAIL auc=0.4876 turning_point_ckpt_turn1_inversion.pt=PASS turning_point_ckpt_turn2_mature.pt=PASS exit_head_exists=PASS exit_head_structure=PASS exit_head_auc=FAIL

@@ -1,0 +1,46 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+E:\develop\project_files\llm-test\loopus_env\Lib\site-packages\transformers\modeling_utils.py:4810: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<04:08,  1.71it/s]Loading weights:   1%|▏         | 6/426 [00:01<01:11,  5.87it/s]Loading weights:   2%|▏         | 7/426 [00:01<01:14,  5.61it/s]Loading weights:   2%|▏         | 8/426 [00:01<01:18,  5.33it/s]Loading weights:   2%|▏         | 9/426 [00:01<01:11,  5.85it/s]Loading weights:   3%|▎         | 11/426 [00:01<00:59,  6.93it/s]Loading weights:   3%|▎         | 12/426 [00:02<00:59,  7.00it/s]Loading weights:   3%|▎         | 13/426 [00:02<01:09,  5.93it/s]Loading weights:   3%|▎         | 14/426 [00:02<01:19,  5.16it/s]Loading weights:   5%|▍         | 20/426 [00:02<00:34, 11.62it/s]Loading weights:   5%|▌         | 22/426 [00:03<00:44,  9.10it/s]Loading weights:   6%|▌         | 24/426 [00:03<00:44,  9.11it/s]Loading weights:   6%|▌         | 25/426 [00:03<00:44,  9.05it/s]Loading weights:   6%|▌         | 26/426 [00:03<00:59,  6.69it/s]Loading weights:   6%|▋         | 27/426 [00:03<01:02,  6.38it/s]Loading weights:   7%|▋         | 28/426 [00:04<01:09,  5.69it/s]Loading weights:  43%|████▎     | 182/426 [00:04<00:00, 245.71it/s]Loading weights:  84%|████████▍ | 357/426 [00:04<00:00, 519.53it/s]Loading weights: 100%|██████████| 426/426 [00:04<00:00, 94.03it/s] 
+loaded v3 step=225 | gsm8k blocks x d<=12
+Token indices sequence length is longer than the specified maximum sequence length for this model (1464620 > 262144). Running this sequence through the model will result in indexing errors
+  block 0: d1=0.717 d12=0.852
+  block 1: d1=0.819 d12=0.855
+  block 2: d1=0.966 d12=1.057
+  block 3: d1=0.962 d12=0.986
+  block 4: d1=0.907 d12=0.950
+  block 5: d1=0.697 d12=0.634
+  block 6: d1=0.918 d12=0.964
+  block 7: d1=0.915 d12=0.944
+  block 8: d1=0.721 d12=0.768
+  block 9: d1=1.129 d12=1.196
+  block 10: d1=1.118 d12=1.119
+  block 11: d1=0.968 d12=0.996
+  block 12: d1=0.857 d12=0.911
+  block 13: d1=1.124 d12=1.133
+  block 14: d1=0.913 d12=0.947
+  block 15: d1=0.859 d12=0.895
+
+=== GSM8K 逐块深度价值 ===
+  block  0: best= 1 exit_kl= 3 ce(best)=0.7174 ce(d2)=0.7489 ce(d1)=0.7174 浅优
+  block  1: best= 1 exit_kl= 6 ce(best)=0.8192 ce(d2)=0.8256 ce(d1)=0.8192 浅优
+  block  2: best= 1 exit_kl= 6 ce(best)=0.9664 ce(d2)=0.9883 ce(d1)=0.9664 浅优
+  block  3: best= 1 exit_kl= 3 ce(best)=0.9617 ce(d2)=0.9645 ce(d1)=0.9617 浅优
+  block  4: best= 1 exit_kl= 3 ce(best)=0.9066 ce(d2)=0.9200 ce(d1)=0.9066 浅优
+  block  5: best= 5 exit_kl= 4 ce(best)=0.6276 ce(d2)=0.6409 ce(d1)=0.6974 深度有益
+  block  6: best= 1 exit_kl= 6 ce(best)=0.9182 ce(d2)=0.9296 ce(d1)=0.9182 浅优
+  block  7: best= 1 exit_kl= 5 ce(best)=0.9146 ce(d2)=0.9275 ce(d1)=0.9146 浅优
+  block  8: best= 2 exit_kl= 4 ce(best)=0.7199 ce(d2)=0.7199 ce(d1)=0.7207 浅优
+  block  9: best= 1 exit_kl= 4 ce(best)=1.1289 ce(d2)=1.1648 ce(d1)=1.1289 浅优
+  block 10: best= 2 exit_kl= 8 ce(best)=1.1023 ce(d2)=1.1023 ce(d1)=1.1182 浅优
+  block 11: best= 1 exit_kl= 5 ce(best)=0.9684 ce(d2)=0.9751 ce(d1)=0.9684 浅优
+  block 12: best= 1 exit_kl= 3 ce(best)=0.8571 ce(d2)=0.8761 ce(d1)=0.8571 浅优
+  block 13: best= 5 exit_kl= 4 ce(best)=1.1194 ce(d2)=1.1207 ce(d1)=1.1241 深度有益
+  block 14: best= 1 exit_kl= 4 ce(best)=0.9127 ce(d2)=0.9186 ce(d1)=0.9127 浅优
+  block 15: best= 1 exit_kl= 3 ce(best)=0.8595 ce(d2)=0.8693 ce(d1)=0.8595 浅优
+
+聚合 CE(d): {1: 0.9119, 2: 0.9183, 3: 0.9245, 4: 0.9287, 5: 0.9312, 6: 0.9339, 7: 0.9367, 8: 0.9393, 9: 0.9423, 10: 0.9448, 11: 0.9471, 12: 0.9504}
+最优深度分布: {d: bests.count(d) for d in set(bests)} = {1: 12, 2: 2, 5: 2}
+**决定性数字**: 深度>2 有益的块: 2/16 (12%)
+退出 vs d2 配对胜负: 1/16
+written E:\develop\project_files\llm-test\results\s8_r0_value_gsm.json

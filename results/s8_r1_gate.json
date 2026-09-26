@@ -1,0 +1,28 @@
+{
+ "time": "2026-09-26 06:37:28",
+ "ckpt": "runs/v5_l1/ckpt_turn2_mature.pt",
+ "ckpt_step": 700,
+ "turns": [
+  "t1_inversion",
+  "t2_mature"
+ ],
+ "n_train": 367920,
+ "n_val": 122640,
+ "pos_rate": 0.5176,
+ "features": [
+  "delta_norm",
+  "h_norm_after",
+  "A_bar_mean"
+ ],
+ "label": "y = 1[loss(token at d+1) < loss(token at d)]",
+ "heads": {
+  "linear": {
+   "val_auc": 0.517,
+   "final_train_loss": 0.7202
+  },
+  "mlp": {
+   "val_auc": 0.4876,
+   "final_train_loss": 0.6989
+  }
+ }
+}

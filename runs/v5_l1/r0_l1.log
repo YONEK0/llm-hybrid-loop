@@ -1,0 +1,154 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<04:09,  1.70it/s]Loading weights:   1%|▏         | 6/426 [00:01<01:11,  5.85it/s]Loading weights:   2%|▏         | 7/426 [00:01<01:09,  6.06it/s]Loading weights:   2%|▏         | 8/426 [00:01<01:10,  5.93it/s]Loading weights:   2%|▏         | 9/426 [00:01<01:07,  6.18it/s]Loading weights:   3%|▎         | 11/426 [00:01<01:04,  6.43it/s]Loading weights:   3%|▎         | 12/426 [00:02<00:59,  6.90it/s]Loading weights:   3%|▎         | 13/426 [00:02<01:14,  5.56it/s]Loading weights:   3%|▎         | 14/426 [00:02<01:09,  5.89it/s]Loading weights:   5%|▍         | 20/426 [00:02<00:32, 12.43it/s]Loading weights:   5%|▌         | 22/426 [00:03<00:42,  9.44it/s]Loading weights:   6%|▌         | 24/426 [00:03<00:43,  9.15it/s]Loading weights:   6%|▌         | 25/426 [00:03<00:47,  8.50it/s]Loading weights:   6%|▌         | 26/426 [00:03<00:52,  7.66it/s]Loading weights:   6%|▋         | 27/426 [00:03<01:00,  6.56it/s]Loading weights:   7%|▋         | 28/426 [00:04<01:09,  5.76it/s]Loading weights:  48%|████▊     | 205/426 [00:04<00:00, 284.96it/s]Loading weights:  90%|█████████ | 385/426 [00:04<00:00, 563.50it/s]Loading weights: 100%|██████████| 426/426 [00:04<00:00, 96.84it/s] 
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at C:\Users\li287\.cache\huggingface\datasets\Salesforce___wikitext\wikitext-2-raw-v1\0.0.0\b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Sep 20 08:41:44 2026).
+blocks=16 d=1..20 ckpt_step=700
+  block 0: d1 ce=1.505 d20 ce=1.515
+  block 1: d1 ce=1.858 d20 ce=1.884
+  block 2: d1 ce=2.007 d20 ce=2.031
+  block 3: d1 ce=1.873 d20 ce=1.874
+  block 4: d1 ce=1.847 d20 ce=1.866
+  block 5: d1 ce=2.065 d20 ce=2.048
+  block 6: d1 ce=2.068 d20 ce=2.058
+  block 7: d1 ce=2.060 d20 ce=2.069
+  block 8: d1 ce=1.971 d20 ce=1.986
+  block 9: d1 ce=2.176 d20 ce=2.208
+  block 10: d1 ce=1.939 d20 ce=1.925
+  block 11: d1 ce=1.884 d20 ce=1.870
+  block 12: d1 ce=2.104 d20 ce=2.117
+  block 13: d1 ce=2.253 d20 ce=2.278
+  block 14: d1 ce=2.397 d20 ce=2.403
+  block 15: d1 ce=1.789 d20 ce=1.782
+{
+ "fixed": {
+  "d4": {
+   "ce": 1.9694,
+   "acc": 0.5625
+  },
+  "d8": {
+   "ce": 1.9722,
+   "acc": 0.5603
+  },
+  "d16": {
+   "ce": 1.9845,
+   "acc": 0.5607
+  },
+  "d20": {
+   "ce": 1.9948,
+   "acc": 0.5569
+  }
+ },
+ "rules": {
+  "velocity": [
+   {
+    "param": 0.003,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.005,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.01,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.02,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.04,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   }
+  ],
+  "kl": [
+   {
+    "param": 0.0001,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.0005,
+    "avg_exit": 10.88,
+    "ce": 1.9789,
+    "gap_vs_d8": 0.0067
+   },
+   {
+    "param": 0.001,
+    "avg_exit": 4.06,
+    "ce": 1.97,
+    "gap_vs_d8": -0.0022
+   },
+   {
+    "param": 0.002,
+    "avg_exit": 3.06,
+    "ce": 1.9695,
+    "gap_vs_d8": -0.0027
+   }
+  ],
+  "patience": [
+   {
+    "param": 1,
+    "avg_exit": 2.0,
+    "ce": 1.9713,
+    "gap_vs_d8": -0.0009
+   },
+   {
+    "param": 2,
+    "avg_exit": 3.0,
+    "ce": 1.9693,
+    "gap_vs_d8": -0.0029
+   },
+   {
+    "param": 3,
+    "avg_exit": 4.0,
+    "ce": 1.9694,
+    "gap_vs_d8": -0.0028
+   }
+  ],
+  "ruleE": [
+   {
+    "param": 0.02,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.05,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.1,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.2,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   },
+   {
+    "param": 0.5,
+    "avg_exit": 20.0,
+    "ce": 1.9948,
+    "gap_vs_d8": 0.0226
+   }
+  ]
+ }
+}
+written E:\develop\project_files\llm-test\results\s8_r0_l1.json

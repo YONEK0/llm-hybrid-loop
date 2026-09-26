@@ -34,6 +34,13 @@ def main():
     args = ap.parse_args()
     run_dir = ROOT / "runs" / args.run
     checks, fails = [], 0
+    is_l1 = False
+    _aj = run_dir / "args.json"
+    if _aj.exists():
+        try:
+            is_l1 = "lora_r" in json.loads(_aj.read_text(encoding="utf-8"))
+        except Exception:
+            is_l1 = False
 
     def check(name, ok, detail, warn_only=False):
         nonlocal fails
@@ -51,17 +58,28 @@ def main():
             continue
         try:
             ck = load_ckpt(path)
-            need = {"step", "sup_tokens", "gate", "q_head", "optimizer", "rng", "args"}
+            if is_l1:
+                need = {"step", "sup_tokens", "gate", "switch", "lora",
+                        "optimizer", "rng", "args"}
+            else:
+                need = {"step", "sup_tokens", "gate", "q_head",
+                        "optimizer", "rng", "args"}
             missing = need - set(ck)
             size_mb = round(path.stat().st_size / 2 ** 20, 1)
             if missing:
                 check(f"ckpt_{tag}_structure", False, f"missing keys {sorted(missing)}")
             else:
                 g = sum(p.numel() for p in ck["gate"].values())
-                q = sum(p.numel() for p in ck["q_head"].values())
+                if is_l1:
+                    sw = int(ck["switch"].numel())
+                    q = sum(p.numel() for p in ck["lora"].values())
+                    extra = f" switch={sw} lora={q}"
+                else:
+                    q = sum(p.numel() for p in ck["q_head"].values())
+                    extra = ""
                 opt_steps = len(ck["optimizer"].get("state", {}))
                 check(f"ckpt_{tag}_structure", True,
-                      f"{size_mb}MB step={ck['step']} gate={g} q_head={q} "
+                      f"{size_mb}MB step={ck['step']} gate={g}{extra} "
                       f"opt_states={opt_steps} rng=3")
             if tag == "latest":
                 latest = ck
@@ -75,9 +93,16 @@ def main():
               f"latest={latest['step']} > prev={prev['step']}")
     if latest:
         g = sum(p.numel() for p in latest["gate"].values())
-        q = sum(p.numel() for p in latest["q_head"].values())
-        check("trainable_param_count", g + q == 832001,
-              f"gate+q_head={g + q} (expected 832001)")
+        if is_l1:
+            sw = int(latest["switch"].numel())
+            lo = sum(p.numel() for p in latest["lora"].values())
+            check("trainable_param_count",
+                  g + sw == 824340 and lo > 1_000_000,
+                  f"gate+switch={g + sw} (expect 824340) + lora={lo} (r=8)")
+        else:
+            q = sum(p.numel() for p in latest["q_head"].values())
+            check("trainable_param_count", g + q == 832001,
+                  f"gate+q_head={g + q} (expected 832001)")
 
     # ---- 4: history integrity ----
     hist_p = run_dir / "history.jsonl"
@@ -141,9 +166,16 @@ def main():
             check("depth_curve_inverted", ce["d4"] <= ce["d1"],
                   f"d4={ce['d4']} vs d1={ce['d1']} "
                   + ("(deeper now better)" if ce["d4"] <= ce["d1"]
-                     else "(still deeper=worse)"))
+                     else "(still deeper=worse; L1 identity-first: T1 pending)"),
+                  warn_only=is_l1)
+        if is_l1 and baseline and "d8" in ce and "d8" in baseline:
+            check("depth_damage_cleared", ce["d8"] <= baseline["d8"] * 1.15,
+                  f"d8={ce['d8']} vs init baseline {baseline['d8']} "
+                  f"(x1.15 tolerance; init loop damage cleared)")
         # vs S1b frozen reference at the same depth
         try:
+            if is_l1:
+                raise RuntimeError("L1: S1b frozen ref not comparable")
             s1b = json.loads((ROOT / "results/s1b_trace_v2.json")
                              .read_text(encoding="utf-8"))
             frozen = s1b["models"]["qwen3.5-4b_hybrid_nf4"]["candidates"]["L8-19"]["mean"]["ce"]
