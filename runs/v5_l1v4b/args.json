@@ -1,0 +1,18 @@
+{
+  "run_name": "v5_l1v4b",
+  "v3": "runs/v5_l1v3/ckpt_v3_step225_diag.pt",
+  "target_supervised_tokens": 500000.0,
+  "ckpt_every": 25,
+  "eval_every": 25,
+  "B": 8,
+  "K": 4,
+  "ctx": 512,
+  "lr": 0.001,
+  "lam": 0.02,
+  "k_frac": 0.05,
+  "beta": 1.0,
+  "gate_h": 256,
+  "seed": 2029,
+  "dev_blocks": 4,
+  "resume": "auto"
+}

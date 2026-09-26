@@ -1,0 +1,17 @@
+{
+ "A": {
+  "ce": 1.841,
+  "mean_exit": 6.44,
+  "n_distinct": 3
+ },
+ "B": {
+  "ce": 1.841,
+  "mean_exit": 4.84,
+  "n_distinct": 7
+ },
+ "C": {
+  "ce": 2.1139,
+  "mean_exit": 4.83,
+  "n_distinct": 8
+ }
+}

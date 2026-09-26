@@ -1,0 +1,11 @@
+[v4-accept] 2026-09-27 01:47:10 verdict=PASS history_parses=PASS router_archive=PASS turning_point_archive=WARN exit_divergence=PASS ce_reported=PASS gate_active=PASS training_live=PASS
+[v4-watch] sleeping 30 min...
+[v4-accept] 2026-09-27 02:17:36 verdict=PASS history_parses=PASS router_archive=PASS turning_point_archive=PASS exit_divergence=PASS ce_reported=PASS gate_active=PASS training_live=PASS
+  PASS history_parses: 380 lines, 0 bad
+  PASS router_archive: step=225 sup=460800 router=5,246,984 keys=['args', 'optimizer', 'rng', 'router', 'step', 'sup_tokens']
+  PASS turning_point_archive: ['ckpt_turn1_split.pt', 'ckpt_turn2_mature.pt'] (permanent, never overwritten)
+  PASS exit_divergence: distinct exit depths=8 mean=4.82 dist={'1': 364, '2': 5, '3': 12, '4': 1, '5': 789, '6': 751, '7': 1, '8': 125}
+  PASS ce_reported: adaptive CE=2.1144 fixed={'d1': 2.085, 'd2': 2.0937, 'd4': 2.1097, 'd8': 2.1144}
+  PASS gate_active: min alive_frac=0.0137 (router is halting tokens)
+  PASS training_live: history written 342s ago
+written E:\develop\project_files\llm-test\results\s10_accept_v5_l1v4b.json
