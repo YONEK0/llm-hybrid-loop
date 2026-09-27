@@ -1,0 +1,14 @@
+s11_b_v4: n=6 budget=256 modes=['adaptive']
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+E:\develop\project_files\llm-test\loopus_env\Lib\site-packages\transformers\modeling_utils.py:4810: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:01<08:37,  1.22s/it]Loading weights:   1%|▏         | 6/426 [00:02<02:09,  3.25it/s]Loading weights:   2%|▏         | 7/426 [00:02<02:18,  3.02it/s]Loading weights:   2%|▏         | 8/426 [00:03<02:38,  2.64it/s]Loading weights:   2%|▏         | 9/426 [00:03<03:05,  2.25it/s]Loading weights:   3%|▎         | 11/426 [00:04<02:35,  2.66it/s]Loading weights:   3%|▎         | 12/426 [00:04<02:48,  2.46it/s]Loading weights:   3%|▎         | 13/426 [00:05<02:54,  2.37it/s]Loading weights:   3%|▎         | 14/426 [00:05<03:02,  2.26it/s]Loading weights:   5%|▍         | 20/426 [00:06<01:17,  5.21it/s]Loading weights:   5%|▍         | 21/426 [00:06<01:35,  4.26it/s]Loading weights:   5%|▌         | 22/426 [00:07<02:14,  3.00it/s]Loading weights:   5%|▌         | 23/426 [00:08<02:48,  2.40it/s]Loading weights:   6%|▌         | 25/426 [00:09<02:50,  2.36it/s]Loading weights:  19%|█▊        | 79/426 [00:09<00:10, 32.68it/s]Loading weights:  36%|███▌      | 152/426 [00:09<00:03, 84.62it/s]Loading weights:  81%|████████  | 344/426 [00:09<00:00, 261.20it/s]Loading weights: 100%|█████████▉| 425/426 [00:09<00:00, 326.25it/s]Loading weights: 100%|██████████| 426/426 [00:09<00:00, 44.29it/s] 
+loaded v3 base + v4-c router (step=225)
+  [adaptive] 1/6: strict=False loose=False gold=15 fin=True [1343s]
+  [adaptive] 2/6: strict=False loose=False gold=19 fin=True [2744s]
+  [adaptive] 3/6: strict=False loose=False gold=324 fin=True [4332s]
+  [adaptive] 4/6: strict=False loose=False gold=144 fin=True [5901s]
+  [adaptive] 5/6: strict=False loose=False gold=94 fin=True [7672s]
+  [adaptive] 6/6: strict=True loose=True gold=44 fin=True [9235s]
+== adaptive: strict 1/6 loose 1/6 fin 6/6
+written results/s11_b_v4.json
