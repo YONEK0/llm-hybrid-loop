@@ -1,6 +1,0 @@
-torch>=2.1
-transformers>=4.45
-accelerate
-bitsandbytes>=0.43
-safetensors
-peft
