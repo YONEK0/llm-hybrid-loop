@@ -30,7 +30,7 @@ def main():
     inject_lora(backbone, 8, 19, 8)
     model = L1Qwen35(backbone, 20)
     model.eval()
-    ck = load_ckpt(model, ROOT / 'runs/v5_l1v3/ckpt_latest.pt')
+    ck = load_ckpt(model, ROOT / 'runs/v5_l1v4c/ckpt_latest.pt')
     print(f'loaded v3 step={ck["step"]} | gsm8k blocks x d<={MAX_D}', flush=True)
 
     gsm_all, _n = build_gsm_blocks(tok, 512)

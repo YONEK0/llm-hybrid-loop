@@ -1,0 +1,42 @@
+{
+ "time": "2026-09-28 01:22:17",
+ "run": "v5_l1v4c",
+ "verdict": "PASS",
+ "checks": [
+  {
+   "item": "history_parses",
+   "status": "PASS",
+   "detail": "670 lines, 0 bad"
+  },
+  {
+   "item": "router_archive",
+   "status": "PASS",
+   "detail": "step=475 sup=972800 router=5,246,984 keys=['args', 'optimizer', 'rng', 'router', 'step', 'sup_tokens']"
+  },
+  {
+   "item": "turning_point_archive",
+   "status": "PASS",
+   "detail": "['ckpt_turn1_split.pt', 'ckpt_turn2_mature.pt'] (permanent, never overwritten)"
+  },
+  {
+   "item": "exit_divergence",
+   "status": "PASS",
+   "detail": "distinct exit depths=8 mean=4.8 dist={'1': 361, '2': 8, '3': 7, '4': 1, '5': 812, '6': 748, '7': 1, '8': 110}"
+  },
+  {
+   "item": "ce_reported",
+   "status": "PASS",
+   "detail": "adaptive CE=1.9187 fixed={'d1': 2.025, 'd2': 2.0006, 'd4': 1.9711, 'd8': 1.9187}"
+  },
+  {
+   "item": "gate_active",
+   "status": "PASS",
+   "detail": "min alive_frac=0.0137 (router is halting tokens)"
+  },
+  {
+   "item": "training_live",
+   "status": "PASS",
+   "detail": "history written 23s ago"
+  }
+ ]
+}

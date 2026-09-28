@@ -1,0 +1,40 @@
+[v4-watch] sleeping 30 min...
+[v4-accept] 2026-09-27 23:47:21 verdict=PASS history_parses=PASS router_archive=PASS turning_point_archive=PASS exit_divergence=PASS ce_reported=PASS gate_active=PASS training_live=PASS
+  PASS history_parses: 461 lines, 0 bad
+  PASS router_archive: step=275 sup=563200 router=5,246,984 keys=['args', 'optimizer', 'rng', 'router', 'step', 'sup_tokens']
+  PASS turning_point_archive: ['ckpt_turn1_split.pt'] (permanent, never overwritten)
+  PASS exit_divergence: distinct exit depths=8 mean=4.83 dist={'1': 359, '2': 6, '3': 11, '4': 1, '5': 794, '6': 754, '7': 1, '8': 122}
+  PASS ce_reported: adaptive CE=1.9206 fixed={'d1': 2.0288, 'd2': 2.0032, 'd4': 1.9737, 'd8': 1.9206}
+  PASS gate_active: min alive_frac=0.0137 (router is halting tokens)
+  PASS training_live: history written 21s ago
+written E:\develop\project_files\llm-test\results\s10_accept_v5_l1v4c.json
+[v4-watch] sleeping 30 min...
+[v4-accept] 2026-09-28 00:18:47 verdict=PASS history_parses=PASS router_archive=PASS turning_point_archive=PASS exit_divergence=PASS ce_reported=PASS gate_active=PASS training_live=PASS
+  PASS history_parses: 533 lines, 0 bad
+  PASS router_archive: step=350 sup=716800 router=5,246,984 keys=['args', 'optimizer', 'rng', 'router', 'step', 'sup_tokens']
+  PASS turning_point_archive: ['ckpt_turn1_split.pt', 'ckpt_turn2_mature.pt'] (permanent, never overwritten)
+  PASS exit_divergence: distinct exit depths=8 mean=4.82 dist={'1': 361, '2': 8, '3': 9, '4': 1, '5': 792, '6': 755, '7': 1, '8': 121}
+  PASS ce_reported: adaptive CE=1.9171 fixed={'d1': 2.0256, 'd2': 2.0021, 'd4': 1.9727, 'd8': 1.9171}
+  PASS gate_active: min alive_frac=0.0137 (router is halting tokens)
+  PASS training_live: history written 13s ago
+written E:\develop\project_files\llm-test\results\s10_accept_v5_l1v4c.json
+[v4-watch] sleeping 30 min...
+[v4-accept] 2026-09-28 00:50:22 verdict=PASS history_parses=PASS router_archive=PASS turning_point_archive=PASS exit_divergence=PASS ce_reported=PASS gate_active=PASS training_live=PASS
+  PASS history_parses: 606 lines, 0 bad
+  PASS router_archive: step=400 sup=819200 router=5,246,984 keys=['args', 'optimizer', 'rng', 'router', 'step', 'sup_tokens']
+  PASS turning_point_archive: ['ckpt_turn1_split.pt', 'ckpt_turn2_mature.pt'] (permanent, never overwritten)
+  PASS exit_divergence: distinct exit depths=8 mean=4.81 dist={'1': 364, '2': 6, '3': 9, '4': 2, '5': 795, '6': 758, '7': 2, '8': 112}
+  PASS ce_reported: adaptive CE=1.9209 fixed={'d1': 2.0262, 'd2': 2.004, 'd4': 1.9735, 'd8': 1.9209}
+  PASS gate_active: min alive_frac=0.0137 (router is halting tokens)
+  PASS training_live: history written 26s ago
+written E:\develop\project_files\llm-test\results\s10_accept_v5_l1v4c.json
+[v4-watch] sleeping 30 min...
+[v4-accept] 2026-09-28 01:22:17 verdict=PASS history_parses=PASS router_archive=PASS turning_point_archive=PASS exit_divergence=PASS ce_reported=PASS gate_active=PASS training_live=PASS
+  PASS history_parses: 670 lines, 0 bad
+  PASS router_archive: step=475 sup=972800 router=5,246,984 keys=['args', 'optimizer', 'rng', 'router', 'step', 'sup_tokens']
+  PASS turning_point_archive: ['ckpt_turn1_split.pt', 'ckpt_turn2_mature.pt'] (permanent, never overwritten)
+  PASS exit_divergence: distinct exit depths=8 mean=4.8 dist={'1': 361, '2': 8, '3': 7, '4': 1, '5': 812, '6': 748, '7': 1, '8': 110}
+  PASS ce_reported: adaptive CE=1.9187 fixed={'d1': 2.025, 'd2': 2.0006, 'd4': 1.9711, 'd8': 1.9187}
+  PASS gate_active: min alive_frac=0.0137 (router is halting tokens)
+  PASS training_live: history written 23s ago
+written E:\develop\project_files\llm-test\results\s10_accept_v5_l1v4c.json

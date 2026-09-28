@@ -1,0 +1,36 @@
+[1/5] loading base in bf16 on CPU ...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 4833.19it/s]
+[2/5] building HybridLoop and copying weights ...
+HybridLoopForCausalLM has generative capabilities, as `prepare_inputs_for_generation` is explicitly defined. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+      copied 427 tensors; model-specific (missing from base): 37 (expected: gate/router/switch)
+[3/5] merging LoRA deltas ...
+      merged 57/57 LoRA targets
+[4/5] loading gate / switch / router ...
+[5/5] saving HF directory ...
+HybridLoopForCausalLM has generative capabilities, as `prepare_inputs_for_generation` is explicitly defined. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+Writing model shards:   0%|          | 0/10 [00:00<?, ?it/s]Writing model shards:  10%|█         | 1/10 [00:02<00:23,  2.66s/it]Writing model shards:  20%|██        | 2/10 [00:05<00:21,  2.64s/it]Writing model shards:  30%|███       | 3/10 [00:07<00:16,  2.31s/it]Writing model shards:  40%|████      | 4/10 [00:08<00:11,  1.89s/it]Writing model shards:  50%|█████     | 5/10 [00:09<00:08,  1.69s/it]Writing model shards:  60%|██████    | 6/10 [00:11<00:06,  1.63s/it]Writing model shards:  70%|███████   | 7/10 [00:12<00:04,  1.56s/it]Writing model shards:  80%|████████  | 8/10 [00:14<00:02,  1.48s/it]Writing model shards:  90%|█████████ | 9/10 [00:15<00:01,  1.58s/it]Writing model shards: 100%|██████████| 10/10 [00:16<00:00,  1.23s/it]Writing model shards: 100%|██████████| 10/10 [00:16<00:00,  1.63s/it]
+      done in 89s -> E:\develop\project_files\llm-test\export\hybridloop-v0.1-hf
+        chat_template.jinja 0.0MB
+        config.json 0.0MB
+        lineage.json 0.0MB
+        model-00001-of-00010.safetensors 2425.0MB
+        model-00002-of-00010.safetensors 1863.1MB
+        model-00003-of-00010.safetensors 1882.3MB
+        model-00004-of-00010.safetensors 1832.5MB
+        model-00005-of-00010.safetensors 1823.0MB
+        model-00006-of-00010.safetensors 1882.3MB
+        model-00007-of-00010.safetensors 1832.5MB
+        model-00008-of-00010.safetensors 1823.0MB
+        model-00009-of-00010.safetensors 2425.0MB
+        model-00010-of-00010.safetensors 703.2MB
+        model.safetensors.index.json 0.0MB
+        modeling_hybridloop.py 0.0MB
+        tokenizer.json 19.1MB
+        tokenizer_config.json 0.0MB

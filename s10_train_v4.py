@@ -354,6 +354,7 @@ def main():
                                 'exit': e['exit'], 'ce': e['ce']})
                 print(f'TURNING-POINT {_name} saved @ step {step} '
                       f'(distinct={_nd} mean_exit={_mean})', flush=True)
+    save_ckpt(ckpt_latest, step, sup_tokens, model, optimizer, args, [])
     fin = {'event': 'final', 'step': step, 'sup_tokens': sup_tokens,
            **eval_v4(model, router, dev_blocks, args.B)}
     append_history(fin)

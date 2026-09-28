@@ -33,9 +33,9 @@ base-model 续写风格（非指令模型）；单种子小样本，数字均为
 | 恒等首圈 + h₀ 再注入 | [Retrofitting Recurrent Depth](https://arxiv.org/abs/2608.11233)、Fan et al. |
 | 逐圈 MLP 路由 + 单调掩码 + bottom-K 自监督 | [AdaPonderLM](https://arxiv.org/abs/2603.01914) |
 | Δloss oracle 标签 | [RecurTrace](https://arxiv.org/abs/2609.03379)（R1 试验） |
-| ★ 块定位（M=L8-19，动力学+接缝） | **原创**——LoopUS 附录 F 声明的开放问题 |
-| ★ 宽开门（A_bar 0.08→0.31）| **原创**——退出深度分化的物理前提 |
-| ★ 软性状态衰减 | **原创**——硬冻结 +0.27 CE 的对症解（对照试验隔离） |
+| 块定位（M=L8-19） | 本项目流程：量化 plateau + 接缝规则 + 候选冻结对比（LoopUS 附录 D 做了定性观察，附录 F 声明混合架构未覆盖） |
+| 宽开门初始化（A uniform[0.1,1.0]） | 本项目参数修改：LoopUS 原始 A 分布导致 99% 通道死区 |
+| 软性状态衰减（SOFT_EPS=0.05） | 本项目修正：AdaPonderLM 冻结 KV；我们发现冻结状态本身损失 +0.27 CE，改为保留 5% 精化 |
 
 ## 关键实验结论（详见 docs/plans/…结论表）
 
