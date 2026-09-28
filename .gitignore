@@ -23,3 +23,6 @@ loopus/
 .cache/
 .ipynb_checkpoints/
 tmp/
+
+# 19GB HF export — pushed separately (see branch export-pending)
+export/hybridloop-v0.1-hf/*.split-*
