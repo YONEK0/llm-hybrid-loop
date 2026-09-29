@@ -1,0 +1,13 @@
+{
+ "l0_tokens": 5002240,
+ "v2_tokens": 1792000,
+ "v3_tokens": 576000,
+ "v4c_tokens": 460800,
+ "archives": [
+  "runs/v5_l0/ckpt_l0_final_step1954.pt",
+  "runs/v5_l1/ckpt_turn1_inversion.pt",
+  "runs/v5_l1/ckpt_turn2_mature.pt",
+  "runs/v5_l1v3/ckpt_v3_step225_diag.pt",
+  "runs/v5_l1v4c/ckpt_v4c_final_step245.pt"
+ ]
+}
